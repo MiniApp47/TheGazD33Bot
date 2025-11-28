@@ -70,8 +70,8 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: '90u PREMIUM',
                             image: 'ProductRuntz.jpg',
                             video: 'VideoRuntz.mp4',
-                            description: '',
-                            tarifs: [
+                            description: 'Le goût classique du Runtz : un mélange bonbon sucré avec une bonne note de gaz.\n\n⚡️ <i>Valeur sûre, effet relaxant immédiat.</i>',
+                              tarifs: [
                                 { weight: '10g', price: 70.00 },
                                 { weight: '25g', price: 130.00 },
                                 { weight: '50g', price: 220.00 },
@@ -88,9 +88,9 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: '90u PREMIUM',
                             image: 'ProductBruce.jpg',
                             video: 'VideoBruce.mp4',
-                            description: '',
+                            description: 'Comme son nom l\'indique : c\'est vert et ça tape fort.\n\n⛽️ <i>Arômes très diesel et terreux. Pour ceux qui cherchent la puissance.</i>',
                             tarifs: [
-                                { weight: '10g', price: 70.00 },
+                            { weight: '10g', price: 70.00 },
                                 { weight: '25g', price: 130.00 },
                                 { weight: '50g', price: 220.00 },
                                 { weight: '100g', price: 400.00 },
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: '90u PREMIUM',
                             image: 'ProductChem.jpg',
                             video: 'VideoChem.mp4',
-                            description: '',
+                            description: 'Le père des variétés Diesel. Un goût "chimique" et piquant très reconnaissable.\n\n🧠 <i>Gros effet cérébral, ça réveille les sens.</i>',
                             tarifs: [
                                 { weight: '10g', price: 70.00 },
                                 { weight: '25g', price: 130.00 },
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: '90u PREMIUM',
                             image: 'ProductBanana.jpg',
                             video: 'VideoBanana.mp4',
-                            description: '',
+                            description: 'Un vrai goût de banane mûre mélangé à du biscuit.\n\n🍰 <i>Texture grasse et goût bien fruité en bouche.</i>',
                             tarifs: [
                                 { weight: '10g', price: 70.00 },
                                 { weight: '25g', price: 130.00 },
@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: '120u PREMIUM',
                             image: 'ProductSweat.jpg',
                             video: 'VideoSweat.mp4',
-                            description: '',
+                            description: 'Son nom résume tout : c\'est doux, c\'est crémeux et vanillé.\n\n☁️ <i>Fumée épaisse et douce, filtrage 120u très propre.</i>',
                             tarifs: [
                                 { weight: '10g', price: 90.00 },
                                 { weight: '25g', price: 150.00 },
@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: '120u PREMIUM',
                             image: 'ProductCereal.jpg',
                             video: 'VideoCereal.mp4',
-                            description: '',
+                            description: 'Le goût du lait sucré après un bol de céréales.\n\n🥣 <i>Profil terpénique gourmand et laiteux. Texture au top.</i>',
                             tarifs: [
                                 { weight: '10g', price: 90.00 },
                                 { weight: '25g', price: 150.00 },
@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: '120u PREMIUM',
                             image: 'ProductGolden.jpg',
                             video: 'VideoGolden.mp4',
-                            description: '',
+                            description: 'Une variété "Gold" aux arômes aigre-doux et légèrement citronnés.\n\n⚜️ <i>Un Hash clair et brillant, effet joyeux.</i>',
                             tarifs: [
                                 { weight: '10g', price: 90.00 },
                                 { weight: '25g', price: 150.00 },
@@ -205,7 +205,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: '120u PREMIUM',
                             image: 'ProductAnimal.jpg',
                             video: 'VideoAnimal.mp4',
-                            description: '',
+                            description: 'Fraîcheur garantie. Un goût de menthe poivrée avec un fond cookie.\n\n❄️ <i>Laisse une sensation fraîche en bouche très agréable.</i>',
                             tarifs: [
                                 { weight: '10g', price: 90.00 },
                                 { weight: '25g', price: 150.00 },
@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: 'FRESH FROZEN',
                             image: 'ProductZmo.jpg',
                             video: 'VideoZmo.mp4',
-                            description: '',
+                            description: 'Pur jus de Papaye. On retrouve exactement l\'odeur du fruit frais.\n\n🥭 <i>Extraction glacée pour garder tout le goût. Une dinguerie.</i>',
                             tarifs: [
                                 { weight: '5g', price: 70.00 },
                                 { weight: '10g', price: 100.00 },
@@ -250,8 +250,8 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: 'FRESH FROZEN',
                             image: 'ProductLimez.jpg',
                             video: 'VideoLimez.mp4',
-                            description: '',
-                            tarifs: [
+                            description: 'Pêche x Citron Vert. Un mélange sucré et acide qui pète en bouche.\n\n⚡️ <i>Terpènes explosifs dès l\'ouverture du pot.</i>',
+                                tarifs: [
                                 { weight: '5g', price: 70.00 },
                                 { weight: '10g', price: 100.00 },
                                 { weight: '25g', price: 220.00 },
@@ -291,8 +291,8 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: 'Weed',
                             image: 'ProductGush.jpg',
                             video: 'VideoGush.mp4',
-                            description: '',
-                            tarifs: [
+description: 'Comme le bonbon Gushers : une explosion de fruits tropicaux.\n\n🇺🇸 <i>Import Cali authentique, têtes denses et colorées.</i>',                            
+tarifs: [
                                 { weight: '3,5g', price: 70.00 },
                                 { weight: '7g', price: 130.00 },
                                 { weight: '14g', price: 230.00 },
@@ -308,12 +308,31 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: 'Weed',
                             image: 'ProductCandle.jpg',
                             video: 'VideoCandle.mp4',
-                            description: '',
+                            description: 'Un profil unique, très parfumé avec une fumée douce.\n\n🌊 <i>Manucure parfaite, c\'est du propre made in USA.</i>',                            
                             tarifs: [
                                 { weight: '3,5g', price: 70.00 },
                                 { weight: '7g', price: 130.00 },
                                 { weight: '14g', price: 230.00 },
                                 { weight: '56g', price: 650.00 },
+                            ]
+                        },
+                        {
+                            id: 'PAPAYA',
+                           //flag: '🇺🇸',
+                            name: 'PAPAYA x CHERRY GELATO 🍒 🥭',
+                            farm: 'CALI NO BRAND ™️©️',
+                            promoEligible: true,
+                            type: 'Weed',
+                            image: 'ProductPapaya.jpg',
+                            video: 'VideoPapaya.mp4',
+                            description: 'Le mariage de la Papaye et de la Cerise Gelato. Très fruité.\n\n🍒 <i>LA FOLIE 🤪 ‼️ Goût intense et buds magnifiques.</i>',                            
+                            tarifs: [
+                                { weight: '5g', price: 70.00 },
+                                { weight: '10g', price: 120.00 },
+                                { weight: '25g', price: 220.00 },
+                                { weight: '50g', price: 420.00 },
+                                { weight: '100g', price: 800.00 },
+
                             ]
                         }
                     ]
@@ -776,14 +795,16 @@ function renderProductPage(productId) {
     // ... (la logique de descriptionHTML ne change pas) ...
     let descriptionHTML = '';
     if (product.description) {
-        // ...
+        const formattedDescription = product.description.replace(/\n/g, '<br>');
+        descriptionHTML = `<p class="product-description">${formattedDescription}</p>`;
+
     }
     
     // On injecte le HTML, y compris la description
     detailsContainer.innerHTML = `
     <div class="name">${product.name}</div>
     <div class="farm">${product.farm}</div>
-    ${descriptionHTML} 
+    <div class="description">${descriptionHTML} </div>
     <h4 class="tarifs-title">💰 Tarifs disponibles :</h4>
 
     <div class="tarifs-grid-container">
