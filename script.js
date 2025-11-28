@@ -352,7 +352,7 @@ tarifs: [
             farms: [
                 {
                 id: 'VAPE',
-                    name: 'VAPE',
+                    name: '😶‍🌫️ VAPE 😶‍🌫️',
                     image: 'CategHash.png', 
                     badgeText: '0 produits',
                     clickable: true,  
@@ -379,7 +379,7 @@ tarifs: [
                 },
                 {
                     id: 'SERINGUE WAX',
-                        name: 'SERINGUE WAX',
+                        name: '💉 SERINGUE WAX 💉',
                         image: 'CategHash.png', 
                         badgeText: '0 produits',
                         clickable: true,  
