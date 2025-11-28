@@ -8,21 +8,49 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // --- CONFIGURATION DES LIENS DE CONTACT ---
     const contactLinks = [
-    { name: 'WhatsApp', url: 'https://wa.me/33758626677', icon: '#icon-whatsapp', id: 'whatsapp' ,className: 'whatsapp', text: "WhatsApp"},
-    { name: 'Snapchat', url: 'https://www.snapchat.com/@ckush731?locale=fr-FR&share_id=BsJIDrpIOaQ', icon: '#icon-snapchat', id: 'snapchat', className: 'snapchat' , text: "Snapchat"},
-    { name: 'Telegram', url: 'https://t.me/+8sCHftv9LF1kZWZk', icon: '#icon-telegram', id: 'telegram',className: 'telegram', text: "Telegram" },
-    { name: 'Signal', url: 'https://signal.me/#eu/dd_ukQSEetkqH6i_rhDQpjg6MBEPo-32cX6zpd3VHDPLSHdQYRVJw5ODNbilKXYF', icon: '#icon-signal', id: 'signal', className: 'signal', text: "Signal" }
-];
+        { 
+            name: 'TELEGRAM PRINCIPAL 🥇', 
+            url: 'https://t.me/+VSfcWu4V17plNzlk', 
+            icon: '#icon-telegram', 
+            id: 'telegram-main',
+            className: 'telegram-main', // Référence le CSS Bleu
+            text: "TELEGRAM PRINCIPAL 🥇"
+        },
+        { 
+            name: 'POTATO PRINCIPAL 🥔', 
+            url: 'https://dympt.org/thegazdoggy330', 
+            icon: '#icon-potato', 
+            id: 'potato-main', 
+            className: 'potato-main', // Référence le CSS Marron/Doré
+            text: "POTATO PRINCIPAL 🥔"
+        },
+        { 
+            name: 'CANAL LUFFA 🟣', 
+            url: 'https://callup.luffa.im/c/YWbtpoF4Trg', 
+            icon: '#icon-signal', // J'utilise l'icone signal car Luffa n'a pas d'icone dédiée
+            id: 'luffa-main', 
+            className: 'luffa-main', // Référence le CSS Violet
+            text: "CANAL LUFFA 🟣"
+        },
+        { 
+            name: 'PAGE INSTAGRAM 📸', 
+            url: 'https://www.instagram.com/thegazdoggy1', // <--- Pense à mettre ton vrai lien Insta ici !
+            icon: '#icon-instagram', 
+            id: 'insta-main', 
+            className: 'insta-main', // Référence le CSS Sunset
+            text: "PAGE INSTAGRAM 📸"
+        }
+    ];
 
     // --- DONNÉES DE L'APPLICATION (NOUVELLE STRUCTURE) ---
     const appData = [
         // --- Catégorie 1: HASH ---
         {
             id: 'HASH',
-            name: '🍫 Hash',
+            name: '🍪 Hash 🍪',
             farm: '',
             type: 'Hash',
-            quality: ' 🍫 Hash',
+            quality: ' 🍪 Hash 🍪',
             image: 'CategHash.jpg', // Image de la catégorie
 
             // La catégorie contient maintenant des "farms"
@@ -240,11 +268,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // --- Catégorie 2: BEUH ---
         {
-            id: 'BEUH',
-            name: ' 🍀 Beuh',
+            id: 'WEED',
+            name: ' 🪴 Weed 🪴',
             farm: '',
             type: 'Weed',
-            quality: ' 🍀 Beuh',
+            quality: ' 🪴 Weed 🪴',
             image: 'CategWeed.jpg', // Image de la catégorie
 
             farms: [

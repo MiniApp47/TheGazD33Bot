@@ -262,11 +262,11 @@
 
         .category-card img {
             width: 95%;
-            height: 25vh;
-            object-fit: cover;
-            border-radius: 20px;
-            margin: auto;
-            display: block;
+    height: 20vh;
+    object-fit: cover;
+    border-radius: 50px;
+    margin: auto;
+    display: block;
         }
 
         .cart-button .cart-count {
@@ -913,10 +913,10 @@
             text-decoration: none;
             color: var(--text-color);
             transition: background-color 0.2s ease;
-            height: 5vh;
-            display: flex;
-            justify-content: center;
-            font-size: 3vh;
+            height: 10vh;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
         }
 
         .contact-links-list a:last-child {
@@ -933,35 +933,64 @@
             width: 4vh;
         }
 
-        /* --- NOUVEAU STYLE POUR LES LIENS DE CONTACT COLORÉS --- */
-        .contact-link.whatsapp {
-            background-color: #25D366;
-        }
+       /* --- Styles spécifiques pour les boutons LINKS --- */
 
-        .contact-link.instagram {
-            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-        }
+/* Style de base du bouton (forme, taille text) */
+.contact-link {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centre le contenu */
+    padding: 20px;
+    border-radius: 15px; /* Arrondi */
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: white;
+    font-family: 'Impact', sans-serif; /* Police impactante */
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid rgba(255,255,255,0.1); /* Bordure subtile */
+    width: 100%;
+    box-sizing: border-box;
+}
 
-        .contact-link.snapchat {
-            background-color: #FFFC00;
-            color: #000000;
-            /* Texte en noir pour la lisibilité */
-        }
+/* Effet au clic */
+.contact-link:active {
+    transform: scale(0.98);
+}
 
-        .contact-link.snapchat svg {
-            stroke: #000000;
-            /* Icône en noir */
-        }
+/* 1. TELEGRAM PRINCIPAL (Bleu Cyan vers Bleu Profond) */
+.contact-link.telegram-main {
+    background: linear-gradient(135deg, #0088cc 0%, #005f8f 100%);
+    box-shadow: 0 4px 15px rgba(0, 136, 204, 0.4);
+}
 
-        .contact-link.telegram {
-            background-color: #0088cc;
-        }
+/* 2. POTATO PRINCIPAL (Marron Terre vers Doré Potato) */
+.contact-link.potato-main {
+    background: linear-gradient(135deg, #6d4c41 0%, #d4a05e 100%);
+    box-shadow: 0 4px 15px rgba(109, 76, 65, 0.4);
+}
 
-        .contact-link.potato {
-            background-color: #d35400;
-            /* Une couleur orange/marron pour Potato */
-        }
+/* 3. CANAL LUFFA (Violet Luffa) */
+.contact-link.luffa-main {
+    background: linear-gradient(135deg, #7b1fa2 0%, #aa00ff 100%);
+    box-shadow: 0 4px 15px rgba(123, 31, 162, 0.4);
+}
 
+/* 4. INSTAGRAM (Sunset officiel) */
+.contact-link.insta-main {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    box-shadow: 0 4px 15px rgba(220, 39, 67, 0.4);
+}
+
+/* Style pour l'icône à l'intérieur */
+.contact-link svg {
+    margin-right: 15px;
+    width: 28px;
+    height: 28px;
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,0.3)); /* Petite ombre sous l'icone */
+}
         /* --- NOUVEAU STYLE POUR L'ACCORDÉON --- */
         .accordion-container {
             width: 100%;
