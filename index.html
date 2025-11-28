@@ -1290,6 +1290,48 @@
     font-weight: normal;
     display: none;
 }
+/* --- STYLE DU CARROUSEL --- */
+.carousel-container {
+    display: flex;
+    overflow-x: auto; /* Permet de scroller horizontalement */
+    scroll-snap-type: x mandatory; /* L'effet "aimant" quand on swipe */
+    gap: 10px;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    
+    /* Cache la barre de défilement (scroll bar) pour faire propre */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE */
+}
+.carousel-container::-webkit-scrollbar { 
+    display: none; /* Chrome/Safari */
+}
+
+.carousel-slide {
+    flex: 0 0 100%; /* Chaque image prend 100% de la largeur */
+    scroll-snap-align: center; /* L'image se centre toute seule */
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* L'image remplit bien l'espace */
+    display: block;
+    aspect-ratio: 1 / 1; /* Format carré (ou change en 9/16 si format story) */
+}
+
+/* Petit indicateur (optionnel, pour dire qu'on peut swiper) */
+.carousel-hint {
+    text-align: center;
+    color: var(--hint-color);
+    font-size: 0.8rem;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    opacity: 0.7;
+}
 
     </style>
 </head>

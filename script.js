@@ -393,7 +393,16 @@ tarifs: [
                                 promoEligible: true,
                                 type: 'Vape',
                                 image: 'ProductSer.png',
-                                video: '',
+                                images: [
+                                    'ProductSer1.jpg',  // Photo 1
+                                    'ProductSer2.jpg', // Photo 2 (Assure-toi d'avoir uploadé ce fichier !)
+                                    'ProductSer3.jpg',  // Photo 3 (Assure-toi d'avoir uploadé ce fichier !)
+                                    'ProductSer4.jpg', // Photo 2 (Assure-toi d'avoir uploadé ce fichier !)
+                                    'ProductSer5.jpg'  // Photo 3 (Assure-toi d'avoir uploadé ce fichier !)
+
+                                ],
+                            
+                                video: '', // Pas de vidéo pour celui-là
                                 description: '🎯 Pur à 91%THC  | THC \n ⚡ Effet ultra rapide & intense \n 💎 Qualité distillat premium • Sans coupe \n\n ℹ️ A mettre au tour du join ou meme dedans ℹ️',
                                 tarifs: [
                                     { weight: '1 💉', price: 60.00 },
@@ -764,53 +773,86 @@ tarifs: [
         });
     }
 
-   // Affiche la page de détail d'un produit
+// --- FONCTION MODIFIÉE POUR GÉRER LE CARROUSEL ---
 function renderProductPage(productId) {
-    // On utilise notre nouvelle fonction "helper"
     const product = getProductById(productId);
     if (!product) return;
 
-    const videoElement = document.querySelector('#page-product .product-video');
-    videoElement.src = product.video;
-    videoElement.poster = product.image;
+    // 1. On récupère la zone où s'affiche l'image/vidéo
+    // (Note: dans ton HTML actuel c'est une balise <video>, on va peut-être devoir la remplacer)
+    const mediaContainer = document.querySelector('#page-product .page-content');
+    
+    // On cherche si on a déjà créé un wrapper média, sinon on nettoie le haut
+    // Pour faire simple avec ton code actuel, on va reconstruire le haut de la page produit dynamiquement
+    
+    // --- CONSTRUCTION DU MÉDIA (Vidéo ou Carrousel) ---
+    let mediaHTML = '';
+
+    if (product.images && product.images.length > 0) {
+        // CAS 1 : C'est un CARROUSEL (Seringue)
+        const slides = product.images.map(img => `
+            <div class="carousel-slide">
+                <img src="${img}" alt="${product.name}">
+            </div>
+        `).join('');
+
+        mediaHTML = `
+            <div class="carousel-container">
+                ${slides}
+            </div>
+            <div class="carousel-hint">↔️ Swipe pour voir les photos</div>
+        `;
+    } else {
+        // CAS 2 : C'est une VIDÉO ou une IMAGE UNIQUE (Les autres produits)
+        // On garde ta logique actuelle avec la vidéo
+        mediaHTML = `
+            <video class="product-video" poster="${product.image}" src="${product.video || ''}" ${product.video ? 'controls' : ''}></video>
+        `;
+    }
 
     document.getElementById('product-page-title').innerText = product.name;
     const detailsContainer = document.getElementById('product-details-content');
 
-   // 2. On définit le style : Si useSmallText est vrai, on réduit la police, sinon rien.
-   const weightStyle = product.useSmallText ? 'font-size: 20px; line-height: 1.2;' : '';
+    // --- GESTION DES TARIFS ---
+    // (On garde ta logique pour le petit texte)
+    const weightStyle = product.useSmallText ? 'font-size: 12px; line-height: 1.2;' : '';
 
-   let tarifsHTML = product.tarifs.map(tarif => `
-   <div class="tarif-item">
-       <div class="box-tarif">
-           <div class="tarif-wieght" style="${weightStyle}">${tarif.weight}</div>
-           <div class="tarif-price">${tarif.price.toFixed(2)}€</div>
-       </div>
-       <button class="add-to-cart-btn" data-product-id="${product.id}" data-weight="${tarif.weight}" data-price="${tarif.price}">
-           <svg width="20" height="20"><use href="#icon-cart"/></svg>
-       </button>
-   </div>
-   `).join('');
+    let tarifsHTML = product.tarifs.map(tarif => `
+    <div class="tarif-item">
+        <div class="box-tarif">
+            <div class="tarif-wieght" style="${weightStyle}">${tarif.weight}</div>
+            <div class="tarif-price">${tarif.price.toFixed(2)}€</div>
+        </div>
+        <button class="add-to-cart-btn" data-product-id="${product.id}" data-weight="${tarif.weight}" data-price="${tarif.price}">
+            <svg width="20" height="20"><use href="#icon-cart"/></svg>
+        </button>
+    </div>
+    `).join('');
 
-    // ... (la logique de descriptionHTML ne change pas) ...
     let descriptionHTML = '';
     if (product.description) {
-        const formattedDescription = product.description.replace(/\n/g, '<br>');
-        descriptionHTML = `<p class="product-description">${formattedDescription}</p>`;
-
+         descriptionHTML = `<div class="product-description">${product.description}</div>`;
     }
     
-    // On injecte le HTML, y compris la description
-    detailsContainer.innerHTML = `
-    <div class="name">${product.name}</div>
-    <div class="farm">${product.farm}</div>
-    <div class="description">${descriptionHTML} </div>
-    <h4 class="tarifs-title">💰 Tarifs disponibles :</h4>
-
-    <div class="tarifs-grid-container">
-        ${tarifsHTML}
-    </div>
+    // --- ON INJECTE TOUT DANS LA PAGE ---
+    // Attention : On modifie légèrement la structure HTML via JS pour insérer le média au bon endroit
+    // On vide le contenu précédent pour éviter les doublons
+    const pageContent = document.querySelector('#page-product .page-content');
+    
+    // On reconstruit le contenu de la page produit proprement
+    pageContent.innerHTML = `
+        ${mediaHTML}
+        <div id="product-details-content" class="product-details">
+            <div class="name">${product.name}</div>
+            <div class="farm">${product.farm}</div>
+            ${descriptionHTML} 
+            <h4 class="tarifs-title">💰 Tarifs disponibles :</h4>
+            <div class="tarifs-grid-container">
+                ${tarifsHTML}
+            </div>
+        </div>
     `;
+
     showPage('page-product');
 }
     // Met à jour l'affichage du panier (inchangé)
