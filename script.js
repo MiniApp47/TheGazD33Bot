@@ -249,7 +249,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             promoEligible: true,
                             type: 'FRESH FROZEN',
                             image: 'ProductLimez.jpg',
-                            video: 'VideoLimez.mov',
+                            video: 'VideoPeach.mp4',
                             description: 'Pêche x Citron Vert. Un mélange sucré et acide qui pète en bouche.\n\n⚡️ <i>Terpènes explosifs dès l\'ouverture du pot.</i>',
                                 tarifs: [
                                 { weight: '5g', price: 70.00 },
