@@ -218,8 +218,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     ]
                 },
                 {
-                    id: 'FRESH FROZEN',
-                    name: '⚡ FRESH FROZEN ⚡',
+                    id: 'SIFT FROZEN',
+                    name: '🧊 FROZEN SIFT 🧊',
                     image: 'CategHash.png', // Mets une image de farm si tu veux
                     badgeText: '5 produits', 
                     products: [
@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             promoEligible: true,
                             type: 'FRESH FROZEN',
                             image: 'ProductZmo.jpg',
-                            video: 'VideoZmo.mp4',
+                            video: 'VideoZmo.mov',
                             description: 'Pur jus de Papaye. On retrouve exactement l\'odeur du fruit frais.\n\n🥭 <i>Extraction glacée pour garder tout le goût. Une dinguerie.</i>',
                             tarifs: [
                                 { weight: '5g', price: 70.00 },
@@ -249,7 +249,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             promoEligible: true,
                             type: 'FRESH FROZEN',
                             image: 'ProductLimez.jpg',
-                            video: 'VideoLimez.mp4',
+                            video: 'VideoLimez.mov',
                             description: 'Pêche x Citron Vert. Un mélange sucré et acide qui pète en bouche.\n\n⚡️ <i>Terpènes explosifs dès l\'ouverture du pot.</i>',
                                 tarifs: [
                                 { weight: '5g', price: 70.00 },
@@ -258,6 +258,49 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: '50g', price: 400.00 },
                                 { weight: '100g', price: 700.00 },
                             ]
+                        }
+                        
+                    ]
+                },
+                {
+                    id: '⚡️DOUBLE STATIC',
+                    name: '⚡️DOUBLE STATIC ⚡️',
+                    image: 'CategHash.png', // Mets une image de farm si tu veux
+                    badgeText: '5 produits', 
+                    products: [
+                         {
+                            id: 'MOMOCHI',
+                           //  flag: '🇺🇸',
+                            name: '🏮 MOMOCHI x LIMEZ 🍋',
+                            farm: 'HASH GAZ SELECTION 🇲🇦 ⛰️',
+                            promoEligible: true,
+                            type: '⚡️DOUBLE STATIC',
+                            image: 'ProductMochi.jpg',
+                            video: 'VideoMochi.mov',
+                            description: '🎒 <b>SÉLECTION BACKPACK</b> 🎒\n\nLe choc des titans : l\'onctuosité du Momochi rencontre le peps acidulé du Limez.\n\n🇺🇸 <i>Un profil terpénique rare et complexe. Terps explosifs garantis.</i>',                            tarifs: [
+                                { weight: '5g', price: 80.00 },
+                                { weight: '10g', price: 150.00 },
+                                { weight: '25g', price: 300.00 },
+                                { weight: '50g', price: 500.00 },
+                                { weight: '100g', price: 900.00 },
+                            ]
+                        },
+                        {
+                            id: 'FORBIDDEN',
+                           //  flag: '🇺🇸',
+                            name: 'CALIPPO x FORBIDDEN 🚫 ',
+                            farm: 'HASH GAZ SELECTION 🇲🇦 ⛰️',
+                            promoEligible: true,
+                            type: '⚡️DOUBLE STATIC',
+                            image: 'ProductForbi.jpg',
+                            video: 'VideoForbi.mov',
+                            description: '🎒 <b>SÉLECTION BACKPACK</b> 🎒\n\nLe mariage interdit : la fraîcheur sucrée du Calippo mixée aux terpènes exotiques de la Forbidden.\n\n🚫 <i>Un cocktail de fruits explosif. Goût intense et fumée épaisse.</i>',                                tarifs: [
+                                    { weight: '5g', price: 80.00 },
+                                    { weight: '10g', price: 150.00 },
+                                    { weight: '25g', price: 300.00 },
+                                    { weight: '50g', price: 500.00 },
+                                    { weight: '100g', price: 900.00 },
+                                ]
                         }
                         
                     ]
@@ -291,8 +334,8 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: 'Weed',
                             image: 'ProductGush.jpg',
                             video: 'VideoGush.mp4',
-description: 'Comme le bonbon Gushers : une explosion de fruits tropicaux.\n\n🇺🇸 <i>Import Cali authentique, têtes denses et colorées.</i>',                            
-tarifs: [
+                            description: 'Comme le bonbon Gushers : une explosion de fruits tropicaux.\n\n🇺🇸 <i>Import Cali authentique, têtes denses et colorées.</i>',                            
+                            tarifs: [
                                 { weight: '3,5g', price: 70.00 },
                                 { weight: '7g', price: 130.00 },
                                 { weight: '14g', price: 230.00 },
