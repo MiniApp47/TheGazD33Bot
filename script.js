@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             promoEligible: true,
                             type: '90u PREMIUM',
                             image: 'ProductRuntz.jpg',
-                            video: 'VideoRuntz.mp4',
+                            video: 'VideoRuntz.MOV',
                             description: 'Le goût classique du Runtz : un mélange bonbon sucré avec une bonne note de gaz.\n\n⚡️ <i>Valeur sûre, effet relaxant immédiat.</i>',
                               tarifs: [
                                 { weight: '10g', price: 70.00 },
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             promoEligible: true,
                             type: '90u PREMIUM',
                             image: 'ProductBruce.jpg',
-                            video: 'VideoBruce.mp4',
+                            video: 'VideoBruce.MOV',
                             description: 'Comme son nom l\'indique : c\'est vert et ça tape fort.\n\n⛽️ <i>Arômes très diesel et terreux. Pour ceux qui cherchent la puissance.</i>',
                             tarifs: [
                             { weight: '10g', price: 70.00 },
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             promoEligible: true,
                             type: '90u PREMIUM',
                             image: 'ProductChem.jpg',
-                            video: 'VideoChem.mp4',
+                            video: 'VideoChem.MOV',
                             description: 'Le père des variétés Diesel. Un goût "chimique" et piquant très reconnaissable.\n\n🧠 <i>Gros effet cérébral, ça réveille les sens.</i>',
                             tarifs: [
                                 { weight: '10g', price: 70.00 },
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             promoEligible: true,
                             type: '90u PREMIUM',
                             image: 'ProductBanana.jpg',
-                            video: 'VideoBanana.mp4',
+                            video: 'VideoBanana.MOV',
                             description: 'Un vrai goût de banane mûre mélangé à du biscuit.\n\n🍰 <i>Texture grasse et goût bien fruité en bouche.</i>',
                             tarifs: [
                                 { weight: '10g', price: 70.00 },
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             promoEligible: true,
                             type: '120u PREMIUM',
                             image: 'ProductSweat.jpg',
-                            video: 'VideoSweat.mp4',
+                            video: 'VideoSweat.MOV',
                             description: 'Son nom résume tout : c\'est doux, c\'est crémeux et vanillé.\n\n☁️ <i>Fumée épaisse et douce, filtrage 120u très propre.</i>',
                             tarifs: [
                                 { weight: '10g', price: 90.00 },
@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             promoEligible: true,
                             type: '120u PREMIUM',
                             image: 'ProductCereal.jpg',
-                            video: 'VideoCereal.mp4',
+                            video: 'VideoCereal.MOV',
                             description: 'Le goût du lait sucré après un bol de céréales.\n\n🥣 <i>Profil terpénique gourmand et laiteux. Texture au top.</i>',
                             tarifs: [
                                 { weight: '10g', price: 90.00 },
@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             promoEligible: true,
                             type: '120u PREMIUM',
                             image: 'ProductGolden.jpg',
-                            video: 'VideoGolden.mp4',
+                            video: 'VideoGolden.MOV',
                             description: 'Une variété "Gold" aux arômes aigre-doux et légèrement citronnés.\n\n⚜️ <i>Un Hash clair et brillant, effet joyeux.</i>',
                             tarifs: [
                                 { weight: '10g', price: 90.00 },
@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             promoEligible: true,
                             type: '120u PREMIUM',
                             image: 'ProductAnimal.jpg',
-                            video: 'VideoAnimal.mp4',
+                            video: 'VideoAnimal.MOV',
                             description: 'Fraîcheur garantie. Un goût de menthe poivrée avec un fond cookie.\n\n❄️ <i>Laisse une sensation fraîche en bouche très agréable.</i>',
                             tarifs: [
                                 { weight: '10g', price: 90.00 },
@@ -718,60 +718,94 @@ tarifs: [
         });
     }
 
- 
-    // Affiche la liste des PRODUITS pour une CATÉGORIE ENTIÈRE
-    function renderProductList(categoryId) { // <-- MODIFIÉ (on n'a plus besoin de farmId)
-        const category = appData.find(c => c.id === categoryId);
-        if (!category) {
-            productListContainer.innerHTML = '<p class="no-results">Catégorie non trouvée.</p>';
-            return;
-        }
-
-        // --- MODIFICATION MAJEURE ---
-        // On récupère TOUS les produits de TOUTES les farms de cette catégorie
-        const allProducts = category.farms.flatMap(farm => farm.products);
-        // --- FIN MODIFICATION ---
-
-        if (!allProducts || allProducts.length === 0) {
-            productListContainer.innerHTML = '<p class="no-results">Aucun produit dans cette catégorie.</p>';
-            return;
-        }
-
-        const filteredProducts = allProducts.filter(product => { // <-- On filtre la nouvelle liste
-            const searchMatch = product.name.toLowerCase().includes(currentFilters.searchTerm.toLowerCase());
-            const farmMatch = currentFilters.farm === 'all' || product.farm === currentFilters.farm;
-            return searchMatch && farmMatch;
-        });
-
-        productListContainer.innerHTML = '';
-        if (filteredProducts.length === 0) {
-            productListContainer.innerHTML = '<p class="no-results">Aucun produit ne correspond à votre recherche.</p>';
-            return;
-        }
-
-        filteredProducts.forEach(product => {
-            // ... (le reste de la fonction est identique)
-            const card = document.createElement('div');
-            card.className = 'product-card product-item-card';
-            card.dataset.productId = product.id;
-
-            if (product.clickable === false) {
-                card.classList.add('unclickable');
-            }
-
-            let flagHTML = product.flag ? `<span class="product-flag">${product.flag}</span>` : '';
-
-            card.innerHTML = `
-            <img src="${product.image}" alt="${product.name}">
-            <div class="info">
-                <div class="name">${product.name} ${flagHTML}</div>
-                <div class="farm">${product.farm}</div>
-                <div class="price">${product.tarifs[0].price.toFixed(2)}€</div>
-            </div>
-        `;
-            productListContainer.appendChild(card);
-        });
+ // Affiche la liste des PRODUITS
+function renderProductList(categoryId) {
+    const category = appData.find(c => c.id === categoryId);
+    if (!category) {
+        productListContainer.innerHTML = '<p class="no-results">Catégorie non trouvée.</p>';
+        return;
     }
+
+    let allProducts = [];
+
+    // --- CORRECTION ICI ---
+    
+    // CAS 1 : On est dans une sous-catégorie précise
+    if (currentFarmId) {
+        // 1. On récupère les produits de la Farm sélectionnée
+        const selectedFarm = category.farms.find(f => f.id === currentFarmId);
+        if (selectedFarm) {
+            allProducts = selectedFarm.products; 
+        }
+
+        // 2. On affiche le bouton retour "Vers les choix"
+        const backButton = document.createElement('button');
+        backButton.className = 'back-to-farms-btn'; 
+        backButton.innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg> Retour aux choix`;
+        backButton.style.cssText = `background: linear-gradient(180deg, black, transparent); border-bottom: 2px solid #ca351d; border-top: none; border-left: none; border-right: none; color: white; padding: 10px 15px; border-radius: 10px; font-size: 1.1rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 10px; width: 100%; box-sizing: border-box; margin-top: 3vh; font-family: Copperplate;`;
+        
+        // On s'assure de ne pas avoir de doublons de boutons
+        const existingBtn = filterContainer.querySelector('.back-to-farms-btn');
+        if (!existingBtn) filterContainer.prepend(backButton);
+    } 
+    // CAS 2 : On affiche tout (pas de farm sélectionnée)
+    else {
+        // 1. On récupère TOUS les produits (décommenté !)
+        allProducts = category.farms.flatMap(farm => farm.products);
+
+        // 2. On affiche le bouton retour "Vers les catégories"
+        const backButton = document.createElement('button');
+        backButton.className = 'back-to-categories-btn';
+        backButton.innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg> ${category.name}`;
+        backButton.style.cssText = `background: linear-gradient(180deg, black, transparent); border-bottom: 2px solid #ca351d; border-top: none; border-left: none; border-right: none; color: white; padding: 10px 15px; border-radius: 10px; font-size: 1.1rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 10px; width: 100%; box-sizing: border-box; margin-top: 3vh; font-family: Copperplate;`;
+
+        const existingBtn = filterContainer.querySelector('.back-to-categories-btn');
+        if (!existingBtn) filterContainer.prepend(backButton);
+    }
+
+    // --- FIN CORRECTION ---
+
+    if (!allProducts || allProducts.length === 0) {
+        productListContainer.innerHTML = '<p class="no-results">Aucun produit trouvé.</p>';
+        return;
+    }
+
+    // Filtrage supplémentaire (Barre de recherche et filtres)
+    const filteredProducts = allProducts.filter(product => {
+        const searchMatch = product.name.toLowerCase().includes(currentFilters.searchTerm.toLowerCase());
+        const farmMatch = currentFarmId ? true : (currentFilters.farm === 'all' || product.farm === currentFilters.farm);
+        return searchMatch && farmMatch;
+    });
+
+    productListContainer.innerHTML = '';
+    
+    if (filteredProducts.length === 0) {
+        productListContainer.innerHTML = '<p class="no-results">Aucun produit ne correspond à votre recherche.</p>';
+        return;
+    }
+
+    filteredProducts.forEach(product => {
+        const card = document.createElement('div');
+        card.className = 'product-card product-item-card';
+        card.dataset.productId = product.id;
+
+        if (product.clickable === false) {
+            card.classList.add('unclickable');
+        }
+
+        let flagHTML = product.flag ? `<span class="product-flag">${product.flag}</span>` : '';
+
+        card.innerHTML = `
+        <img src="${product.image}" alt="${product.name}">
+        <div class="info">
+            <div class="name">${product.name} ${flagHTML}</div>
+            <div class="farm">${product.farm}</div>
+            <div class="price">${product.tarifs[0].price.toFixed(2)}€</div>
+        </div>
+    `;
+        productListContainer.appendChild(card);
+    });
+}
 
 // --- FONCTION MODIFIÉE POUR GÉRER LE CARROUSEL ---
 function renderProductPage(productId) {
