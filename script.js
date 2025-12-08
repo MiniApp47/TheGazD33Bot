@@ -379,6 +379,31 @@ document.addEventListener('DOMContentLoaded', function () {
                             ]
                         }
                     ]
+                },
+                {
+                    id: 'CALIHolland', // J'ai inventé un ID de farm
+                    name: '🇳🇱 Cali Hollandaise 🇳🇱',
+                    image: 'Wizard4.png', // Mets une image de farm si tu veux
+                    badgeText: '2 produits', 
+                    products: [
+                        {
+                            id: 'AMNESIA HAZE',
+                           //flag: '🇺🇸',
+                            name: 'AMNESIA HAZE ⛽️ 🌲',
+                            farm: 'NO BRAND ™️©️',
+                            promoEligible: true,
+                            type: 'Weed',
+                            image: 'ProductAmne.jpg',
+                            video: 'VideAmne.mp4',
+                            description: 'L\'indémodable Haze à la puissance légendaire. Attendez-vous à un \'high\' cérébral stimulant et euphorique. \n\n🍋 Arômes Vifs & Citronnés 🍋\n avec des notes de poivre et d\'encens. Une expérience Haze authentique et pure.',                            
+                            tarifs: [
+                                { weight: '10g', price: 70.00 },
+                                { weight: '25g', price: 150.00 },
+                                { weight: '50g', price: 270.00 },
+                                { weight: '100g', price: 500.00 },
+                            ]
+                        }
+                    ]
                 }
             ]
         },
