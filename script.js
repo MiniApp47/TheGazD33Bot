@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             promoEligible: true,
                             type: 'FRESH FROZEN',
                             image: 'ProductZmo.jpg',
-                            video: 'VideoZmo.mov',
+                            video: 'VideoZmo.mp4',
                             description: 'Pur jus de Papaye. On retrouve exactement l\'odeur du fruit frais.\n\n🥭 <i>Extraction glacée pour garder tout le goût. Une dinguerie.</i>',
                             tarifs: [
                                 { weight: '5g', price: 70.00 },
@@ -249,7 +249,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             promoEligible: true,
                             type: 'FRESH FROZEN',
                             image: 'ProductLimez.jpg',
-                            video: 'VideoPeach.mov',
+                            video: 'VideoLimez.mp4',
                             description: 'Pêche x Citron Vert. Un mélange sucré et acide qui pète en bouche.\n\n⚡️ <i>Terpènes explosifs dès l\'ouverture du pot.</i>',
                                 tarifs: [
                                 { weight: '5g', price: 70.00 },
@@ -276,7 +276,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             promoEligible: true,
                             type: '⚡️DOUBLE STATIC',
                             image: 'ProductMochi.jpg',
-                            video: 'VideoMochi.mov',
+                            video: 'VideoMochi.mp4',
                             description: '🎒 <b>SÉLECTION BACKPACK</b> 🎒\n\nLe choc des titans : l\'onctuosité du Momochi rencontre le peps acidulé du Limez.\n\n🇺🇸 <i>Un profil terpénique rare et complexe. Terps explosifs garantis.</i>',                            tarifs: [
                                 { weight: '5g', price: 80.00 },
                                 { weight: '10g', price: 150.00 },
@@ -293,7 +293,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             promoEligible: true,
                             type: '⚡️DOUBLE STATIC',
                             image: 'ProductForbi.jpg',
-                            video: 'VideoForbi.mov',
+                            video: 'VideoForbi.mp4',
                             description: '🎒 <b>SÉLECTION BACKPACK</b> 🎒\n\nLe mariage interdit : la fraîcheur sucrée du Calippo mixée aux terpènes exotiques de la Forbidden.\n\n🚫 <i>Un cocktail de fruits explosif. Goût intense et fumée épaisse.</i>',                                tarifs: [
                                     { weight: '5g', price: 80.00 },
                                     { weight: '10g', price: 150.00 },
