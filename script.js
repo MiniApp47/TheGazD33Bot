@@ -381,8 +381,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     ]
                 },
                 {
-                    id: 'CALIHolland', // J'ai inventé un ID de farm
-                    name: '🇳🇱 Cali Hollandaise 🇳🇱',
+                    id: 'WEEDholland', // J'ai inventé un ID de farm
+                    name: '🇳🇱 Weed Hollandaise 🇳🇱',
                     image: 'Wizard4.png', // Mets une image de farm si tu veux
                     badgeText: '2 produits', 
                     products: [
