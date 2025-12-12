@@ -481,6 +481,116 @@ document.addEventListener('DOMContentLoaded', function () {
                         ]
                     }
             ]
+        },
+
+        // PACK NOEL 
+
+
+        {
+            id: 'PACKDENOEL',
+            name: '🎅🏽 PACKDENOEL 🎅🏽',
+            farm: '',
+            type: 'PACKDENOEL',
+            quality: '🎅🏽 PACKDENOEL 🎅🏽',
+            image: 'CategNoel.jpg',
+
+            farms: [
+                {
+                id: 'PACKBRONZE',
+                    name: '🥉 PACKBRONZE 🥉',
+                    image: 'CategHash.png', 
+                    badgeText: '0 produits',
+                    clickable: true,  
+                    products: [
+
+                        {
+                            id: 'PromoBronze',
+                            name: '🎁 10G DE 120u / 10G D’AMNESIA HAZE 🎁',
+                            farm: '🎄 Spécial Noël',
+                            promoEligible: true,
+                            type: 'Promo', // Important pour le CSS
+                            image: '', // Pas besoin d'image
+                            video: '',
+                            description: '',
+                            clickable: true, // On met à TRUE pour que le curseur change
+                            tarifs: [
+                                { weight: 'Pack', price: 120.00 },
+                            ]
+                        }
+                    ]
+                },
+                {
+                    id: 'PACK ARGENTÉ',
+                        name: '🥈 PACK ARGENTÉ 🥈',
+                        image: 'CategHash.png', 
+                        badgeText: '0 produits',
+                        clickable: true,  
+                        products: [
+
+                            {
+                                id: 'PromoArgente',
+                                name: '🎁 10G DE 90u/ 5G DE DOUBLE STATIC/ 10G D’AMNESIA HAZE 🎁',
+                                farm: '🎄 Spécial Noël',
+                                promoEligible: true,
+                                type: 'Promo', // Important pour le CSS
+                                image: '', // Pas besoin d'image
+                                video: '',
+                                description: '',
+                                clickable: true, // On met à TRUE pour que le curseur change
+                                tarifs: [
+                                    { weight: 'Pack', price: 180.00 },
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        id: 'PACK OR',
+                            name: '🥇 PACK OR 🥇',
+                            image: 'CategHash.png', 
+                            badgeText: '0 produits',
+                            clickable: true,  
+                            products: [
+        
+                                {
+                                    id: 'PromoArgPromoOrente',
+                                    name: '🎁 10G DE FROZEN/ 3.5G DE PARLAY/ 10G DE DOUBLE STATIC  🎁',
+                                    farm: '🎄 Spécial Noël',
+                                    promoEligible: true,
+                                    type: 'Promo', // Important pour le CSS
+                                    image: '', // Pas besoin d'image
+                                    video: '',
+                                    description: '',
+                                    clickable: true, // On met à TRUE pour que le curseur change
+                                    tarifs: [
+                                        { weight: 'Pack', price: 280.00 },
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            id: 'PACK DIAMANT',
+                                name: '💎 PACK DIAMANT 💎',
+                                image: 'CategHash.png', 
+                                badgeText: '0 produits',
+                                clickable: true,  
+                                products: [
+                                    {
+                                        id: 'PromoDiamant',
+                                        name: '🎁 10G DE DOUBLE STATIC/ 25 DE FROZEN/ 7G DE PARLAY/ 1 SERINGUE WAX  🎁',
+                                        farm: '🎄 Spécial Noël',
+                                        promoEligible: true,
+                                        type: 'Promo', // Important pour le CSS
+                                        image: '', // Pas besoin d'image
+                                        video: '',
+                                        description: '',
+                                        clickable: true, // On met à TRUE pour que le curseur change
+                                        tarifs: [
+                                            { weight: 'Pack', price: 450.00 },
+                                        ]
+                                    }
+                                ]
+                            }
+            ]
         }
     ];
 
@@ -786,7 +896,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
- // Affiche la liste des PRODUITS
+// Affiche la liste des PRODUITS (Version optimisée PROMO)
 function renderProductList(categoryId) {
     const category = appData.find(c => c.id === categoryId);
     if (!category) {
@@ -796,32 +906,25 @@ function renderProductList(categoryId) {
 
     let allProducts = [];
 
-    // --- CORRECTION ICI ---
-    
-    // CAS 1 : On est dans une sous-catégorie précise
+    // CAS 1 : Sous-catégorie précise
     if (currentFarmId) {
-        // 1. On récupère les produits de la Farm sélectionnée
         const selectedFarm = category.farms.find(f => f.id === currentFarmId);
         if (selectedFarm) {
             allProducts = selectedFarm.products; 
         }
-
-        // 2. On affiche le bouton retour "Vers les choix"
+        // Bouton retour... (ton code habituel ici)
         const backButton = document.createElement('button');
         backButton.className = 'back-to-farms-btn'; 
         backButton.innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg> Retour aux choix`;
         backButton.style.cssText = `background: linear-gradient(180deg, black, transparent); border-bottom: 2px solid #ca351d; border-top: none; border-left: none; border-right: none; color: white; padding: 10px 15px; border-radius: 10px; font-size: 1.1rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 10px; width: 100%; box-sizing: border-box; margin-top: 3vh; font-family: Copperplate;`;
         
-        // On s'assure de ne pas avoir de doublons de boutons
         const existingBtn = filterContainer.querySelector('.back-to-farms-btn');
         if (!existingBtn) filterContainer.prepend(backButton);
     } 
-    // CAS 2 : On affiche tout (pas de farm sélectionnée)
+    // CAS 2 : Tout afficher
     else {
-        // 1. On récupère TOUS les produits (décommenté !)
         allProducts = category.farms.flatMap(farm => farm.products);
-
-        // 2. On affiche le bouton retour "Vers les catégories"
+        // Bouton retour... (ton code habituel ici)
         const backButton = document.createElement('button');
         backButton.className = 'back-to-categories-btn';
         backButton.innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg> ${category.name}`;
@@ -831,14 +934,12 @@ function renderProductList(categoryId) {
         if (!existingBtn) filterContainer.prepend(backButton);
     }
 
-    // --- FIN CORRECTION ---
-
     if (!allProducts || allProducts.length === 0) {
         productListContainer.innerHTML = '<p class="no-results">Aucun produit trouvé.</p>';
         return;
     }
 
-    // Filtrage supplémentaire (Barre de recherche et filtres)
+    // Filtrage... (ton code habituel)
     const filteredProducts = allProducts.filter(product => {
         const searchMatch = product.name.toLowerCase().includes(currentFilters.searchTerm.toLowerCase());
         const farmMatch = currentFarmId ? true : (currentFilters.farm === 'all' || product.farm === currentFilters.farm);
@@ -847,30 +948,47 @@ function renderProductList(categoryId) {
 
     productListContainer.innerHTML = '';
     
-    if (filteredProducts.length === 0) {
-        productListContainer.innerHTML = '<p class="no-results">Aucun produit ne correspond à votre recherche.</p>';
-        return;
-    }
-
+    // --- BOUCLE D'AFFICHAGE DES CARTES ---
     filteredProducts.forEach(product => {
         const card = document.createElement('div');
-        card.className = 'product-card product-item-card';
-        card.dataset.productId = product.id;
+        
+        // 1. SI C'EST UNE PROMO (Type 'Promo')
+        if (product.type === 'Promo') {
+            card.className = 'product-card promo-card'; // Nouvelle classe CSS
+            // On ajoute un écouteur spécial pour ajouter au panier directement
+          /*   card.addEventListener('click', () => {
+                addToCart(product.id, 'Pack Noël', product.tarifs[0].price);
+            }); */
 
-        if (product.clickable === false) {
-            card.classList.add('unclickable');
+            card.innerHTML = `
+                <div class="info">
+                    <div class="promo-icon">🎄</div>
+                    <div class="name">${product.name}</div>
+                    <div class="price">${product.tarifs[0].price.toFixed(2)}€</div>
+                </div>
+            `;
+        } 
+        // 2. SI C'EST UN PRODUIT NORMAL
+        else {
+            card.className = 'product-card product-item-card';
+            card.dataset.productId = product.id;
+
+            if (product.clickable === false) {
+                card.classList.add('unclickable');
+            }
+
+            let flagHTML = product.flag ? `<span class="product-flag">${product.flag}</span>` : '';
+
+            card.innerHTML = `
+                <img src="${product.image}" alt="${product.name}">
+                <div class="info">
+                    <div class="name">${product.name} ${flagHTML}</div>
+                    <div class="farm">${product.farm}</div>
+                    <div class="price">${product.tarifs[0].price.toFixed(2)}€</div>
+                </div>
+            `;
         }
-
-        let flagHTML = product.flag ? `<span class="product-flag">${product.flag}</span>` : '';
-
-        card.innerHTML = `
-        <img src="${product.image}" alt="${product.name}">
-        <div class="info">
-            <div class="name">${product.name} ${flagHTML}</div>
-            <div class="farm">${product.farm}</div>
-            <div class="price">${product.tarifs[0].price.toFixed(2)}€</div>
-        </div>
-    `;
+        
         productListContainer.appendChild(card);
     });
 }
