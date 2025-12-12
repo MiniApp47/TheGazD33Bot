@@ -496,8 +496,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
             farms: [
                 {
-                id: 'PACK BRONZE',
-                    name: '🥉 PACKBRONZE 🥉',
+                id: 'PACKBRONZE',
+                    name: '🥉 PACK BRONZE 🥉',
                     image: 'CategHash.png', 
                     badgeText: '0 produits',
                     clickable: true,  
