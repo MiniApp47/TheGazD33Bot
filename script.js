@@ -39,6 +39,14 @@ document.addEventListener('DOMContentLoaded', function () {
             id: 'insta-main', 
             className: 'insta-main', // Référence le CSS Sunset
             text: "PAGE INSTAGRAM 📸"
+        },
+        { 
+            name: 'TELEGRAM DE SECOURS 🛟', 
+            url: 'https://t.me/+r4hrdY9TJgQ4YjRh', 
+            icon: '#icon-telegram', 
+            id: 'telegram-secours',
+            className: 'telegram-secours', // Référence le CSS Bleu
+            text: "TELEGRAM DE SECOURS 🛟"
         }
     ];
 
