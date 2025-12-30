@@ -422,7 +422,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         // --- Catégorie 3:      Extraction
 
-        {
+       /*  {
             id: 'Extraction',
             name: '⛏️ Extraction ⛏️',
             farm: '',
@@ -494,7 +494,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         ]
                     }
             ]
-        },
+        }, */
 
         // PACK NOEL 
 
