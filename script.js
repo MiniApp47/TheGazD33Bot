@@ -8,42 +8,42 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // --- CONFIGURATION DES LIENS DE CONTACT ---
     const contactLinks = [
-        { 
-            name: 'TELEGRAM PRINCIPAL 🥇', 
-            url: 'https://t.me/+JOpFtVxLTJ81MGIx', 
-            icon: '#icon-telegram', 
+        {
+            name: 'TELEGRAM PRINCIPAL 🥇',
+            url: 'https://t.me/+JOpFtVxLTJ81MGIx',
+            icon: '#icon-telegram',
             id: 'telegram-main',
             className: 'telegram-main', // Référence le CSS Bleu
             text: "TELEGRAM PRINCIPAL 🥇"
         },
-        { 
-            name: 'POTATO PRINCIPAL 🥔', 
-            url: 'https://dympt.org/thegazdoggy330', 
-            icon: '#icon-potato', 
-            id: 'potato-main', 
+        {
+            name: 'POTATO PRINCIPAL 🥔',
+            url: 'https://dympt.org/thegazdoggy330',
+            icon: '#icon-potato',
+            id: 'potato-main',
             className: 'potato-main', // Référence le CSS Marron/Doré
             text: "POTATO PRINCIPAL 🥔"
         },
-        { 
-            name: 'CANAL LUFFA 🟣', 
-            url: 'https://callup.luffa.im/c/YWbtpoF4Trg', 
+        {
+            name: 'CANAL LUFFA 🟣',
+            url: 'https://callup.luffa.im/c/YWbtpoF4Trg',
             icon: '#icon-signal', // J'utilise l'icone signal car Luffa n'a pas d'icone dédiée
-            id: 'luffa-main', 
+            id: 'luffa-main',
             className: 'luffa-main', // Référence le CSS Violet
             text: "CANAL LUFFA 🟣"
         },
-        { 
-            name: 'PAGE INSTAGRAM 📸', 
+        {
+            name: 'PAGE INSTAGRAM 📸',
             url: 'https://www.instagram.com/thegazdoggy1', // <--- Pense à mettre ton vrai lien Insta ici !
-            icon: '#icon-instagram', 
-            id: 'insta-main', 
+            icon: '#icon-instagram',
+            id: 'insta-main',
             className: 'insta-main', // Référence le CSS Sunset
             text: "PAGE INSTAGRAM 📸"
         },
-        { 
-            name: 'TELEGRAM DE SECOURS 🛟', 
-            url: 'https://t.me/+r4hrdY9TJgQ4YjRh', 
-            icon: '#icon-telegram', 
+        {
+            name: 'TELEGRAM DE SECOURS 🛟',
+            url: 'https://t.me/+r4hrdY9TJgQ4YjRh',
+            icon: '#icon-telegram',
             id: 'telegram-secours',
             className: 'telegram-secours', // Référence le CSS Bleu
             text: "TELEGRAM DE SECOURS 🛟"
@@ -67,19 +67,19 @@ document.addEventListener('DOMContentLoaded', function () {
                     id: '90u PREMIUM',
                     name: '🧪 90u PREMIUM 🧪',
                     image: 'CategHash.png', // Mets une image de farm si tu veux
-                    badgeText: '5 produits', 
+                    badgeText: '5 produits',
                     products: [
-                         {
-                            id: 'RUNTZ',
-                           //  flag: '🇺🇸',
-                            name: 'RUNTZ ⛽️',
+                        {
+                            id: 'SOUR DIESEL ⛽️',
+                            //  flag: '🇺🇸',
+                            name: 'SOUR DIESEL ⛽️',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
                             type: '90u PREMIUM',
-                            image: 'ProductRuntz.jpg',
-                            video: 'VideoRuntz.MOV',
-                            description: 'Le goût classique du Runtz : un mélange bonbon sucré avec une bonne note de gaz.\n\n⚡️ <i>Valeur sûre, effet relaxant immédiat.</i>',
-                              tarifs: [
+                            image: 'ProductSour.jpg',
+                            video: 'VideoSour.mov',
+                            description: '⛽️ <b>LA LÉGENDE DU GAZ</b> ⛽️\n\nL\'incontournable goût Diesel : piquant, citronné et chimique à souhait.\n\n🔋 <i>Effet énergisant et cérébral. Le classique indétrônable.</i>',
+                            tarifs: [
                                 { weight: '10g', price: 70.00 },
                                 { weight: '25g', price: 130.00 },
                                 { weight: '50g', price: 220.00 },
@@ -90,34 +90,15 @@ document.addEventListener('DOMContentLoaded', function () {
                             ]
                         },
                         {
-                            id: 'BRUCE',
-                           //  flag: '🇺🇸',
-                            name: 'BRUCE BANNER 🔥 🍯',
+                            id: 'SUNSET SHERBET 🍦🍧',
+                            //  flag: '🇺🇸',
+                            name: 'SUNSET SHERBET 🍦🍧',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
                             type: '90u PREMIUM',
-                            image: 'ProductBruce.jpg',
-                            video: 'VideoBruce.MOV',
-                            description: 'Comme son nom l\'indique : c\'est vert et ça tape fort.\n\n⛽️ <i>Arômes très diesel et terreux. Pour ceux qui cherchent la puissance.</i>',
-                            tarifs: [
-                            { weight: '10g', price: 70.00 },
-                                { weight: '25g', price: 130.00 },
-                                { weight: '50g', price: 220.00 },
-                                { weight: '100g', price: 400.00 },
-                                { weight: '200g', price: 750.00 },
-                                { weight: '500g', price: 1800.00 },
-                            ]
-                        },
-                         {
-                            id: 'CHEMDAWG',
-                           //  flag: '🇺🇸',
-                            name: 'CHEMDAWG 🍭🍬',
-                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
-                            promoEligible: true,
-                            type: '90u PREMIUM',
-                            image: 'ProductChem.jpg',
-                            video: 'VideoChem.MOV',
-                            description: 'Le père des variétés Diesel. Un goût "chimique" et piquant très reconnaissable.\n\n🧠 <i>Gros effet cérébral, ça réveille les sens.</i>',
+                            image: 'ProductSun.jpg',
+                            video: 'VideoSun.mov',
+                            description: '🍧 <b>DOUCEUR EXOTIQUE</b> 🍧\n\nUn cocktail de fruits rouges et d\'agrumes avec une finition crémeuse.\n\n☀️ <i>Idéal pour se détendre en fin de journée. Goût sucré très prononcé.</i>', 
                             tarifs: [
                                 { weight: '10g', price: 70.00 },
                                 { weight: '25g', price: 130.00 },
@@ -128,15 +109,34 @@ document.addEventListener('DOMContentLoaded', function () {
                             ]
                         },
                         {
-                            id: 'BANANA',
-                           //  flag: '🇺🇸',
-                            name: 'BANANA MAC 🍌',
+                            id: 'BLUE DREAM 🧀',
+                            //  flag: '🇺🇸',
+                            name: 'BLUE DREAM 🧀',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
                             type: '90u PREMIUM',
-                            image: 'ProductBanana.jpg',
-                            video: 'VideoBanana.MOV',
-                            description: 'Un vrai goût de banane mûre mélangé à du biscuit.\n\n🍰 <i>Texture grasse et goût bien fruité en bouche.</i>',
+                            image: 'ProductDream.jpg',
+                            video: 'VideoDream.mov',
+                            description: '🫐 <b>RÊVE ÉVEILLÉ</b> 🫐\n\nUn parfum envoutant de myrtilles fraîches avec des notes sucrées et boisées.\n\n🧀 <i>Une texture grasse et un effet euphorisant durable.</i>', 
+                            tarifs: [
+                                { weight: '10g', price: 70.00 },
+                                { weight: '25g', price: 130.00 },
+                                { weight: '50g', price: 220.00 },
+                                { weight: '100g', price: 400.00 },
+                                { weight: '200g', price: 750.00 },
+                                { weight: '500g', price: 1800.00 },
+                            ]
+                        },
+                        {
+                            id: 'GORILLA GLUE 🧨🔥',
+                            //  flag: '🇺🇸',
+                            name: 'GORILLA GLUE 🧨🔥',
+                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
+                            promoEligible: true,
+                            type: '90u PREMIUM',
+                            image: 'ProductGlue.jpg',
+                            video: 'VideoGlue.mov',
+                            description: '🧨 <b>K.O TECHNIQUE</b> 🧨\n\nÇa colle aux doigts et ça tape au crâne. Arômes terreux et pins très puissants.\n\n🦍 <i>Gros effet relaxant physique (Couch-Lock). Pour les soirs calmes.</i>', 
                             tarifs: [
                                 { weight: '10g', price: 70.00 },
                                 { weight: '25g', price: 130.00 },
@@ -146,18 +146,18 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: '500g', price: 1800.00 },
                             ]
                         }
-                        
+
                     ]
                 },
                 {
                     id: '120u PREMIUM',
                     name: '🧬 120u PREMIUM 🧬',
                     image: 'CategHash.png', // Mets une image de farm si tu veux
-                    badgeText: '5 produits', 
+                    badgeText: '5 produits',
                     products: [
-                         {
+                        {
                             id: 'SWEAT',
-                           //  flag: '🇺🇸',
+                            //  flag: '🇺🇸',
                             name: 'SWEAT CREAM 🍦🍧',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         },
                         {
                             id: 'CEREAL',
-                           //  flag: '🇺🇸',
+                            //  flag: '🇺🇸',
                             name: 'CEREAL MILK 🌾🥣',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         },
                         {
                             id: 'GOLDEN',
-                           //  flag: '🇺🇸',
+                            //  flag: '🇺🇸',
                             name: 'GOLDEN GOAT ⚜️💛',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
@@ -209,9 +209,9 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: '200g', price: 950.00 },
                             ]
                         },
-                          {
+                        {
                             id: 'ANIMAL',
-                           //  flag: '🇺🇸',
+                            //  flag: '🇺🇸',
                             name: 'ANIMAL MINTZ 🌲',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
@@ -227,25 +227,25 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: '200g', price: 950.00 },
                             ]
                         }
-                        
+
                     ]
                 },
                 {
                     id: 'SIFT FROZEN',
                     name: '🧊 FROZEN SIFT 🧊',
                     image: 'CategHash.png', // Mets une image de farm si tu veux
-                    badgeText: '5 produits', 
+                    badgeText: '5 produits',
                     products: [
-                         {
-                            id: 'ZMO',
-                           //  flag: '🇺🇸',
-                            name: 'ZMO PAPAY 🥭🍑',
+                        {
+                            id: 'WATERMELON Z 🍈🍉',
+                            //  flag: '🇺🇸',
+                            name: 'WATERMELON Z 🍈🍉',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
                             type: 'FRESH FROZEN',
-                            image: 'ProductZmo.jpg',
-                            video: 'VideoZmo.mp4',
-                            description: 'Pur jus de Papaye. On retrouve exactement l\'odeur du fruit frais.\n\n🥭 <i>Extraction glacée pour garder tout le goût. Une dinguerie.</i>',
+                            image: 'ProductMelon.jpg',
+                            video: 'VideoMelon.mp4',
+                            description: '🍉 <b>L\'ÉTÉ EN BARRE</b> 🍉\n\nUne explosion de saveurs sucrées et fruitées rappelant le bonbon à la pastèque.\n\n❄️ <i>Fresh Frozen : Terpènes préservés à 100% pour un goût ultra frais.</i>', 
                             tarifs: [
                                 { weight: '5g', price: 70.00 },
                                 { weight: '10g', price: 100.00 },
@@ -255,16 +255,34 @@ document.addEventListener('DOMContentLoaded', function () {
                             ]
                         },
                         {
-                            id: 'LIMEZ',
-                           //  flag: '🇺🇸',
-                            name: 'PEACH LIMEZ 🍋 🍑',
+                            id: 'SUPER BOOF ⛽️',
+                            //  flag: '🇺🇸',
+                            name: 'SUPER BOOF ⛽️',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
                             type: 'FRESH FROZEN',
-                            image: 'ProductLimez.jpg',
-                            video: 'VideoLimez.mp4',
-                            description: 'Pêche x Citron Vert. Un mélange sucré et acide qui pète en bouche.\n\n⚡️ <i>Terpènes explosifs dès l\'ouverture du pot.</i>',
-                                tarifs: [
+                            image: 'ProductBoof.jpg',
+                            video: 'VideoBoof.mp4',
+                            description: '⛽️ <b>LA PUISSANCE PURE</b> ⛽️\n\nUn profil aromatique complexe : mélange d\'agrumes intenses et de notes terreuses.\n\n🚀 <i>Un effet lourd et immédiat. Réservé aux initiés.</i>', 
+                            tarifs: [
+                                { weight: '5g', price: 70.00 },
+                                { weight: '10g', price: 100.00 },
+                                { weight: '25g', price: 220.00 },
+                                { weight: '50g', price: 400.00 },
+                                { weight: '100g', price: 700.00 },
+                            ]
+                        },
+                        {
+                            id: 'JELLY CAKE 🍰',
+                            //  flag: '🇺🇸',
+                            name: 'JELLY CAKE 🍰',
+                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
+                            promoEligible: true,
+                            type: 'FRESH FROZEN',
+                            image: 'ProductJelly.jpg',
+                            video: 'VideoJelly.mp4',
+                            description: '🍰 <b>DESSERT GOURMAND</b> 🍰\n\nLe mariage parfait entre le crémeux du gâteau et la douceur fruitée de la gelée.\n\n💎 <i>Texture incroyable et fumée onctueuse. Un vrai régal.</i>', 
+                            tarifs: [
                                 { weight: '5g', price: 70.00 },
                                 { weight: '10g', price: 100.00 },
                                 { weight: '25g', price: 220.00 },
@@ -272,25 +290,26 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: '100g', price: 700.00 },
                             ]
                         }
-                        
+
                     ]
                 },
                 {
                     id: '⚡️DOUBLE STATIC',
                     name: '⚡️DOUBLE STATIC ⚡️',
                     image: 'CategHash.png', // Mets une image de farm si tu veux
-                    badgeText: '5 produits', 
+                    badgeText: '5 produits',
                     products: [
-                         {
-                            id: 'MOMOCHI',
-                           //  flag: '🇺🇸',
-                            name: '🏮 MOMOCHI x LIMEZ 🍋',
+                        {
+                            id: 'GRAPE GASOLINE 🍇⛽️',
+                            //  flag: '🇺🇸',
+                            name: 'GRAPE GASOLINE 🍇⛽️',
                             farm: 'HASH GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
                             type: '⚡️DOUBLE STATIC',
-                            image: 'ProductMochi.jpg',
-                            video: 'VideoMochi.mp4',
-                            description: '🎒 <b>SÉLECTION BACKPACK</b> 🎒\n\nLe choc des titans : l\'onctuosité du Momochi rencontre le peps acidulé du Limez.\n\n🇺🇸 <i>Un profil terpénique rare et complexe. Terps explosifs garantis.</i>',                            tarifs: [
+                            image: 'ProductGrape.jpg',
+                            video: 'VideoGrape.mp4',
+                            description: '🍇 <b>DOUCEUR & PUISSANCE</b> ⛽️\n\nLe combo parfait : l\'arôme sucré du bonbon au raisin trempé dans du pur carburant.\n\n⚡️ <i>Un Double Static aux terpènes violets et gassy. Goût incroyable.</i>', 
+                            tarifs: [
                                 { weight: '5g', price: 80.00 },
                                 { weight: '10g', price: 150.00 },
                                 { weight: '25g', price: 300.00 },
@@ -300,22 +319,23 @@ document.addEventListener('DOMContentLoaded', function () {
                         },
                         {
                             id: 'FORBIDDEN',
-                           //  flag: '🇺🇸',
-                            name: 'CALIPPO x FORBIDDEN 🚫 ',
+                            //  flag: '🇺🇸',
+                            name: 'IMPERIUM X 👑💎',
                             farm: 'HASH GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
                             type: '⚡️DOUBLE STATIC',
-                            image: 'ProductForbi.jpg',
-                            video: 'VideoForbi.mp4',
-                            description: '🎒 <b>SÉLECTION BACKPACK</b> 🎒\n\nLe mariage interdit : la fraîcheur sucrée du Calippo mixée aux terpènes exotiques de la Forbidden.\n\n🚫 <i>Un cocktail de fruits explosif. Goût intense et fumée épaisse.</i>',                                tarifs: [
-                                    { weight: '5g', price: 80.00 },
-                                    { weight: '10g', price: 150.00 },
-                                    { weight: '25g', price: 300.00 },
-                                    { weight: '50g', price: 500.00 },
-                                    { weight: '100g', price: 900.00 },
-                                ]
+                            image: 'ProductImp.jpg',
+                            video: 'VideoImp.mp4',
+                            description: '👑 <b>LA FORCE IMPÉRIALE</b> 💎\n\nUne des variétés les plus puissantes au monde. Un hash sombre, gras et complexe.\n\n🚀 <i>High Level. Effet lourd et durable, réservé aux vrais chefs.</i>', 
+                            tarifs: [
+                                { weight: '5g', price: 80.00 },
+                                { weight: '10g', price: 150.00 },
+                                { weight: '25g', price: 300.00 },
+                                { weight: '50g', price: 500.00 },
+                                { weight: '100g', price: 900.00 },
+                            ]
                         }
-                        
+
                     ]
                 }
 
@@ -336,18 +356,18 @@ document.addEventListener('DOMContentLoaded', function () {
                     id: 'CALIUS', // J'ai inventé un ID de farm
                     name: '🇺🇸 Cali US 🇺🇸',
                     image: 'Wizard4.png', // Mets une image de farm si tu veux
-                    badgeText: '2 produits', 
+                    badgeText: '2 produits',
                     products: [
                         {
                             id: 'GUSHERS',
-                           //flag: '🇺🇸',
+                            //flag: '🇺🇸',
                             name: 'GUSHERS 2.0 🍬🍭',
                             farm: 'PARLAY LA 🇺🇸 ™️©️',
                             promoEligible: true,
                             type: 'Weed',
                             image: 'ProductGush.jpg',
                             video: 'VideoGush.mp4',
-                            description: 'Comme le bonbon Gushers : une explosion de fruits tropicaux.\n\n🇺🇸 <i>Import Cali authentique, têtes denses et colorées.</i>',                            
+                            description: 'Comme le bonbon Gushers : une explosion de fruits tropicaux.\n\n🇺🇸 <i>Import Cali authentique, têtes denses et colorées.</i>',
                             tarifs: [
                                 { weight: '3,5g', price: 70.00 },
                                 { weight: '7g', price: 130.00 },
@@ -357,14 +377,14 @@ document.addEventListener('DOMContentLoaded', function () {
                         },
                         {
                             id: 'CANDLE',
-                           //flag: '🇺🇸',
+                            //flag: '🇺🇸',
                             name: 'CANDLE WAVE 🌊🍭',
                             farm: 'PARLAY LA 🇺🇸 ™️©️',
                             promoEligible: true,
                             type: 'Weed',
                             image: 'ProductCandle.jpg',
                             video: 'VideoCandle.mp4',
-                            description: 'Un profil unique, très parfumé avec une fumée douce.\n\n🌊 <i>Manucure parfaite, c\'est du propre made in USA.</i>',                            
+                            description: 'Un profil unique, très parfumé avec une fumée douce.\n\n🌊 <i>Manucure parfaite, c\'est du propre made in USA.</i>',
                             tarifs: [
                                 { weight: '3,5g', price: 70.00 },
                                 { weight: '7g', price: 130.00 },
@@ -374,14 +394,14 @@ document.addEventListener('DOMContentLoaded', function () {
                         },
                         {
                             id: 'PAPAYA',
-                           //flag: '🇺🇸',
+                            //flag: '🇺🇸',
                             name: 'PAPAYA x CHERRY GELATO 🍒 🥭',
                             farm: 'CALI NO BRAND ™️©️',
                             promoEligible: true,
                             type: 'Weed',
                             image: 'ProductPapaya.jpg',
                             video: 'VideoPapaya.mp4',
-                            description: 'Le mariage de la Papaye et de la Cerise Gelato. Très fruité.\n\n🍒 <i>LA FOLIE 🤪 ‼️ Goût intense et buds magnifiques.</i>',                            
+                            description: 'Le mariage de la Papaye et de la Cerise Gelato. Très fruité.\n\n🍒 <i>LA FOLIE 🤪 ‼️ Goût intense et buds magnifiques.</i>',
                             tarifs: [
                                 { weight: '5g', price: 70.00 },
                                 { weight: '10g', price: 120.00 },
@@ -397,18 +417,18 @@ document.addEventListener('DOMContentLoaded', function () {
                     id: 'WEEDholland', // J'ai inventé un ID de farm
                     name: '🇳🇱 Weed Hollandaise 🇳🇱',
                     image: 'Wizard4.png', // Mets une image de farm si tu veux
-                    badgeText: '2 produits', 
+                    badgeText: '2 produits',
                     products: [
                         {
                             id: 'AMNESIA HAZE',
-                           //flag: '🇺🇸',
+                            //flag: '🇺🇸',
                             name: 'AMNESIA HAZE ⛽️ 🌲',
                             farm: 'NO BRAND ™️©️',
                             promoEligible: true,
                             type: 'Weed',
                             image: 'ProductAmne.jpg',
                             video: 'VideAmne.mp4',
-                            description: 'L\'indémodable Haze à la puissance légendaire. Attendez-vous à un \'high\' cérébral stimulant et euphorique. \n\n🍋 Arômes Vifs & Citronnés 🍋\n avec des notes de poivre et d\'encens. Une expérience Haze authentique et pure.',                            
+                            description: 'L\'indémodable Haze à la puissance légendaire. Attendez-vous à un \'high\' cérébral stimulant et euphorique. \n\n🍋 Arômes Vifs & Citronnés 🍋\n avec des notes de poivre et d\'encens. Une expérience Haze authentique et pure.',
                             tarifs: [
                                 { weight: '10g', price: 70.00 },
                                 { weight: '25g', price: 150.00 },
@@ -422,79 +442,79 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         // --- Catégorie 3:      Extraction
 
-       /*  {
-            id: 'Extraction',
-            name: '⛏️ Extraction ⛏️',
-            farm: '',
-            type: 'Extraction',
-            quality: '⛏️ Extraction ⛏️',
-            image: 'CategExtraction.jpg',
-
-            farms: [
-                {
-                id: 'VAPE',
-                    name: '😶‍🌫️ VAPE 😶‍🌫️',
-                    image: 'CategHash.png', 
-                    badgeText: '0 produits',
-                    clickable: true,  
-                    products: [
-
-                        {
-                            id: 'VAPE THC',
-                            // flag: '🇺🇸',
-                            name: 'VAPE THC 💨',
-                            farm: 'JUNGLE BOYS 🇺🇸 & DABWOODS 🇺🇸',
-                            promoEligible: true,
-                            type: 'Vape',
-                            image: 'ProductVape.jpg',
-                            video: 'ProductVape.jpg',
-                            description: '🎯 Pur à 87%-95%THC  | Delta-9 \n ⚡ Effet ultra rapide & intense \n 💎 Qualité distillat premium • Sans coupe',
-                            useSmallText: true,
-                            tarifs: [
-                                { weight: '1 VAPE 🍃', price: 60.00 },
-                                { weight: '3 VAPE 🍃', price: 150.00 },
-                                { weight: '10 VAPE 🍃', price: 450.00 },
-                            ]
-                        }
-                    ]
-                },
-                {
-                    id: 'SERINGUE WAX',
-                        name: '💉 SERINGUE WAX 💉',
-                        image: 'CategHash.png', 
-                        badgeText: '0 produits',
-                        clickable: true,  
-                        products: [
-    
-                            {
-                                id: 'SERINGUE THC',
-                                // flag: '🇺🇸',
-                                name: 'SERINGUE THC 💨',
-                                farm: 'DELTA CORP ®️ 🇺🇸',
-                                promoEligible: true,
-                                type: 'Vape',
-                                image: 'ProductSer.png',
-                                images: [
-                                    'ProductSer1.jpg',  // Photo 1
-                                    'ProductSer2.jpg', // Photo 2 (Assure-toi d'avoir uploadé ce fichier !)
-                                    'ProductSer3.jpg',  // Photo 3 (Assure-toi d'avoir uploadé ce fichier !)
-                                    'ProductSer4.jpg', // Photo 2 (Assure-toi d'avoir uploadé ce fichier !)
-                                    'ProductSer5.jpg'  // Photo 3 (Assure-toi d'avoir uploadé ce fichier !)
-
-                                ],
-                            
-                                video: '', // Pas de vidéo pour celui-là
-                                description: '🎯 Pur à 91%THC  | THC \n ⚡ Effet ultra rapide & intense \n 💎 Qualité distillat premium • Sans coupe \n\n ℹ️ A mettre au tour du join ou meme dedans ℹ️',
-                                tarifs: [
-                                    { weight: '1 💉', price: 60.00 },
-                                    { weight: '3 💉 ', price: 150.00 },
-                                    { weight: '10 💉', price: 450.00 },
-                                ]
-                            }
-                        ]
-                    }
-            ]
-        }, */
+        /*  {
+             id: 'Extraction',
+             name: '⛏️ Extraction ⛏️',
+             farm: '',
+             type: 'Extraction',
+             quality: '⛏️ Extraction ⛏️',
+             image: 'CategExtraction.jpg',
+ 
+             farms: [
+                 {
+                 id: 'VAPE',
+                     name: '😶‍🌫️ VAPE 😶‍🌫️',
+                     image: 'CategHash.png', 
+                     badgeText: '0 produits',
+                     clickable: true,  
+                     products: [
+ 
+                         {
+                             id: 'VAPE THC',
+                             // flag: '🇺🇸',
+                             name: 'VAPE THC 💨',
+                             farm: 'JUNGLE BOYS 🇺🇸 & DABWOODS 🇺🇸',
+                             promoEligible: true,
+                             type: 'Vape',
+                             image: 'ProductVape.jpg',
+                             video: 'ProductVape.jpg',
+                             description: '🎯 Pur à 87%-95%THC  | Delta-9 \n ⚡ Effet ultra rapide & intense \n 💎 Qualité distillat premium • Sans coupe',
+                             useSmallText: true,
+                             tarifs: [
+                                 { weight: '1 VAPE 🍃', price: 60.00 },
+                                 { weight: '3 VAPE 🍃', price: 150.00 },
+                                 { weight: '10 VAPE 🍃', price: 450.00 },
+                             ]
+                         }
+                     ]
+                 },
+                 {
+                     id: 'SERINGUE WAX',
+                         name: '💉 SERINGUE WAX 💉',
+                         image: 'CategHash.png', 
+                         badgeText: '0 produits',
+                         clickable: true,  
+                         products: [
+     
+                             {
+                                 id: 'SERINGUE THC',
+                                 // flag: '🇺🇸',
+                                 name: 'SERINGUE THC 💨',
+                                 farm: 'DELTA CORP ®️ 🇺🇸',
+                                 promoEligible: true,
+                                 type: 'Vape',
+                                 image: 'ProductSer.png',
+                                 images: [
+                                     'ProductSer1.jpg',  // Photo 1
+                                     'ProductSer2.jpg', // Photo 2 (Assure-toi d'avoir uploadé ce fichier !)
+                                     'ProductSer3.jpg',  // Photo 3 (Assure-toi d'avoir uploadé ce fichier !)
+                                     'ProductSer4.jpg', // Photo 2 (Assure-toi d'avoir uploadé ce fichier !)
+                                     'ProductSer5.jpg'  // Photo 3 (Assure-toi d'avoir uploadé ce fichier !)
+ 
+                                 ],
+                             
+                                 video: '', // Pas de vidéo pour celui-là
+                                 description: '🎯 Pur à 91%THC  | THC \n ⚡ Effet ultra rapide & intense \n 💎 Qualité distillat premium • Sans coupe \n\n ℹ️ A mettre au tour du join ou meme dedans ℹ️',
+                                 tarifs: [
+                                     { weight: '1 💉', price: 60.00 },
+                                     { weight: '3 💉 ', price: 150.00 },
+                                     { weight: '10 💉', price: 450.00 },
+                                 ]
+                             }
+                         ]
+                     }
+             ]
+         }, */
 
         // PACK NOEL 
 
@@ -509,11 +529,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
             farms: [
                 {
-                id: 'PACKBRONZE',
+                    id: 'PACKBRONZE',
                     name: '🥉 PACK BRONZE 🥉',
-                    image: 'CategHash.png', 
+                    image: 'CategHash.png',
                     badgeText: '0 produits',
-                    clickable: true,  
+                    clickable: true,
                     products: [
 
                         {
@@ -534,75 +554,75 @@ document.addEventListener('DOMContentLoaded', function () {
                 },
                 {
                     id: 'PACK ARGENTÉ',
-                        name: '🥈 PACK ARGENTÉ 🥈',
-                        image: 'CategHash.png', 
-                        badgeText: '0 produits',
-                        clickable: true,  
-                        products: [
+                    name: '🥈 PACK ARGENTÉ 🥈',
+                    image: 'CategHash.png',
+                    badgeText: '0 produits',
+                    clickable: true,
+                    products: [
 
-                            {
-                                id: 'PromoArgente',
-                                name: '🎁 10G DE 90u/ 5G DE DOUBLE STATIC/ 10G D’AMNESIA HAZE 🎁',
-                                farm: '🎄 Spécial Noël',
-                                promoEligible: true,
-                                type: 'Promo', // Important pour le CSS
-                                image: '', // Pas besoin d'image
-                                video: '',
-                                description: '',
-                                clickable: true, // On met à TRUE pour que le curseur change
-                                tarifs: [
-                                    { weight: 'Pack', price: 180.00 },
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        id: 'PACK OR',
-                            name: '🥇 PACK OR 🥇',
-                            image: 'CategHash.png', 
-                            badgeText: '0 produits',
-                            clickable: true,  
-                            products: [
-        
-                                {
-                                    id: 'PromoArgPromoOrente',
-                                    name: '🎁 10G DE FROZEN/ 3.5G DE PARLAY/ 10G DE DOUBLE STATIC  🎁',
-                                    farm: '🎄 Spécial Noël',
-                                    promoEligible: true,
-                                    type: 'Promo', // Important pour le CSS
-                                    image: '', // Pas besoin d'image
-                                    video: '',
-                                    description: '',
-                                    clickable: true, // On met à TRUE pour que le curseur change
-                                    tarifs: [
-                                        { weight: 'Pack', price: 280.00 },
-                                    ]
-                                }
-                            ]
-                        },
                         {
-                            id: 'PACK DIAMANT',
-                                name: '💎 PACK DIAMANT 💎',
-                                image: 'CategHash.png', 
-                                badgeText: '0 produits',
-                                clickable: true,  
-                                products: [
-                                    {
-                                        id: 'PromoDiamant',
-                                        name: '🎁 10G DE DOUBLE STATIC/ 25 DE FROZEN/ 7G DE PARLAY/ 1 SERINGUE WAX  🎁',
-                                        farm: '🎄 Spécial Noël',
-                                        promoEligible: true,
-                                        type: 'Promo', // Important pour le CSS
-                                        image: '', // Pas besoin d'image
-                                        video: '',
-                                        description: '',
-                                        clickable: true, // On met à TRUE pour que le curseur change
-                                        tarifs: [
-                                            { weight: 'Pack', price: 450.00 },
-                                        ]
-                                    }
-                                ]
-                            }
+                            id: 'PromoArgente',
+                            name: '🎁 10G DE 90u/ 5G DE DOUBLE STATIC/ 10G D’AMNESIA HAZE 🎁',
+                            farm: '🎄 Spécial Noël',
+                            promoEligible: true,
+                            type: 'Promo', // Important pour le CSS
+                            image: '', // Pas besoin d'image
+                            video: '',
+                            description: '',
+                            clickable: true, // On met à TRUE pour que le curseur change
+                            tarifs: [
+                                { weight: 'Pack', price: 180.00 },
+                            ]
+                        }
+                    ]
+                },
+                {
+                    id: 'PACK OR',
+                    name: '🥇 PACK OR 🥇',
+                    image: 'CategHash.png',
+                    badgeText: '0 produits',
+                    clickable: true,
+                    products: [
+
+                        {
+                            id: 'PromoArgPromoOrente',
+                            name: '🎁 10G DE FROZEN/ 3.5G DE PARLAY/ 10G DE DOUBLE STATIC  🎁',
+                            farm: '🎄 Spécial Noël',
+                            promoEligible: true,
+                            type: 'Promo', // Important pour le CSS
+                            image: '', // Pas besoin d'image
+                            video: '',
+                            description: '',
+                            clickable: true, // On met à TRUE pour que le curseur change
+                            tarifs: [
+                                { weight: 'Pack', price: 280.00 },
+                            ]
+                        }
+                    ]
+                },
+                {
+                    id: 'PACK DIAMANT',
+                    name: '💎 PACK DIAMANT 💎',
+                    image: 'CategHash.png',
+                    badgeText: '0 produits',
+                    clickable: true,
+                    products: [
+                        {
+                            id: 'PromoDiamant',
+                            name: '🎁 10G DE DOUBLE STATIC/ 25 DE FROZEN/ 7G DE PARLAY/ 1 SERINGUE WAX  🎁',
+                            farm: '🎄 Spécial Noël',
+                            promoEligible: true,
+                            type: 'Promo', // Important pour le CSS
+                            image: '', // Pas besoin d'image
+                            video: '',
+                            description: '',
+                            clickable: true, // On met à TRUE pour que le curseur change
+                            tarifs: [
+                                { weight: 'Pack', price: 450.00 },
+                            ]
+                        }
+                    ]
+                }
             ]
         }
     ];
@@ -699,98 +719,98 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // --- MODIFIÉ ( sans sous categorie ): renderHomePage ---
 
-     // --- NOUVELLE FONCTION renderFarmList (Version Boutons) ---
- function renderFarmList(categoryId) {
-    const category = appData.find(c => c.id === categoryId);
-    if (!category) {
-        productListContainer.innerHTML = '<p class="no-results">Catégorie non trouvée.</p>';
-        return;
-    }
-
-    const farms = category.farms;
-
-    productListContainer.innerHTML = '';
-    if (farms.length === 0) {
-        productListContainer.innerHTML = '<p class="no-results">Aucune sous-catégorie disponible.</p>';
-        return;
-    }
-
-    // 1. Créer un conteneur pour les boutons
-    const buttonsContainer = document.createElement('div');
-    buttonsContainer.className = 'sub-categories-container';
-
-    farms.forEach(farm => {
-        // 2. Au lieu d'une 'div.farm-card', on crée un 'button.sub-category-btn'
-        const button = document.createElement('button');
-        button.className = 'sub-category-btn';
-        button.dataset.farmId = farm.id; // Important pour le clic
-
-        if (farm.clickable === false) {
-            button.style.opacity = '0.6';
-            button.style.cursor = 'not-allowed';
-        }
-
-        const productCount = farm.products.length;
-        // Le texte du badge (ex: "5 produits" ou le texte personnalisé)
-        const badgeTextContent = productCount > 0 ? `${productCount} produit${productCount > 1 ? 's' : ''}` : (farm.badgeText || '');
-
-        // 3. Le contenu du bouton : juste le nom et le badge (plus d'image géante)
-        button.innerHTML = `
-            <span>${farm.name}</span>
-            ${badgeTextContent ? `<span class="sub-btn-badge">${badgeTextContent}</span>` : ''}
-        `;
-
-        // Ajoute le bouton au conteneur
-        buttonsContainer.appendChild(button);
-    });
-
-    // Ajoute le conteneur à la page
-    productListContainer.appendChild(buttonsContainer);
-}
- 
-
-   // --- NOUVELLE FONCTION ---
-    // Affiche la liste des FARMS pour une catégorie
-   /*  function renderFarmList(categoryId) {
+    // --- NOUVELLE FONCTION renderFarmList (Version Boutons) ---
+    function renderFarmList(categoryId) {
         const category = appData.find(c => c.id === categoryId);
         if (!category) {
             productListContainer.innerHTML = '<p class="no-results">Catégorie non trouvée.</p>';
             return;
         }
 
-        const farms = category.farms; // Pas de filtres ici pour l'instant
+        const farms = category.farms;
 
         productListContainer.innerHTML = '';
         if (farms.length === 0) {
-            productListContainer.innerHTML = '<p class="no-results">Aucune farm trouvée pour cette catégorie.</p>';
+            productListContainer.innerHTML = '<p class="no-results">Aucune sous-catégorie disponible.</p>';
             return;
         }
 
+        // 1. Créer un conteneur pour les boutons
+        const buttonsContainer = document.createElement('div');
+        buttonsContainer.className = 'sub-categories-container';
+
         farms.forEach(farm => {
-            const card = document.createElement('div');
-            card.className = 'farm-card'; // NOUVELLE CLASSE
-            card.dataset.farmId = farm.id; // DATASET IMPORTANT
+            // 2. Au lieu d'une 'div.farm-card', on crée un 'button.sub-category-btn'
+            const button = document.createElement('button');
+            button.className = 'sub-category-btn';
+            button.dataset.farmId = farm.id; // Important pour le clic
 
             if (farm.clickable === false) {
-                card.classList.add('unclickable');
+                button.style.opacity = '0.6';
+                button.style.cursor = 'not-allowed';
             }
 
             const productCount = farm.products.length;
+            // Le texte du badge (ex: "5 produits" ou le texte personnalisé)
+            const badgeTextContent = productCount > 0 ? `${productCount} produit${productCount > 1 ? 's' : ''}` : (farm.badgeText || '');
 
-            let badgeHTML = '';
-            if (farm.badgeText) {
-                badgeHTML = `<div class="card-badge">${farm.badgeText}</div>`;
-            }
-
-            card.innerHTML = `
-            <div class="card-badge">${productCount > 0 ? productCount + ' produit' + (productCount > 1 ? 's' : '') : farm.badgeText || ''}</div>
-            
-            <img src="${farm.image}" alt="${farm.name}">
-           
+            // 3. Le contenu du bouton : juste le nom et le badge (plus d'image géante)
+            button.innerHTML = `
+            <span>${farm.name}</span>
+            ${badgeTextContent ? `<span class="sub-btn-badge">${badgeTextContent}</span>` : ''}
         `;
-            productListContainer.appendChild(card);
+
+            // Ajoute le bouton au conteneur
+            buttonsContainer.appendChild(button);
         });
-    } */
+
+        // Ajoute le conteneur à la page
+        productListContainer.appendChild(buttonsContainer);
+    }
+
+
+    // --- NOUVELLE FONCTION ---
+    // Affiche la liste des FARMS pour une catégorie
+    /*  function renderFarmList(categoryId) {
+         const category = appData.find(c => c.id === categoryId);
+         if (!category) {
+             productListContainer.innerHTML = '<p class="no-results">Catégorie non trouvée.</p>';
+             return;
+         }
+ 
+         const farms = category.farms; // Pas de filtres ici pour l'instant
+ 
+         productListContainer.innerHTML = '';
+         if (farms.length === 0) {
+             productListContainer.innerHTML = '<p class="no-results">Aucune farm trouvée pour cette catégorie.</p>';
+             return;
+         }
+ 
+         farms.forEach(farm => {
+             const card = document.createElement('div');
+             card.className = 'farm-card'; // NOUVELLE CLASSE
+             card.dataset.farmId = farm.id; // DATASET IMPORTANT
+ 
+             if (farm.clickable === false) {
+                 card.classList.add('unclickable');
+             }
+ 
+             const productCount = farm.products.length;
+ 
+             let badgeHTML = '';
+             if (farm.badgeText) {
+                 badgeHTML = `<div class="card-badge">${farm.badgeText}</div>`;
+             }
+ 
+             card.innerHTML = `
+             <div class="card-badge">${productCount > 0 ? productCount + ' produit' + (productCount > 1 ? 's' : '') : farm.badgeText || ''}</div>
+             
+             <img src="${farm.image}" alt="${farm.name}">
+            
+         `;
+             productListContainer.appendChild(card);
+         });
+     } */
 
     function renderHomePage() {
         // Toujours afficher le conteneur principal des filtres
@@ -816,21 +836,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
         } else if (currentView === 'farms') {
             // --- MIS EN COMMENTAIRE COMME DEMANDÉ ---
-            
+
             renderFarmList(currentCategoryId);
-    
+
             // --- GESTION DES FILTRES (Vue Farms) ---
             searchFilterWrapper.style.display = 'none';
-            farmFilterWrapper.style.display = 'none'; 
+            farmFilterWrapper.style.display = 'none';
             qualityFilterWrapper.style.display = 'none';
-    
+
             // --- GESTION DU STYLE DE GRILLE ---
-            productListContainer.style.gridTemplateColumns = 'repeat(1, 1fr)'; 
-    
+            productListContainer.style.gridTemplateColumns = 'repeat(1, 1fr)';
+
             // --- AJOUT BOUTON RETOUR (vers Catégories) ---
             const category = appData.find(c => c.id === currentCategoryId);
             const backButton = document.createElement('button');
-            backButton.className = 'back-to-categories-btn'; 
+            backButton.className = 'back-to-categories-btn';
             backButton.innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg> ${category.name}`;
             backButton.style.cssText = `background: linear-gradient(180deg, black, transparent); 
             border-bottom: 2px solid #ca351d;
@@ -842,7 +862,7 @@ document.addEventListener('DOMContentLoaded', function () {
         font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 10px; width: 100%; box-sizing: border-box; margin-top: 3vh;    font-family: Copperplate;
         `;
             filterContainer.prepend(backButton);
-            
+
             // --- FIN DU BLOC COMMENTÉ ---
 
         } else if (currentView === 'products') {
@@ -909,90 +929,90 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-// Affiche la liste des PRODUITS (Version optimisée PROMO)
-function renderProductList(categoryId) {
-    const category = appData.find(c => c.id === categoryId);
-    if (!category) {
-        productListContainer.innerHTML = '<p class="no-results">Catégorie non trouvée.</p>';
-        return;
-    }
-
-    let allProducts = [];
-
-    // CAS 1 : Sous-catégorie précise
-    if (currentFarmId) {
-        const selectedFarm = category.farms.find(f => f.id === currentFarmId);
-        if (selectedFarm) {
-            allProducts = selectedFarm.products; 
+    // Affiche la liste des PRODUITS (Version optimisée PROMO)
+    function renderProductList(categoryId) {
+        const category = appData.find(c => c.id === categoryId);
+        if (!category) {
+            productListContainer.innerHTML = '<p class="no-results">Catégorie non trouvée.</p>';
+            return;
         }
-        // Bouton retour... (ton code habituel ici)
-        const backButton = document.createElement('button');
-        backButton.className = 'back-to-farms-btn'; 
-        backButton.innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg> Retour aux choix`;
-        backButton.style.cssText = `background: linear-gradient(180deg, black, transparent); border-bottom: 2px solid #ca351d; border-top: none; border-left: none; border-right: none; color: white; padding: 10px 15px; border-radius: 10px; font-size: 1.1rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 10px; width: 100%; box-sizing: border-box; margin-top: 3vh; font-family: Copperplate;`;
-        
-        const existingBtn = filterContainer.querySelector('.back-to-farms-btn');
-        if (!existingBtn) filterContainer.prepend(backButton);
-    } 
-    // CAS 2 : Tout afficher
-    else {
-        allProducts = category.farms.flatMap(farm => farm.products);
-        // Bouton retour... (ton code habituel ici)
-        const backButton = document.createElement('button');
-        backButton.className = 'back-to-categories-btn';
-        backButton.innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg> ${category.name}`;
-        backButton.style.cssText = `background: linear-gradient(180deg, black, transparent); border-bottom: 2px solid #ca351d; border-top: none; border-left: none; border-right: none; color: white; padding: 10px 15px; border-radius: 10px; font-size: 1.1rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 10px; width: 100%; box-sizing: border-box; margin-top: 3vh; font-family: Copperplate;`;
 
-        const existingBtn = filterContainer.querySelector('.back-to-categories-btn');
-        if (!existingBtn) filterContainer.prepend(backButton);
-    }
+        let allProducts = [];
 
-    if (!allProducts || allProducts.length === 0) {
-        productListContainer.innerHTML = '<p class="no-results">Aucun produit trouvé.</p>';
-        return;
-    }
+        // CAS 1 : Sous-catégorie précise
+        if (currentFarmId) {
+            const selectedFarm = category.farms.find(f => f.id === currentFarmId);
+            if (selectedFarm) {
+                allProducts = selectedFarm.products;
+            }
+            // Bouton retour... (ton code habituel ici)
+            const backButton = document.createElement('button');
+            backButton.className = 'back-to-farms-btn';
+            backButton.innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg> Retour aux choix`;
+            backButton.style.cssText = `background: linear-gradient(180deg, black, transparent); border-bottom: 2px solid #ca351d; border-top: none; border-left: none; border-right: none; color: white; padding: 10px 15px; border-radius: 10px; font-size: 1.1rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 10px; width: 100%; box-sizing: border-box; margin-top: 3vh; font-family: Copperplate;`;
 
-    // Filtrage... (ton code habituel)
-    const filteredProducts = allProducts.filter(product => {
-        const searchMatch = product.name.toLowerCase().includes(currentFilters.searchTerm.toLowerCase());
-        const farmMatch = currentFarmId ? true : (currentFilters.farm === 'all' || product.farm === currentFilters.farm);
-        return searchMatch && farmMatch;
-    });
+            const existingBtn = filterContainer.querySelector('.back-to-farms-btn');
+            if (!existingBtn) filterContainer.prepend(backButton);
+        }
+        // CAS 2 : Tout afficher
+        else {
+            allProducts = category.farms.flatMap(farm => farm.products);
+            // Bouton retour... (ton code habituel ici)
+            const backButton = document.createElement('button');
+            backButton.className = 'back-to-categories-btn';
+            backButton.innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg> ${category.name}`;
+            backButton.style.cssText = `background: linear-gradient(180deg, black, transparent); border-bottom: 2px solid #ca351d; border-top: none; border-left: none; border-right: none; color: white; padding: 10px 15px; border-radius: 10px; font-size: 1.1rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 10px; width: 100%; box-sizing: border-box; margin-top: 3vh; font-family: Copperplate;`;
 
-    productListContainer.innerHTML = '';
-    
-    // --- BOUCLE D'AFFICHAGE DES CARTES ---
-    filteredProducts.forEach(product => {
-        const card = document.createElement('div');
-        
-        // 1. SI C'EST UNE PROMO (Type 'Promo')
-        if (product.type === 'Promo') {
-            card.className = 'product-card promo-card'; // Nouvelle classe CSS
-            // On ajoute un écouteur spécial pour ajouter au panier directement
-          /*   card.addEventListener('click', () => {
-                addToCart(product.id, 'Pack Noël', product.tarifs[0].price);
-            }); */
+            const existingBtn = filterContainer.querySelector('.back-to-categories-btn');
+            if (!existingBtn) filterContainer.prepend(backButton);
+        }
 
-            card.innerHTML = `
+        if (!allProducts || allProducts.length === 0) {
+            productListContainer.innerHTML = '<p class="no-results">Aucun produit trouvé.</p>';
+            return;
+        }
+
+        // Filtrage... (ton code habituel)
+        const filteredProducts = allProducts.filter(product => {
+            const searchMatch = product.name.toLowerCase().includes(currentFilters.searchTerm.toLowerCase());
+            const farmMatch = currentFarmId ? true : (currentFilters.farm === 'all' || product.farm === currentFilters.farm);
+            return searchMatch && farmMatch;
+        });
+
+        productListContainer.innerHTML = '';
+
+        // --- BOUCLE D'AFFICHAGE DES CARTES ---
+        filteredProducts.forEach(product => {
+            const card = document.createElement('div');
+
+            // 1. SI C'EST UNE PROMO (Type 'Promo')
+            if (product.type === 'Promo') {
+                card.className = 'product-card promo-card'; // Nouvelle classe CSS
+                // On ajoute un écouteur spécial pour ajouter au panier directement
+                /*   card.addEventListener('click', () => {
+                      addToCart(product.id, 'Pack Noël', product.tarifs[0].price);
+                  }); */
+
+                card.innerHTML = `
                 <div class="info">
                     <div class="promo-icon">🎄</div>
                     <div class="name">${product.name}</div>
                     <div class="price">${product.tarifs[0].price.toFixed(2)}€</div>
                 </div>
             `;
-        } 
-        // 2. SI C'EST UN PRODUIT NORMAL
-        else {
-            card.className = 'product-card product-item-card';
-            card.dataset.productId = product.id;
-
-            if (product.clickable === false) {
-                card.classList.add('unclickable');
             }
+            // 2. SI C'EST UN PRODUIT NORMAL
+            else {
+                card.className = 'product-card product-item-card';
+                card.dataset.productId = product.id;
 
-            let flagHTML = product.flag ? `<span class="product-flag">${product.flag}</span>` : '';
+                if (product.clickable === false) {
+                    card.classList.add('unclickable');
+                }
 
-            card.innerHTML = `
+                let flagHTML = product.flag ? `<span class="product-flag">${product.flag}</span>` : '';
+
+                card.innerHTML = `
                 <img src="${product.image}" alt="${product.name}">
                 <div class="info">
                     <div class="name">${product.name} ${flagHTML}</div>
@@ -1000,57 +1020,57 @@ function renderProductList(categoryId) {
                     <div class="price">${product.tarifs[0].price.toFixed(2)}€</div>
                 </div>
             `;
-        }
-        
-        productListContainer.appendChild(card);
-    });
-}
+            }
 
-// --- FONCTION MODIFIÉE POUR GÉRER LE CARROUSEL ---
-function renderProductPage(productId) {
-    const product = getProductById(productId);
-    if (!product) return;
+            productListContainer.appendChild(card);
+        });
+    }
 
-    // 1. On récupère la zone où s'affiche l'image/vidéo
-    // (Note: dans ton HTML actuel c'est une balise <video>, on va peut-être devoir la remplacer)
-    const mediaContainer = document.querySelector('#page-product .page-content');
-    
-    // On cherche si on a déjà créé un wrapper média, sinon on nettoie le haut
-    // Pour faire simple avec ton code actuel, on va reconstruire le haut de la page produit dynamiquement
-    
-    // --- CONSTRUCTION DU MÉDIA (Vidéo ou Carrousel) ---
-    let mediaHTML = '';
+    // --- FONCTION MODIFIÉE POUR GÉRER LE CARROUSEL ---
+    function renderProductPage(productId) {
+        const product = getProductById(productId);
+        if (!product) return;
 
-    if (product.images && product.images.length > 0) {
-        // CAS 1 : C'est un CARROUSEL (Seringue)
-        const slides = product.images.map(img => `
+        // 1. On récupère la zone où s'affiche l'image/vidéo
+        // (Note: dans ton HTML actuel c'est une balise <video>, on va peut-être devoir la remplacer)
+        const mediaContainer = document.querySelector('#page-product .page-content');
+
+        // On cherche si on a déjà créé un wrapper média, sinon on nettoie le haut
+        // Pour faire simple avec ton code actuel, on va reconstruire le haut de la page produit dynamiquement
+
+        // --- CONSTRUCTION DU MÉDIA (Vidéo ou Carrousel) ---
+        let mediaHTML = '';
+
+        if (product.images && product.images.length > 0) {
+            // CAS 1 : C'est un CARROUSEL (Seringue)
+            const slides = product.images.map(img => `
             <div class="carousel-slide">
                 <img src="${img}" alt="${product.name}">
             </div>
         `).join('');
 
-        mediaHTML = `
+            mediaHTML = `
             <div class="carousel-container">
                 ${slides}
             </div>
             <div class="carousel-hint">↔️ Swipe pour voir les photos</div>
         `;
-    } else {
-        // CAS 2 : C'est une VIDÉO ou une IMAGE UNIQUE (Les autres produits)
-        // On garde ta logique actuelle avec la vidéo
-        mediaHTML = `
+        } else {
+            // CAS 2 : C'est une VIDÉO ou une IMAGE UNIQUE (Les autres produits)
+            // On garde ta logique actuelle avec la vidéo
+            mediaHTML = `
             <video class="product-video" poster="${product.image}" src="${product.video || ''}" ${product.video ? 'controls' : ''}></video>
         `;
-    }
+        }
 
-    document.getElementById('product-page-title').innerText = product.name;
-    const detailsContainer = document.getElementById('product-details-content');
+        document.getElementById('product-page-title').innerText = product.name;
+        const detailsContainer = document.getElementById('product-details-content');
 
-    // --- GESTION DES TARIFS ---
-    // (On garde ta logique pour le petit texte)
-    const weightStyle = product.useSmallText ? 'font-size: 12px; line-height: 1.2;' : '';
+        // --- GESTION DES TARIFS ---
+        // (On garde ta logique pour le petit texte)
+        const weightStyle = product.useSmallText ? 'font-size: 12px; line-height: 1.2;' : '';
 
-    let tarifsHTML = product.tarifs.map(tarif => `
+        let tarifsHTML = product.tarifs.map(tarif => `
     <div class="tarif-item">
         <div class="box-tarif">
             <div class="tarif-wieght" style="${weightStyle}">${tarif.weight}</div>
@@ -1062,18 +1082,18 @@ function renderProductPage(productId) {
     </div>
     `).join('');
 
-    let descriptionHTML = '';
-    if (product.description) {
-         descriptionHTML = `<div class="product-description">${product.description}</div>`;
-    }
-    
-    // --- ON INJECTE TOUT DANS LA PAGE ---
-    // Attention : On modifie légèrement la structure HTML via JS pour insérer le média au bon endroit
-    // On vide le contenu précédent pour éviter les doublons
-    const pageContent = document.querySelector('#page-product .page-content');
-    
-    // On reconstruit le contenu de la page produit proprement
-    pageContent.innerHTML = `
+        let descriptionHTML = '';
+        if (product.description) {
+            descriptionHTML = `<div class="product-description">${product.description}</div>`;
+        }
+
+        // --- ON INJECTE TOUT DANS LA PAGE ---
+        // Attention : On modifie légèrement la structure HTML via JS pour insérer le média au bon endroit
+        // On vide le contenu précédent pour éviter les doublons
+        const pageContent = document.querySelector('#page-product .page-content');
+
+        // On reconstruit le contenu de la page produit proprement
+        pageContent.innerHTML = `
         ${mediaHTML}
         <div id="product-details-content" class="product-details">
             <div class="name">${product.name}</div>
@@ -1086,8 +1106,8 @@ function renderProductPage(productId) {
         </div>
     `;
 
-    showPage('page-product');
-}
+        showPage('page-product');
+    }
     // Met à jour l'affichage du panier (inchangé)
     function renderCart() {
         const cartContainer = document.getElementById('cart-items-container');
@@ -1424,32 +1444,32 @@ function renderProductPage(productId) {
     }
 
     // --- NOUVELLE FONCTION POUR COPIER DANS LE PRESSE-PAPIERS ---
- /*    function copyToClipboard(text) {
-        if (navigator.clipboard) { // API moderne et sécurisée
-            navigator.clipboard.writeText(text).then(() => {
-                showNotification('✅ Commande copiée ! Colle-la dans le chat.');
-                tg.HapticFeedback.notificationOccurred('success');
-            }, (err) => {
-                showNotification('❌ Erreur en copiant le message');
-            });
-        } else { // Ancien fallback (pour certains navigateurs)
-            const textArea = document.createElement('textarea');
-            textArea.value = text;
-            textArea.style.position = 'fixed'; // Hors de l'écran
-            document.body.appendChild(textArea);
-            textArea.focus();
-            textArea.select();
-            try {
-                document.execCommand('copy');
-                showNotification('✅ Commande copiée ! Colle-la dans le chat.');
-                tg.HapticFeedback.notificationOccurred('success');
-            } catch (err) {
-                showNotification('❌ Erreur en copiant le message');
-            }
-            document.body.removeChild(textArea);
-        }
-    }
- */
+    /*    function copyToClipboard(text) {
+           if (navigator.clipboard) { // API moderne et sécurisée
+               navigator.clipboard.writeText(text).then(() => {
+                   showNotification('✅ Commande copiée ! Colle-la dans le chat.');
+                   tg.HapticFeedback.notificationOccurred('success');
+               }, (err) => {
+                   showNotification('❌ Erreur en copiant le message');
+               });
+           } else { // Ancien fallback (pour certains navigateurs)
+               const textArea = document.createElement('textarea');
+               textArea.value = text;
+               textArea.style.position = 'fixed'; // Hors de l'écran
+               document.body.appendChild(textArea);
+               textArea.focus();
+               textArea.select();
+               try {
+                   document.execCommand('copy');
+                   showNotification('✅ Commande copiée ! Colle-la dans le chat.');
+                   tg.HapticFeedback.notificationOccurred('success');
+               } catch (err) {
+                   showNotification('❌ Erreur en copiant le message');
+               }
+               document.body.removeChild(textArea);
+           }
+       }
+    */
     // --- GESTION DES ÉVÉNEMENTS ---
 
     // Clics sur la barre de navigation
@@ -1513,7 +1533,7 @@ function renderProductPage(productId) {
             // AVANT C'ÉTAIT : currentView = 'products'; 
             // MODIFIE PAR :
             currentView = 'farms'; // <--- On veut voir les sous-catégories (Farms) d'abord
-            
+
             currentCategoryId = categoryCard.dataset.categoryId;
             // On reset les filtres
             currentFilters.searchTerm = '';
@@ -1543,43 +1563,43 @@ function renderProductPage(productId) {
 
 
         // 2. NOUVEAU : Clic sur une carte FARM (MIS EN COMMENTAIRE)
-          /*   const farmCard = target.closest('.farm-card');
-           if (farmCard) {
-   
-               if (farmCard.classList.contains('unclickable')) {
-                   return;
-               }
-   
-               currentView = 'products'; // On va à la vue "products"
-               currentFarmId = farmCard.dataset.farmId;
-               // On reset les filtres
-               currentFilters.searchTerm = '';
-               document.getElementById('search-filter').value = '';
-               renderHomePage();
-               return;
-           } 
- */
+        /*   const farmCard = target.closest('.farm-card');
+         if (farmCard) {
+ 
+             if (farmCard.classList.contains('unclickable')) {
+                 return;
+             }
+ 
+             currentView = 'products'; // On va à la vue "products"
+             currentFarmId = farmCard.dataset.farmId;
+             // On reset les filtres
+             currentFilters.searchTerm = '';
+             document.getElementById('search-filter').value = '';
+             renderHomePage();
+             return;
+         } 
+*/
 
-           // 2. Clic sur un BOUTON SOUS-CATÉGORIE (Modifié)
-// AVANT C'ÉTAIT : const farmCard = target.closest('.farm-card');
-// MAINTENANT C'EST :
-const subCategoryBtn = target.closest('.sub-category-btn');
+        // 2. Clic sur un BOUTON SOUS-CATÉGORIE (Modifié)
+        // AVANT C'ÉTAIT : const farmCard = target.closest('.farm-card');
+        // MAINTENANT C'EST :
+        const subCategoryBtn = target.closest('.sub-category-btn');
 
-if (subCategoryBtn) { // Si on a cliqué sur un bouton
+        if (subCategoryBtn) { // Si on a cliqué sur un bouton
 
-    // Vérif si c'est cliquable (optionnel selon tes data)
-    if (subCategoryBtn.style.cursor === 'not-allowed') return;
+            // Vérif si c'est cliquable (optionnel selon tes data)
+            if (subCategoryBtn.style.cursor === 'not-allowed') return;
 
-    currentView = 'products'; 
-    // On récupère l'ID via le dataset du bouton
-    currentFarmId = subCategoryBtn.dataset.farmId;
-    
-    // On reset les filtres
-    currentFilters.searchTerm = '';
-    document.getElementById('search-filter').value = '';
-    renderHomePage();
-    return;
-}
+            currentView = 'products';
+            // On récupère l'ID via le dataset du bouton
+            currentFarmId = subCategoryBtn.dataset.farmId;
+
+            // On reset les filtres
+            currentFilters.searchTerm = '';
+            document.getElementById('search-filter').value = '';
+            renderHomePage();
+            return;
+        }
 
         // 3. Clic sur une carte PRODUIT
         const productCard = target.closest('.product-item-card');
@@ -1712,9 +1732,9 @@ if (subCategoryBtn) { // Si on a cliqué sur un bouton
 
         // Clic sur "Confirmer la commande" (VERSION COPIER/COLLER - LA SEULE FIABLE)
         if (target.closest('#confirm-order-button')) {
-            
+
             // 1. TON PSEUDO TELEGRAM
-            const targetUsername = 'thegdservices'; 
+            const targetUsername = 'thegdservices';
 
             // 2. On prépare le message
             let message = formatOrderMessage();
@@ -1726,7 +1746,7 @@ if (subCategoryBtn) { // Si on a cliqué sur un bouton
             // 4. On encode et on ouvre le lien
             const encodedMessage = encodeURIComponent(message);
             const telegramUrl = `https://t.me/${targetUsername}?text=${encodedMessage}`;
-            
+
             tg.openLink(telegramUrl);
         }
 
