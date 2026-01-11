@@ -1734,7 +1734,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (target.closest('#confirm-order-button')) {
 
             // 1. TON PSEUDO TELEGRAM
-            const targetUsername = 'thegdservices';
+            const targetUsername = 'THEGAZCOMMANDE';
 
             // 2. On prépare le message
             let message = formatOrderMessage();
