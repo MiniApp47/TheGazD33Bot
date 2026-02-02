@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     ]
                 },
-                {
+                /* {
                     id: '120u PREMIUM',
                     name: '🧬 120u PREMIUM 🧬',
                     image: 'CategHash.png', // Mets une image de farm si tu veux
@@ -229,7 +229,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         }
 
                     ]
-                },
+                }, */
                 {
                     id: 'SIFT FROZEN',
                     name: '🧊 FROZEN SIFT 🧊',
