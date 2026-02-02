@@ -519,7 +519,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // PACK NOEL 
 
 
-        {
+       /*  {
             id: 'PACKDENOEL',
             name: '🎅🏽 PACKDENOEL 🎅🏽',
             farm: '',
@@ -624,7 +624,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     ]
                 }
             ]
-        }
+        } */
     ];
 
     // --- VARIABLES D'ÉTAT ---
