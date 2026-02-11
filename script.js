@@ -337,7 +337,7 @@ document.addEventListener('DOMContentLoaded', function () {
             farms: [
                 {
                     id: 'CALIUS',
-                    name: '🇺🇸 Cali US 🇺🇸',
+                    name: '🇺🇸 CALI US 🇺🇸',
                     image: 'Wizard4.png',
                     badgeText: '2 produits',
                     products: [
@@ -394,7 +394,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 },
                 {
                     id: 'WEEDholland',
-                    name: '🇳🇱 Weed Hollandaise 🇳🇱',
+                    name: '🇳🇱 WEED HOLLANDAISE 🇳🇱',
                     image: 'Wizard4.png',
                     badgeText: '2 produits',
                     products: [
@@ -412,6 +412,30 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: '25g', price: 150.00 },
                                 { weight: '50g', price: 270.00 },
                                 { weight: '100g', price: 500.00 },
+                            ]
+                        }
+                    ]
+                },
+                {
+                    id: 'WeedCanada',
+                    name: '🇨🇦 CALI CANADA 🇨🇦',
+                    image: 'Wizard4.png',
+                    badgeText: '2 produits',
+                    products: [
+                        {
+                            id: 'ORANGE CREAMSICLE 🧈🍊',
+                            name: 'ORANGE CREAMSICLE 🧈🍊',
+                            farm: 'NO BRAND ™️©️',
+                            promoEligible: true,
+                            type: 'Weed',
+                            image: 'ProductSicle.jpg',
+                            video: 'VideoSicle.mov',
+                            description: '',
+                            tarifs: [
+                                { weight: '10g', price: 80.00 },
+                                { weight: '25g', price: 180.00 },
+                                { weight: '50g', price: 350.00 },
+                                { weight: '100g', price: 600.00 },
                             ]
                         }
                     ]
