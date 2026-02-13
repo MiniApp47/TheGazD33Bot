@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
             farm: '',
             type: 'Hash',
             quality: ' 🍪 Hash 🍪',
-            image: 'CategHash.jpg',
+            image: 'CategHash.png',
 
             farms: [
                 {
@@ -333,7 +333,7 @@ document.addEventListener('DOMContentLoaded', function () {
             farm: '',
             type: 'Weed',
             quality: ' 🪴 Weed 🪴',
-            image: 'CategWeed.jpg',
+            image: 'CategWeed.png',
             farms: [
                 {
                     id: 'CALIUS',
