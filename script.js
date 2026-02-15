@@ -202,6 +202,40 @@ document.addEventListener('DOMContentLoaded', function () {
                     badgeText: '5 produits',
                     products: [
                         {
+                            id: 'BOOBIES COOKING 🌾🥣',
+                            name: 'BOOBIES COOKING 🌾🥣',
+                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
+                            promoEligible: true,
+                            type: 'FRESH FROZEN',
+                            image: 'ProductBoobie.jpg',
+                            video: 'VideoBoobie.mp4',
+                            description: 'NEW DROP 2026 ✨✨ \n FROZEN SIFT 🥶🧊', 
+                            tarifs: [
+                                { weight: '5g', price: 70.00 },
+                                { weight: '10g', price: 100.00 },
+                                { weight: '25g', price: 220.00 },
+                                { weight: '50g', price: 400.00 },
+                                { weight: '100g', price: 700.00 },
+                            ]
+                        },
+                        {
+                            id: 'SOUR BURGER x LEMON 🍋🍔',
+                            name: 'SOUR BURGER x LEMON 🍋🍔',
+                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
+                            promoEligible: true,
+                            type: 'FRESH FROZEN',
+                            image: 'ProductSourB.jpg',
+                            video: 'VideoSourB.mp4',
+                            description: 'NEW DROP 2026 ✨✨ \n FROZEN SIFT 🥶🧊', 
+                            tarifs: [
+                                { weight: '5g', price: 70.00 },
+                                { weight: '10g', price: 100.00 },
+                                { weight: '25g', price: 220.00 },
+                                { weight: '50g', price: 400.00 },
+                                { weight: '100g', price: 700.00 },
+                            ]
+                        },
+                        {
                             id: 'WATERMELON Z 🍈🍉',
                             name: 'WATERMELON Z 🍈🍉',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
