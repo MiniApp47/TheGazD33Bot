@@ -287,8 +287,8 @@ document.addEventListener('DOMContentLoaded', function () {
                             ]
                         }
                     ]
-                },
-                {
+                }
+               /*  {
                     id: '⚡️DOUBLE STATIC',
                     name: '⚡️DOUBLE STATIC ⚡️',
                     image: 'CategHash.png',
@@ -329,7 +329,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             ]
                         }
                     ]
-                }
+                } */
             ]
         },
 
