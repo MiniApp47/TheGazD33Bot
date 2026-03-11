@@ -430,6 +430,38 @@ document.addEventListener('DOMContentLoaded', function () {
                     badgeText: '2 produits',
                     products: [
                         {
+                            id: 'PINK STARBURST 🌹🎟️',
+                            name: 'PINK STARBURST 🌹🎟️',
+                            farm: 'NO BRAND ™️©️',
+                            promoEligible: true,
+                            type: 'Weed',
+                            image: 'ProductPinkS.png',
+                            video: 'VideoPinkS.mov',
+                            description: '',
+                            tarifs: [
+                                { weight: '10g', price: 80.00 },
+                                { weight: '25g', price: 180.00 },
+                                { weight: '50g', price: 350.00 },
+                                { weight: '100g', price: 600.00 },
+                            ]
+                        },
+                        {
+                            id: 'PINK GASOLINE 💕⛽️',
+                            name: 'PINK GASOLINE 💕⛽️',
+                            farm: 'NO BRAND ™️©️',
+                            promoEligible: true,
+                            type: 'Weed',
+                            image: 'ProductPinkG.png',
+                            video: 'VideoPingG.mov',
+                            description: '',
+                            tarifs: [
+                                { weight: '10g', price: 80.00 },
+                                { weight: '25g', price: 180.00 },
+                                { weight: '50g', price: 350.00 },
+                                { weight: '100g', price: 600.00 },
+                            ]
+                        },
+                        {
                             id: 'CHAOS CAKE 🍰 ',
                             name: 'CHAOS CAKE 🍰 ',
                             farm: 'NO BRAND ™️©️',
