@@ -435,7 +435,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             farm: 'NO BRAND ™️©️',
                             promoEligible: true,
                             type: 'Weed',
-                            image: 'ProductPinkS.png',
+                            image: 'ProductPinks.png',
                             video: 'VideoPinkS.mov',
                             description: '',
                             tarifs: [
