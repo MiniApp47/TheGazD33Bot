@@ -69,86 +69,63 @@ document.addEventListener('DOMContentLoaded', function () {
                     badgeText: '5 produits',
                     products: [
                         {
-                            id: 'MANDARINA 🍊🍊',
-                            //  flag: '🇺🇸',
-                            name: 'MANDARINA 🍊🍊',
+                            id: 'BISCOTTI 🍪',
+                            name: 'BISCOTTI 🍪',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
                             type: 'thegaz',
-                            image: 'ProductMand.jpg',
-                            video: 'VideoGarry.mov',
-                            description: '🍊 <b>VITAMINE C PURE</b> 🍊\n\nUne explosion d\'agrumes acidulés. Texture mousseuse et forte odeur de clémentine fraîche.\n\n⚡️ <i>Effet énergisant et créatif. Le top pour la journée.</i>',
+                            image: 'ProductBis.jpg',
+                            video: 'VideoBis.mp4',
+                            description: 'NEW DROP 2026 ✨✨',
                             tarifs: [
                                 { weight: '10g', price: 70.00 },
                                 { weight: '25g', price: 130.00 },
-                                { weight: '50g', price: 230.00 },
-                                { weight: '100g', price: 400.00 },
+                                { weight: '50g', price: 200.00 },
+                                { weight: '100g', price: 380.00 },
                                 { weight: '200g', price: 700.00 },
                                 { weight: '500g', price: 1700.00 },
                                 { weight: 'Pour+', price: 'En Privé 🤫' },
                             ]
                         },
                         {
-                            id: 'BLUE PAPAYA 🥭🥶',
-                            //  flag: '🇺🇸',
-                            name: 'BLUE PAPAYA 🥭🥶',
+                            id: 'ZILLIONES 💵',
+                            name: 'ZILLIONES 💵',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
                             type: 'thegaz',
-                            image: 'ProductPapayaB.jpg',
-                            video: 'VideoPapayaB.mov',
-                            description: '🥭 <b>COCKTAIL TROPICAL</b> 🏝️\n\nLe mariage exotique de la mangue et de la papaye. Texture grasse et collante, typique du 90u premium.\n\n🥶 <i>Puissant et apaisant. Déconnexion totale garantie.</i>',
+                            image: 'ProductZls.jpg',
+                            video: 'VideoZls.mp4',
+                            description: 'NEW DROP 2026 ✨✨',
                             tarifs: [
                                 { weight: '10g', price: 70.00 },
                                 { weight: '25g', price: 130.00 },
-                                { weight: '50g', price: 230.00 },
-                                { weight: '100g', price: 400.00 },
+                                { weight: '50g', price: 200.00 },
+                                { weight: '100g', price: 380.00 },
                                 { weight: '200g', price: 700.00 },
                                 { weight: '500g', price: 1700.00 },
                                 { weight: 'Pour+', price: 'En Privé 🤫' },
                             ]
                         },
                         {
-                            id: 'GOLDEN CHERRY 🏆🍒',
-                            //  flag: '🇺🇸',
-                            name: 'GOLDEN CHERRY 🏆🍒',
+                            id: 'MIMOSA EVO 🍋',
+                            name: 'MIMOSA EVO 🍋',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
                             type: 'thegaz',
-                            image: 'ProductCherry.jpg',
-                            video: 'VideoCherry.mov',
-                            description: '🍒 <b>CONFISERIE DE LUXE</b> 🏆\n\nUn profil "Golden" rare. Le goût du bonbon à la cerise griotte mélangé à la puissance du Dry.\n\n🍭 <i>Équilibré et gourmand. Une douceur à fumer toute la journée.</i>',
+                            image: 'ProductMie.jpg',
+                            video: 'VideoMie.mp4',
+                            description: 'NEW DROP 2026 ✨✨',
                             tarifs: [
                                 { weight: '10g', price: 70.00 },
                                 { weight: '25g', price: 130.00 },
-                                { weight: '50g', price: 230.00 },
-                                { weight: '100g', price: 400.00 },
+                                { weight: '50g', price: 200.00 },
+                                { weight: '100g', price: 380.00 },
                                 { weight: '200g', price: 700.00 },
                                 { weight: '500g', price: 1700.00 },
                                 { weight: 'Pour+', price: 'En Privé 🤫' },
-                            ]
-                        },
-                        {
-                            id: 'GARRY PAYTON 🍭 ⛽️',
-                            //  flag: '🇺🇸',
-                            name: 'GARRY PAYTON 🍭 ⛽️',
-                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
-                            promoEligible: true,
-                            type: 'thegaz',
-                            image: 'ProductGarry.jpg', // Attention : vérifie si tu as une image 'ProductGarry.jpg'
-                            video: 'VideoMand.mov', // Attention : vérifie la vidéo aussi
-                            description: '🏀 <b>LE MVP DU GAZ</b> ⛽️\n\nUne frappe lourde : mélange d\'épices poivrées et de pur carburant. C\'est du sérieux.\n\n🥊 <i>Gros hit physique et cérébral. Ça tape fort, réservé aux experts.</i>',
-                            tarifs: [
-                                { weight: '10g', price: 70.00 },
-                                { weight: '25g', price: 130.00 },
-                                { weight: '50g', price: 230.00 },
-                                { weight: '100g', price: 400.00 },
-                                { weight: '200g', price: 700.00 },
-                                { weight: '500g', price: 1700.00 },
-                                { weight: 'Pour+', price: 'En Privé 🤫' },
-
                             ]
                         }
+                      
                     ]
                 },
                 {
@@ -157,15 +134,15 @@ document.addEventListener('DOMContentLoaded', function () {
                     image: 'CategHash.png',
                     badgeText: '5 produits',
                     products: [
-                        {
-                            id: 'PARMESAN COOKIES 🧀 🍪',
-                            name: 'PARMESAN COOKIES 🧀 🍪',
+                         {
+                            id: 'PURPULE PUNCH 🥊',
+                            name: 'PURPULE PUNCH 🥊',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
                             type: '120u PREMIUM',
-                            image: 'ProductParm.jpg',
-                            video: 'VideoParm.mov',
-                            description: '🧀 <b>FUNKY & CRÉMEUX</b> 🍪\n\nUn croisement audacieux : l\'attaque puissante du fromage affiné adoucie par une note cookie sucrée.\n\n🧀 <i>Un profil terpénique complexe et "skunky". Pour les amateurs de goûts forts.</i>',
+                            image: 'ProductPP.jpg',
+                            video: 'VideoPP.mp4',
+                            description: 'NEW DROP 2026 ✨✨',
                             tarifs: [
                                 { weight: '10g', price: 80.00 },
                                 { weight: '25g', price: 150.00 },
@@ -175,15 +152,15 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: 'Pour+', price: 'En Privé 🤫' },
                             ]
                         },
-                        {
-                            id: 'HAWAIAN RAIN 🌴🏝️🍹',
-                            name: 'HAWAIAN RAIN 🌴🏝️🍹',
+                         {
+                            id: 'BUDDHA PEACH 🍑',
+                            name: 'BUDDHA PEACH 🍑',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
                             type: '120u PREMIUM',
-                            image: 'ProductHaw.jpg',
-                            video: 'VideoHaw.mov',
-                            description: '🏝️ <b>TEMPÊTE TROPICALE</b> 🍹\n\nUne explosion de fruits exotiques et d\'agrumes. C\'est sucré, frais et floral comme un jus pressé.\n\n☔️ <i>Détente immédiate, comme des vacances au soleil. Terpènes très fruités.</i>',
+                            image: 'ProductBP.jpg',
+                            video: 'VideoBP.mp4',
+                            description: 'NEW DROP 2026 ✨✨',
                             tarifs: [
                                 { weight: '10g', price: 80.00 },
                                 { weight: '25g', price: 150.00 },
@@ -192,7 +169,26 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: '200g', price: 900.00 },
                                 { weight: 'Pour+', price: 'En Privé 🤫' },
                             ]
-                        }
+                        },
+                         {
+                            id: 'BUDDHA LEMON 🍋',
+                            name: 'BUDDHA LEMON 🍋',
+                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
+                            promoEligible: true,
+                            type: '120u PREMIUM',
+                            image: 'ProductBL.jpg',
+                            video: 'VideoBL.mp4',
+                            description: 'NEW DROP 2026 ✨✨',
+                            tarifs: [
+                                { weight: '10g', price: 80.00 },
+                                { weight: '25g', price: 150.00 },
+                                { weight: '50g', price: 250.00 },
+                                { weight: '100g', price: 480.00 },
+                                { weight: '200g', price: 900.00 },
+                                { weight: 'Pour+', price: 'En Privé 🤫' },
+                            ]
+                        },
+                       
                     ]
                 },
                 {
@@ -202,14 +198,14 @@ document.addEventListener('DOMContentLoaded', function () {
                     badgeText: '5 produits',
                     products: [
                         {
-                            id: 'BOOBIES COOKING 🌾🥣',
-                            name: 'BOOBIES COOKING 🌾🥣',
+                            id: 'PAPAYA FROSTED 🍹',
+                            name: 'PAPAYA FROSTED 🍹',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
-                            type: 'FRESH FROZEN',
-                            image: 'ProductBoobie.jpg',
-                            video: 'VideoBoobie.mp4',
-                            description: 'NEW DROP 2026 ✨✨ \n FROZEN SIFT 🥶🧊', 
+                            type: 'FROZEN SIFT',
+                            image: 'ProductPF.jpg',
+                            video: 'VideoPF.mp4',
+                            description: 'NEW DROP 2026 ✨✨',
                             tarifs: [
                                 { weight: '5g', price: 70.00 },
                                 { weight: '10g', price: 100.00 },
@@ -219,14 +215,14 @@ document.addEventListener('DOMContentLoaded', function () {
                             ]
                         },
                         {
-                            id: 'SOUR BURGER x LEMON 🍋🍔',
-                            name: 'SOUR BURGER x LEMON 🍋🍔',
+                            id: 'MENDO BREATH 🧠',
+                            name: 'MENDO BREATH 🧠',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
-                            type: 'FRESH FROZEN',
-                            image: 'ProductSourB.jpg',
-                            video: 'VideoSourB.mp4',
-                            description: 'NEW DROP 2026 ✨✨ \n FROZEN SIFT 🥶🧊', 
+                            type: 'FROZEN SIFT',
+                            image: 'ProductMB.jpg',
+                            video: 'VideoMB.mp4',
+                            description: 'NEW DROP 2026 ✨✨',
                             tarifs: [
                                 { weight: '5g', price: 70.00 },
                                 { weight: '10g', price: 100.00 },
@@ -236,14 +232,14 @@ document.addEventListener('DOMContentLoaded', function () {
                             ]
                         },
                         {
-                            id: 'WATERMELON Z 🍈🍉',
-                            name: 'WATERMELON Z 🍈🍉',
+                            id: 'DONNY BURGER 🍔',
+                            name: 'DONNY BURGER 🍔',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
-                            type: 'FRESH FROZEN',
-                            image: 'ProductMelon.jpg',
-                            video: 'VideoMelon.mp4',
-                            description: '🍉 <b>L\'ÉTÉ EN BARRE</b> 🍉\n\nUne explosion de saveurs sucrées et fruitées rappelant le bonbon à la pastèque.\n\n❄️ <i>Fresh Frozen : Terpènes préservés à 100% pour un goût ultra frais.</i>', 
+                            type: 'FROZEN SIFT',
+                            image: 'ProductDB.jpg',
+                            video: 'VideoDB.mp4',
+                            description: 'NEW DROP 2026 ✨✨',
                             tarifs: [
                                 { weight: '5g', price: 70.00 },
                                 { weight: '10g', price: 100.00 },
@@ -252,84 +248,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: '100g', price: 700.00 },
                             ]
                         },
-                        {
-                            id: 'SUPER BOOF ⛽️',
-                            name: 'SUPER BOOF ⛽️',
-                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
-                            promoEligible: true,
-                            type: 'FRESH FROZEN',
-                            image: 'ProductBoof.jpg',
-                            video: 'VideoBoof.mp4',
-                            description: '⛽️ <b>LA PUISSANCE PURE</b> ⛽️\n\nUn profil aromatique complexe : mélange d\'agrumes intenses et de notes terreuses.\n\n🚀 <i>Un effet lourd et immédiat. Réservé aux initiés.</i>', 
-                            tarifs: [
-                                { weight: '5g', price: 70.00 },
-                                { weight: '10g', price: 100.00 },
-                                { weight: '25g', price: 220.00 },
-                                { weight: '50g', price: 400.00 },
-                                { weight: '100g', price: 700.00 },
-                            ]
-                        },
-                        {
-                            id: 'JELLY CAKE 🍰',
-                            name: 'JELLY CAKE 🍰',
-                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
-                            promoEligible: true,
-                            type: 'FRESH FROZEN',
-                            image: 'ProductJelly.jpg',
-                            video: 'VideoJelly.mp4',
-                            description: '🍰 <b>DESSERT GOURMAND</b> 🍰\n\nLe mariage parfait entre le crémeux du gâteau et la douceur fruitée de la gelée.\n\n💎 <i>Texture incroyable et fumée onctueuse. Un vrai régal.</i>', 
-                            tarifs: [
-                                { weight: '5g', price: 70.00 },
-                                { weight: '10g', price: 100.00 },
-                                { weight: '25g', price: 220.00 },
-                                { weight: '50g', price: 400.00 },
-                                { weight: '100g', price: 700.00 },
-                            ]
-                        }
                     ]
                 }
-               /*  {
-                    id: '⚡️DOUBLE STATIC',
-                    name: '⚡️DOUBLE STATIC ⚡️',
-                    image: 'CategHash.png',
-                    badgeText: '5 produits',
-                    products: [
-                        {
-                            id: 'GRAPE GASOLINE 🍇⛽️',
-                            name: 'GRAPE GASOLINE 🍇⛽️',
-                            farm: 'HASH GAZ SELECTION 🇲🇦 ⛰️',
-                            promoEligible: true,
-                            type: '⚡️DOUBLE STATIC',
-                            image: 'ProductGrape.jpg',
-                            video: 'VideoGrape.mp4',
-                            description: '🍇 <b>DOUCEUR & PUISSANCE</b> ⛽️\n\nLe combo parfait : l\'arôme sucré du bonbon au raisin trempé dans du pur carburant.\n\n⚡️ <i>Un Double Static aux terpènes violets et gassy. Goût incroyable.</i>', 
-                            tarifs: [
-                                { weight: '5g', price: 80.00 },
-                                { weight: '10g', price: 150.00 },
-                                { weight: '25g', price: 300.00 },
-                                { weight: '50g', price: 500.00 },
-                                { weight: '100g', price: 900.00 },
-                            ]
-                        },
-                        {
-                            id: 'FORBIDDEN',
-                            name: 'IMPERIUM X 👑💎',
-                            farm: 'HASH GAZ SELECTION 🇲🇦 ⛰️',
-                            promoEligible: true,
-                            type: '⚡️DOUBLE STATIC',
-                            image: 'ProductImp.jpg',
-                            video: 'VideoImp.mp4',
-                            description: '👑 <b>LA FORCE IMPÉRIALE</b> 💎\n\nUne des variétés les plus puissantes au monde. Un hash sombre, gras et complexe.\n\n🚀 <i>High Level. Effet lourd et durable, réservé aux vrais chefs.</i>', 
-                            tarifs: [
-                                { weight: '5g', price: 80.00 },
-                                { weight: '10g', price: 150.00 },
-                                { weight: '25g', price: 300.00 },
-                                { weight: '50g', price: 500.00 },
-                                { weight: '100g', price: 900.00 },
-                            ]
-                        }
-                    ]
-                } */
             ]
         },
 
@@ -347,57 +267,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     name: '🇺🇸 CALI US 🇺🇸',
                     image: 'Wizard4.png',
                     badgeText: '2 produits',
-                    products: [
-                        /* {
-                            id: 'GUSHERS',
-                            name: 'GUSHERS 2.0 🍬🍭',
-                            farm: 'PARLAY LA 🇺🇸 ™️©️',
-                            promoEligible: true,
-                            type: 'Weed',
-                            image: 'ProductGush.jpg',
-                            video: 'VideoGush.mp4',
-                            description: 'Comme le bonbon Gushers : une explosion de fruits tropicaux.\n\n🇺🇸 <i>Import Cali authentique, têtes denses et colorées.</i>',
-                            tarifs: [
-                                { weight: '3,5g', price: 70.00 },
-                                { weight: '7g', price: 130.00 },
-                                { weight: '14g', price: 230.00 },
-                                { weight: '56g', price: 650.00 },
-                            ]
-                        },
-                        {
-                            id: 'CANDLE',
-                            name: 'CANDLE WAVE 🌊🍭',
-                            farm: 'PARLAY LA 🇺🇸 ™️©️',
-                            promoEligible: true,
-                            type: 'Weed',
-                            image: 'ProductCandle.jpg',
-                            video: 'VideoCandle.mp4',
-                            description: 'Un profil unique, très parfumé avec une fumée douce.\n\n🌊 <i>Manucure parfaite, c\'est du propre made in USA.</i>',
-                            tarifs: [
-                                { weight: '3,5g', price: 70.00 },
-                                { weight: '7g', price: 130.00 },
-                                { weight: '14g', price: 230.00 },
-                                { weight: '56g', price: 650.00 },
-                            ]
-                        },
-                        {
-                            id: 'PAPAYA',
-                            name: 'PAPAYA x CHERRY GELATO 🍒 🥭',
-                            farm: 'CALI NO BRAND ™️©️',
-                            promoEligible: true,
-                            type: 'Weed',
-                            image: 'ProductPapaya.jpg',
-                            video: 'VideoPapaya.mp4',
-                            description: 'Le mariage de la Papaye et de la Cerise Gelato. Très fruité.\n\n🍒 <i>LA FOLIE 🤪 ‼️ Goût intense et buds magnifiques.</i>',
-                            tarifs: [
-                                { weight: '5g', price: 70.00 },
-                                { weight: '10g', price: 120.00 },
-                                { weight: '25g', price: 220.00 },
-                                { weight: '50g', price: 420.00 },
-                                { weight: '100g', price: 800.00 },
-                            ]
-                        } */
-                    ]
+                    products: []
                 },
                 {
                     id: 'WEEDholland',
@@ -493,6 +363,65 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: '100g', price: 600.00 },
                             ]
                         }
+                    ]
+                }
+            ]
+        },
+        // --- Catégorie 3: EXTRACTION ---
+        {
+            id: 'Exctraction',
+            name: '🔬 EXTRACTION 🔬',
+            farm: '',
+            type: 'EXTRACTION',
+            quality: '🔬 EXTRACTION 🔬',
+            image: 'CategExctra.jpg',
+            farms: [
+                {
+                    id: 'VAPES 😶‍🌫️',
+                    name: 'VAPES 😶‍🌫️',
+                    image: '',
+                    badgeText: '0 produits',
+                    products: [
+                        {
+                            id: 'PREMIUM VAPES 🔥',
+                            name: 'PREMIUM VAPES 🔥',
+                            farm: 'CHOICES LAB 🇺🇸',
+                            promoEligible: true,
+                            type: 'Weed',
+                            image: 'ProductVape.png',
+                            videos: ['VideoVape1.mov','VideoVape2.mov','VideoVape3.mov'],
+                            description: '2G 🍯  \n\n - CANDY GRAPES 🍬 \n - JUICY WATERMELON 🍉  \n- GLACIAL GUAVA 🥭❄️',
+                            tarifs: [
+                                { weight: '1 VAPE', price: 60.00 },
+                                { weight: '5 VAPE', price: 250.00 },
+                                { weight: '10 VAPE', price: 450.00 },
+                                { weight: '50 VAPE', price: 2000.00 },
+                            ]
+                        },
+                    ]
+                },
+                {
+                    id: 'WAX 💉',
+                    name: 'WAX 💉',
+                    image: '',
+                    badgeText: '0 produits',
+                    products: [
+                        {
+                            id: 'CANNABIS DISTILLATE WAX🔥',
+                            name: 'CANNABIS DISTILLATE WAX🔥',
+                            farm: 'DELTA CORP ®️ 🇺🇸',
+                            promoEligible: true,
+                            type: 'Weed',
+                            useSmallText: true, // <--- C'EST CETTE LIGNE QUI FAIT LA MAGIE
+                            image: 'ProductSer.png',
+                            videos: ['VideoSer1.mov','VideoSer2.mov','VideoSer3.mov','VideoSer4.mov'],
+                            description: 'SERINGUE DE 1G 🍯 💉 \n (a mettre au tour du join ou dedans) \n\n - GELATO 🍦\n - DOSÉ KUSH 💣 \n - GALACTIC GAZ ⛽️  \n - DONNY BURGER 🍔',
+                            tarifs: [
+                                { weight: '1 SERINGUE', price: 50.00 },
+                                { weight: '5 SERINGUE', price: 230.00 },
+                                { weight: '10 SERINGUE', price: 400.00 },
+                            ]
+                        },
                     ]
                 }
             ]
@@ -780,14 +709,29 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // --- FONCTION MODIFIÉE POUR GÉRER LE PRIX TEXTE (En Privé) ---
+    // --- FONCTION MODIFIÉE POUR GÉRER LE PRIX TEXTE ET LES CARROUSELS DE VIDÉOS ---
     function renderProductPage(productId) {
         const product = getProductById(productId);
         if (!product) return;
 
         let mediaHTML = '';
 
-        if (product.images && product.images.length > 0) {
+        if (product.videos && product.videos.length > 0) {
+            // NOUVEAU : CARROUSEL DE VIDÉOS
+            const slides = product.videos.map((vid, index) => `
+            <div class="carousel-slide">
+                <video class="product-video" src="${vid}" controls playsinline ${index === 0 && product.image ? `poster="${product.image}"` : ''}></video>
+            </div>
+        `).join('');
+
+            mediaHTML = `
+            <div class="carousel-container">
+                ${slides}
+            </div>
+            <div class="carousel-hint">↔️ Swipe pour voir les vidéos</div>
+        `;
+        } else if (product.images && product.images.length > 0) {
+            // CARROUSEL D'IMAGES
             const slides = product.images.map(img => `
             <div class="carousel-slide">
                 <img src="${img}" alt="${product.name}">
@@ -801,23 +745,21 @@ document.addEventListener('DOMContentLoaded', function () {
             <div class="carousel-hint">↔️ Swipe pour voir les photos</div>
         `;
         } else {
+            // VIDÉO UNIQUE
             mediaHTML = `
-            <video class="product-video" poster="${product.image}" src="${product.video || ''}" ${product.video ? 'controls' : ''}></video>
+            <video class="product-video" poster="${product.image}" src="${product.video || ''}" ${product.video ? 'controls playsinline' : ''}></video>
         `;
         }
 
         document.getElementById('product-page-title').innerText = product.name;
         const detailsContainer = document.getElementById('product-details-content');
 
-        const weightStyle = product.useSmallText ? 'font-size: 12px; line-height: 1.2;' : '';
+        const weightStyle = product.useSmallText ? 'font-size: 18px; line-height: 1.2;' : '';
 
-        // ICI C'EST LA MODIFICATION CRITIQUE POUR NE PAS PLANTER
         let tarifsHTML = product.tarifs.map(tarif => {
-            // On vérifie si c'est un nombre ou du texte
             const isPriceNumber = typeof tarif.price === 'number';
             const priceDisplay = isPriceNumber ? tarif.price.toFixed(2) + '€' : tarif.price;
 
-            // Si c'est un prix texte, on met un bouton Contact au lieu de Panier
             const actionButton = isPriceNumber
                 ? `<button class="add-to-cart-btn" data-product-id="${product.id}" data-weight="${tarif.weight}" data-price="${tarif.price}">
                      <svg width="20" height="20"><use href="#icon-cart"/></svg>
