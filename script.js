@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: 'thegaz',
                             image: 'ProductBis.jpg',
                             video: 'VideoBis.mp4',
-                            description: 'NEW DROP 2026 ✨✨',
+                            description: '🍪 <b>DOUCEUR ITALIENNE</b> 🍪\n\nUn arôme gourmand de biscuit chaud avec des notes terreuses profondes.\n\n☕ <i>Idéal avec un café. Effet relaxant et euphorique.</i>',
                             tarifs: [
                                 { weight: '10g', price: 70.00 },
                                 { weight: '25g', price: 130.00 },
@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: 'thegaz',
                             image: 'ProductZls.jpg',
                             video: 'VideoZls.mp4',
-                            description: 'NEW DROP 2026 ✨✨',
+                            description: '💵 <b>LE BRAQUAGE</b> 💵\n\nUne pépite rare. Profil gazeux et crémeux qui tabasse le palais.\n\n🏦 <i>Gros effet stone. Réservé aux braqueurs de terps.</i>',
                             tarifs: [
                                 { weight: '10g', price: 70.00 },
                                 { weight: '25g', price: 130.00 },
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: 'thegaz',
                             image: 'ProductMie.jpg',
                             video: 'VideoMie.mp4',
-                            description: 'NEW DROP 2026 ✨✨',
+                            description: '🍋 <b>RÉVEIL ACIDULÉ</b> 🍋\n\nL\'écorce de citron jaune fraîchement pressée. Texture sablonneuse et claire.\n\n⚡ <i>Coup de fouet cérébral garanti. Parfait pour la journée.</i>',
                             tarifs: [
                                 { weight: '10g', price: 70.00 },
                                 { weight: '25g', price: 130.00 },
@@ -125,7 +125,6 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: 'Pour+', price: 'En Privé 🤫' },
                             ]
                         }
-                      
                     ]
                 },
                 {
@@ -142,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: '120u PREMIUM',
                             image: 'ProductPP.jpg',
                             video: 'VideoPP.mp4',
-                            description: 'NEW DROP 2026 ✨✨',
+                            description: '🥊 <b>UPPERCUT FRUITÉ</b> 🥊\n\nLe croisement parfait entre le raisin sucré et la myrtille. Filtrage 120u ultra propre.\n\n🍇 <i>Un K.O. physique doux et rapide.</i>',
                             tarifs: [
                                 { weight: '10g', price: 80.00 },
                                 { weight: '25g', price: 150.00 },
@@ -160,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: '120u PREMIUM',
                             image: 'ProductBP.jpg',
                             video: 'VideoBP.mp4',
-                            description: 'NEW DROP 2026 ✨✨',
+                            description: '🍑 <b>PÊCHE DIVINE</b> 🍑\n\nDes arômes de pêche juteuse avec un fond floral très doux. Un régal en bouche.\n\n🧘‍♂️ <i>Méditation et détente profonde. Zen absolu.</i>',
                             tarifs: [
                                 { weight: '10g', price: 80.00 },
                                 { weight: '25g', price: 150.00 },
@@ -178,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: '120u PREMIUM',
                             image: 'ProductBL.jpg',
                             video: 'VideoBL.mp4',
-                            description: 'NEW DROP 2026 ✨✨',
+                            description: '🍋 <b>CITRON SACRÉ</b> 🍋\n\nUn zeste de citron vert ultra frais. Ça pique le nez et ça fond tout seul.\n\n🙏 <i>Un high clair et stimulant. Qualité 120u irréprochable.</i>',
                             tarifs: [
                                 { weight: '10g', price: 80.00 },
                                 { weight: '25g', price: 150.00 },
@@ -187,8 +186,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: '200g', price: 900.00 },
                                 { weight: 'Pour+', price: 'En Privé 🤫' },
                             ]
-                        },
-                       
+                        }
                     ]
                 },
                 {
@@ -198,6 +196,23 @@ document.addEventListener('DOMContentLoaded', function () {
                     badgeText: '5 produits',
                     products: [
                         {
+                            id: 'SUPER BOOF 🌺',
+                            name: 'SUPER BOOF 🌺',
+                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
+                            promoEligible: true,
+                            type: 'FROZEN SIFT',
+                            image: 'ProductSP.jpg',
+                            video: 'VideoSP.mov',
+                            description: '🌺 <b>BOUQUET FLORAL & GAZ</b> 🌺\n\nTerpènes complexes, agrumes rouges et terre humide. Conservation à froid parfaite.\n\n🚀 <i>Frappe instantanée. Une vraie dinguerie.</i>',
+                            tarifs: [
+                                { weight: '5g', price: 70.00 },
+                                { weight: '10g', price: 100.00 },
+                                { weight: '25g', price: 220.00 },
+                                { weight: '50g', price: 400.00 },
+                                { weight: '100g', price: 700.00 },
+                            ]
+                        },
+                        {
                             id: 'PAPAYA FROSTED 🍹',
                             name: 'PAPAYA FROSTED 🍹',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
@@ -205,7 +220,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: 'FROZEN SIFT',
                             image: 'ProductPF.jpg',
                             video: 'VideoPF.mp4',
-                            description: 'NEW DROP 2026 ✨✨',
+                            description: '🍹 <b>SMOOTHIE GLACÉ</b> 🍹\n\nLe vrai goût de la papaye mûre sortie du congélo. Fresh Frozen de très haute volée.\n\n🥶 <i>Saveurs intactes, fumée épaisse, effet très lourd.</i>',
                             tarifs: [
                                 { weight: '5g', price: 70.00 },
                                 { weight: '10g', price: 100.00 },
@@ -222,7 +237,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: 'FROZEN SIFT',
                             image: 'ProductMB.jpg',
                             video: 'VideoMB.mp4',
-                            description: 'NEW DROP 2026 ✨✨',
+                            description: '🧠 <b>LAVAGE DE CERVEAU</b> 🧠\n\nArômes de caramel vanillé et de poivre mentholé. Profil extrêmement rare.\n\n🛌 <i>Effet canapé garanti. Pour les fins de soirée.</i>',
                             tarifs: [
                                 { weight: '5g', price: 70.00 },
                                 { weight: '10g', price: 100.00 },
@@ -239,7 +254,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: 'FROZEN SIFT',
                             image: 'ProductDB.jpg',
                             video: 'VideoDB.mp4',
-                            description: 'NEW DROP 2026 ✨✨',
+                            description: '🍔 <b>LE FAST FOOD</b> 🍔\n\nNotes salées, épicées et umami, avec un fond gaz très puissant.\n\n🔥 <i>Ça sent la friture et le gasoil. Un OVNI terpénique.</i>',
                             tarifs: [
                                 { weight: '5g', price: 70.00 },
                                 { weight: '10g', price: 100.00 },
@@ -247,7 +262,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: '50g', price: 400.00 },
                                 { weight: '100g', price: 700.00 },
                             ]
-                        },
+                        }
                     ]
                 }
             ]
@@ -383,14 +398,49 @@ document.addEventListener('DOMContentLoaded', function () {
                     badgeText: '0 produits',
                     products: [
                         {
-                            id: 'PREMIUM VAPES 🔥',
-                            name: 'PREMIUM VAPES 🔥',
+                            id: 'CANDY GRAPES 🍬',
+                            name: 'CANDY GRAPES 🍬',
                             farm: 'CHOICES LAB 🇺🇸',
                             promoEligible: true,
                             type: 'Weed',
+                            useSmallText: true,
                             image: 'ProductVape.png',
-                            videos: ['VideoVape1.mov','VideoVape2.mov','VideoVape3.mov'],
-                            description: '2G 🍯  \n\n - CANDY GRAPES 🍬 \n - JUICY WATERMELON 🍉  \n- GLACIAL GUAVA 🥭❄️',
+                            video: 'VideoVape1.mov',
+                            description: '🍬 <b>BONBON AU RAISIN</b> 🍬\n\nDistillat ultra pur. Un goût explosif de bonbon violet.\n\n💨 <i>2G de puissance pure. Prêt à vaper.</i>',
+                            tarifs: [
+                                { weight: '1 VAPE', price: 60.00 },
+                                { weight: '5 VAPE', price: 250.00 },
+                                { weight: '10 VAPE', price: 450.00 },
+                                { weight: '50 VAPE', price: 2000.00 },
+                            ]
+                        },
+                        {
+                            id: 'JUICY WATERMELON 🍉',
+                            name: 'JUICY WATERMELON 🍉',
+                            farm: 'CHOICES LAB 🇺🇸',
+                            promoEligible: true,
+                            type: 'Weed',
+                            useSmallText: true,
+                            image: 'ProductJW.png',
+                            video: 'VideoVape2.mov',
+                            description: '🍉 <b>JUS DE PASTÈQUE</b> 🍉\n\nFraîcheur et sucre. Le classique indémodable pour une vape discrète.\n\n💨 <i>2G de puissance pure. Prêt à vaper.</i>',
+                            tarifs: [
+                                { weight: '1 VAPE', price: 60.00 },
+                                { weight: '5 VAPE', price: 250.00 },
+                                { weight: '10 VAPE', price: 450.00 },
+                                { weight: '50 VAPE', price: 2000.00 },
+                            ]
+                        },
+                        {
+                            id: 'GLACIAL GUAVA 🥭❄️',
+                            name: 'GLACIAL GUAVA 🥭❄️',
+                            farm: 'CHOICES LAB 🇺🇸',
+                            promoEligible: true,
+                            type: 'Weed',
+                            useSmallText: true,
+                            image: 'ProductGG.png',
+                            video: 'VideoVape3.mov',
+                            description: '🥭❄️ <b>GOYAVE GIVRÉE</b> 🥭❄️\n\nUn fruit tropical avec un effet frais (ice) en fin de bouffée.\n\n💨 <i>2G de puissance pure. Prêt à vaper.</i>',
                             tarifs: [
                                 { weight: '1 VAPE', price: 60.00 },
                                 { weight: '5 VAPE', price: 250.00 },
@@ -407,15 +457,63 @@ document.addEventListener('DOMContentLoaded', function () {
                     badgeText: '0 produits',
                     products: [
                         {
-                            id: 'CANNABIS DISTILLATE WAX🔥',
-                            name: 'CANNABIS DISTILLATE WAX🔥',
+                            id: 'DONNY BURGERRR 🍔',
+                            name: 'DONNY BURGER 🍔',
                             farm: 'DELTA CORP ®️ 🇺🇸',
                             promoEligible: true,
                             type: 'Weed',
-                            useSmallText: true, // <--- C'EST CETTE LIGNE QUI FAIT LA MAGIE
+                            useSmallText: true,
                             image: 'ProductSer.png',
-                            videos: ['VideoSer1.mov','VideoSer2.mov','VideoSer3.mov','VideoSer4.mov'],
-                            description: 'SERINGUE DE 1G 🍯 💉 \n (a mettre au tour du join ou dedans) \n\n - GELATO 🍦\n - DOSÉ KUSH 💣 \n - GALACTIC GAZ ⛽️  \n - DONNY BURGER 🍔',
+                            video: 'VideoSer4.mov',
+                            description: '🍔 <b>UMAMI & GAZ</b> 🍔\n\nSeringue de 1G. Profil salé et épicé, parfait pour pimper ton mix.\n\n💉 <i>À étaler sur ou dans la feuille. K.O. assuré.</i>',
+                            tarifs: [
+                                { weight: '1 SERINGUE', price: 50.00 },
+                                { weight: '5 SERINGUE', price: 230.00 },
+                                { weight: '10 SERINGUE', price: 400.00 },
+                            ]
+                        },
+                        {
+                            id: 'GALACTIC GAZ ⛽️',
+                            name: 'GALACTIC GAZ ⛽️',
+                            farm: 'DELTA CORP ®️ 🇺🇸',
+                            promoEligible: true,
+                            type: 'Weed',
+                            useSmallText: true,
+                            image: 'ProductGG2.png',
+                            video: 'VideoSer3.mov',
+                            description: '⛽️ <b>CARBURANT SPATIAL</b> ⛽️\n\nSeringue de 1G. Le goût pur de l\'essence, pour des vols orbitaux.\n\n🚀 <i>Puissance extrême. Ne pas sous-estimer.</i>',
+                            tarifs: [
+                                { weight: '1 SERINGUE', price: 50.00 },
+                                { weight: '5 SERINGUE', price: 230.00 },
+                                { weight: '10 SERINGUE', price: 400.00 },
+                            ]
+                        },
+                        {
+                            id: 'GELATO 🍦',
+                            name: 'GELATO 🍦',
+                            farm: 'DELTA CORP ®️ 🇺🇸',
+                            promoEligible: true,
+                            type: 'Weed',
+                            useSmallText: true,
+                            image: 'ProductGE.png',
+                            video: 'VideoSer1.mov',
+                            description: '🍦 <b>DESSERT CRÉMEUX</b> 🍦\n\nSeringue de 1G. La douceur de la glace italienne avec une grosse frappe THC.\n\n🍨 <i>Parfait pour booster les saveurs de ton mix.</i>',
+                            tarifs: [
+                                { weight: '1 SERINGUE', price: 50.00 },
+                                { weight: '5 SERINGUE', price: 230.00 },
+                                { weight: '10 SERINGUE', price: 400.00 },
+                            ]
+                        },
+                        {
+                            id: 'DOSÉ KUSH 💣',
+                            name: 'DOSÉ KUSH 💣',
+                            farm: 'DELTA CORP ®️ 🇺🇸',
+                            promoEligible: true,
+                            type: 'Weed',
+                            useSmallText: true,
+                            image: 'ProductDK.png',
+                            video: 'VideoSer2.mov',
+                            description: '💣 <b>LA BOMBE</b> 💣\n\nSeringue de 1G. Profil Kush classique, ultra terreux et pin.\n\n💥 <i>Pour les amateurs de lourdeur. Ça colle au cerveau.</i>',
                             tarifs: [
                                 { weight: '1 SERINGUE', price: 50.00 },
                                 { weight: '5 SERINGUE', price: 230.00 },
