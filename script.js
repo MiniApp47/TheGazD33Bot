@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             name: 'POTATO PRINCIPAL 🥔',
-            url: 'https://duanym138.org/thegazdoggy330',
+            url: 'https://tutuduanyu.org/thegazdoggy330',
             icon: '#icon-potato',
             id: 'potato-main',
             className: 'potato-main',
