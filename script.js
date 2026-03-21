@@ -754,7 +754,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('product-page-title').innerText = product.name;
         const detailsContainer = document.getElementById('product-details-content');
 
-        const weightStyle = product.useSmallText ? 'font-size: 18px; line-height: 1.2;' : '';
+        const weightStyle = product.useSmallText ? 'font-size: 1.8vh; line-height: 1.2;' : '';
 
         let tarifsHTML = product.tarifs.map(tarif => {
             const isPriceNumber = typeof tarif.price === 'number';
