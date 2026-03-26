@@ -315,6 +315,22 @@ document.addEventListener('DOMContentLoaded', function () {
                     badgeText: '2 produits',
                     products: [
                         {
+                            id: 'FORBIDDEN X FRUIT JOY 🍓🍇🍒',
+                            name: 'FORBIDDEN X FRUIT JOY 🍓🍇🍒',
+                            farm: 'NO BRAND ™️©️',
+                            promoEligible: true,
+                            type: 'Weed',
+                            image: 'ProductFFJ.jpg',
+                            video: 'VideoFFJ.mov',
+                            description: '',
+                            tarifs: [
+                                { weight: '10g', price: 80.00 },
+                                { weight: '25g', price: 180.00 },
+                                { weight: '50g', price: 350.00 },
+                                { weight: '100g', price: 600.00 },
+                            ]
+                        },
+                        {
                             id: 'PINK STARBURST 🌹🎟️',
                             name: 'PINK STARBURST 🌹🎟️',
                             farm: 'NO BRAND ™️©️',
@@ -330,7 +346,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: '100g', price: 600.00 },
                             ]
                         },
-                        {
+                       /*  {
                             id: 'PINK GASOLINE 💕⛽️',
                             name: 'PINK GASOLINE 💕⛽️',
                             farm: 'NO BRAND ™️©️',
@@ -377,7 +393,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: '50g', price: 350.00 },
                                 { weight: '100g', price: 600.00 },
                             ]
-                        }
+                        } */
                     ]
                 }
             ]
