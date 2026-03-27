@@ -322,7 +322,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: 'Weed',
                             image: 'ProductFFJ.jpg',
                             video: 'VideoFFJ.mov',
-                            description: '',
+                            description: '🍓 <b>SALADE DE FRUITS</b> 🍒\n\nUn croisement explosif. Des arômes de fruits rouges intenses et sucrés avec une touche florale envoûtante.\n\n🍇 <i>Effet relaxant profond. Parfait pour chiller avec un goût incroyable en bouche.</i>',                            
                             tarifs: [
                                 { weight: '10g', price: 80.00 },
                                 { weight: '25g', price: 180.00 },
@@ -338,7 +338,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: 'Weed',
                             image: 'ProductPinks.png',
                             video: 'VideoPinkS.mov',
-                            description: '',
+                            description: '🍬 <b>BONBON FLORAL</b> 🌹\n\nUne explosion de saveurs douces et sucrées, rappelant le célèbre bonbon rose avec des notes florales subtiles.\n\n🎟️ <i>Un high euphorique et créatif. Idéal pour rester actif tout en kiffant.</i>',
                             tarifs: [
                                 { weight: '10g', price: 80.00 },
                                 { weight: '25g', price: 180.00 },
