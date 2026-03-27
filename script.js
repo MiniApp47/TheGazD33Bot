@@ -264,6 +264,150 @@ document.addEventListener('DOMContentLoaded', function () {
                             ]
                         }
                     ]
+                },
+                {
+                    id: 'PLASMASTATIC',
+                    name: '⚡️ PLASMASTATIC ⚡️',
+                    image: 'CategHash.png',
+                    badgeText: '8 produits',
+                    products: [
+                        {
+                            id: 'GRAPE PIZZA 🍕🍇',
+                            name: 'GRAPE PIZZA 🍕🍇',
+                            farm: 'TARIFA GOLD 🇲🇦 🚤',
+                            promoEligible: true,
+                            type: 'PLASMASTATIC ⚡️',
+                            image: 'ProductGrapeP.jpg',
+                            video: 'VideoGrapeP.mp4',
+                            description: '🍕 <b>LA RECETTE SECRÈTE</b> 🍇\n\nUn profil "Savory & Sweet". La rondeur du raisin frappée par des notes umami et funky incroyables.\n\n🥇 <i>Tarifa Gold Exclusive. Frappe monumentale, réservée à l\'élite.</i>',
+                            tarifs: [
+                                { weight: '5g', price: 90.00 },
+                                { weight: '10g', price: 170.00 },
+                                { weight: '25g', price: 350.00 },
+                                { weight: '50g', price: 650.00 },
+                                { weight: '100g', price: 1200.00 },
+                            ]
+                        },
+                        {
+                            id: 'GAZZURPLE 🍇⛽️',
+                            name: 'GAZZURPLE (GZE) 🍇⛽️',
+                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
+                            promoEligible: true,
+                            type: 'PLASMASTATIC ⚡️',
+                            image: 'ProductGZE.jpg',
+                            video: 'VideoGZE.mp4',
+                            description: '🍇 <b>L\'ALLIANCE PARFAITE</b> ⛽️\n\nL\'équilibre parfait entre le sucré du raisin et la puissance brute du gaz. Une texture plasmastatic hors norme.\n\n⚡️ <i>Un hit foudroyant. Effet cérébral intense.</i>',
+                            tarifs: [
+                                { weight: '5g', price: 80.00 },
+                                { weight: '10g', price: 150.00 },
+                                { weight: '25g', price: 320.00 },
+                                { weight: '50g', price: 600.00 },
+                                { weight: '100g', price: 1100.00 },
+                            ]
+                        },
+                        {
+                            id: 'HONEY BANANA 🍯🍌',
+                            name: 'HONEY BANANA (HB) 🍯🍌',
+                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
+                            promoEligible: true,
+                            type: 'PLASMASTATIC ⚡️',
+                            image: 'ProductHB.jpg',
+                            video: 'VideoHB.mp4',
+                            description: '🍌 <b>NECTAR TROPICAL</b> 🍯\n\nUne douceur mielleuse qui fond en bouche, sublimée par des notes de banane bien mûre.\n\n⚡️ <i>Gourmandise pure. Détente musculaire absolue.</i>',
+                            tarifs: [
+                                { weight: '5g', price: 80.00 },
+                                { weight: '10g', price: 150.00 },
+                                { weight: '25g', price: 320.00 },
+                                { weight: '50g', price: 600.00 },
+                                { weight: '100g', price: 1100.00 },
+                            ]
+                        },
+                        {
+                            id: '24K 🔱🍋‍🟩🍋',
+                            name: '24K 🔱🍋‍🟩🍋',
+                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
+                            promoEligible: true,
+                            type: 'PLASMASTATIC ⚡️',
+                            image: 'Product24K.jpg',
+                            video: 'Video24K.mp4',
+                            description: '🔱 <b>L\'OR MASSIF</b> 🍋\n\nUne pureté exceptionnelle. Des arômes d\'agrumes explosifs (citron jaune et vert) pour une expérience VIP.\n\n⚡️ <i>Énergisant et euphorique. Le luxe à l\'état pur.</i>',
+                            tarifs: [
+                                { weight: '5g', price: 80.00 },
+                                { weight: '10g', price: 150.00 },
+                                { weight: '25g', price: 320.00 },
+                                { weight: '50g', price: 600.00 },
+                                { weight: '100g', price: 1100.00 },
+                            ]
+                        },
+                        {
+                            id: 'LIMEZ x DOSIDOS 🍬🍭',
+                            name: 'LIMEZ x DOSIDOS (LXD) 🍬🍭',
+                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
+                            promoEligible: true,
+                            type: 'PLASMASTATIC ⚡️',
+                            image: 'ProductLXD.jpg',
+                            video: 'VideoLXD.mp4',
+                            description: '🍬 <b>CANDY KUSH</b> 🍭\n\nLe croisement ultime : la force du Dosidos percutée par la fraîcheur acidulée du Limez.\n\n⚡️ <i>Une claque gustative et un effet corporel très lourd.</i>',
+                            tarifs: [
+                                { weight: '5g', price: 80.00 },
+                                { weight: '10g', price: 150.00 },
+                                { weight: '25g', price: 320.00 },
+                                { weight: '50g', price: 600.00 },
+                                { weight: '100g', price: 1100.00 },
+                            ]
+                        },
+                        {
+                            id: 'RUNTZ x BANANA 🍌⛽️',
+                            name: 'RUNTZ x BANANA (RXB) 🍌⛽️',
+                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
+                            promoEligible: true,
+                            type: 'PLASMASTATIC ⚡️',
+                            image: 'ProductRXB.jpg',
+                            video: 'VideoRXB.mp4',
+                            description: '🍌 <b>FRUIT & GAZ</b> ⛽️\n\nLa douceur bonbon du Runtz couplée à la banane, avec un retour gassy persistant.\n\n⚡️ <i>Un high joyeux et un goût qui reste collé au palais.</i>',
+                            tarifs: [
+                                { weight: '5g', price: 80.00 },
+                                { weight: '10g', price: 150.00 },
+                                { weight: '25g', price: 320.00 },
+                                { weight: '50g', price: 600.00 },
+                                { weight: '100g', price: 1100.00 },
+                            ]
+                        },
+                        {
+                            id: 'COCONUT’Z 🥥🌴',
+                            name: 'COCONUT’Z (CNZ) 🥥🌴',
+                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
+                            promoEligible: true,
+                            type: 'PLASMASTATIC ⚡️',
+                            image: 'ProductCNZ.jpg',
+                            video: 'VideoCNZ.mp4',
+                            description: '🥥 <b>DOUCEUR DES ÎLES</b> 🌴\n\nDes notes crémeuses et exotiques de noix de coco. Une extraction Plasmastatic d\'une finesse rare.\n\n⚡️ <i>Voyage immédiat. Effet apaisant et anti-stress.</i>',
+                            tarifs: [
+                                { weight: '5g', price: 80.00 },
+                                { weight: '10g', price: 150.00 },
+                                { weight: '25g', price: 320.00 },
+                                { weight: '50g', price: 600.00 },
+                                { weight: '100g', price: 1100.00 },
+                            ]
+                        },
+                        {
+                            id: 'MIMOZZ x BANANA 🍋‍🟩🍌',
+                            name: 'MIMOZZ x BANANA 🍋‍🟩🍌',
+                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
+                            promoEligible: true,
+                            type: 'PLASMASTATIC ⚡️',
+                            image: 'ProductMZB.jpg',
+                            video: 'VideoMZB.mp4',
+                            description: '🍌 <b>COCKTAIL PÉTILLANT</b> 🍋‍🟩\n\nUn mix effervescent d\'agrumes et de banane sucrée. Un profil terpénique vibrant et unique.\n\n⚡️ <i>Stimulant, parfait pour rester créatif et de bonne humeur.</i>',
+                            tarifs: [
+                                { weight: '5g', price: 80.00 },
+                                { weight: '10g', price: 150.00 },
+                                { weight: '25g', price: 320.00 },
+                                { weight: '50g', price: 600.00 },
+                                { weight: '100g', price: 1100.00 },
+                            ]
+                        }
+                    ]
                 }
             ]
         },
@@ -589,6 +733,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // --- NAVIGATION ---
     function showPage(pageId) {
+              // 👇 AJOUT STRATÉGIQUE : Coupe toutes les vidéos instantanément au changement de page
+              document.querySelectorAll('video').forEach(video => {
+                video.pause();
+            });
+            
         pages.forEach(p => p.classList.remove('active'));
         const page = document.getElementById(pageId);
         if (page) {
