@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             name: 'POTATO PRINCIPAL 🥔',
-            url: 'https://tutuduanyu.org/thegazdoggy330',
+            url: 'https://duanym138.org/thegazdoggy330',
             icon: '#icon-potato',
             id: 'potato-main',
             className: 'potato-main',
@@ -52,6 +52,81 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // --- DONNÉES DE L'APPLICATION (NOUVELLE STRUCTURE) ---
     const appData = [
+        // --- Catégorie 0: PACKS PROMO ---
+        {
+            id: 'PackPromo',
+            name: '📣 Pack PROMO 📣',
+            farm: '',
+            type: 'PackPromo',
+            quality: '📣 Pack PROMO 📣',
+            image: 'CategPromo.jpg',
+            farms: [
+                {
+                    id: 'PACKS_DISPO',
+                    name: '🎁 NOS PACKS DISPONIBLES 🎁',
+                    image: '', 
+                    badgeText: '4 packs',
+                    products: [
+                        {
+                            id: 'PACK_PLATINUM',
+                            name: '📀🔥 PACK PLATINUM',
+                            farm: 'LE COMPLET 😎💎',
+                            promoEligible: false,
+                            type: 'Pack',
+                            useSmallText: true,
+                            image: '', // Pas d'image
+                            video: '',
+                            description: '<b>LE PACK ULTIME 👑</b>\n\n• 10G PLASMASTATIC (Au choix) ⚡️\n• 10G FROZEN SIFT (Au choix) 🧊\n• 25G 120U PREMIUM (Au choix) 💣\n• 15G WEED CALI CANADA 🍁\n• 1 VAPE CHOICES LAB 2G 💨 <b>OU</b> 1 SERINGUE DELTA CORP 💉\n\n<i>💬 Précise tes choix exacts en message privé lors de la confirmation de commande.</i>',
+                            tarifs: [
+                                { weight: '1 PACK', price: 590.00 }
+                            ]
+                        },
+                        {
+                            id: 'PACK_GOLD',
+                            name: '🥇✨ PACK GOLD',
+                            farm: 'LE SPÉCIALISTE 😎',
+                            promoEligible: false,
+                            type: 'Pack',
+                            useSmallText: true,
+                            image: '', // Pas d'image
+                            video: '',
+                            description: '<b>POUR LES CONNAISSEURS 🥇</b>\n\n• 10G PLASMASTATIC (Au choix) ⚡️\n• 10G 120U PREMIUM (Au choix) 💣\n• 25G 90U PREMIUM (Au choix) 🔥\n• 1 VAPE CHOICES LAB 2G 💨 <b>OU</b> 1 SERINGUE DELTA CORP 💉\n\n<i>💬 Précise tes choix exacts en message privé lors de la confirmation de commande.</i>',
+                            tarifs: [
+                                { weight: '1 PACK', price: 380.00 }
+                            ]
+                        },
+                        {
+                            id: 'PACK_SILVER',
+                            name: '🥈🔥 PACK SILVER',
+                            farm: 'L’ÉQUILIBRE 😌',
+                            promoEligible: false,
+                            type: 'Pack',
+                            useSmallText: true,
+                            image: '', // Pas d'image
+                            video: '',
+                            description: '<b>LE COMBO PARFAIT ⚖️</b>\n\n• 5G FROZEN SIFT (Au choix) 🧊\n• 10G 90U PREMIUM (Au choix) 🔥\n• 10G WEED CALI CANADA 🍁\n• 1 VAPE CHOICES LAB 2G 💨 <b>OU</b> 1 SERINGUE DELTA CORP 💉\n\n<i>💬 Précise tes choix exacts en message privé lors de la confirmation de commande.</i>',
+                            tarifs: [
+                                { weight: '1 PACK', price: 220.00 }
+                            ]
+                        },
+                        {
+                            id: 'PACK_STARTER',
+                            name: '🥉🚀 PACK STARTER',
+                            farm: 'LA DÉCOUVERTE 😏',
+                            promoEligible: false,
+                            type: 'Pack',
+                            useSmallText: true,
+                            image: '', // Pas d'image
+                            video: '',
+                            description: '<b>IDÉAL POUR TESTER 🚀</b>\n\n• 5G 90U PREMIUM (Au choix) 🔥\n• 2G PLASMASTATIC (Au choix) ⚡️\n• 5G WEED CALI CANADA 🍁\n\n<i>💬 Précise tes choix exacts en message privé lors de la confirmation de commande.</i>',
+                            tarifs: [
+                                { weight: '1 PACK', price: 110.00 }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
         // --- Catégorie 1: HASH ---
         {
             id: 'HASH',
@@ -489,55 +564,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: '50g', price: 350.00 },
                                 { weight: '100g', price: 600.00 },
                             ]
-                        },
-                       /*  {
-                            id: 'PINK GASOLINE 💕⛽️',
-                            name: 'PINK GASOLINE 💕⛽️',
-                            farm: 'NO BRAND ™️©️',
-                            promoEligible: true,
-                            type: 'Weed',
-                            image: 'ProductPinkG.png',
-                            video: 'VideoPingG.mov',
-                            description: '',
-                            tarifs: [
-                                { weight: '10g', price: 80.00 },
-                                { weight: '25g', price: 180.00 },
-                                { weight: '50g', price: 350.00 },
-                                { weight: '100g', price: 600.00 },
-                            ]
-                        },
-                        {
-                            id: 'CHAOS CAKE 🍰 ',
-                            name: 'CHAOS CAKE 🍰 ',
-                            farm: 'NO BRAND ™️©️',
-                            promoEligible: true,
-                            type: 'Weed',
-                            image: 'ProductChaos.jpg',
-                            video: 'VideoChaos.mov',
-                            description: '',
-                            tarifs: [
-                                { weight: '10g', price: 80.00 },
-                                { weight: '25g', price: 180.00 },
-                                { weight: '50g', price: 350.00 },
-                                { weight: '100g', price: 600.00 },
-                            ]
-                        },
-                        {
-                            id: 'ORANGE CREAMSICLE 🧈🍊',
-                            name: 'ORANGE CREAMSICLE 🧈🍊',
-                            farm: 'NO BRAND ™️©️',
-                            promoEligible: true,
-                            type: 'Weed',
-                            image: 'ProductSicle.jpg',
-                            video: 'VideoSicle.mov',
-                            description: '',
-                            tarifs: [
-                                { weight: '10g', price: 80.00 },
-                                { weight: '25g', price: 180.00 },
-                                { weight: '50g', price: 350.00 },
-                                { weight: '100g', price: 600.00 },
-                            ]
-                        } */
+                        }
                     ]
                 }
             ]
@@ -733,10 +760,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // --- NAVIGATION ---
     function showPage(pageId) {
-              // 👇 AJOUT STRATÉGIQUE : Coupe toutes les vidéos instantanément au changement de page
-              document.querySelectorAll('video').forEach(video => {
-                video.pause();
-            });
+        // Coupe toutes les vidéos instantanément au changement de page
+        document.querySelectorAll('video').forEach(video => {
+            video.pause();
+        });
             
         pages.forEach(p => p.classList.remove('active'));
         const page = document.getElementById(pageId);
@@ -845,7 +872,13 @@ document.addEventListener('DOMContentLoaded', function () {
             searchFilterWrapper.style.display = 'flex';
             farmFilterWrapper.style.display = 'none';
             qualityFilterWrapper.style.display = 'none';
-            productListContainer.style.gridTemplateColumns = 'repeat(2, 1fr)';
+            
+            // LIGNE AJOUTÉE ICI : On met les packs sur 1 colonne, le reste sur 2
+            if (currentCategoryId === 'PackPromo') {
+                productListContainer.style.gridTemplateColumns = 'repeat(1, 1fr)';
+            } else {
+                productListContainer.style.gridTemplateColumns = 'repeat(2, 1fr)';
+            }
 
             const category = appData.find(c => c.id === currentCategoryId);
             const backButton = document.createElement('button');
@@ -913,13 +946,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         else {
             allProducts = category.farms.flatMap(farm => farm.products);
-            const backButton = document.createElement('button');
-            backButton.className = 'back-to-categories-btn';
-            backButton.innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg> ${category.name}`;
-            backButton.style.cssText = `background: linear-gradient(180deg, black, transparent); border-bottom: 2px solid #ca351d; border-top: none; border-left: none; border-right: none; color: white; padding: 10px 15px; border-radius: 10px; font-size: 1.1rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 10px; width: 100%; box-sizing: border-box; margin-top: 3vh; font-family: Copperplate;`;
-
-            const existingBtn = filterContainer.querySelector('.back-to-categories-btn');
-            if (!existingBtn) filterContainer.prepend(backButton);
+            // On ne met pas le bouton retour ici car il est géré dans renderHomePage
         }
 
         if (!allProducts || allProducts.length === 0) {
@@ -957,13 +984,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
 
                 let flagHTML = product.flag ? `<span class="product-flag">${product.flag}</span>` : '';
+                
+                // LIGNE AJOUTÉE ICI : On affiche l'image QUE si elle n'est pas vide
+                let imgHTML = product.image ? `<img src="${product.image}" alt="${product.name}">` : '';
 
                 card.innerHTML = `
-                <img src="${product.image}" alt="${product.name}">
-                <div class="info">
-                    <div class="name">${product.name} ${flagHTML}</div>
-                    <div class="farm">${product.farm}</div>
-                    <div class="price">${typeof product.tarifs[0].price === 'number' ? product.tarifs[0].price.toFixed(2) + '€' : product.tarifs[0].price}</div>
+                ${imgHTML}
+                <div class="info" style="${!product.image ? '' : ''}">
+                    <div class="name" style="${!product.image ? 'font-size: 1.2rem;' : ''}">${product.name} ${flagHTML}</div>
+                    <div class="farm" style="${!product.image ? 'font-size: 1rem; margin-bottom: 10px;' : ''}">${product.farm}</div>
+                    <div class="price" style="${!product.image ? 'font-size: 1.2rem; color: #ca351d;' : ''}">${typeof product.tarifs[0].price === 'number' ? product.tarifs[0].price.toFixed(2) + '€' : product.tarifs[0].price}</div>
                 </div>
             `;
             }
@@ -980,7 +1010,6 @@ document.addEventListener('DOMContentLoaded', function () {
         let mediaHTML = '';
 
         if (product.videos && product.videos.length > 0) {
-            // NOUVEAU : CARROUSEL DE VIDÉOS
             const slides = product.videos.map((vid, index) => `
             <div class="carousel-slide">
                 <video class="product-video" src="${vid}" controls playsinline ${index === 0 && product.image ? `poster="${product.image}"` : ''}></video>
@@ -994,7 +1023,6 @@ document.addEventListener('DOMContentLoaded', function () {
             <div class="carousel-hint">↔️ Swipe pour voir les vidéos</div>
         `;
         } else if (product.images && product.images.length > 0) {
-            // CARROUSEL D'IMAGES
             const slides = product.images.map(img => `
             <div class="carousel-slide">
                 <img src="${img}" alt="${product.name}">
@@ -1007,10 +1035,10 @@ document.addEventListener('DOMContentLoaded', function () {
             </div>
             <div class="carousel-hint">↔️ Swipe pour voir les photos</div>
         `;
-        } else {
-            // VIDÉO UNIQUE
+        } else if (product.video || product.image) {
+            // LIGNE AJOUTÉE ICI : Sécurité pour éviter d'afficher une vidéo noire si image/vidéo sont vides (Pack)
             mediaHTML = `
-            <video class="product-video" poster="${product.image}" src="${product.video || ''}" ${product.video ? 'controls playsinline' : ''}></video>
+            <video class="product-video" poster="${product.image || ''}" src="${product.video || ''}" ${product.video ? 'controls playsinline' : ''}></video>
         `;
         }
 
@@ -1052,8 +1080,8 @@ document.addEventListener('DOMContentLoaded', function () {
         pageContent.innerHTML = `
         ${mediaHTML}
         <div id="product-details-content" class="product-details">
-            <div class="name">${product.name}</div>
-            <div class="farm">${product.farm}</div>
+            <div class="name" style="text-align: center;">${product.name}</div>
+            <div class="farm" style="text-align: center;">${product.farm}</div>
             ${descriptionHTML} 
             <h4 class="tarifs-title">💰 Tarifs disponibles :</h4>
             <div class="tarifs-grid-container">
@@ -1076,7 +1104,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         cartContainer.innerHTML = cart.map(item => `
             <div class="cart-item">
-                <img src="${item.image}" alt="${item.name}">
+                <img src="${item.image || ''}" alt="${item.name}">
                 <div class="item-details">
                     <div class="name">${item.name}</div>
                     <div class="gram" >${item.weight} - ${item.unitPrice.toFixed(2)}€</div>
@@ -1135,7 +1163,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const itemsList = document.getElementById('confirmation-items-list');
         itemsList.innerHTML = cart.map((item, index) => `
              <div class="cart-item">
-                <img src="${item.image}" alt="${item.name}">
+                <img src="${item.image || ''}" alt="${item.name}">
                 <div class="item-details">
                     <div>${index + 1}. ${item.name}</div>
                     <div>Quantité: ${item.quantity}x ${item.weight}</div>
@@ -1400,11 +1428,18 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
+        // LIGNE MODIFIÉE ICI : Le cœur de l'interception des packs
         const categoryCard = target.closest('.category-card');
         if (categoryCard) {
-            currentView = 'farms';
-
             currentCategoryId = categoryCard.dataset.categoryId;
+            
+            if (currentCategoryId === 'PackPromo') {
+                currentView = 'products'; // On va direct aux produits
+                currentFarmId = null; // On force l'affichage de tous les produits de la catégorie
+            } else {
+                currentView = 'farms'; // Comportement classique
+            }
+
             currentFilters.searchTerm = '';
             document.getElementById('search-filter').value = '';
             renderHomePage();
