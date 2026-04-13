@@ -347,14 +347,31 @@ document.addEventListener('DOMContentLoaded', function () {
                     badgeText: '8 produits',
                     products: [
                         {
-                            id: 'GRAPE PIZZA 🍕🍇',
-                            name: 'GRAPE PIZZA 🍕🍇',
-                            farm: 'TARIFA GOLD 🇲🇦 🚤',
+                            id: 'HASH BURGER 🍔',
+                            name: 'HASH BURGER 🍔',
+                            farm: 'GAZ SÉLECTION 🇲🇦⛰️',
                             promoEligible: true,
                             type: 'PLASMASTATIC ⚡️',
-                            image: 'ProductGrapeP.jpg',
-                            video: 'VideoGrapeP.mp4',
-                            description: '🍕 <b>LA RECETTE SECRÈTE</b> 🍇\n\nUn profil "Savory & Sweet". La rondeur du raisin frappée par des notes umami et funky incroyables.\n\n🥇 <i>Tarifa Gold Exclusive. Frappe monumentale, réservée à l\'élite.</i>',
+                            image: 'ProductHxB.jpg',
+                            video: 'VideoHxB.mp4',
+                            description: '',
+                            tarifs: [
+                                { weight: '5g', price: 90.00 },
+                                { weight: '10g', price: 170.00 },
+                                { weight: '25g', price: 350.00 },
+                                { weight: '50g', price: 650.00 },
+                                { weight: '100g', price: 1200.00 },
+                            ]
+                        },
+                        {
+                            id: 'GSUPER LEMON HAZE 🍋',
+                            name: 'GSUPER LEMON HAZE 🍋',
+                            farm: 'GAZ SÉLECTION 🇲🇦⛰️',
+                            promoEligible: true,
+                            type: 'PLASMASTATIC ⚡️',
+                            image: 'ProductSLH.jpg',
+                            video: 'VideoSLH.mp4',
+                            description: '',
                             tarifs: [
                                 { weight: '5g', price: 90.00 },
                                 { weight: '10g', price: 170.00 },
@@ -482,6 +499,105 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: '100g', price: 1100.00 },
                             ]
                         }
+                    ]
+                },
+                {
+                    id: 'FRESH FROZEN',
+                    name: '💎 FRESH FROZEN 💎',
+                    image: 'CategHash.png',
+                    badgeText: '5 produits',
+                    products: [
+                         {
+                            id: 'SUPER BOOF x LEMON PAPAYA 🍋‍🟩🥭',
+                            name: 'SUPER BOOF x LEMON PAPAYA 🍋‍🟩🥭',
+                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
+                            promoEligible: true,
+                            type: 'FRESH FROZEN',
+                            image: 'ProductLP.jpg',
+                            video: 'VideoLP.mp4',
+                            description: '',
+                            tarifs: [
+                                { weight: '10g', price: 80.00 },
+                                { weight: '25g', price: 150.00 },
+                                { weight: '50g', price: 250.00 },
+                                { weight: '100g', price: 480.00 },
+                                { weight: '200g', price: 900.00 },
+                                { weight: 'Pour+', price: 'En Privé 🤫' },
+                            ]
+                        },
+                         {
+                            id: 'TROPICAL ODV 🌴🍹',
+                            name: 'TROPICAL ODV 🌴🍹',
+                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
+                            promoEligible: true,
+                            type: 'FRESH FROZEN',
+                            image: 'ProductODV.jpg',
+                            video: 'VideoODV.mp4',
+                            description: '',
+                            tarifs: [
+                                { weight: '10g', price: 80.00 },
+                                { weight: '25g', price: 150.00 },
+                                { weight: '50g', price: 250.00 },
+                                { weight: '100g', price: 480.00 },
+                                { weight: '200g', price: 900.00 },
+                                { weight: 'Pour+', price: 'En Privé 🤫' },
+                            ]
+                        },
+                         {
+                            id: 'FORBIDDEN FRUIT X FRUIT JOY 🍭🍉🍇🍓',
+                            name: 'FORBIDDEN FRUIT X FRUIT JOY 🍭🍉🍇🍓',
+                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
+                            promoEligible: true,
+                            type: 'FRESH FROZEN',
+                            image: 'ProductJF.jpg',
+                            video: 'VideoFJ.mp4',
+                            description: '',
+                            tarifs: [
+                                { weight: '10g', price: 80.00 },
+                                { weight: '25g', price: 150.00 },
+                                { weight: '50g', price: 250.00 },
+                                { weight: '100g', price: 480.00 },
+                                { weight: '200g', price: 900.00 },
+                                { weight: 'Pour+', price: 'En Privé 🤫' },
+                            ]
+                        },
+                         {
+                            id: 'FORBIDDEN FRUIT X GARLIC COCKTAIL 🧄🍉🍓',
+                            name: 'FORBIDDEN FRUIT X GARLIC COCKTAIL 🧄🍉🍓',
+                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
+                            promoEligible: true,
+                            type: 'FRESH FROZEN',
+                            image: 'ProductFF.jpg',
+                            video: 'VideoFF.mp4',
+                            description: '',
+                            tarifs: [
+                                { weight: '10g', price: 80.00 },
+                                { weight: '25g', price: 150.00 },
+                                { weight: '50g', price: 250.00 },
+                                { weight: '100g', price: 480.00 },
+                                { weight: '200g', price: 900.00 },
+                                { weight: 'Pour+', price: 'En Privé 🤫' },
+                            ]
+                        },
+                         {
+                            id: 'GRAPPE GASOLINE ⛽️ 🍇',
+                            name: 'GRAPPE GASOLINE ⛽️ 🍇',
+                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
+                            promoEligible: true,
+                            type: 'FRESH FROZEN',
+                            image: 'ProductGG.jpg',
+                            video: 'VideoGG.mp4',
+                            description: '',
+                            tarifs: [
+                                { weight: '10g', price: 80.00 },
+                                { weight: '25g', price: 150.00 },
+                                { weight: '50g', price: 250.00 },
+                                { weight: '100g', price: 480.00 },
+                                { weight: '200g', price: 900.00 },
+                                { weight: 'Pour+', price: 'En Privé 🤫' },
+                            ]
+                        },
+                        
                     ]
                 }
             ]
