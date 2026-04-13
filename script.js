@@ -508,6 +508,23 @@ document.addEventListener('DOMContentLoaded', function () {
                     badgeText: '5 produits',
                     products: [
                          {
+                            id: 'SUPER BOOF x CHERRY🍋 🍒',
+                            name: 'SUPER BOOF x CHERRY🍋 🍒',
+                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
+                            promoEligible: true,
+                            type: 'FRESH FROZEN',
+                            image: 'ProductSC.jpg',
+                            video: 'VideoSC.mp4',
+                            description: '',
+                            tarifs: [
+                                { weight: '5g', price: 70.00 },
+                                { weight: '10g', price: 130.00 },
+                                { weight: '25g', price: 260.00 },
+                                { weight: '50g', price: 480.00 },
+                                { weight: '100g', price: 900.00 },
+                            ]
+                        },
+                         {
                             id: 'SUPER BOOF x LEMON PAPAYA 🍋‍🟩🥭',
                             name: 'SUPER BOOF x LEMON PAPAYA 🍋‍🟩🥭',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
@@ -517,12 +534,11 @@ document.addEventListener('DOMContentLoaded', function () {
                             video: 'VideoLP.mp4',
                             description: '',
                             tarifs: [
-                                { weight: '10g', price: 80.00 },
-                                { weight: '25g', price: 150.00 },
-                                { weight: '50g', price: 250.00 },
-                                { weight: '100g', price: 480.00 },
-                                { weight: '200g', price: 900.00 },
-                                { weight: 'Pour+', price: 'En Privé 🤫' },
+                                { weight: '5g', price: 70.00 },
+                                { weight: '10g', price: 130.00 },
+                                { weight: '25g', price: 260.00 },
+                                { weight: '50g', price: 480.00 },
+                                { weight: '100g', price: 900.00 },
                             ]
                         },
                          {
@@ -535,12 +551,11 @@ document.addEventListener('DOMContentLoaded', function () {
                             video: 'VideoODV.mp4',
                             description: '',
                             tarifs: [
-                                { weight: '10g', price: 80.00 },
-                                { weight: '25g', price: 150.00 },
-                                { weight: '50g', price: 250.00 },
-                                { weight: '100g', price: 480.00 },
-                                { weight: '200g', price: 900.00 },
-                                { weight: 'Pour+', price: 'En Privé 🤫' },
+                                { weight: '5g', price: 70.00 },
+                                { weight: '10g', price: 130.00 },
+                                { weight: '25g', price: 260.00 },
+                                { weight: '50g', price: 480.00 },
+                                { weight: '100g', price: 900.00 },
                             ]
                         },
                          {
@@ -553,12 +568,11 @@ document.addEventListener('DOMContentLoaded', function () {
                             video: 'VideoFJ.mp4',
                             description: '',
                             tarifs: [
-                                { weight: '10g', price: 80.00 },
-                                { weight: '25g', price: 150.00 },
-                                { weight: '50g', price: 250.00 },
-                                { weight: '100g', price: 480.00 },
-                                { weight: '200g', price: 900.00 },
-                                { weight: 'Pour+', price: 'En Privé 🤫' },
+                                { weight: '5g', price: 70.00 },
+                                { weight: '10g', price: 130.00 },
+                                { weight: '25g', price: 260.00 },
+                                { weight: '50g', price: 480.00 },
+                                { weight: '100g', price: 900.00 },
                             ]
                         },
                          {
@@ -571,12 +585,11 @@ document.addEventListener('DOMContentLoaded', function () {
                             video: 'VideoFF.mp4',
                             description: '',
                             tarifs: [
-                                { weight: '10g', price: 80.00 },
-                                { weight: '25g', price: 150.00 },
-                                { weight: '50g', price: 250.00 },
-                                { weight: '100g', price: 480.00 },
-                                { weight: '200g', price: 900.00 },
-                                { weight: 'Pour+', price: 'En Privé 🤫' },
+                                { weight: '5g', price: 70.00 },
+                                { weight: '10g', price: 130.00 },
+                                { weight: '25g', price: 260.00 },
+                                { weight: '50g', price: 480.00 },
+                                { weight: '100g', price: 900.00 },
                             ]
                         },
                          {
@@ -589,12 +602,11 @@ document.addEventListener('DOMContentLoaded', function () {
                             video: 'VideoGG.mp4',
                             description: '',
                             tarifs: [
-                                { weight: '10g', price: 80.00 },
-                                { weight: '25g', price: 150.00 },
-                                { weight: '50g', price: 250.00 },
-                                { weight: '100g', price: 480.00 },
-                                { weight: '200g', price: 900.00 },
-                                { weight: 'Pour+', price: 'En Privé 🤫' },
+                                { weight: '5g', price: 70.00 },
+                                { weight: '10g', price: 130.00 },
+                                { weight: '25g', price: 260.00 },
+                                { weight: '50g', price: 480.00 },
+                                { weight: '100g', price: 900.00 },
                             ]
                         },
                         
