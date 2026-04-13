@@ -564,7 +564,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
                             type: 'FRESH FROZEN',
-                            image: 'ProductJF.jpg',
+                            image: 'ProductFJ.jpg',
                             video: 'VideoFJ.mp4',
                             description: '',
                             tarifs: [
