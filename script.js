@@ -280,7 +280,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             video: 'VideoSP.mov',
                             description: '🌺 <b>BOUQUET FLORAL & GAZ</b> 🌺\n\nTerpènes complexes, agrumes rouges et terre humide. Conservation à froid parfaite.\n\n🚀 <i>Frappe instantanée. Une vraie dinguerie.</i>',
                             tarifs: [
-                                { weight: '5g', price: 70.00 },
+                                { weight: '5g', price: 60.00 },
                                 { weight: '10g', price: 100.00 },
                                 { weight: '25g', price: 220.00 },
                                 { weight: '50g', price: 400.00 },
@@ -297,7 +297,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             video: 'VideoPF.mp4',
                             description: '🍹 <b>SMOOTHIE GLACÉ</b> 🍹\n\nLe vrai goût de la papaye mûre sortie du congélo. Fresh Frozen de très haute volée.\n\n🥶 <i>Saveurs intactes, fumée épaisse, effet très lourd.</i>',
                             tarifs: [
-                                { weight: '5g', price: 70.00 },
+                                { weight: '5g', price: 60.00 },
                                 { weight: '10g', price: 100.00 },
                                 { weight: '25g', price: 220.00 },
                                 { weight: '50g', price: 400.00 },
@@ -314,7 +314,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             video: 'VideoMB.mp4',
                             description: '🧠 <b>LAVAGE DE CERVEAU</b> 🧠\n\nArômes de caramel vanillé et de poivre mentholé. Profil extrêmement rare.\n\n🛌 <i>Effet canapé garanti. Pour les fins de soirée.</i>',
                             tarifs: [
-                                { weight: '5g', price: 70.00 },
+                                { weight: '5g', price: 60.00 },
                                 { weight: '10g', price: 100.00 },
                                 { weight: '25g', price: 220.00 },
                                 { weight: '50g', price: 400.00 },
@@ -331,7 +331,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             video: 'VideoDB.mp4',
                             description: '🍔 <b>LE FAST FOOD</b> 🍔\n\nNotes salées, épicées et umami, avec un fond gaz très puissant.\n\n🔥 <i>Ça sent la friture et le gasoil. Un OVNI terpénique.</i>',
                             tarifs: [
-                                { weight: '5g', price: 70.00 },
+                                { weight: '5g', price: 60.00 },
                                 { weight: '10g', price: 100.00 },
                                 { weight: '25g', price: 220.00 },
                                 { weight: '50g', price: 400.00 },
@@ -354,13 +354,12 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: 'PLASMASTATIC ⚡️',
                             image: 'ProductHxB.jpg',
                             video: 'VideoHxB.mp4',
-                            description: '',
-                            tarifs: [
-                                { weight: '5g', price: 90.00 },
-                                { weight: '10g', price: 170.00 },
-                                { weight: '25g', price: 350.00 },
-                                { weight: '50g', price: 650.00 },
-                                { weight: '100g', price: 1200.00 },
+                            description: '🍔 <b>FAST FOOD TERPS</b> 🍔\n\nDes notes umami, salées et épicées avec un fond gaz omniprésent. Une texture Plasmastatic incroyable.\n\n🔥 <i>Un goût unique de friture et de gasoil. Effet très lourd.</i>',                            tarifs: [
+                                { weight: '5g', price: 80.00 },
+                                { weight: '10g', price: 150.00 },
+                                { weight: '25g', price: 320.00 },
+                                { weight: '50g', price: 600.00 },
+                                { weight: '100g', price: 1100.00 },
                             ]
                         },
                         {
@@ -371,13 +370,12 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: 'PLASMASTATIC ⚡️',
                             image: 'ProductSLH.jpg',
                             video: 'VideoSLH.mp4',
-                            description: '',
-                            tarifs: [
-                                { weight: '5g', price: 90.00 },
-                                { weight: '10g', price: 170.00 },
-                                { weight: '25g', price: 350.00 },
-                                { weight: '50g', price: 650.00 },
-                                { weight: '100g', price: 1200.00 },
+                            description: '🍋 <b>CITRON HAUTE TENSION</b> ⚡️\n\nLe grand classique Haze revisité en extraction Plasmastatic. Un citron jaune électrique et piquant.\n\n⚡️ <i>Coup de boost immédiat. High cérébral très clair et créatif.</i>',                            tarifs: [
+                                { weight: '5g', price: 80.00 },
+                                { weight: '10g', price: 150.00 },
+                                { weight: '25g', price: 320.00 },
+                                { weight: '50g', price: 600.00 },
+                                { weight: '100g', price: 1100.00 },
                             ]
                         },
                         {
@@ -507,7 +505,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     image: 'CategHash.png',
                     badgeText: '5 produits',
                     products: [
-                         {
+                        {
                             id: 'SUPER BOOF x CHERRY🍋 🍒',
                             name: 'SUPER BOOF x CHERRY🍋 🍒',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
@@ -515,7 +513,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: 'FRESH FROZEN',
                             image: 'ProductSC.jpg',
                             video: 'VideoSC.mp4',
-                            description: '',
+                            description: '🍒 <b>COCKTAIL DÉTONANT</b> 🍋\n\nL\'acidité piquante du citron rencontre la douceur de la cerise. Une résine glacée gorgée de terpènes.\n\n❄️ <i>Un high joyeux et élévateur. Parfait pour se motiver.</i>',
                             tarifs: [
                                 { weight: '5g', price: 70.00 },
                                 { weight: '10g', price: 130.00 },
@@ -532,7 +530,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: 'FRESH FROZEN',
                             image: 'ProductLP.jpg',
                             video: 'VideoLP.mp4',
-                            description: '',
+                            description: '🥭 <b>SALADE TROPICALE</b> 🍋‍🟩\n\nLe mix parfait entre la papaye mûre et le zeste de citron vert. Fresh Frozen d\'une pureté absolue.\n\n🏝️ <i>Détente exotique. Une fumée épaisse et ultra-douce.</i>',
                             tarifs: [
                                 { weight: '5g', price: 70.00 },
                                 { weight: '10g', price: 130.00 },
@@ -549,7 +547,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: 'FRESH FROZEN',
                             image: 'ProductODV.jpg',
                             video: 'VideoODV.mp4',
-                            description: '',
+                            description: '🍹 <b>NECTAR DES ÎLES</b> 🌴\n\nUn jus de fruits exotiques concentré en résine. Des arômes très puissants d\'ananas et de mangue.\n\n☀️ <i>Voyage direct sous les tropiques. Effet relaxant et apaisant.</i>',
                             tarifs: [
                                 { weight: '5g', price: 70.00 },
                                 { weight: '10g', price: 130.00 },
@@ -566,7 +564,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: 'FRESH FROZEN',
                             image: 'ProductFJ.jpg',
                             video: 'VideoFJ.mp4',
-                            description: '',
+                            description: '🍇 <b>CANDY SHOP</b> 🍭\n\nL\'avalanche de fruits rouges et de bonbons. Un profil terpénique extrêmement riche et complexe.\n\n🍓 <i>Une claque gustative. Effet stone profond et gourmand.</i>',
                             tarifs: [
                                 { weight: '5g', price: 70.00 },
                                 { weight: '10g', price: 130.00 },
@@ -583,7 +581,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: 'FRESH FROZEN',
                             image: 'ProductFF.jpg',
                             video: 'VideoFF.mp4',
-                            description: '',
+                            description: '🧄 <b>SAVORY & SWEET</b> 🍓\n\nLe croisement improbable : l\'umami piquant de l\'ail adouci par un cocktail de fruits rouges.\n\n💥 <i>Un profil rare pour les vrais connaisseurs. Hit massif.</i>',
                             tarifs: [
                                 { weight: '5g', price: 70.00 },
                                 { weight: '10g', price: 130.00 },
@@ -600,7 +598,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: 'FRESH FROZEN',
                             image: 'ProductGG.jpg',
                             video: 'VideoGG.mp4',
-                            description: '',
+                            description: '⛽️ <b>PUR CARBURANT</b> 🍇\n\nL\'odeur d\'essence pure mélangée à du sirop de raisin. Ça pique le nez dès l\'ouverture.\n\n🚀 <i>Une puissance phénoménale. K.O. technique assuré.</i>',
                             tarifs: [
                                 { weight: '5g', price: 70.00 },
                                 { weight: '10g', price: 130.00 },
@@ -608,7 +606,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: '50g', price: 480.00 },
                                 { weight: '100g', price: 900.00 },
                             ]
-                        },
+                        }
                         
                     ]
                 }
