@@ -144,14 +144,14 @@ document.addEventListener('DOMContentLoaded', function () {
                     badgeText: '5 produits',
                     products: [
                         {
-                            id: 'BISCOTTI 🍪',
-                            name: 'BISCOTTI 🍪',
+                            id: 'APRICOT 🍑',
+                            name: 'APRICOT 🍑',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
                             type: 'thegaz',
-                            image: 'ProductBis.jpg',
-                            video: 'VideoBis.mp4',
-                            description: '🍪 <b>DOUCEUR ITALIENNE</b> 🍪\n\nUn arôme gourmand de biscuit chaud avec des notes terreuses profondes.\n\n☕ <i>Idéal avec un café. Effet relaxant et euphorique.</i>',
+                            image: 'ProductAP.jpg',
+                            video: 'VideoAP.mp4',
+                            description: '🍑 <b>NECTAR D\'ABRICOT</b> 🍑\n\nUne texture grasse et un parfum explosif d\'abricot mûr gorgé de soleil. Un profil fruité d\'une rare intensité.\n\n☀️ <i>High chaleureux et relaxant. Idéal pour décompresser.</i>',
                             tarifs: [
                                 { weight: '10g', price: 70.00 },
                                 { weight: '25g', price: 130.00 },
@@ -163,14 +163,14 @@ document.addEventListener('DOMContentLoaded', function () {
                             ]
                         },
                         {
-                            id: 'ZILLIONES 💵',
-                            name: 'ZILLIONES 💵',
+                            id: 'GUSHER MINTZ 🍭🍬',
+                            name: 'GUSHER MINTZ 🍭🍬',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
                             type: 'thegaz',
-                            image: 'ProductZls.jpg',
-                            video: 'VideoZls.mp4',
-                            description: '💵 <b>LE BRAQUAGE</b> 💵\n\nUne pépite rare. Profil gazeux et crémeux qui tabasse le palais.\n\n🏦 <i>Gros effet stone. Réservé aux braqueurs de terps.</i>',
+                            image: 'ProductGM.jpg',
+                            video: 'VideoGM.mp4',
+                            description: '🍬 <b>GIVRE SUCRÉ</b> 🍭\n\nLe combo parfait : l\'explosion sucrée du bonbon fruit rouge percutée par une vague mentholée glaciale.\n\n❄️ <i>Frappe cérébrale nette suivie d\'une grosse détente physique.</i>',
                             tarifs: [
                                 { weight: '10g', price: 70.00 },
                                 { weight: '25g', price: 130.00 },
@@ -182,14 +182,33 @@ document.addEventListener('DOMContentLoaded', function () {
                             ]
                         },
                         {
-                            id: 'MIMOSA EVO 🍋',
-                            name: 'MIMOSA EVO 🍋',
+                            id: 'APPLE BANANA 🍏🍌',
+                            name: 'APPLE BANANA 🍏🍌',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
                             type: 'thegaz',
-                            image: 'ProductMie.jpg',
-                            video: 'VideoMie.mp4',
-                            description: '🍋 <b>RÉVEIL ACIDULÉ</b> 🍋\n\nL\'écorce de citron jaune fraîchement pressée. Texture sablonneuse et claire.\n\n⚡ <i>Coup de fouet cérébral garanti. Parfait pour la journée.</i>',
+                            image: 'ProductAB.jpg',
+                            video: 'VideoAB.mp4',
+                            description: '🍏 <b>SALADE ACIDE & DOUCE</b> 🍌\n\nL\'acidité piquante de la pomme verte adoucie par la rondeur crémeuse de la banane. Un terpène complexe et addictif.\n\n⚡️ <i>Effet joyeux, stimulant et créatif.</i>',
+                            tarifs: [
+                                { weight: '10g', price: 70.00 },
+                                { weight: '25g', price: 130.00 },
+                                { weight: '50g', price: 200.00 },
+                                { weight: '100g', price: 380.00 },
+                                { weight: '200g', price: 700.00 },
+                                { weight: '500g', price: 1700.00 },
+                                { weight: 'Pour+', price: 'En Privé 🤫' },
+                            ]
+                        },
+                        {
+                            id: 'SOUR DIESEL ⛽️',
+                            name: 'SOUR DIESEL ⛽️',
+                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
+                            promoEligible: true,
+                            type: 'thegaz',
+                            image: 'ProductSD.jpg',
+                            video: 'VideoSD.mp4',
+                            description: '⛽️ <b>LA LÉGENDE DU GAZ</b> ⛽️\n\nL\'incontournable goût Diesel : piquant, terreux et chimique à souhait. Ça prend à la gorge instantanément.\n\n🔋 <i>Énergisant et ultra-cérébral. Le choix des puristes.</i>',
                             tarifs: [
                                 { weight: '10g', price: 70.00 },
                                 { weight: '25g', price: 130.00 },
