@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             name: 'PAGE INSTAGRAM 📸',
-            url: 'https://www.instagram.com/thegazdoggy1',
+            url: 'https://www.instagram.com/the_gaz_doggy?igsh=MWszcGI3MjZibnl2Nw%3D%3D&utm_source=qr',
             icon: '#icon-instagram',
             id: 'insta-main',
             className: 'insta-main',
