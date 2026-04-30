@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // --- DONNÉES DE L'APPLICATION (NOUVELLE STRUCTURE) ---
     const appData = [
         // --- Catégorie 0: PACKS PROMO ---
-        {
+      /*   {
             id: 'PackPromo',
             name: '📣 Pack PROMO 📣',
             farm: '',
@@ -126,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     ]
                 }
             ]
-        },
+        }, */
         // --- Catégorie 1: HASH ---
         {
             id: 'HASH',
