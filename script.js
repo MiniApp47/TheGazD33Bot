@@ -853,6 +853,30 @@ document.addEventListener('DOMContentLoaded', function () {
                             ]
                         },
                     ]
+                },
+                {
+                    id: 'SIROP THC 🍹',
+                    name: 'SIROP THC 🍹',
+                    image: '',
+                    badgeText: '0 produits',
+                    products: [
+                        {
+                            id: 'GRENADINE 🍓🍒',
+                            name: 'GRENADINE 🍓🍒',
+                            farm: 'DELTA CORP ®️ 🇺🇸',
+                            promoEligible: true,
+                            type: 'Weed',
+                            useSmallText: true,
+                            image: 'ProductSir.png',
+                            video: '',
+                            description: 'SIROP THC 🍷🍸🍹\n 500MG \n (A diluer avec sprite ou eau )',
+                            tarifs: [
+                                { weight: '1 BOUTEILLE', price: 50.00 },
+                                { weight: '5 BOUTEILLE', price: 230.00 },
+                                { weight: '10 BOUTEILLE', price: 400.00 },
+                            ]
+                        },
+                    ]
                 }
             ]
         }
