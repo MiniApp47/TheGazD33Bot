@@ -289,7 +289,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     image: 'CategHash.png',
                     badgeText: '5 produits',
                     products: [
-                        {
+                       /*  {
                             id: 'SUPER BOOF 🌺',
                             name: 'SUPER BOOF 🌺',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
@@ -356,7 +356,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: '50g', price: 400.00 },
                                 { weight: '100g', price: 700.00 },
                             ]
-                        }
+                        } */
                     ]
                 },
                 {
