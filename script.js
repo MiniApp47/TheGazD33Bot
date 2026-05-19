@@ -281,7 +281,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: 'Pour+', price: 'En Privé 🤫' },
                             ]
                         },
-                         {
+                         /* {
                             id: 'PURPULE PUNCH 🥊',
                             name: 'PURPULE PUNCH 🥊',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
@@ -334,7 +334,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: '200g', price: 900.00 },
                                 { weight: 'Pour+', price: 'En Privé 🤫' },
                             ]
-                        }
+                        } */
                     ]
                 },
                 {
