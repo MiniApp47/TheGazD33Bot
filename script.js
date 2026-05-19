@@ -460,7 +460,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             farm: 'GAZ SÉLECTION 🇲🇦⛰️',
                             promoEligible: true,
                             type: 'PLASMASTATIC ⚡️ FROZEN',
-                            image: 'ProductHxB.jpg',
+                            image: 'ProductHxb.jpg',
                             video: 'VideoHxB.mp4',
                             description: '🍔 <b>FAST FOOD TERPS</b> 🍔\n\nDes notes umami, salées et épicées avec un fond gaz omniprésent. Une texture Plasmastatic incroyable.\n\n🔥 <i>Un goût unique de friture et de gasoil. Effet très lourd.</i>',                            tarifs: [
                                 { weight: '5g', price: 80.00 },
