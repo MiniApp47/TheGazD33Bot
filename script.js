@@ -227,6 +227,60 @@ document.addEventListener('DOMContentLoaded', function () {
                     image: 'CategHash.png',
                     badgeText: '5 produits',
                     products: [
+                        {
+                            id: 'BISCOTTI PAPAY 🍪🥭',
+                            name: 'BISCOTTI PAPAY 🍪🥭',
+                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
+                            promoEligible: true,
+                            type: '120u PREMIUM',
+                            image: 'ProductBP2.jpg',
+                            video: 'VideoBP2.mp4',
+                            description: '🍪 <b>DESSERT TROPICAL</b> 🥭\n\nLe croisement parfait entre la pâte à biscuit sucrée et la douceur juteuse de la papaye. Un 120u gras et mousseux.\n\n🏝️ <i>High corporel très relaxant. L\'idéal pour chiller le soir.</i>',
+                            tarifs: [
+                                { weight: '10g', price: 80.00 },
+                                { weight: '25g', price: 150.00 },
+                                { weight: '50g', price: 250.00 },
+                                { weight: '100g', price: 480.00 },
+                                { weight: '200g', price: 900.00 },
+                                { weight: 'Pour+', price: 'En Privé 🤫' },
+                            ]
+                        },
+                         {
+                            id: 'BLUE LEMON 🍋',
+                            name: 'BLUE LEMON 🍋',
+                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
+                            promoEligible: true,
+                            type: '120u PREMIUM',
+                            image: 'ProductBL2.jpg',
+                            video: 'VideoBL2.mp4',
+                            description: '🫐 <b>LIMONADE GLACÉE</b> 🍋\n\nUne attaque acidulée de citron jaune suivie par la douceur des fruits des bois. Résine très claire et fondante.\n\n⚡️ <i>Effet électrique et stimulant. Parfait pour booster la créativité.</i>',
+                            tarifs: [
+                                { weight: '10g', price: 80.00 },
+                                { weight: '25g', price: 150.00 },
+                                { weight: '50g', price: 250.00 },
+                                { weight: '100g', price: 480.00 },
+                                { weight: '200g', price: 900.00 },
+                                { weight: 'Pour+', price: 'En Privé 🤫' },
+                            ]
+                        },
+                         {
+                            id: 'PINAPPLE PUNCH 🍍👊',
+                            name: 'PINAPPLE PUNCH 🍍👊',
+                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
+                            promoEligible: true,
+                            type: '120u PREMIUM',
+                            image: 'ProductPP2.jpg',
+                            video: 'VideoPP2.mp4',
+                            description: '🍍 <b>UPPERCUT EXOTIQUE</b> 🥊\n\nUn jus d\'ananas concentré en hash. Une odeur sucrée, fruitée et piquante qui envahit la pièce à l\'ouverture.\n\n👊 <i>Frappe lourde et immédiate. Un stone qui détend chaque muscle.</i>',
+                            tarifs: [
+                                { weight: '10g', price: 80.00 },
+                                { weight: '25g', price: 150.00 },
+                                { weight: '50g', price: 250.00 },
+                                { weight: '100g', price: 480.00 },
+                                { weight: '200g', price: 900.00 },
+                                { weight: 'Pour+', price: 'En Privé 🤫' },
+                            ]
+                        },
                          {
                             id: 'PURPULE PUNCH 🥊',
                             name: 'PURPULE PUNCH 🥊',
@@ -284,79 +338,114 @@ document.addEventListener('DOMContentLoaded', function () {
                     ]
                 },
                 {
-                    id: 'SIFT FROZEN',
-                    name: '🧊 FROZEN SIFT 🧊',
+                    id: 'FRESH FROZEN',
+                    name: '💎 FRESH FROZEN 💎',
                     image: 'CategHash.png',
                     badgeText: '5 produits',
                     products: [
-                       /*  {
-                            id: 'SUPER BOOF 🌺',
-                            name: 'SUPER BOOF 🌺',
+                        {
+                            id: 'SUPER BOOF x CHERRY🍋 🍒',
+                            name: 'SUPER BOOF x CHERRY🍋 🍒',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
-                            type: 'FROZEN SIFT',
-                            image: 'ProductSP.jpg',
-                            video: 'VideoSP.mov',
-                            description: '🌺 <b>BOUQUET FLORAL & GAZ</b> 🌺\n\nTerpènes complexes, agrumes rouges et terre humide. Conservation à froid parfaite.\n\n🚀 <i>Frappe instantanée. Une vraie dinguerie.</i>',
+                            type: 'FRESH FROZEN',
+                            image: 'ProductSC.jpg',
+                            video: 'VideoSC.mp4',
+                            description: '🍒 <b>COCKTAIL DÉTONANT</b> 🍋\n\nL\'acidité piquante du citron rencontre la douceur de la cerise. Une résine glacée gorgée de terpènes.\n\n❄️ <i>Un high joyeux et élévateur. Parfait pour se motiver.</i>',
                             tarifs: [
-                                { weight: '5g', price: 60.00 },
-                                { weight: '10g', price: 100.00 },
-                                { weight: '25g', price: 220.00 },
-                                { weight: '50g', price: 400.00 },
-                                { weight: '100g', price: 700.00 },
+                                { weight: '5g', price: 70.00 },
+                                { weight: '10g', price: 120.00 },
+                                { weight: '25g', price: 250.00 },
+                                { weight: '50g', price: 450.00 },
+                                { weight: '100g', price: 800.00 },
                             ]
                         },
-                        {
-                            id: 'PAPAYA FROSTED 🍹',
-                            name: 'PAPAYA FROSTED 🍹',
+                         {
+                            id: 'SUPER BOOF x LEMON PAPAYA 🍋‍🟩🥭',
+                            name: 'SUPER BOOF x LEMON PAPAYA 🍋‍🟩🥭',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
-                            type: 'FROZEN SIFT',
-                            image: 'ProductPF.jpg',
-                            video: 'VideoPF.mp4',
-                            description: '🍹 <b>SMOOTHIE GLACÉ</b> 🍹\n\nLe vrai goût de la papaye mûre sortie du congélo. Fresh Frozen de très haute volée.\n\n🥶 <i>Saveurs intactes, fumée épaisse, effet très lourd.</i>',
+                            type: 'FRESH FROZEN',
+                            image: 'ProductLP.jpg',
+                            video: 'VideoLP.mp4',
+                            description: '🥭 <b>SALADE TROPICALE</b> 🍋‍🟩\n\nLe mix parfait entre la papaye mûre et le zeste de citron vert. Fresh Frozen d\'une pureté absolue.\n\n🏝️ <i>Détente exotique. Une fumée épaisse et ultra-douce.</i>',
                             tarifs: [
-                                { weight: '5g', price: 60.00 },
-                                { weight: '10g', price: 100.00 },
-                                { weight: '25g', price: 220.00 },
-                                { weight: '50g', price: 400.00 },
-                                { weight: '100g', price: 700.00 },
+                                { weight: '5g', price: 70.00 },
+                                { weight: '10g', price: 120.00 },
+                                { weight: '25g', price: 250.00 },
+                                { weight: '50g', price: 450.00 },
+                                { weight: '100g', price: 800.00 },
                             ]
                         },
-                        {
-                            id: 'MENDO BREATH 🧠',
-                            name: 'MENDO BREATH 🧠',
+                         {
+                            id: 'TROPICAL ODV 🌴🍹',
+                            name: 'TROPICAL ODV 🌴🍹',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
-                            type: 'FROZEN SIFT',
-                            image: 'ProductMB.jpg',
-                            video: 'VideoMB.mp4',
-                            description: '🧠 <b>LAVAGE DE CERVEAU</b> 🧠\n\nArômes de caramel vanillé et de poivre mentholé. Profil extrêmement rare.\n\n🛌 <i>Effet canapé garanti. Pour les fins de soirée.</i>',
+                            type: 'FRESH FROZEN',
+                            image: 'ProductODV.jpg',
+                            video: 'VideoODV.mp4',
+                            description: '🍹 <b>NECTAR DES ÎLES</b> 🌴\n\nUn jus de fruits exotiques concentré en résine. Des arômes très puissants d\'ananas et de mangue.\n\n☀️ <i>Voyage direct sous les tropiques. Effet relaxant et apaisant.</i>',
                             tarifs: [
-                                { weight: '5g', price: 60.00 },
-                                { weight: '10g', price: 100.00 },
-                                { weight: '25g', price: 220.00 },
-                                { weight: '50g', price: 400.00 },
-                                { weight: '100g', price: 700.00 },
+                                { weight: '5g', price: 70.00 },
+                                { weight: '10g', price: 120.00 },
+                                { weight: '25g', price: 250.00 },
+                                { weight: '50g', price: 450.00 },
+                                { weight: '100g', price: 800.00 },
                             ]
                         },
-                        {
-                            id: 'DONNY BURGER 🍔',
-                            name: 'DONNY BURGER 🍔',
+                         {
+                            id: 'FORBIDDEN FRUIT X FRUIT JOY 🍭🍉🍇🍓',
+                            name: 'FORBIDDEN FRUIT X FRUIT JOY 🍭🍉🍇🍓',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
-                            type: 'FROZEN SIFT',
-                            image: 'ProductDB.jpg',
-                            video: 'VideoDB.mp4',
-                            description: '🍔 <b>LE FAST FOOD</b> 🍔\n\nNotes salées, épicées et umami, avec un fond gaz très puissant.\n\n🔥 <i>Ça sent la friture et le gasoil. Un OVNI terpénique.</i>',
+                            type: 'FRESH FROZEN',
+                            image: 'ProductFJ.jpg',
+                            video: 'VideoFJ.mp4',
+                            description: '🍇 <b>CANDY SHOP</b> 🍭\n\nL\'avalanche de fruits rouges et de bonbons. Un profil terpénique extrêmement riche et complexe.\n\n🍓 <i>Une claque gustative. Effet stone profond et gourmand.</i>',
                             tarifs: [
-                                { weight: '5g', price: 60.00 },
-                                { weight: '10g', price: 100.00 },
-                                { weight: '25g', price: 220.00 },
-                                { weight: '50g', price: 400.00 },
-                                { weight: '100g', price: 700.00 },
+                                { weight: '5g', price: 70.00 },
+                                { weight: '10g', price: 120.00 },
+                                { weight: '25g', price: 250.00 },
+                                { weight: '50g', price: 450.00 },
+                                { weight: '100g', price: 800.00 },
                             ]
-                        } */
+                        },
+                         {
+                            id: 'FORBIDDEN FRUIT X GARLIC COCKTAIL 🧄🍉🍓',
+                            name: 'FORBIDDEN FRUIT X GARLIC COCKTAIL 🧄🍉🍓',
+                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
+                            promoEligible: true,
+                            type: 'FRESH FROZEN',
+                            image: 'ProductFF.jpg',
+                            video: 'VideoFF.mp4',
+                            description: '🧄 <b>SAVORY & SWEET</b> 🍓\n\nLe croisement improbable : l\'umami piquant de l\'ail adouci par un cocktail de fruits rouges.\n\n💥 <i>Un profil rare pour les vrais connaisseurs. Hit massif.</i>',
+                            tarifs: [
+                                { weight: '5g', price: 70.00 },
+                                { weight: '10g', price: 120.00 },
+                                { weight: '25g', price: 250.00 },
+                                { weight: '50g', price: 450.00 },
+                                { weight: '100g', price: 800.00 },
+                            ]
+                        },
+                         {
+                            id: 'GRAPPE GASOLINE ⛽️ 🍇',
+                            name: 'GRAPPE GASOLINE ⛽️ 🍇',
+                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
+                            promoEligible: true,
+                            type: 'FRESH FROZEN',
+                            image: 'ProductGG.jpg',
+                            video: 'VideoGG.mp4',
+                            description: '⛽️ <b>PUR CARBURANT</b> 🍇\n\nL\'odeur d\'essence pure mélangée à du sirop de raisin. Ça pique le nez dès l\'ouverture.\n\n🚀 <i>Une puissance phénoménale. K.O. technique assuré.</i>',
+                            tarifs: [
+                                { weight: '5g', price: 70.00 },
+                                { weight: '10g', price: 120.00 },
+                                { weight: '25g', price: 250.00 },
+                                { weight: '50g', price: 450.00 },
+                                { weight: '100g', price: 800.00 },
+                            ]
+                        }
+                        
                     ]
                 },
                 {
@@ -518,119 +607,86 @@ document.addEventListener('DOMContentLoaded', function () {
                         }
                     ]
                 },
-                {
-                    id: 'FRESH FROZEN',
-                    name: '💎 FRESH FROZEN 💎',
+                
+            ]
+        },
+
+         /* {
+                    id: 'SIFT FROZEN',
+                    name: '🧊 FROZEN SIFT 🧊',
                     image: 'CategHash.png',
                     badgeText: '5 produits',
                     products: [
                         {
-                            id: 'SUPER BOOF x CHERRY🍋 🍒',
-                            name: 'SUPER BOOF x CHERRY🍋 🍒',
+                            id: 'SUPER BOOF 🌺',
+                            name: 'SUPER BOOF 🌺',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
-                            type: 'FRESH FROZEN',
-                            image: 'ProductSC.jpg',
-                            video: 'VideoSC.mp4',
-                            description: '🍒 <b>COCKTAIL DÉTONANT</b> 🍋\n\nL\'acidité piquante du citron rencontre la douceur de la cerise. Une résine glacée gorgée de terpènes.\n\n❄️ <i>Un high joyeux et élévateur. Parfait pour se motiver.</i>',
+                            type: 'FROZEN SIFT',
+                            image: 'ProductSP.jpg',
+                            video: 'VideoSP.mov',
+                            description: '🌺 <b>BOUQUET FLORAL & GAZ</b> 🌺\n\nTerpènes complexes, agrumes rouges et terre humide. Conservation à froid parfaite.\n\n🚀 <i>Frappe instantanée. Une vraie dinguerie.</i>',
                             tarifs: [
-                                { weight: '5g', price: 70.00 },
-                                { weight: '10g', price: 130.00 },
-                                { weight: '25g', price: 260.00 },
-                                { weight: '50g', price: 480.00 },
-                                { weight: '100g', price: 900.00 },
+                                { weight: '5g', price: 60.00 },
+                                { weight: '10g', price: 100.00 },
+                                { weight: '25g', price: 220.00 },
+                                { weight: '50g', price: 400.00 },
+                                { weight: '100g', price: 700.00 },
                             ]
                         },
-                         {
-                            id: 'SUPER BOOF x LEMON PAPAYA 🍋‍🟩🥭',
-                            name: 'SUPER BOOF x LEMON PAPAYA 🍋‍🟩🥭',
+                        {
+                            id: 'PAPAYA FROSTED 🍹',
+                            name: 'PAPAYA FROSTED 🍹',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
-                            type: 'FRESH FROZEN',
-                            image: 'ProductLP.jpg',
-                            video: 'VideoLP.mp4',
-                            description: '🥭 <b>SALADE TROPICALE</b> 🍋‍🟩\n\nLe mix parfait entre la papaye mûre et le zeste de citron vert. Fresh Frozen d\'une pureté absolue.\n\n🏝️ <i>Détente exotique. Une fumée épaisse et ultra-douce.</i>',
+                            type: 'FROZEN SIFT',
+                            image: 'ProductPF.jpg',
+                            video: 'VideoPF.mp4',
+                            description: '🍹 <b>SMOOTHIE GLACÉ</b> 🍹\n\nLe vrai goût de la papaye mûre sortie du congélo. Fresh Frozen de très haute volée.\n\n🥶 <i>Saveurs intactes, fumée épaisse, effet très lourd.</i>',
                             tarifs: [
-                                { weight: '5g', price: 70.00 },
-                                { weight: '10g', price: 130.00 },
-                                { weight: '25g', price: 260.00 },
-                                { weight: '50g', price: 480.00 },
-                                { weight: '100g', price: 900.00 },
+                                { weight: '5g', price: 60.00 },
+                                { weight: '10g', price: 100.00 },
+                                { weight: '25g', price: 220.00 },
+                                { weight: '50g', price: 400.00 },
+                                { weight: '100g', price: 700.00 },
                             ]
                         },
-                         {
-                            id: 'TROPICAL ODV 🌴🍹',
-                            name: 'TROPICAL ODV 🌴🍹',
+                        {
+                            id: 'MENDO BREATH 🧠',
+                            name: 'MENDO BREATH 🧠',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
-                            type: 'FRESH FROZEN',
-                            image: 'ProductODV.jpg',
-                            video: 'VideoODV.mp4',
-                            description: '🍹 <b>NECTAR DES ÎLES</b> 🌴\n\nUn jus de fruits exotiques concentré en résine. Des arômes très puissants d\'ananas et de mangue.\n\n☀️ <i>Voyage direct sous les tropiques. Effet relaxant et apaisant.</i>',
+                            type: 'FROZEN SIFT',
+                            image: 'ProductMB.jpg',
+                            video: 'VideoMB.mp4',
+                            description: '🧠 <b>LAVAGE DE CERVEAU</b> 🧠\n\nArômes de caramel vanillé et de poivre mentholé. Profil extrêmement rare.\n\n🛌 <i>Effet canapé garanti. Pour les fins de soirée.</i>',
                             tarifs: [
-                                { weight: '5g', price: 70.00 },
-                                { weight: '10g', price: 130.00 },
-                                { weight: '25g', price: 260.00 },
-                                { weight: '50g', price: 480.00 },
-                                { weight: '100g', price: 900.00 },
+                                { weight: '5g', price: 60.00 },
+                                { weight: '10g', price: 100.00 },
+                                { weight: '25g', price: 220.00 },
+                                { weight: '50g', price: 400.00 },
+                                { weight: '100g', price: 700.00 },
                             ]
                         },
-                         {
-                            id: 'FORBIDDEN FRUIT X FRUIT JOY 🍭🍉🍇🍓',
-                            name: 'FORBIDDEN FRUIT X FRUIT JOY 🍭🍉🍇🍓',
+                        {
+                            id: 'DONNY BURGER 🍔',
+                            name: 'DONNY BURGER 🍔',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
-                            type: 'FRESH FROZEN',
-                            image: 'ProductFJ.jpg',
-                            video: 'VideoFJ.mp4',
-                            description: '🍇 <b>CANDY SHOP</b> 🍭\n\nL\'avalanche de fruits rouges et de bonbons. Un profil terpénique extrêmement riche et complexe.\n\n🍓 <i>Une claque gustative. Effet stone profond et gourmand.</i>',
+                            type: 'FROZEN SIFT',
+                            image: 'ProductDB.jpg',
+                            video: 'VideoDB.mp4',
+                            description: '🍔 <b>LE FAST FOOD</b> 🍔\n\nNotes salées, épicées et umami, avec un fond gaz très puissant.\n\n🔥 <i>Ça sent la friture et le gasoil. Un OVNI terpénique.</i>',
                             tarifs: [
-                                { weight: '5g', price: 70.00 },
-                                { weight: '10g', price: 130.00 },
-                                { weight: '25g', price: 260.00 },
-                                { weight: '50g', price: 480.00 },
-                                { weight: '100g', price: 900.00 },
+                                { weight: '5g', price: 60.00 },
+                                { weight: '10g', price: 100.00 },
+                                { weight: '25g', price: 220.00 },
+                                { weight: '50g', price: 400.00 },
+                                { weight: '100g', price: 700.00 },
                             ]
-                        },
-                         {
-                            id: 'FORBIDDEN FRUIT X GARLIC COCKTAIL 🧄🍉🍓',
-                            name: 'FORBIDDEN FRUIT X GARLIC COCKTAIL 🧄🍉🍓',
-                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
-                            promoEligible: true,
-                            type: 'FRESH FROZEN',
-                            image: 'ProductFF.jpg',
-                            video: 'VideoFF.mp4',
-                            description: '🧄 <b>SAVORY & SWEET</b> 🍓\n\nLe croisement improbable : l\'umami piquant de l\'ail adouci par un cocktail de fruits rouges.\n\n💥 <i>Un profil rare pour les vrais connaisseurs. Hit massif.</i>',
-                            tarifs: [
-                                { weight: '5g', price: 70.00 },
-                                { weight: '10g', price: 130.00 },
-                                { weight: '25g', price: 260.00 },
-                                { weight: '50g', price: 480.00 },
-                                { weight: '100g', price: 900.00 },
-                            ]
-                        },
-                         {
-                            id: 'GRAPPE GASOLINE ⛽️ 🍇',
-                            name: 'GRAPPE GASOLINE ⛽️ 🍇',
-                            farm: 'GAZ SELECTION 🇲🇦 ⛰️',
-                            promoEligible: true,
-                            type: 'FRESH FROZEN',
-                            image: 'ProductGG.jpg',
-                            video: 'VideoGG.mp4',
-                            description: '⛽️ <b>PUR CARBURANT</b> 🍇\n\nL\'odeur d\'essence pure mélangée à du sirop de raisin. Ça pique le nez dès l\'ouverture.\n\n🚀 <i>Une puissance phénoménale. K.O. technique assuré.</i>',
-                            tarifs: [
-                                { weight: '5g', price: 70.00 },
-                                { weight: '10g', price: 130.00 },
-                                { weight: '25g', price: 260.00 },
-                                { weight: '50g', price: 480.00 },
-                                { weight: '100g', price: 900.00 },
-                            ]
-                        }
-                        
+                        } 
                     ]
-                }
-            ]
-        },
+                },*/
 
         // --- Catégorie 2: BEUH ---
         {
@@ -867,7 +923,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             promoEligible: true,
                             type: 'Weed',
                             useSmallText: true,
-                            image: 'ProductSir.png',
+                            image: 'ProductSir.jpg',
                             video: '',
                             description: 'SIROP THC 🍷🍸🍹\n 500MG \n (A diluer avec sprite ou eau )',
                             tarifs: [
@@ -1171,7 +1227,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // --- FONCTION MODIFIÉE POUR GÉRER LE PRIX TEXTE ET LES CARROUSELS DE VIDÉOS ---
+    // --- FONCTION MODIFIÉE POUR GÉRER LE PRIX TEXTE, LES CARROUSELS ET LE BADGE PROMO ---
     function renderProductPage(productId) {
         const product = getProductById(productId);
         if (!product) return;
@@ -1205,7 +1261,6 @@ document.addEventListener('DOMContentLoaded', function () {
             <div class="carousel-hint">↔️ Swipe pour voir les photos</div>
         `;
         } else if (product.video || product.image) {
-            // LIGNE AJOUTÉE ICI : Sécurité pour éviter d'afficher une vidéo noire si image/vidéo sont vides (Pack)
             mediaHTML = `
             <video class="product-video" poster="${product.image || ''}" src="${product.video || ''}" ${product.video ? 'controls playsinline' : ''}></video>
         `;
@@ -1228,8 +1283,17 @@ document.addEventListener('DOMContentLoaded', function () {
                      <svg width="20" height="20" style="fill:white"><use href="#icon-telegram"/></svg>
                    </button>`;
 
+            // --- NOUVEAUTÉ : GÉNÉRATION DU BADGE PROMO ---
+            let promoBadge = '';
+            // On vérifie si le type du produit contient le mot "FROZEN" (ça marche pour "FRESH FROZEN", "FROZEN SIFT", "💎 Fresh Frozen 💎", etc.)
+            if (product.type && product.type.toUpperCase().includes('FROZEN')) {
+                promoBadge = `<div style="position: absolute; top: -8px; left: -8px; background: linear-gradient(45deg, #ff0000, #ff8c00); color: white; padding: 3px 8px; border-radius: 12px; font-size: 0.75rem; font-weight: 900; font-family: 'Impact', sans-serif; border: 1px solid white; box-shadow: 0px 0px 8px rgba(255,0,0,0.8); transform: rotate(-5deg); z-index: 10;">🔥 PROMO</div>`;
+            }
+
+            // On ajoute "position: relative;" sur la div principale pour que le badge se positionne bien par rapport à la case
             return `
-        <div class="tarif-item">
+        <div class="tarif-item" style="position: relative;">
+            ${promoBadge}
             <div class="box-tarif">
                 <div class="tarif-wieght" style="${weightStyle}">${tarif.weight}</div>
                 <div class="tarif-price">${priceDisplay}</div>
