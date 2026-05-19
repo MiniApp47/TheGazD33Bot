@@ -459,31 +459,31 @@ document.addEventListener('DOMContentLoaded', function () {
                             name: 'HASH BURGER 🍔',
                             farm: 'GAZ SÉLECTION 🇲🇦⛰️',
                             promoEligible: true,
-                            type: 'PLASMASTATIC ⚡️',
+                            type: 'PLASMASTATIC ⚡️ FROZEN',
                             image: 'ProductHxB.jpg',
                             video: 'VideoHxB.mp4',
                             description: '🍔 <b>FAST FOOD TERPS</b> 🍔\n\nDes notes umami, salées et épicées avec un fond gaz omniprésent. Une texture Plasmastatic incroyable.\n\n🔥 <i>Un goût unique de friture et de gasoil. Effet très lourd.</i>',                            tarifs: [
                                 { weight: '5g', price: 80.00 },
                                 { weight: '10g', price: 150.00 },
-                                { weight: '25g', price: 320.00 },
-                                { weight: '50g', price: 600.00 },
-                                { weight: '100g', price: 1100.00 },
+                                { weight: '25g', price: 300.00 },
+                                { weight: '50g', price: 550.00 },
+                                { weight: '100g', price: 1000.00 },
                             ]
                         },
                         {
                             id: 'GSUPER LEMON HAZE 🍋',
-                            name: 'GSUPER LEMON HAZE 🍋',
+                            name: 'SUPER LEMON HAZE 🍋',
                             farm: 'GAZ SÉLECTION 🇲🇦⛰️',
                             promoEligible: true,
-                            type: 'PLASMASTATIC ⚡️',
+                            type: 'PLASMASTATIC ⚡️ FROZEN',
                             image: 'ProductSLH.jpg',
                             video: 'VideoSLH.mp4',
                             description: '🍋 <b>CITRON HAUTE TENSION</b> ⚡️\n\nLe grand classique Haze revisité en extraction Plasmastatic. Un citron jaune électrique et piquant.\n\n⚡️ <i>Coup de boost immédiat. High cérébral très clair et créatif.</i>',                            tarifs: [
                                 { weight: '5g', price: 80.00 },
                                 { weight: '10g', price: 150.00 },
-                                { weight: '25g', price: 320.00 },
-                                { weight: '50g', price: 600.00 },
-                                { weight: '100g', price: 1100.00 },
+                                { weight: '25g', price: 300.00 },
+                                { weight: '50g', price: 550.00 },
+                                { weight: '100g', price: 1000.00 },
                             ]
                         },
                         {
@@ -491,19 +491,19 @@ document.addEventListener('DOMContentLoaded', function () {
                             name: 'GAZZURPLE (GZE) 🍇⛽️',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
-                            type: 'PLASMASTATIC ⚡️',
+                            type: 'PLASMASTATIC ⚡️ FROZEN',
                             image: 'ProductGZE.jpg',
                             video: 'VideoGZE.mp4',
                             description: '🍇 <b>L\'ALLIANCE PARFAITE</b> ⛽️\n\nL\'équilibre parfait entre le sucré du raisin et la puissance brute du gaz. Une texture plasmastatic hors norme.\n\n⚡️ <i>Un hit foudroyant. Effet cérébral intense.</i>',
                             tarifs: [
                                 { weight: '5g', price: 80.00 },
                                 { weight: '10g', price: 150.00 },
-                                { weight: '25g', price: 320.00 },
-                                { weight: '50g', price: 600.00 },
-                                { weight: '100g', price: 1100.00 },
+                                { weight: '25g', price: 300.00 },
+                                { weight: '50g', price: 550.00 },
+                                { weight: '100g', price: 1000.00 },
                             ]
                         },
-                        {
+                        /* {
                             id: 'HONEY BANANA 🍯🍌',
                             name: 'HONEY BANANA (HB) 🍯🍌',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
@@ -519,22 +519,22 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: '50g', price: 600.00 },
                                 { weight: '100g', price: 1100.00 },
                             ]
-                        },
+                        }, */
                         {
                             id: '24K 🔱🍋‍🟩🍋',
                             name: '24K 🔱🍋‍🟩🍋',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
-                            type: 'PLASMASTATIC ⚡️',
+                            type: 'PLASMASTATIC ⚡️ FROZEN',
                             image: 'Product24K.jpg',
                             video: 'Video24K.mp4',
                             description: '🔱 <b>L\'OR MASSIF</b> 🍋\n\nUne pureté exceptionnelle. Des arômes d\'agrumes explosifs (citron jaune et vert) pour une expérience VIP.\n\n⚡️ <i>Énergisant et euphorique. Le luxe à l\'état pur.</i>',
                             tarifs: [
                                 { weight: '5g', price: 80.00 },
                                 { weight: '10g', price: 150.00 },
-                                { weight: '25g', price: 320.00 },
-                                { weight: '50g', price: 600.00 },
-                                { weight: '100g', price: 1100.00 },
+                                { weight: '25g', price: 300.00 },
+                                { weight: '50g', price: 550.00 },
+                                { weight: '100g', price: 1000.00 },
                             ]
                         },
                         {
@@ -542,16 +542,16 @@ document.addEventListener('DOMContentLoaded', function () {
                             name: 'LIMEZ x DOSIDOS (LXD) 🍬🍭',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
-                            type: 'PLASMASTATIC ⚡️',
+                            type: 'PLASMASTATIC ⚡️ FROZEN',
                             image: 'ProductLXD.jpg',
                             video: 'VideoLXD.mp4',
                             description: '🍬 <b>CANDY KUSH</b> 🍭\n\nLe croisement ultime : la force du Dosidos percutée par la fraîcheur acidulée du Limez.\n\n⚡️ <i>Une claque gustative et un effet corporel très lourd.</i>',
                             tarifs: [
                                 { weight: '5g', price: 80.00 },
                                 { weight: '10g', price: 150.00 },
-                                { weight: '25g', price: 320.00 },
-                                { weight: '50g', price: 600.00 },
-                                { weight: '100g', price: 1100.00 },
+                                { weight: '25g', price: 300.00 },
+                                { weight: '50g', price: 550.00 },
+                                { weight: '100g', price: 1000.00 },
                             ]
                         },
                         {
@@ -559,16 +559,16 @@ document.addEventListener('DOMContentLoaded', function () {
                             name: 'RUNTZ x BANANA (RXB) 🍌⛽️',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
-                            type: 'PLASMASTATIC ⚡️',
+                            type: 'PLASMASTATIC ⚡️ FROZEN',
                             image: 'ProductRXB.jpg',
                             video: 'VideoRXB.mp4',
                             description: '🍌 <b>FRUIT & GAZ</b> ⛽️\n\nLa douceur bonbon du Runtz couplée à la banane, avec un retour gassy persistant.\n\n⚡️ <i>Un high joyeux et un goût qui reste collé au palais.</i>',
                             tarifs: [
                                 { weight: '5g', price: 80.00 },
                                 { weight: '10g', price: 150.00 },
-                                { weight: '25g', price: 320.00 },
-                                { weight: '50g', price: 600.00 },
-                                { weight: '100g', price: 1100.00 },
+                                { weight: '25g', price: 300.00 },
+                                { weight: '50g', price: 550.00 },
+                                { weight: '100g', price: 1000.00 },
                             ]
                         },
                         {
@@ -576,19 +576,19 @@ document.addEventListener('DOMContentLoaded', function () {
                             name: 'COCONUT’Z (CNZ) 🥥🌴',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
                             promoEligible: true,
-                            type: 'PLASMASTATIC ⚡️',
+                            type: 'PLASMASTATIC ⚡️ FROZEN',
                             image: 'ProductCNZ.jpg',
                             video: 'VideoCNZ.mp4',
                             description: '🥥 <b>DOUCEUR DES ÎLES</b> 🌴\n\nDes notes crémeuses et exotiques de noix de coco. Une extraction Plasmastatic d\'une finesse rare.\n\n⚡️ <i>Voyage immédiat. Effet apaisant et anti-stress.</i>',
                             tarifs: [
                                 { weight: '5g', price: 80.00 },
                                 { weight: '10g', price: 150.00 },
-                                { weight: '25g', price: 320.00 },
-                                { weight: '50g', price: 600.00 },
-                                { weight: '100g', price: 1100.00 },
+                                { weight: '25g', price: 300.00 },
+                                { weight: '50g', price: 550.00 },
+                                { weight: '100g', price: 1000.00 },
                             ]
                         },
-                        {
+                       /*  {
                             id: 'MIMOZZ x BANANA 🍋‍🟩🍌',
                             name: 'MIMOZZ x BANANA 🍋‍🟩🍌',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
@@ -604,7 +604,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: '50g', price: 600.00 },
                                 { weight: '100g', price: 1100.00 },
                             ]
-                        }
+                        } */
                     ]
                 },
                 
