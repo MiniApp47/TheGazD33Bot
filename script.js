@@ -454,7 +454,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     image: 'CategHash.png',
                     badgeText: '8 produits',
                     products: [
-                        {
+                     {
                             id: 'SUPER BOOF X  TROP CHERRY🍋 🍒',
                             name: 'SUPER BOOF X  TROP CHERRY🍋 🍒',
                             farm: 'GAZ SÉLECTION 🇲🇦⛰️',
@@ -462,7 +462,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: 'PLASMASTATIC ⚡️ FROZEN',
                             image: 'ProductStc.jpg',
                             video: 'VideoStc.mp4',
-                            description: '',
+                            description: '🍒 <b>COCKTAIL DÉTONANT</b> 🍋\n\nL\'acidité piquante du citron rencontre la douceur de la cerise. Une résine glacée gorgée de terpènes.\n\n❄️ <i>Un high joyeux et élévateur. Parfait pour se motiver.</i>',
                             tarifs: [
                                 { weight: '5g', price: 80.00 },
                                 { weight: '10g', price: 140.00 },
@@ -479,7 +479,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: 'PLASMASTATIC ⚡️ FROZEN',
                             image: 'ProductRgc.jpg',
                             video: 'VideoRgc.mp4',
-                            description: '',
+                            description: '🍬 <b>UMAMI SUCRÉ</b> 🍹\n\nLe croisement improbable : l\'umami piquant de l\'ail adouci par la douceur des bonbons Zkittlez.\n\n💥 <i>Un profil rare pour les vrais connaisseurs. Hit massif et relaxant.</i>',
                             tarifs: [
                                 { weight: '5g', price: 80.00 },
                                 { weight: '10g', price: 140.00 },
@@ -496,7 +496,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: 'PLASMASTATIC ⚡️ FROZEN',
                             image: 'ProductCff.jpg',
                             video: 'VideoCff.mp4',
-                            description: '',
+                            description: '🍇 <b>GLACE AUX FRUITS</b> 🍦\n\nL\'avalanche de fruits rouges et de bonbons couplée à la douceur crémeuse d\'une glace.\n\n🍓 <i>Une claque gustative. Effet stone profond et gourmand.</i>',
                             tarifs: [
                                 { weight: '5g', price: 80.00 },
                                 { weight: '10g', price: 140.00 },
@@ -513,7 +513,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             type: 'PLASMASTATIC ⚡️ FROZEN',
                             image: 'ProductCpp.jpg',
                             video: 'VideoCpp.mp4',
-                            description: '',
+                            description: '🍓 <b>SALADE DE FRUITS GLACÉE</b> 🍉\n\nUn croisement explosif. Des arômes de fruits rouges intenses et sucrés avec une touche crémeuse.\n\n🍇 <i>Effet relaxant profond. Parfait pour chiller avec un goût incroyable en bouche.</i>',
                             tarifs: [
                                 { weight: '5g', price: 80.00 },
                                 { weight: '10g', price: 140.00 },
