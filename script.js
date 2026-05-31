@@ -354,10 +354,10 @@ document.addEventListener('DOMContentLoaded', function () {
                             description: '🍒 <b>COCKTAIL DÉTONANT</b> 🍋\n\nL\'acidité piquante du citron rencontre la douceur de la cerise. Une résine glacée gorgée de terpènes.\n\n❄️ <i>Un high joyeux et élévateur. Parfait pour se motiver.</i>',
                             tarifs: [
                                 { weight: '5g', price: 70.00 },
-                                { weight: '10g', price: 120.00 },
-                                { weight: '25g', price: 250.00 },
-                                { weight: '50g', price: 450.00 },
-                                { weight: '100g', price: 800.00 },
+                                { weight: '10g', price: 100.00 },
+                                { weight: '25g', price: 220.00 },
+                                { weight: '50g', price: 400.00 },
+                                { weight: '100g', price: 750.00 },
                             ]
                         },
                          {
@@ -371,10 +371,10 @@ document.addEventListener('DOMContentLoaded', function () {
                             description: '🥭 <b>SALADE TROPICALE</b> 🍋‍🟩\n\nLe mix parfait entre la papaye mûre et le zeste de citron vert. Fresh Frozen d\'une pureté absolue.\n\n🏝️ <i>Détente exotique. Une fumée épaisse et ultra-douce.</i>',
                             tarifs: [
                                 { weight: '5g', price: 70.00 },
-                                { weight: '10g', price: 120.00 },
-                                { weight: '25g', price: 250.00 },
-                                { weight: '50g', price: 450.00 },
-                                { weight: '100g', price: 800.00 },
+                                { weight: '10g', price: 100.00 },
+                                { weight: '25g', price: 220.00 },
+                                { weight: '50g', price: 400.00 },
+                                { weight: '100g', price: 750.00 },
                             ]
                         },
                          {
@@ -388,10 +388,10 @@ document.addEventListener('DOMContentLoaded', function () {
                             description: '🍹 <b>NECTAR DES ÎLES</b> 🌴\n\nUn jus de fruits exotiques concentré en résine. Des arômes très puissants d\'ananas et de mangue.\n\n☀️ <i>Voyage direct sous les tropiques. Effet relaxant et apaisant.</i>',
                             tarifs: [
                                 { weight: '5g', price: 70.00 },
-                                { weight: '10g', price: 120.00 },
-                                { weight: '25g', price: 250.00 },
-                                { weight: '50g', price: 450.00 },
-                                { weight: '100g', price: 800.00 },
+                                { weight: '10g', price: 100.00 },
+                                { weight: '25g', price: 220.00 },
+                                { weight: '50g', price: 400.00 },
+                                { weight: '100g', price: 750.00 },
                             ]
                         },
                          {
@@ -405,10 +405,10 @@ document.addEventListener('DOMContentLoaded', function () {
                             description: '🍇 <b>CANDY SHOP</b> 🍭\n\nL\'avalanche de fruits rouges et de bonbons. Un profil terpénique extrêmement riche et complexe.\n\n🍓 <i>Une claque gustative. Effet stone profond et gourmand.</i>',
                             tarifs: [
                                 { weight: '5g', price: 70.00 },
-                                { weight: '10g', price: 120.00 },
-                                { weight: '25g', price: 250.00 },
-                                { weight: '50g', price: 450.00 },
-                                { weight: '100g', price: 800.00 },
+                                { weight: '10g', price: 100.00 },
+                                { weight: '25g', price: 220.00 },
+                                { weight: '50g', price: 400.00 },
+                                { weight: '100g', price: 750.00 },
                             ]
                         },
                          {
@@ -422,10 +422,10 @@ document.addEventListener('DOMContentLoaded', function () {
                             description: '🧄 <b>SAVORY & SWEET</b> 🍓\n\nLe croisement improbable : l\'umami piquant de l\'ail adouci par un cocktail de fruits rouges.\n\n💥 <i>Un profil rare pour les vrais connaisseurs. Hit massif.</i>',
                             tarifs: [
                                 { weight: '5g', price: 70.00 },
-                                { weight: '10g', price: 120.00 },
-                                { weight: '25g', price: 250.00 },
-                                { weight: '50g', price: 450.00 },
-                                { weight: '100g', price: 800.00 },
+                                { weight: '10g', price: 100.00 },
+                                { weight: '25g', price: 220.00 },
+                                { weight: '50g', price: 400.00 },
+                                { weight: '100g', price: 750.00 },
                             ]
                         },
                          {
@@ -439,10 +439,10 @@ document.addEventListener('DOMContentLoaded', function () {
                             description: '⛽️ <b>PUR CARBURANT</b> 🍇\n\nL\'odeur d\'essence pure mélangée à du sirop de raisin. Ça pique le nez dès l\'ouverture.\n\n🚀 <i>Une puissance phénoménale. K.O. technique assuré.</i>',
                             tarifs: [
                                 { weight: '5g', price: 70.00 },
-                                { weight: '10g', price: 120.00 },
-                                { weight: '25g', price: 250.00 },
-                                { weight: '50g', price: 450.00 },
-                                { weight: '100g', price: 800.00 },
+                                { weight: '10g', price: 100.00 },
+                                { weight: '25g', price: 220.00 },
+                                { weight: '50g', price: 400.00 },
+                                { weight: '100g', price: 750.00 },
                             ]
                         }
                         
@@ -455,6 +455,74 @@ document.addEventListener('DOMContentLoaded', function () {
                     badgeText: '8 produits',
                     products: [
                         {
+                            id: 'SUPER BOOF X  TROP CHERRY🍋 🍒',
+                            name: 'SUPER BOOF X  TROP CHERRY🍋 🍒',
+                            farm: 'GAZ SÉLECTION 🇲🇦⛰️',
+                            promoEligible: true,
+                            type: 'PLASMASTATIC ⚡️ FROZEN',
+                            image: 'ProductStc.jpg',
+                            video: 'VideoStc.mp4',
+                            description: '',
+                            tarifs: [
+                                { weight: '5g', price: 80.00 },
+                                { weight: '10g', price: 140.00 },
+                                { weight: '25g', price: 300.00 },
+                                { weight: '50g', price: 550.00 },
+                                { weight: '100g', price: 1000.00 },
+                            ]
+                        },
+                        {
+                            id: 'RAIBOW BELTS X GARLIC COCKTAIL 🍬 🍹',
+                            name: 'RAIBOW BELTS X GARLIC COCKTAIL 🍬 🍹',
+                            farm: 'GAZ SÉLECTION 🇲🇦⛰️',
+                            promoEligible: true,
+                            type: 'PLASMASTATIC ⚡️ FROZEN',
+                            image: 'ProductRgc.jpg',
+                            video: 'VideoRgc.mp4',
+                            description: '',
+                            tarifs: [
+                                { weight: '5g', price: 80.00 },
+                                { weight: '10g', price: 140.00 },
+                                { weight: '25g', price: 300.00 },
+                                { weight: '50g', price: 550.00 },
+                                { weight: '100g', price: 1000.00 },
+                            ]
+                        },
+                        {
+                            id: 'CALIPPO x FORBIDDEN FRUIT 🍇🍦🍨',
+                            name: 'CALIPPO x FORBIDDEN FRUIT 🍇🍦🍨',
+                            farm: 'GAZ SÉLECTION 🇲🇦⛰️',
+                            promoEligible: true,
+                            type: 'PLASMASTATIC ⚡️ FROZEN',
+                            image: 'ProductCff.jpg',
+                            video: 'VideoCff.mp4',
+                            description: '',
+                            tarifs: [
+                                { weight: '5g', price: 80.00 },
+                                { weight: '10g', price: 140.00 },
+                                { weight: '25g', price: 300.00 },
+                                { weight: '50g', price: 550.00 },
+                                { weight: '100g', price: 1000.00 },
+                            ]
+                        },
+                        {
+                            id: 'CALIPPO X PURPLE PANTIES 🍦🍓🍇🍒🍉',
+                            name: 'CALIPPO X PURPLE PANTIES 🍦🍓🍇🍒🍉',
+                            farm: 'GAZ SÉLECTION 🇲🇦⛰️',
+                            promoEligible: true,
+                            type: 'PLASMASTATIC ⚡️ FROZEN',
+                            image: 'ProductCpp.jpg',
+                            video: 'VideoCpp.mp4',
+                            description: '',
+                            tarifs: [
+                                { weight: '5g', price: 80.00 },
+                                { weight: '10g', price: 140.00 },
+                                { weight: '25g', price: 300.00 },
+                                { weight: '50g', price: 550.00 },
+                                { weight: '100g', price: 1000.00 },
+                            ]
+                        },
+                      /*   {
                             id: 'HASH BURGER 🍔',
                             name: 'HASH BURGER 🍔',
                             farm: 'GAZ SÉLECTION 🇲🇦⛰️',
@@ -502,7 +570,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: '50g', price: 550.00 },
                                 { weight: '100g', price: 1000.00 },
                             ]
-                        },
+                        }, */
                         /* {
                             id: 'HONEY BANANA 🍯🍌',
                             name: 'HONEY BANANA (HB) 🍯🍌',
@@ -520,7 +588,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: '100g', price: 1100.00 },
                             ]
                         }, */
-                        {
+                      /*   {
                             id: '24K 🔱🍋‍🟩🍋',
                             name: '24K 🔱🍋‍🟩🍋',
                             farm: 'GAZ SELECTION 🇲🇦 ⛰️',
@@ -587,7 +655,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: '50g', price: 550.00 },
                                 { weight: '100g', price: 1000.00 },
                             ]
-                        },
+                        }, */
                        /*  {
                             id: 'MIMOZZ x BANANA 🍋‍🟩🍌',
                             name: 'MIMOZZ x BANANA 🍋‍🟩🍌',
