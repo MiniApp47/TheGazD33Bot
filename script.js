@@ -765,13 +765,13 @@ document.addEventListener('DOMContentLoaded', function () {
             quality: ' 🪴 Weed 🪴',
             image: 'CategWeed.jpg',
             farms: [
-                {
+              /*   {
                     id: 'CALIUS',
                     name: '🇺🇸 CALI US 🇺🇸',
                     image: 'Wizard4.png',
                     badgeText: '2 produits',
                     products: []
-                },
+                }, */
                 {
                     id: 'WEEDholland',
                     name: '🇳🇱 WEED HOLLANDAISE 🇳🇱',
@@ -785,7 +785,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             promoEligible: true,
                             type: 'Weed',
                             image: 'ProductAmne.jpg',
-                            video: 'VideAmne.mp4',
+                            video: 'VideoAmne.mp4',
                             description: 'L\'indémodable Haze à la puissance légendaire. Attendez-vous à un \'high\' cérébral stimulant et euphorique. \n\n🍋 Arômes Vifs & Citronnés 🍋\n avec des notes de poivre et d\'encens. Une expérience Haze authentique et pure.',
                             tarifs: [
                                 { weight: '10g', price: 70.00 },
@@ -796,7 +796,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         }
                     ]
                 },
-                {
+               /*  {
                     id: 'WeedCanada',
                     name: '🇨🇦 CALI CANADA 🇨🇦',
                     image: 'Wizard4.png',
@@ -834,8 +834,8 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: '100g', price: 600.00 },
                             ]
                         }
-                    ]
-                }
+            ])
+                } */
             ]
         },
         // --- Catégorie 3: EXTRACTION ---
