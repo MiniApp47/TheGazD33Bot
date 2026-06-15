@@ -796,13 +796,30 @@ document.addEventListener('DOMContentLoaded', function () {
                         }
                     ]
                 },
-               /*  {
+                {
                     id: 'WeedCanada',
                     name: '🇨🇦 CALI CANADA 🇨🇦',
                     image: 'Wizard4.png',
                     badgeText: '2 produits',
                     products: [
                         {
+                            id: 'ONIONZ COCKTAIL x 26MM 🧅🍋',
+                            name: 'ONIONZ COCKTAIL x 26MM 🧅🍋',
+                            farm: 'NO BRAND ™️©️',
+                            promoEligible: true,
+                            type: 'Weed',
+                            image: 'ProductO2.jpg',
+                            video: 'VideoO2.mov',
+                            description: '🧅 <b>COCKTAIL FUNKY</b> 🍋\n\nUn croisement audacieux. L\'arôme puissant et umami de l\'oignon percuté par l\'acidité piquante du citron. Un profil terpénique gazeux et unique.\n\n🚀 <i>Grosse claque cérébrale suivie d\'un stone corporel profond. Pour les palais avertis.</i>',
+                            tarifs: [
+                                { weight: '10g', price: 80.00 },
+                                { weight: '25g', price: 180.00 },
+                                { weight: '50g', price: 350.00 },
+                                { weight: '100g', price: 650.00 },
+                                { weight: '500g', price: 2500.00 },
+                            ]
+                        },
+                      /*   {
                             id: 'FORBIDDEN X FRUIT JOY 🍓🍇🍒',
                             name: 'FORBIDDEN X FRUIT JOY 🍓🍇🍒',
                             farm: 'NO BRAND ™️©️',
@@ -833,9 +850,9 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: '50g', price: 350.00 },
                                 { weight: '100g', price: 600.00 },
                             ]
-                        }
-            ])
-                } */
+                        } */
+                    ]
+                }
             ]
         },
         // --- Catégorie 3: EXTRACTION ---
