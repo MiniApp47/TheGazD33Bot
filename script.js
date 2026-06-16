@@ -455,6 +455,38 @@ document.addEventListener('DOMContentLoaded', function () {
                     badgeText: '8 produits',
                     products: [
                      {
+                            id: 'FORBIDDEN FRUIT x FRUIT JOY 🍉🍓🍋🍭',
+                            name: 'FORBIDDEN FRUIT x FRUIT JOY 🍉🍓🍋🍭',
+                            farm: 'GAZ SÉLECTION 🇲🇦⛰️',
+                            promoEligible: true,
+                            type: 'PLASMASTATIC ⚡️ FROZEN',
+                            image: 'ProductFFFJ.jpg',
+                            video: 'VideoFFFJ.mp4',
+                            description: '🍉 <b>CANDY SHOP GLACÉ</b> 🍭\n\nL\'ultime cocktail sucré. Une fusion magistrale de fruits rouges intenses et de bonbons acidulés, figée dans une résine Plasmastatic exceptionnelle.\n\n🍓 <i>Grosse euphorie cérébrale suivie d\'un stone physique profond. Kiff absolu.</i>',                            tarifs: [
+                                { weight: '5g', price: 80.00 },
+                                { weight: '10g', price: 140.00 },
+                                { weight: '25g', price: 300.00 },
+                                { weight: '50g', price: 550.00 },
+                                { weight: '100g', price: 1000.00 },
+                            ]
+                        },
+                     {
+                            id: 'ORANGE GROVIE x 26MM 🍊🍋⛽️',
+                            name: 'ORANGE GROVIE x 26MM 🍊🍋⛽️',
+                            farm: 'GAZ SÉLECTION 🇲🇦⛰️',
+                            promoEligible: true,
+                            type: 'PLASMASTATIC ⚡️ FROZEN',
+                            image: 'Product26.jpg',
+                            video: 'Video26.mp4',
+                            description: '🍊 <b>AGRUMES SOUS PRESSION</b> ⛽️\n\nUn contraste explosif. L\'orange douce et le citron piquant percutés de plein fouet par un fond gazeux lourd et persistant. Texture Plasmastatic d\'élite.\n\n⚡️ <i>Hit surpuissant. Un effet clair et stimulant qui te maintient en orbite.</i>',                            tarifs: [
+                                { weight: '5g', price: 80.00 },
+                                { weight: '10g', price: 140.00 },
+                                { weight: '25g', price: 300.00 },
+                                { weight: '50g', price: 550.00 },
+                                { weight: '100g', price: 1000.00 },
+                            ]
+                        },
+                     {
                             id: 'SUPER BOOF X  TROP CHERRY🍋 🍒',
                             name: 'SUPER BOOF X  TROP CHERRY🍋 🍒',
                             farm: 'GAZ SÉLECTION 🇲🇦⛰️',
