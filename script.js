@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function () {
             image: 'CategHash.jpg',
 
             farms: [
-                {
+                /* {
                     id: '90u PREMIUM',
                     name: '🧪 90u PREMIUM 🧪',
                     image: 'CategHash.png',
@@ -220,8 +220,9 @@ document.addEventListener('DOMContentLoaded', function () {
                             ]
                         }
                     ]
-                },
-                {
+                }, */
+                /* {
+
                     id: '120u PREMIUM',
                     name: '🧬 120u PREMIUM 🧬',
                     image: 'CategHash.png',
@@ -334,9 +335,9 @@ document.addEventListener('DOMContentLoaded', function () {
                                 { weight: '200g', price: 900.00 },
                                 { weight: 'Pour+', price: 'En Privé 🤫' },
                             ]
-                        } */
+                        } 
                     ]
-                },
+                }, */
                 {
                     id: 'FRESH FROZEN',
                     name: '💎 FRESH FROZEN 💎',
