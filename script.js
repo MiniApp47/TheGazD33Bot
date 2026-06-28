@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             name: 'POTATO PRINCIPAL 🥔',
-            url: 'https://duanym138.org/thegazdoggy330',
+            url: 'https://tatokdym.org/thegazdoggy330',
             icon: '#icon-potato',
             id: 'potato-main',
             className: 'potato-main',
@@ -34,11 +34,11 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         {
             name: 'PAGE INSTAGRAM 📸',
-            url: 'https://www.instagram.com/the_gaz_doggy?igsh=MWszcGI3MjZibnl2Nw%3D%3D&utm_source=qr',
+            url: 'https://www.instagram.com/thegdbdx?igsh=MWlvZWFybGd3bTVvaQ==',
             icon: '#icon-instagram',
             id: 'insta-main',
             className: 'insta-main',
-            text: "PAGE INSTAGRAM 📸"
+            text: "CANAL INSTAGRAM 📸"
         },
         {
             name: 'TELEGRAM DE SECOURS 🛟',
