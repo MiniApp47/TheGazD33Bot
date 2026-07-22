@@ -77,7 +77,6 @@ document.addEventListener("DOMContentLoaded", function () {
               type: "Pack",
               useSmallText: true,
               image: "PackPL.jpg",
-              images:["ProductPromo.jpg"],
               video: "",
 
               description: `<b>💎 PACK PLATINUM — L’EXPÉRIENCE ULTIME</b>
@@ -111,7 +110,6 @@ document.addEventListener("DOMContentLoaded", function () {
               type: "Pack",
               useSmallText: true,
               image: "PackG.jpg",
-                            images:["ProductPromo.jpg"],
               video: "",
 
               description: `<b>🥇 PACK GOLD — LE SPÉCIALISTE</b>
@@ -144,7 +142,6 @@ document.addEventListener("DOMContentLoaded", function () {
               type: "Pack",
               useSmallText: true,
               image: "PackS.jpg",
-                            images:["ProductPromo.jpg"],
               video: "",
 
               description: `<b>🥈 PACK SILVER — L’ÉQUILIBRE</b>
@@ -177,7 +174,6 @@ document.addEventListener("DOMContentLoaded", function () {
               type: "Pack",
               useSmallText: true,
               image: "PackSt.jpg",
-                            images:["ProductPromo.jpg"],
               video: "",
 
               description: `<b>🥉 PACK STARTER — LA DÉCOUVERTE</b>
