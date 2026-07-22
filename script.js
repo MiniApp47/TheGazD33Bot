@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
               promoEligible: false,
               type: "Pack",
               useSmallText: true,
-              image: "PackPL.png",
+              image: "PackPL.jpg",
               images:["ProductPromo.jpg"],
               video: "",
 
@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
               promoEligible: false,
               type: "Pack",
               useSmallText: true,
-              image: "PackG.png",
+              image: "PackG.jpg",
                             images:["ProductPromo.jpg"],
               video: "",
 
@@ -143,7 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
               promoEligible: false,
               type: "Pack",
               useSmallText: true,
-              image: "PackS.png",
+              image: "PackS.jpg",
                             images:["ProductPromo.jpg"],
               video: "",
 
@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function () {
               promoEligible: false,
               type: "Pack",
               useSmallText: true,
-              image: "PackSt.png",
+              image: "PackSt.jpg",
                             images:["ProductPromo.jpg"],
               video: "",
 
@@ -304,6 +304,82 @@ document.addEventListener("DOMContentLoaded", function () {
           badgeText: "5 produits",
           products: [
             {
+              id: "MELTED HEADZ  🍯🍋",
+              name: "MELTED HEADZ  🍯🍋",
+              farm: "GAZ SELECTION 🇲🇦 ⛰️",
+              promoEligible: true,
+              type: "120u PREMIUM",
+              image: "ProductMH.jpg",
+              video: "VideoMH.mp4",
+              description:
+                  "🍯 <b>MIEL CITRONNÉ</b> 🍋\n\nUne douceur mielleuse et fondante rencontrant un zeste de citron vif et légèrement acidulé. Un profil rond, sucré et frais avec une finale persistante.\n\n🧬 <i>Une référence 120u équilibrée au caractère gourmand et citronné.</i>",
+              tarifs: [
+                { weight: "10g", price: 80.0 },
+                { weight: "25g", price: 150.0 },
+                { weight: "50g", price: 250.0 },
+                { weight: "100g", price: 480.0 },
+                { weight: "200g", price: 900.0 },
+                { weight: "Pour+", price: "En Privé 🤫" },
+              ],
+            },
+            {
+              id: "ELECTRIC KOOLAID ⚡️🔋",
+              name: "ELECTRIC KOOLAID ⚡️🔋",
+              farm: "GAZ SELECTION 🇲🇦 ⛰️",
+              promoEligible: true,
+              type: "120u PREMIUM",
+              image: "ProductEK.jpg",
+              video: "VideoEK.mp4",
+              description:
+                  "⚡️ <b>COCKTAIL FRUITÉ SOUS TENSION</b> 🔋\n\nDes notes de fruits rouges acidulés et de bonbon pétillant, accompagnées d'une fraîcheur vive. Un profil expressif rappelant une boisson fruitée servie glacée.\n\n🧬 <i>Un 120u coloré, sucré et dynamique.</i>",
+              tarifs: [
+                { weight: "10g", price: 80.0 },
+                { weight: "25g", price: 150.0 },
+                { weight: "50g", price: 250.0 },
+                { weight: "100g", price: 480.0 },
+                { weight: "200g", price: 900.0 },
+                { weight: "Pour+", price: "En Privé 🤫" },
+              ],
+            },
+            {
+              id: "FROSTED SUNSETZ 🍫🍩",
+              name: "FROSTED SUNSETZ 🍫🍩",
+              farm: "GAZ SELECTION 🇲🇦 ⛰️",
+              promoEligible: true,
+              type: "120u PREMIUM",
+              image: "ProductFS.jpg",
+              video: "VideoFS.mp4",
+              description:
+                  "🍫 <b>DESSERT DU SOIR</b> 🍩\n\nUn mélange gourmand de chocolat doux, de pâte sucrée et de notes crémeuses. La finale légèrement toastée rappelle un donut fraîchement préparé.\n\n🧬 <i>Un 120u généreux au profil pâtissier et réconfortant.</i>",
+              tarifs: [
+                { weight: "10g", price: 80.0 },
+                { weight: "25g", price: 150.0 },
+                { weight: "50g", price: 250.0 },
+                { weight: "100g", price: 480.0 },
+                { weight: "200g", price: 900.0 },
+                { weight: "Pour+", price: "En Privé 🤫" },
+              ],
+            },
+            {
+              id: "FROSTED ONIONZ V2 🍦🍬",
+              name: "FROSTED ONIONZ V2 🍦🍬",
+              farm: "GAZ SELECTION 🇲🇦 ⛰️",
+              promoEligible: true,
+              type: "120u PREMIUM",
+              image: "ProductFV2.jpg",
+              video: "VideoFV2.mp4",
+              description:
+                  "🍦 <b>CRÈME FUNKY V2</b> 🍬\n\nUn contraste original entre une base crémeuse et sucrée et des notes plus profondes, légèrement terreuses et umami. Une finale vanillée vient adoucir l'ensemble.\n\n🧬 <i>Une version V2 complexe, gourmande et atypique.</i>",
+              tarifs: [
+                { weight: "10g", price: 80.0 },
+                { weight: "25g", price: 150.0 },
+                { weight: "50g", price: 250.0 },
+                { weight: "100g", price: 480.0 },
+                { weight: "200g", price: 900.0 },
+                { weight: "Pour+", price: "En Privé 🤫" },
+              ],
+            },
+           /*  {
               id: "BISCOTTI PAPAY 🍪🥭",
               name: "BISCOTTI PAPAY 🍪🥭",
               farm: "GAZ SELECTION 🇲🇦 ⛰️",
@@ -359,7 +435,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { weight: "200g", price: 900.0 },
                 { weight: "Pour+", price: "En Privé 🤫" },
               ],
-            },
+            }, */
             /* {
                             id: 'PURPULE PUNCH 🥊',
                             name: 'PURPULE PUNCH 🥊',
@@ -423,6 +499,96 @@ document.addEventListener("DOMContentLoaded", function () {
           badgeText: "5 produits",
           products: [
             {
+              id: "OBSESSION 🍪",
+              name: "OBSESSION 🍪",
+              farm: "GAZ SELECTION 🇲🇦 ⛰️",
+              promoEligible: true,
+              type: "FRESH FROZEN",
+              image: "ProductOS.jpg",
+              video: "VideoOS.mp4",
+              description:
+                  "🍪 <b>BISCUIT ADDICTIF</b> 🍪\n\nDes arômes de pâte sablée, de vanille et de sucre brun, accompagnés d'une légère touche gazeuse en arrière-plan. Un profil dense et particulièrement gourmand.\n\n❄️ <i>Un Fresh Frozen pâtissier à la signature bien marquée.</i>",
+              tarifs: [
+                { weight: "5g", price: 70.0 },
+                { weight: "10g", price: 100.0 },
+                { weight: "25g", price: 220.0 },
+                { weight: "50g", price: 400.0 },
+                { weight: "100g", price: 750.0 },
+              ],
+            },
+            {
+              id: "MIMOZZ x GMO’z",
+              name: "MIMOZZ x GMO’z 🍑",
+              farm: "GAZ SELECTION 🇲🇦 ⛰️",
+              promoEligible: true,
+              type: "FRESH FROZEN",
+              image: "ProductMG.jpg",
+              video: "VideoMG.mp4",
+              description:
+                  "🍑 <b>PÊCHE FUNKY</b> 🧄\n\nLa douceur juteuse de la pêche se mélange à des notes profondes, terreuses et légèrement umami. Un contraste fruité et salé particulièrement original.\n\n❄️ <i>Un Fresh Frozen complexe destiné aux amateurs de profils atypiques.</i>",
+              tarifs: [
+                { weight: "5g", price: 70.0 },
+                { weight: "10g", price: 100.0 },
+                { weight: "25g", price: 220.0 },
+                { weight: "50g", price: 400.0 },
+                { weight: "100g", price: 750.0 },
+              ],
+            },
+            {
+              id: "PANETTONE 🥞🍞",
+              name: "PANETTONE 🥞🍞",
+              farm: "GAZ SELECTION 🇲🇦 ⛰️",
+              promoEligible: true,
+              type: "FRESH FROZEN",
+              image: "ProductPT.jpg",
+              video: "VideoPT.mp4",
+              description:
+                  "🥞 <b>BRIOCHE GOURMANDE</b> 🍞\n\nUn profil chaud et pâtissier rappelant la brioche, la pâte sucrée et les fruits confits, avec une touche de vanille délicate en finale.\n\n❄️ <i>Un Fresh Frozen rond, doux et généreux.</i>",
+              tarifs: [
+                { weight: "5g", price: 70.0 },
+                { weight: "10g", price: 100.0 },
+                { weight: "25g", price: 220.0 },
+                { weight: "50g", price: 400.0 },
+                { weight: "100g", price: 750.0 },
+              ],
+            },
+            {
+              id: "REDVELVET 🎂🍰",
+              name: "REDVELVET 🎂🍰",
+              farm: "GAZ SELECTION 🇲🇦 ⛰️",
+              promoEligible: true,
+              type: "FRESH FROZEN",
+              image: "ProductRV.jpg",
+              video: "VideoRV.mp4",
+              description:
+                  "🎂 <b>GÂTEAU VELOURS</b> 🍰\n\nDes notes de cacao léger, de crème sucrée et de gâteau moelleux, accompagnées d'une discrète pointe fruitée. Une signature dessert élégante et équilibrée.\n\n❄️ <i>Un Fresh Frozen gourmand au profil pâtissier raffiné.</i>",
+              tarifs: [
+                { weight: "5g", price: 70.0 },
+                { weight: "10g", price: 100.0 },
+                { weight: "25g", price: 220.0 },
+                { weight: "50g", price: 400.0 },
+                { weight: "100g", price: 750.0 },
+              ],
+            },
+            {
+              id: "PAVLOVA 🍥🧁",
+              name: "PAVLOVA 🍥🧁",
+              farm: "GAZ SELECTION 🇲🇦 ⛰️",
+              promoEligible: true,
+              type: "FRESH FROZEN",
+              image: "ProductPL.jpg",
+              video: "VideoPL.mp4",
+              description:
+                  "🍥 <b>MERINGUE FRUITÉE</b> 🧁\n\nUne douceur aérienne de meringue et de crème, relevée par des notes de fruits rouges légèrement acidulés. La finale reste sucrée, délicate et persistante.\n\n❄️ <i>Un Fresh Frozen fin, crémeux et fruité.</i>",
+              tarifs: [
+                { weight: "5g", price: 70.0 },
+                { weight: "10g", price: 100.0 },
+                { weight: "25g", price: 220.0 },
+                { weight: "50g", price: 400.0 },
+                { weight: "100g", price: 750.0 },
+              ],
+            },
+          /*   {
               id: "SUPER BOOF x CHERRY🍋 🍒",
               name: "SUPER BOOF x CHERRY🍋 🍒",
               farm: "GAZ SELECTION 🇲🇦 ⛰️",
@@ -529,7 +695,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { weight: "50g", price: 400.0 },
                 { weight: "100g", price: 750.0 },
               ],
-            },
+            }, */
           ],
         },
         {
