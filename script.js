@@ -228,6 +228,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { weight: "100g", price: 380.0 },
                 { weight: "200g", price: 700.0 },
                 { weight: "500g", price: 1700.0 },
+                { weight: "1K", price: 3000.0 },
                 { weight: "Pour+", price: "En Privé 🤫" },
               ],
             },
@@ -248,6 +249,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { weight: "100g", price: 380.0 },
                 { weight: "200g", price: 700.0 },
                 { weight: "500g", price: 1700.0 },
+                { weight: "1K", price: 3000.0 },
                 { weight: "Pour+", price: "En Privé 🤫" },
               ],
             },
@@ -268,6 +270,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { weight: "100g", price: 380.0 },
                 { weight: "200g", price: 700.0 },
                 { weight: "500g", price: 1700.0 },
+                { weight: "1K", price: 3000.0 },
                 { weight: "Pour+", price: "En Privé 🤫" },
               ],
             },
@@ -288,6 +291,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { weight: "100g", price: 380.0 },
                 { weight: "200g", price: 700.0 },
                 { weight: "500g", price: 1700.0 },
+                { weight: "1K", price: 3000.0 },
                 { weight: "Pour+", price: "En Privé 🤫" },
               ],
             },
@@ -315,6 +319,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { weight: "50g", price: 250.0 },
                 { weight: "100g", price: 480.0 },
                 { weight: "200g", price: 900.0 },
+                { weight: "500g", price: 1800.0 },
                 { weight: "Pour+", price: "En Privé 🤫" },
               ],
             },
@@ -334,6 +339,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { weight: "50g", price: 250.0 },
                 { weight: "100g", price: 480.0 },
                 { weight: "200g", price: 900.0 },
+                { weight: "500g", price: 1800.0 },
                 { weight: "Pour+", price: "En Privé 🤫" },
               ],
             },
@@ -353,6 +359,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { weight: "50g", price: 250.0 },
                 { weight: "100g", price: 480.0 },
                 { weight: "200g", price: 900.0 },
+                { weight: "500g", price: 1800.0 },
                 { weight: "Pour+", price: "En Privé 🤫" },
               ],
             },
@@ -372,6 +379,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { weight: "50g", price: 250.0 },
                 { weight: "100g", price: 480.0 },
                 { weight: "200g", price: 900.0 },
+                { weight: "500g", price: 1800.0 },
                 { weight: "Pour+", price: "En Privé 🤫" },
               ],
             },
@@ -505,11 +513,11 @@ document.addEventListener("DOMContentLoaded", function () {
               description:
                   "🍪 <b>BISCUIT ADDICTIF</b> 🍪\n\nDes arômes de pâte sablée, de vanille et de sucre brun, accompagnés d'une légère touche gazeuse en arrière-plan. Un profil dense et particulièrement gourmand.\n\n❄️ <i>Un Fresh Frozen pâtissier à la signature bien marquée.</i>",
               tarifs: [
-                { weight: "5g", price: 70.0 },
+                { weight: "5g", price: 60.0 },
                 { weight: "10g", price: 100.0 },
                 { weight: "25g", price: 220.0 },
                 { weight: "50g", price: 400.0 },
-                { weight: "100g", price: 750.0 },
+                { weight: "100g", price: 700.0 },
               ],
             },
             {
@@ -523,11 +531,11 @@ document.addEventListener("DOMContentLoaded", function () {
               description:
                   "🍑 <b>PÊCHE FUNKY</b> 🧄\n\nLa douceur juteuse de la pêche se mélange à des notes profondes, terreuses et légèrement umami. Un contraste fruité et salé particulièrement original.\n\n❄️ <i>Un Fresh Frozen complexe destiné aux amateurs de profils atypiques.</i>",
               tarifs: [
-                { weight: "5g", price: 70.0 },
+                { weight: "5g", price: 60.0 },
                 { weight: "10g", price: 100.0 },
                 { weight: "25g", price: 220.0 },
                 { weight: "50g", price: 400.0 },
-                { weight: "100g", price: 750.0 },
+                { weight: "100g", price: 700.0 },
               ],
             },
             {
@@ -541,11 +549,11 @@ document.addEventListener("DOMContentLoaded", function () {
               description:
                   "🥞 <b>BRIOCHE GOURMANDE</b> 🍞\n\nUn profil chaud et pâtissier rappelant la brioche, la pâte sucrée et les fruits confits, avec une touche de vanille délicate en finale.\n\n❄️ <i>Un Fresh Frozen rond, doux et généreux.</i>",
               tarifs: [
-                { weight: "5g", price: 70.0 },
+                { weight: "5g", price: 60.0 },
                 { weight: "10g", price: 100.0 },
                 { weight: "25g", price: 220.0 },
                 { weight: "50g", price: 400.0 },
-                { weight: "100g", price: 750.0 },
+                { weight: "100g", price: 700.0 },
               ],
             },
             {
@@ -559,11 +567,11 @@ document.addEventListener("DOMContentLoaded", function () {
               description:
                   "🎂 <b>GÂTEAU VELOURS</b> 🍰\n\nDes notes de cacao léger, de crème sucrée et de gâteau moelleux, accompagnées d'une discrète pointe fruitée. Une signature dessert élégante et équilibrée.\n\n❄️ <i>Un Fresh Frozen gourmand au profil pâtissier raffiné.</i>",
               tarifs: [
-                { weight: "5g", price: 70.0 },
+                { weight: "5g", price: 60.0 },
                 { weight: "10g", price: 100.0 },
                 { weight: "25g", price: 220.0 },
                 { weight: "50g", price: 400.0 },
-                { weight: "100g", price: 750.0 },
+                { weight: "100g", price: 700.0 },
               ],
             },
             {
@@ -577,11 +585,11 @@ document.addEventListener("DOMContentLoaded", function () {
               description:
                   "🍥 <b>MERINGUE FRUITÉE</b> 🧁\n\nUne douceur aérienne de meringue et de crème, relevée par des notes de fruits rouges légèrement acidulés. La finale reste sucrée, délicate et persistante.\n\n❄️ <i>Un Fresh Frozen fin, crémeux et fruité.</i>",
               tarifs: [
-                { weight: "5g", price: 70.0 },
+                { weight: "5g", price: 60.0 },
                 { weight: "10g", price: 100.0 },
                 { weight: "25g", price: 220.0 },
                 { weight: "50g", price: 400.0 },
-                { weight: "100g", price: 750.0 },
+                { weight: "100g", price: 700.0 },
               ],
             },
           /*   {
@@ -714,8 +722,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 { weight: "5g", price: 80.0 },
                 { weight: "10g", price: 140.0 },
                 { weight: "25g", price: 300.0 },
-                { weight: "50g", price: 550.0 },
-                { weight: "100g", price: 1000.0 },
+                { weight: "50g", price: 500.0 },
+                { weight: "100g", price: 900.0 },
               ],
             },
             {
@@ -732,8 +740,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 { weight: "5g", price: 80.0 },
                 { weight: "10g", price: 140.0 },
                 { weight: "25g", price: 300.0 },
-                { weight: "50g", price: 550.0 },
-                { weight: "100g", price: 1000.0 },
+                { weight: "50g", price: 500.0 },
+                { weight: "100g", price: 900.0 },
               ],
             },
             {
@@ -750,8 +758,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 { weight: "5g", price: 80.0 },
                 { weight: "10g", price: 140.0 },
                 { weight: "25g", price: 300.0 },
-                { weight: "50g", price: 550.0 },
-                { weight: "100g", price: 1000.0 },
+                { weight: "50g", price: 500.0 },
+                { weight: "100g", price: 900.0 },
               ],
             },
             {
@@ -768,8 +776,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 { weight: "5g", price: 80.0 },
                 { weight: "10g", price: 140.0 },
                 { weight: "25g", price: 300.0 },
-                { weight: "50g", price: 550.0 },
-                { weight: "100g", price: 1000.0 },
+                { weight: "50g", price: 500.0 },
+                { weight: "100g", price: 900.0 },
               ],
             },
             {
@@ -786,8 +794,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 { weight: "5g", price: 80.0 },
                 { weight: "10g", price: 140.0 },
                 { weight: "25g", price: 300.0 },
-                { weight: "50g", price: 550.0 },
-                { weight: "100g", price: 1000.0 },
+                { weight: "50g", price: 500.0 },
+                { weight: "100g", price: 900.0 },
               ],
             },
             {
@@ -804,8 +812,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 { weight: "5g", price: 80.0 },
                 { weight: "10g", price: 140.0 },
                 { weight: "25g", price: 300.0 },
-                { weight: "50g", price: 550.0 },
-                { weight: "100g", price: 1000.0 },
+                { weight: "50g", price: 500.0 },
+                { weight: "100g", price: 900.0 },
               ],
             },
             /*   {
