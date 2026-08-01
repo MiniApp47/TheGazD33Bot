@@ -884,7 +884,7 @@ document.addEventListener("DOMContentLoaded", function () {
               farm: "GAZ SÉLECTION 🇲🇦⛰️",
               promoEligible: true,
               type: "🧿 DOUBLE STATIC 🧿",
-              image: "ProductBPC.jpg",
+              image: "ProductBCP.jpg",
               video: "VideoBPC.mp4",
               description:
                 "",
