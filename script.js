@@ -1575,7 +1575,51 @@ document.addEventListener("DOMContentLoaded", function () {
 
     productListContainer.innerHTML = "";
 
-    filteredProducts.forEach((product) => {
+if (filteredProducts.length === 0) {
+  productListContainer.innerHTML =
+    '<p class="no-results">Aucun produit ne correspond à votre recherche.</p>';
+  return;
+}
+
+/*
+ * Dans Fresh Frozen uniquement, on regroupe les produits
+ * en fonction du nom présent dans product.farm.
+ */
+const separateFreshFrozenFarms =
+  categoryId === "HASH" && currentFarmId === "FRESH FROZEN";
+
+let productGroups;
+
+if (separateFreshFrozenFarms) {
+  const farmNames = [
+    ...new Set(filteredProducts.map((product) => product.farm)),
+  ];
+
+  productGroups = farmNames.map((farmName) => ({
+    farmName,
+    products: filteredProducts.filter(
+      (product) => product.farm === farmName,
+    ),
+  }));
+} else {
+  productGroups = [
+    {
+      farmName: null,
+      products: filteredProducts,
+    },
+  ];
+}
+
+productGroups.forEach((group) => {
+  if (group.farmName) {
+    const farmSeparator = document.createElement("div");
+    farmSeparator.className = "farm-separator";
+    farmSeparator.innerHTML = `<span>${group.farmName}</span>`;
+
+    productListContainer.appendChild(farmSeparator);
+  }
+
+  group.products.forEach((product) => {
       const card = document.createElement("div");
 
       if (product.type === "Promo") {
@@ -1614,8 +1658,9 @@ document.addEventListener("DOMContentLoaded", function () {
             `;
       }
 
-      productListContainer.appendChild(card);
-    });
+         productListContainer.appendChild(card);
+  });
+});
   }
 
   // --- FONCTION MODIFIÉE POUR GÉRER LE PRIX TEXTE, LES CARROUSELS ET LE BADGE PROMO ---

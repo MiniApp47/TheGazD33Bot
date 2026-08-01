@@ -367,6 +367,44 @@
             margin-top: 3vh;
         }
 
+        /* --- SÉPARATION VISUELLE DES FARMS --- */
+.farm-separator {
+    grid-column: 1 / -1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 25px 0 5px;
+    box-sizing: border-box;
+}
+
+.farm-separator::before,
+.farm-separator::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #ca351d,
+        transparent
+    );
+}
+
+.farm-separator span {
+    padding: 12px 18px;
+    color: white;
+    background: linear-gradient(180deg, #952b18, #1c1c1d);
+    border: 1px solid #ca351d;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(202, 53, 29, 0.7);
+    font-family: Copperplate, serif;
+    font-size: 0.95rem;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+}
+
         .product-card {
             border-radius: 15px;
             overflow: hidden;
