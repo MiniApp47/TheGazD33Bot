@@ -876,16 +876,16 @@ document.addEventListener("DOMContentLoaded", function () {
           id: "DOUBLESTATIC",
           name: "🧿 DOUBLE STATIC 🧿",
           image: "CategHash.png",
-          badgeText: "8 produits",
+          badgeText: "4 produits",
           products: [
             {
               id: "BLACK PAPAYA CHERRY 🥭🍒",
               name: "BLACK PAPAYA CHERRY 🥭🍒",
-              farm: "GAZ SÉLECTION 🇲🇦⛰️",
+              farm: "FULLMELT 🔬👨🏽‍🔬🇲🇦",
               promoEligible: true,
               type: "🧿 DOUBLE STATIC 🧿",
               image: "ProductBCP.jpg",
-              video: "VideoBPC.mp4",
+              video: "VideoBCP.mp4",
               description:
                 "",
               tarifs: [
@@ -899,7 +899,7 @@ document.addEventListener("DOMContentLoaded", function () {
             {
               id: "LIMOSA BX 🍋🍋‍🟩",
               name: "LIMOSA BX 🍋🍋‍🟩",
-              farm: "GAZ SÉLECTION 🇲🇦⛰️",
+              farm: "FULLMELT 🔬👨🏽‍🔬🇲🇦",
               promoEligible: true,
               type: "🧿 DOUBLE STATIC 🧿",
               image: "ProductBX.jpg",
@@ -917,7 +917,7 @@ document.addEventListener("DOMContentLoaded", function () {
             {
               id: "PEACH TSUNAMI 🌊 🍑",
               name: "PEACH TSUNAMI 🌊 🍑",
-              farm: "GAZ SÉLECTION 🇲🇦⛰️",
+              farm: "FULLMELT 🔬👨🏽‍🔬🇲🇦",
               promoEligible: true,
               type: "🧿 DOUBLE STATIC 🧿",
               image: "ProductPTT.jpg",
@@ -935,7 +935,7 @@ document.addEventListener("DOMContentLoaded", function () {
             {
               id: "PINEAPPLE V12 🍍⛽️",
               name: "PINEAPPLE V12 🍍⛽️",
-              farm: "GAZ SÉLECTION 🇲🇦⛰️",
+              farm: "FULLMELT 🔬👨🏽‍🔬🇲🇦",
               promoEligible: true,
               type: "🧿 DOUBLE STATIC 🧿",
               image: "ProductPV.jpg",
@@ -1398,6 +1398,8 @@ document.addEventListener("DOMContentLoaded", function () {
       id: "FULLMELT",
       name: "🔬 FULLMELT 👨🏽‍🔬🇲🇦",
       match: "FULLMELT",
+      // Fresh Frozen en premier, puis Double Static.
+      qualityOrder: ["FRESH FROZEN", "DOUBLESTATIC"],
     },
   ];
 
@@ -1519,12 +1521,24 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    const visibleFarms = category.farms
+    let visibleFarms = category.farms
       .map((farm) => ({
         farm,
         products: farm.products.filter(productMatchesCurrentProducer),
       }))
       .filter(({ products }) => products.length > 0);
+
+    // Pour FULLMELT, affiche Fresh Frozen puis Double Static.
+    const selectedProducer = getCurrentHashProducer();
+    if (selectedProducer?.qualityOrder) {
+      visibleFarms = [...visibleFarms].sort((a, b) => {
+        const orderA = selectedProducer.qualityOrder.indexOf(a.farm.id);
+        const orderB = selectedProducer.qualityOrder.indexOf(b.farm.id);
+        const safeOrderA = orderA === -1 ? Number.MAX_SAFE_INTEGER : orderA;
+        const safeOrderB = orderB === -1 ? Number.MAX_SAFE_INTEGER : orderB;
+        return safeOrderA - safeOrderB;
+      });
+    }
 
     productListContainer.innerHTML = "";
 
