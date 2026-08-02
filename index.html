@@ -367,43 +367,18 @@
             margin-top: 3vh;
         }
 
-        /* --- SÉPARATION VISUELLE DES FARMS --- */
-.farm-separator {
-    grid-column: 1 / -1;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin: 25px 0 5px;
-    box-sizing: border-box;
-}
+        /* --- BOUTONS DU PREMIER NIVEAU HASH : FARMS --- */
+        .producer-btn {
+            min-height: 95px;
+            background: linear-gradient(135deg, #111111 0%, #952b18 45%, #5b37d4 100%);
+            border: 1px solid #ca351d;
+            box-shadow: 0 0 15px rgba(202, 53, 29, 0.45);
+        }
 
-.farm-separator::before,
-.farm-separator::after {
-    content: "";
-    flex: 1;
-    height: 2px;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        #ca351d,
-        transparent
-    );
-}
-
-.farm-separator span {
-    padding: 12px 18px;
-    color: white;
-    background: linear-gradient(180deg, #952b18, #1c1c1d);
-    border: 1px solid #ca351d;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(202, 53, 29, 0.7);
-    font-family: Copperplate, serif;
-    font-size: 0.95rem;
-    font-weight: bold;
-    text-align: center;
-    white-space: nowrap;
-}
+        .producer-btn span:first-child {
+            font-size: 1.35rem;
+            text-align: center;
+        }
 
         .product-card {
             border-radius: 15px;

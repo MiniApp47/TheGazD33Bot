@@ -1318,6 +1318,7 @@ document.addEventListener("DOMContentLoaded", function () {
   };
   let currentView = "categories";
   let currentCategoryId = null;
+  let currentProducerId = null;
   let currentFarmId = null;
   let appliedPromo = null;
   let paymentMethod = "Espèce";
@@ -1386,18 +1387,148 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  function renderFarmList(categoryId) {
+  // --- PRODUCTEURS DISPONIBLES DANS LA CATÉGORIE HASH ---
+  const hashProducers = [
+    {
+      id: "GAZ_SELECTION",
+      name: "⛰️ GAZ SELECTION 🇲🇦",
+      match: "GAZ SELECTION",
+    },
+    {
+      id: "FULLMELT",
+      name: "🔬 FULLMELT 👨🏽‍🔬🇲🇦",
+      match: "FULLMELT",
+    },
+  ];
+
+  // Uniformise les accents, les espaces et les majuscules pour comparer les farms.
+  function normalizeFarmName(value) {
+    return String(value || "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/\s+/g, " ")
+      .trim()
+      .toUpperCase();
+  }
+
+  function getCurrentHashProducer() {
+    return hashProducers.find(
+      (producer) => producer.id === currentProducerId,
+    );
+  }
+
+  function productMatchesCurrentProducer(product) {
+    if (currentCategoryId !== "HASH" || !currentProducerId) {
+      return true;
+    }
+
+    const producer = getCurrentHashProducer();
+    if (!producer) return true;
+
+    return normalizeFarmName(product.farm).includes(producer.match);
+  }
+
+  function createNavigationBackButton(className, label) {
+    const backButton = document.createElement("button");
+    backButton.className = className;
+    backButton.innerHTML = `
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+      </svg>
+      ${label}
+    `;
+
+    backButton.style.cssText = `
+      background: linear-gradient(180deg, black, transparent);
+      border-bottom: 2px solid #ca351d;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 10px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      box-sizing: border-box;
+      margin-top: 3vh;
+      font-family: Copperplate;
+    `;
+
+    return backButton;
+  }
+
+  // Premier niveau dans HASH : GAZ SELECTION ou FULLMELT.
+  function renderProducerList(categoryId) {
     const category = appData.find((c) => c.id === categoryId);
+
     if (!category) {
       productListContainer.innerHTML =
         '<p class="no-results">Catégorie non trouvée.</p>';
       return;
     }
 
-    const farms = category.farms;
+    productListContainer.innerHTML = "";
+
+    const buttonsContainer = document.createElement("div");
+    buttonsContainer.className = "sub-categories-container";
+
+    hashProducers.forEach((producer) => {
+      const productCount = category.farms
+        .flatMap((farm) => farm.products)
+        .filter((product) =>
+          normalizeFarmName(product.farm).includes(producer.match),
+        ).length;
+
+      // N'affiche pas une farm vide.
+      if (productCount === 0) return;
+
+      const button = document.createElement("button");
+      button.className = "sub-category-btn producer-btn";
+      button.dataset.producerId = producer.id;
+      button.innerHTML = `
+        <span>${producer.name}</span>
+        <span class="sub-btn-badge">
+          ${productCount} produit${productCount > 1 ? "s" : ""}
+        </span>
+      `;
+
+      buttonsContainer.appendChild(button);
+    });
+
+    if (!buttonsContainer.children.length) {
+      productListContainer.innerHTML =
+        '<p class="no-results">Aucune farm disponible.</p>';
+      return;
+    }
+
+    productListContainer.appendChild(buttonsContainer);
+  }
+
+  // Deuxième niveau : qualités disponibles dans la farm sélectionnée.
+  function renderFarmList(categoryId) {
+    const category = appData.find((c) => c.id === categoryId);
+
+    if (!category) {
+      productListContainer.innerHTML =
+        '<p class="no-results">Catégorie non trouvée.</p>';
+      return;
+    }
+
+    const visibleFarms = category.farms
+      .map((farm) => ({
+        farm,
+        products: farm.products.filter(productMatchesCurrentProducer),
+      }))
+      .filter(({ products }) => products.length > 0);
 
     productListContainer.innerHTML = "";
-    if (farms.length === 0) {
+
+    if (visibleFarms.length === 0) {
       productListContainer.innerHTML =
         '<p class="no-results">Aucune sous-catégorie disponible.</p>';
       return;
@@ -1406,7 +1537,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const buttonsContainer = document.createElement("div");
     buttonsContainer.className = "sub-categories-container";
 
-    farms.forEach((farm) => {
+    visibleFarms.forEach(({ farm, products }) => {
       const button = document.createElement("button");
       button.className = "sub-category-btn";
       button.dataset.farmId = farm.id;
@@ -1416,16 +1547,17 @@ document.addEventListener("DOMContentLoaded", function () {
         button.style.cursor = "not-allowed";
       }
 
-      const productCount = farm.products.length;
+      const productCount = products.length;
       const badgeTextContent =
         productCount > 0
           ? `${productCount} produit${productCount > 1 ? "s" : ""}`
           : farm.badgeText || "";
 
       button.innerHTML = `
-            <span>${farm.name}</span>
-            ${badgeTextContent ? `<span class="sub-btn-badge">${badgeTextContent}</span>` : ""}
-        `;
+        <span>${farm.name}</span>
+        ${badgeTextContent ? `<span class="sub-btn-badge">${badgeTextContent}</span>` : ""}
+      `;
+
       buttonsContainer.appendChild(button);
     });
 
@@ -1435,68 +1567,100 @@ document.addEventListener("DOMContentLoaded", function () {
   function renderHomePage() {
     filterContainer.style.display = "flex";
 
-    const existingBackBtnCat = filterContainer.querySelector(
+    [
       ".back-to-categories-btn",
-    );
-    if (existingBackBtnCat) existingBackBtnCat.remove();
-    const existingBackBtnFarm =
-      filterContainer.querySelector(".back-to-farms-btn");
-    if (existingBackBtnFarm) existingBackBtnFarm.remove();
+      ".back-to-producers-btn",
+      ".back-to-farms-btn",
+    ].forEach((selector) => {
+      filterContainer
+        .querySelectorAll(selector)
+        .forEach((button) => button.remove());
+    });
 
+    searchFilterWrapper.style.display = "none";
+    farmFilterWrapper.style.display = "none";
+    qualityFilterWrapper.style.display = "none";
+
+    // Niveau principal : Hash, Weed, Packs, etc.
     if (currentView === "categories") {
       renderCategoryList();
-      searchFilterWrapper.style.display = "none";
-      farmFilterWrapper.style.display = "none";
       qualityFilterWrapper.style.display = "flex";
       productListContainer.style.gridTemplateColumns = "repeat(1, 1fr)";
-    } else if (currentView === "farms") {
+      return;
+    }
+
+    const category = appData.find((c) => c.id === currentCategoryId);
+
+    if (!category) {
+      currentView = "categories";
+      currentCategoryId = null;
+      currentProducerId = null;
+      currentFarmId = null;
+      renderCategoryList();
+      return;
+    }
+
+    // Niveau spécial HASH : choix de la farm.
+    if (currentView === "producers") {
+      renderProducerList(currentCategoryId);
+      productListContainer.style.gridTemplateColumns = "repeat(1, 1fr)";
+      filterContainer.prepend(
+        createNavigationBackButton(
+          "back-to-categories-btn",
+          category.name,
+        ),
+      );
+      return;
+    }
+
+    // Niveau des qualités : 90u, 120u, Fresh Frozen, etc.
+    if (currentView === "farms") {
       renderFarmList(currentCategoryId);
-      searchFilterWrapper.style.display = "none";
-      farmFilterWrapper.style.display = "none";
-      qualityFilterWrapper.style.display = "none";
       productListContainer.style.gridTemplateColumns = "repeat(1, 1fr)";
 
-      const category = appData.find((c) => c.id === currentCategoryId);
-      const backButton = document.createElement("button");
-      backButton.className = "back-to-categories-btn";
-      backButton.innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg> ${category.name}`;
-      backButton.style.cssText = `background: linear-gradient(180deg, black, transparent); 
-            border-bottom: 2px solid #ca351d;
-            border-top: none;
-            border-left: none;
-            border-right: none;
-        color: white; padding: 10px 15px; 
-        border-radius: 10px; font-size: 1.1rem; 
-        font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 10px; width: 100%; box-sizing: border-box; margin-top: 3vh;    font-family: Copperplate;
-        `;
-      filterContainer.prepend(backButton);
-    } else if (currentView === "products") {
+      if (currentCategoryId === "HASH") {
+        const producer = getCurrentHashProducer();
+        filterContainer.prepend(
+          createNavigationBackButton(
+            "back-to-producers-btn",
+            producer ? producer.name : category.name,
+          ),
+        );
+      } else {
+        filterContainer.prepend(
+          createNavigationBackButton(
+            "back-to-categories-btn",
+            category.name,
+          ),
+        );
+      }
+      return;
+    }
+
+    // Niveau final : produits de la qualité choisie.
+    if (currentView === "products") {
       renderProductList(currentCategoryId);
       searchFilterWrapper.style.display = "flex";
-      farmFilterWrapper.style.display = "none";
-      qualityFilterWrapper.style.display = "none";
+      productListContainer.style.gridTemplateColumns =
+        currentCategoryId === "PackPromo"
+          ? "repeat(1, 1fr)"
+          : "repeat(2, 1fr)";
 
-      // LIGNE AJOUTÉE ICI : On met les packs sur 1 colonne, le reste sur 2
       if (currentCategoryId === "PackPromo") {
-        productListContainer.style.gridTemplateColumns = "repeat(1, 1fr)";
+        filterContainer.prepend(
+          createNavigationBackButton(
+            "back-to-categories-btn",
+            category.name,
+          ),
+        );
       } else {
-        productListContainer.style.gridTemplateColumns = "repeat(2, 1fr)";
+        filterContainer.prepend(
+          createNavigationBackButton(
+            "back-to-farms-btn",
+            "Retour aux qualités",
+          ),
+        );
       }
-
-      const category = appData.find((c) => c.id === currentCategoryId);
-      const backButton = document.createElement("button");
-      backButton.className = "back-to-categories-btn";
-      backButton.innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>  ${category.name}`;
-      backButton.style.cssText = ` background: linear-gradient(180deg, black, transparent); 
-            border-bottom: 2px solid #ca351d;
-            border-top: none;
-            border-left: none;
-            border-right: none;
-        color: white; padding: 10px 15px; 
-        border-radius: 10px; font-size: 1.1rem; 
-        font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 10px; width: 100%; box-sizing: border-box; margin-top: 3vh;    font-family: Copperplate;
-        `;
-      filterContainer.prepend(backButton);
     }
   }
 
@@ -1532,6 +1696,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function renderProductList(categoryId) {
     const category = appData.find((c) => c.id === categoryId);
+
     if (!category) {
       productListContainer.innerHTML =
         '<p class="no-results">Catégorie non trouvée.</p>';
@@ -1541,23 +1706,22 @@ document.addEventListener("DOMContentLoaded", function () {
     let allProducts = [];
 
     if (currentFarmId) {
-      const selectedFarm = category.farms.find((f) => f.id === currentFarmId);
-      if (selectedFarm) {
-        allProducts = selectedFarm.products;
-      }
-      const backButton = document.createElement("button");
-      backButton.className = "back-to-farms-btn";
-      backButton.innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg> Retour aux choix`;
-      backButton.style.cssText = `background: linear-gradient(180deg, black, transparent); border-bottom: 2px solid #ca351d; border-top: none; border-left: none; border-right: none; color: white; padding: 10px 15px; border-radius: 10px; font-size: 1.1rem; font-weight: 700; cursor: pointer; display: flex; align-items: center; gap: 10px; width: 100%; box-sizing: border-box; margin-top: 3vh; font-family: Copperplate;`;
+      const selectedFarm = category.farms.find(
+        (farm) => farm.id === currentFarmId,
+      );
 
-      const existingBtn = filterContainer.querySelector(".back-to-farms-btn");
-      if (!existingBtn) filterContainer.prepend(backButton);
+      if (selectedFarm) {
+        allProducts = selectedFarm.products.filter(
+          productMatchesCurrentProducer,
+        );
+      }
     } else {
-      allProducts = category.farms.flatMap((farm) => farm.products);
-      // On ne met pas le bouton retour ici car il est géré dans renderHomePage
+      allProducts = category.farms
+        .flatMap((farm) => farm.products)
+        .filter(productMatchesCurrentProducer);
     }
 
-    if (!allProducts || allProducts.length === 0) {
+    if (!allProducts.length) {
       productListContainer.innerHTML =
         '<p class="no-results">Aucun produit trouvé.</p>';
       return;
@@ -1567,70 +1731,35 @@ document.addEventListener("DOMContentLoaded", function () {
       const searchMatch = product.name
         .toLowerCase()
         .includes(currentFilters.searchTerm.toLowerCase());
+
       const farmMatch = currentFarmId
         ? true
-        : currentFilters.farm === "all" || product.farm === currentFilters.farm;
+        : currentFilters.farm === "all" ||
+          product.farm === currentFilters.farm;
+
       return searchMatch && farmMatch;
     });
 
     productListContainer.innerHTML = "";
 
-if (filteredProducts.length === 0) {
-  productListContainer.innerHTML =
-    '<p class="no-results">Aucun produit ne correspond à votre recherche.</p>';
-  return;
-}
+    if (filteredProducts.length === 0) {
+      productListContainer.innerHTML =
+        '<p class="no-results">Aucun produit ne correspond à votre recherche.</p>';
+      return;
+    }
 
-/*
- * Dans Fresh Frozen uniquement, on regroupe les produits
- * en fonction du nom présent dans product.farm.
- */
-const separateFreshFrozenFarms =
-  categoryId === "HASH" && currentFarmId === "FRESH FROZEN";
-
-let productGroups;
-
-if (separateFreshFrozenFarms) {
-  const farmNames = [
-    ...new Set(filteredProducts.map((product) => product.farm)),
-  ];
-
-  productGroups = farmNames.map((farmName) => ({
-    farmName,
-    products: filteredProducts.filter(
-      (product) => product.farm === farmName,
-    ),
-  }));
-} else {
-  productGroups = [
-    {
-      farmName: null,
-      products: filteredProducts,
-    },
-  ];
-}
-
-productGroups.forEach((group) => {
-  if (group.farmName) {
-    const farmSeparator = document.createElement("div");
-    farmSeparator.className = "farm-separator";
-    farmSeparator.innerHTML = `<span>${group.farmName}</span>`;
-
-    productListContainer.appendChild(farmSeparator);
-  }
-
-  group.products.forEach((product) => {
+    filteredProducts.forEach((product) => {
       const card = document.createElement("div");
 
       if (product.type === "Promo") {
         card.className = "product-card promo-card";
         card.innerHTML = `
-                <div class="info">
-                    <div class="promo-icon">🎄</div>
-                    <div class="name">${product.name}</div>
-                    <div class="price">${product.tarifs[0].price.toFixed(2)}€</div>
-                </div>
-            `;
+          <div class="info">
+            <div class="promo-icon">🎄</div>
+            <div class="name">${product.name}</div>
+            <div class="price">${product.tarifs[0].price.toFixed(2)}€</div>
+          </div>
+        `;
       } else {
         card.className = "product-card product-item-card";
         card.dataset.productId = product.id;
@@ -1639,28 +1768,39 @@ productGroups.forEach((group) => {
           card.classList.add("unclickable");
         }
 
-        let flagHTML = product.flag
+        const flagHTML = product.flag
           ? `<span class="product-flag">${product.flag}</span>`
           : "";
 
-        // LIGNE AJOUTÉE ICI : On affiche l'image QUE si elle n'est pas vide
-        let imgHTML = product.image
+        const imgHTML = product.image
           ? `<img src="${product.image}" alt="${product.name}">`
           : "";
 
+        const firstTarif = product.tarifs && product.tarifs[0];
+        const displayedPrice = firstTarif
+          ? typeof firstTarif.price === "number"
+            ? `${firstTarif.price.toFixed(2)}€`
+            : firstTarif.price
+          : "Prix à la demande";
+
         card.innerHTML = `
-                ${imgHTML}
-                <div class="info" style="${!product.image ? "" : ""}">
-                    <div class="name" style="${!product.image ? "font-size: 1.2rem;" : ""}">${product.name} ${flagHTML}</div>
-                    <div class="farm" style="${!product.image ? "font-size: 1rem; margin-bottom: 10px;" : ""}">${product.farm}</div>
-                    <div class="price" style="${!product.image ? "font-size: 1.2rem; color: #ca351d;" : ""}">${typeof product.tarifs[0].price === "number" ? product.tarifs[0].price.toFixed(2) + "€" : product.tarifs[0].price}</div>
-                </div>
-            `;
+          ${imgHTML}
+          <div class="info">
+            <div class="name" style="${!product.image ? "font-size: 1.2rem;" : ""}">
+              ${product.name} ${flagHTML}
+            </div>
+            <div class="farm" style="${!product.image ? "font-size: 1rem; margin-bottom: 10px;" : ""}">
+              ${product.farm}
+            </div>
+            <div class="price" style="${!product.image ? "font-size: 1.2rem; color: #ca351d;" : ""}">
+              ${displayedPrice}
+            </div>
+          </div>
+        `;
       }
 
-         productListContainer.appendChild(card);
-  });
-});
+      productListContainer.appendChild(card);
+    });
   }
 
   // --- FONCTION MODIFIÉE POUR GÉRER LE PRIX TEXTE, LES CARROUSELS ET LE BADGE PROMO ---
@@ -2110,6 +2250,8 @@ productGroups.forEach((group) => {
       if (pageId === "page-home") {
         currentView = "categories";
         currentCategoryId = null;
+        currentProducerId = null;
+        currentFarmId = null;
         currentFilters.searchTerm = "";
         currentFilters.quality = "all";
         currentFilters.farm = "all";
@@ -2148,11 +2290,15 @@ productGroups.forEach((group) => {
     if (categoryCard) {
       currentCategoryId = categoryCard.dataset.categoryId;
 
+      currentProducerId = null;
+      currentFarmId = null;
+
       if (currentCategoryId === "PackPromo") {
-        currentView = "products"; // On va direct aux produits
-        currentFarmId = null; // On force l'affichage de tous les produits de la catégorie
+        currentView = "products";
+      } else if (currentCategoryId === "HASH") {
+        currentView = "producers";
       } else {
-        currentView = "farms"; // Comportement classique
+        currentView = "farms";
       }
 
       currentFilters.searchTerm = "";
@@ -2174,6 +2320,19 @@ productGroups.forEach((group) => {
         });
 
       accordionItem.classList.toggle("active");
+      return;
+    }
+
+    const producerBtn = target.closest(".producer-btn");
+
+    if (producerBtn) {
+      currentProducerId = producerBtn.dataset.producerId;
+      currentFarmId = null;
+      currentView = "farms";
+
+      currentFilters.searchTerm = "";
+      document.getElementById("search-filter").value = "";
+      renderHomePage();
       return;
     }
 
@@ -2203,6 +2362,18 @@ productGroups.forEach((group) => {
     if (target.closest(".back-to-categories-btn")) {
       currentView = "categories";
       currentCategoryId = null;
+      currentProducerId = null;
+      currentFarmId = null;
+      currentFilters.searchTerm = "";
+      document.getElementById("search-filter").value = "";
+      renderHomePage();
+      return;
+    }
+
+    if (target.closest(".back-to-producers-btn")) {
+      currentView = "producers";
+      currentProducerId = null;
+      currentFarmId = null;
       currentFilters.searchTerm = "";
       document.getElementById("search-filter").value = "";
       renderHomePage();
