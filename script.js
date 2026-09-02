@@ -1,6 +1,10 @@
 // Attend que le DOM soit entièrement chargé pour exécuter le script
 document.addEventListener("DOMContentLoaded", function () {
   const tg = window.Telegram.WebApp;
+
+  // Boutique temporairement fermée : aucune navigation vers le catalogue.
+  const SHOP_CLOSED = true;
+
   tg.ready();
   tg.expand();
   tg.setHeaderColor("#2c2c2e");
@@ -1359,6 +1363,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // --- NAVIGATION ---
   function showPage(pageId) {
+    // Tant que la boutique est fermée, aucune autre page n'est accessible.
+    if (SHOP_CLOSED && pageId !== "page-loader" && pageId !== "page-closed") {
+      pageId = "page-closed";
+    }
+
     // Coupe toutes les vidéos instantanément au changement de page
     document.querySelectorAll("video").forEach((video) => {
       video.pause();
@@ -1368,6 +1377,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const page = document.getElementById(pageId);
     if (page) {
       page.classList.add("active");
+    }
+
+    if (pageId === "page-closed") {
+      document.body.classList.add("shop-closed");
+      return;
     }
 
     const homeNav = document.getElementById("nav-menu");
@@ -2483,6 +2497,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function init() {
     setTimeout(() => {
+      if (SHOP_CLOSED) {
+        showPage("page-closed");
+        return;
+      }
+
       populateFilters();
       renderHomePage();
       updateCartCount();

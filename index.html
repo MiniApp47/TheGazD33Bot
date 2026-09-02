@@ -137,6 +137,84 @@
  */
         }
 
+
+
+        /* --- PAGE DE FERMETURE TEMPORAIRE --- */
+        body.shop-closed {
+            overflow: hidden;
+            margin-bottom: 0;
+        }
+
+        body.shop-closed .bottom-nav {
+            display: none !important;
+        }
+
+        #page-closed {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            width: 100%;
+            min-height: 100vh;
+            box-sizing: border-box;
+            padding: 24px 18px;
+            justify-content: center;
+            align-items: center;
+            overflow-y: auto;
+            background:
+                linear-gradient(rgba(8, 8, 10, 0.82), rgba(8, 8, 10, 0.94)),
+                url('Fondecran.jpg') center center / cover no-repeat fixed;
+        }
+
+        .closure-card {
+            width: min(92vw, 520px);
+            box-sizing: border-box;
+            padding: 26px 22px 30px;
+            border-radius: 24px;
+            text-align: center;
+            background: rgba(20, 20, 22, 0.92);
+            border: 1px solid #ca351d;
+            box-shadow: 0 0 30px rgba(202, 53, 29, 0.34);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+        }
+
+        .closure-logo {
+            width: 92px;
+            height: 92px;
+            object-fit: cover;
+            border-radius: 22px;
+            margin-bottom: 18px;
+            box-shadow: 0 0 18px rgba(202, 53, 29, 0.65);
+        }
+
+        .closure-title {
+            margin: 0 0 22px;
+            color: #ffffff;
+            font-family: Copperplate, 'Roboto', sans-serif;
+            font-size: clamp(1.25rem, 5vw, 1.7rem);
+            line-height: 1.35;
+            letter-spacing: 0.4px;
+        }
+
+        .closure-message {
+            color: #f4f4f5;
+            font-family: 'Roboto', sans-serif;
+            font-size: clamp(0.98rem, 4vw, 1.08rem);
+            line-height: 1.62;
+        }
+
+        .closure-message p {
+            margin: 0 0 17px;
+            font-weight: 700;
+        }
+
+        .closure-message p:last-child {
+            margin-bottom: 0;
+            color: #ffb0a4;
+            font-size: 1.08em;
+            letter-spacing: 0.5px;
+        }
+
         /* --- Page d'accueil --- */
         .top-marquee {
             background-color: var(--tertiary-bg-color);
@@ -1603,6 +1681,29 @@
             <img src="Logo.jpg" alt="Logo">
             <div class="app-name"> ⛰️ THEGAZD33 ⛰️ </div>
             <div class="loading-text">Chargement de TheGazD33Bot...</div>
+        </div>
+    </div>
+
+
+    <div id="page-closed" class="page" aria-live="polite">
+        <div class="closure-card">
+            <img src="Logo.jpg" alt="Logo TheGazD33" class="closure-logo">
+
+            <h1 class="closure-title">🚨 PETITE ANNONCE À NOTRE COMMUNAUTÉ 🚨</h1>
+
+            <div class="closure-message">
+                <p>Après quelque temps à vos côtés, on a décidé de fermer temporairement pour une réorganisation et quelques vacances. 🏖️🔄</p>
+
+                <p>La pause peut durer 1 mois, 2 mois, 3 mois… on ne sait pas encore. 🤷‍♂️</p>
+
+                <p>En tout cas, on voulait vous remercier pour votre fidélité et votre confiance ❤️</p>
+
+                <p>On espère sincèrement vous avoir régalés jusqu’au bout. 🫶</p>
+
+                <p>Prenez soin de vous, profitez bien… et à bientôt peut-être 👀❤️</p>
+
+                <p>MERCI POUR TOUT. ❤️</p>
+            </div>
         </div>
     </div>
 
