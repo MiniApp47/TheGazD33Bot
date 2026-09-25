@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // --- DONNÉES DE L'APPLICATION (NOUVELLE STRUCTURE) ---
   const appData = [
     // --- Catégorie 0 : PACKS PROMO ---
-    {
+   /*  {
       id: "PackPromo",
       name: "💎 PACKS PROMO 💎",
       farm: "",
@@ -198,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
           ],
         },
       ],
-    },
+    }, */
     // --- Catégorie 1: HASH ---
     {
       id: "HASH",
@@ -381,7 +381,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }, */
           ],
         },
-        {
+        /* {
           id: "120u PREMIUM",
           name: "🧬 120u PREMIUM 🧬",
           image: "CategHash.png",
@@ -577,9 +577,9 @@ document.addEventListener("DOMContentLoaded", function () {
                                 { weight: '200g', price: 900.00 },
                                 { weight: 'Pour+', price: 'En Privé 🤫' },
                             ]
-                        } */
+                        } 
           ],
-        },
+        }, */
         {
           id: "FRESH FROZEN",
           name: "💎 FRESH FROZEN 💎",
@@ -1100,13 +1100,13 @@ document.addEventListener("DOMContentLoaded", function () {
             }, */
           ],
         },
-        {
+        /* {
           id: "DOUBLESTATIC",
           name: "🧿 DOUBLE STATIC 🧿",
           image: "CategHash.png",
           badgeText: "4 produits",
           products: [
-            {
+           /*  {
               id: "BLACK PAPAYA CHERRY 🥭🍒",
               name: "BLACK PAPAYA CHERRY 🥭🍒",
               farm: "FULLMELT 🔬👨🏽‍🔬🇲🇦",
@@ -1177,9 +1177,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 { weight: "50g", price: 450.0 },
                 { weight: "100g", price: 800.0 },
               ],
-            },
+            }, 
       ],
-        },
+        }, */
       ],
     },
 
