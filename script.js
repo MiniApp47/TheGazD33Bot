@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const tg = window.Telegram.WebApp;
 
   // Boutique temporairement fermée : aucune navigation vers le catalogue.
-  const SHOP_CLOSED = true;
+  const SHOP_CLOSED = false;
 
   tg.ready();
   tg.expand();
@@ -215,7 +215,7 @@ document.addEventListener("DOMContentLoaded", function () {
           image: "CategHash.png",
           badgeText: "5 produits",
           products: [
-            {
+            /* {
               id: "APRICOT 🍑",
               name: "APRICOT 🍑",
               farm: "GAZ SELECTION 🇲🇦 ⛰️",
@@ -298,7 +298,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { weight: "1K", price: 3000.0 },
                 { weight: "Pour+", price: "En Privé 🤫" },
               ],
-            },
+            }, */
           ],
         },
         {
@@ -506,7 +506,79 @@ document.addEventListener("DOMContentLoaded", function () {
           image: "CategHash.png",
           badgeText: "5 produits",
           products: [
-            {
+             {
+              id: "PAPAY LEMONZ 🥭 🍋",
+              name: "PAPAY LEMONZ 🥭 🍋",
+              farm: "GAZ SELECTION 🇲🇦 ⛰️",
+              promoEligible: true,
+              type: "FRESH FRO",
+              image: "ProductPLL.jpg",
+              video: "VideoPLL.mp4",
+              description:
+                  "FRESH FROZEN PREMIUM 🧊 ⚡️",
+              tarifs: [
+                { weight: "5g", price: 60.0 },
+                { weight: "10g", price: 100.0 },
+                { weight: "25g", price: 220.0 },
+                { weight: "50g", price: 400.0 },
+                { weight: "100g", price: 700.0 },
+              ],
+            },
+             {
+              id: "GTA LEMONZ 🔫🍋‍🟩",
+              name: "GTA LEMONZ 🔫🍋‍🟩",
+              farm: "GAZ SELECTION 🇲🇦 ⛰️",
+              promoEligible: true,
+              type: "FRESH FRO",
+              image: "ProductGTA.jpg",
+              video: "VideoGTA.mp4",
+              description:
+                  "FRESH FROZEN PREMIUM 🧊 ⚡️",
+              tarifs: [
+                { weight: "5g", price: 60.0 },
+                { weight: "10g", price: 100.0 },
+                { weight: "25g", price: 220.0 },
+                { weight: "50g", price: 400.0 },
+                { weight: "100g", price: 700.0 },
+              ],
+            },
+             {
+              id: "CHERRY MOCHI 🍒🍙",
+              name: "CHERRY MOCHI 🍒🍙",
+              farm: "GAZ SELECTION 🇲🇦 ⛰️",
+              promoEligible: true,
+              type: "FRESH FRO",
+              image: "ProductCM.jpg",
+              video: "VideoCM.mp4",
+              description:
+                  "FRESH FROZEN PREMIUM 🧊 ⚡️",
+              tarifs: [
+                { weight: "5g", price: 60.0 },
+                { weight: "10g", price: 100.0 },
+                { weight: "25g", price: 220.0 },
+                { weight: "50g", price: 400.0 },
+                { weight: "100g", price: 700.0 },
+              ],
+            },
+             {
+              id: "KNOCK OUT 🥊",
+              name: "KNOCK OUT 🥊",
+              farm: "GAZ SELECTION 🇲🇦 ⛰️",
+              promoEligible: true,
+              type: "FRESH FRO",
+              image: "ProductKO.jpg",
+              video: "VideoKO.mp4",
+              description:
+                  "FRESH FROZEN PREMIUM 🧊 ⚡️",
+              tarifs: [
+                { weight: "5g", price: 60.0 },
+                { weight: "10g", price: 100.0 },
+                { weight: "25g", price: 220.0 },
+                { weight: "50g", price: 400.0 },
+                { weight: "100g", price: 700.0 },
+              ],
+            },
+         /*    {
               id: "FROSTED AÇAI ☃️🫐🫐",
               name: "FROSTED AÇAI ☃️🫐",
               farm: "FULLMELT 🔬👨🏽‍🔬🇲🇦",
@@ -649,7 +721,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { weight: "50g", price: 400.0 },
                 { weight: "100g", price: 700.0 },
               ],
-            },
+            }, */
           /*   {
               id: "SUPER BOOF x CHERRY🍋 🍒",
               name: "SUPER BOOF x CHERRY🍋 🍒",
@@ -767,6 +839,78 @@ document.addEventListener("DOMContentLoaded", function () {
           badgeText: "8 produits",
           products: [
             {
+              id: "HSATZUMA REVENGE (SR) 🍋🍊",
+              name: "SATZUMA REVENGE 🍋🍊",
+              farm: "GAZ SÉLECTION 🇲🇦⛰️",
+              promoEligible: true,
+              type: "PLASMASTATIC ⚡️",
+              image: "ProductSR.jpg",
+              video: "VideoSR.mp4",
+              description:
+                "PLASAMASTATIC ⚡️",
+              tarifs: [
+                { weight: "5g", price: 80.0 },
+                { weight: "10g", price: 140.0 },
+                { weight: "25g", price: 300.0 },
+                { weight: "50g", price: 500.0 },
+                { weight: "100g", price: 900.0 },
+              ],
+            },
+            {
+              id: "HONEY PAPAY (HP)  🍯🥭",
+              name: "HONEY PAPAY  🍯🥭",
+              farm: "GAZ SÉLECTION 🇲🇦⛰️",
+              promoEligible: true,
+              type: "PLASMASTATIC ⚡️",
+              image: "ProductHP.jpg",
+              video: "VideoHP.mp4",
+              description:
+                "PLASAMASTATIC ⚡️",
+              tarifs: [
+                { weight: "5g", price: 80.0 },
+                { weight: "10g", price: 140.0 },
+                { weight: "25g", price: 300.0 },
+                { weight: "50g", price: 500.0 },
+                { weight: "100g", price: 900.0 },
+              ],
+            },
+            {
+              id: "ROTTEN RAINBOW 🍓🍰",
+              name: "ROTTEN RAINBOW 🍓🍰",
+              farm: "GAZ SÉLECTION 🇲🇦⛰️",
+              promoEligible: true,
+              type: "PLASMASTATIC ⚡️",
+              image: "ProductRR.jpg",
+              video: "VideoRR.mp4",
+              description:
+                "PLASAMASTATIC ⚡️",
+              tarifs: [
+                { weight: "5g", price: 80.0 },
+                { weight: "10g", price: 140.0 },
+                { weight: "25g", price: 300.0 },
+                { weight: "50g", price: 500.0 },
+                { weight: "100g", price: 900.0 },
+              ],
+            },
+            {
+              id: "MEAT GRINDER (MG) 🍭🍡",
+              name: "MEAT GRINDER 🍭🍡",
+              farm: "GAZ SÉLECTION 🇲🇦⛰️",
+              promoEligible: true,
+              type: "PLASMASTATIC ⚡️",
+              image: "ProductMGG.jpg",
+              video: "VideoMGG.mp4",
+              description:
+                "PLASAMASTATIC ⚡️",
+              tarifs: [
+                { weight: "5g", price: 80.0 },
+                { weight: "10g", price: 140.0 },
+                { weight: "25g", price: 300.0 },
+                { weight: "50g", price: 500.0 },
+                { weight: "100g", price: 900.0 },
+              ],
+            },
+            /* {
               id: "FORBIDDEN FRUIT x FRUIT JOY 🍉🍓🍋🍭",
               name: "FORBIDDEN FRUIT x FRUIT JOY 🍉🍓🍋🍭",
               farm: "GAZ SÉLECTION 🇲🇦⛰️",
@@ -873,7 +1017,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { weight: "50g", price: 500.0 },
                 { weight: "100g", price: 900.0 },
               ],
-            },
+            }, */
           ],
         },
         {
@@ -2497,10 +2641,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function init() {
     setTimeout(() => {
-      if (SHOP_CLOSED) {
-        showPage("page-closed");
-        return;
-      }
 
       populateFilters();
       renderHomePage();
