@@ -1100,6 +1100,68 @@ document.addEventListener("DOMContentLoaded", function () {
             }, */
           ],
         },
+        {
+          id: "⚡️🥇 PLASMASTATIC 50G 🥇⚡️",
+          name: "⚡️🥇 PLASMASTATIC 50G 🥇⚡️",
+          image: "CategHash.png",
+          badgeText: "8 produits",
+          products: [
+            {
+              id: "ORANGE ODV 🍊🍋",
+              name: "ORANGE ODV 🍊🍋",
+              farm: "GAZ SÉLECTION 🇲🇦⛰️",
+              promoEligible: true,
+              type: "PLASMASTATIC ⚡️",
+              image: "ProductOO.jpg",
+              video: "VideoOO.mp4",
+              description:
+                "PLASAMASTATIC PREMIUM 🥇 ⚡️",
+              tarifs: [
+                { weight: "5g", price: 90.0 },
+                { weight: "10g", price: 160.0 },
+                { weight: "25g", price: 330.0 },
+                { weight: "50g", price: 600.0 },
+                { weight: "100g", price: 1100.0 },
+              ],
+            },
+            {
+              id: "FRUIT JOY x CALIPPO 🍇🍓🍦",
+              name: "FRUIT JOY x CALIPPO 🍇🍓🍦",
+              farm: "GAZ SÉLECTION 🇲🇦⛰️",
+              promoEligible: true,
+              type: "PLASMASTATIC ⚡️",
+              image: "ProductFJC.jpg",
+              video: "VideoFJC.mp4",
+              description:
+                "PLASAMASTATIC PREMIUM 🥇 ⚡️",
+              tarifs: [
+                { weight: "5g", price: 90.0 },
+                { weight: "10g", price: 160.0 },
+                { weight: "25g", price: 330.0 },
+                { weight: "50g", price: 600.0 },
+                { weight: "100g", price: 1100.0 },
+              ],
+            },
+            {
+              id: "FORBIDDEN FRUIT X MANDARINA (FFxM) 🍉🍒🍊",
+              name: "FORBIDDEN FRUIT X MANDARINA 🍉🍒🍊",
+              farm: "GAZ SÉLECTION 🇲🇦⛰️",
+              promoEligible: true,
+              type: "PLASMASTATIC ⚡️",
+              image: "ProductFFM.jpg",
+              video: "VideoFFM.mp4",
+              description:
+                "PLASAMASTATIC PREMIUM 🥇 ⚡️",
+              tarifs: [
+                { weight: "5g", price: 90.0 },
+                { weight: "10g", price: 160.0 },
+                { weight: "25g", price: 330.0 },
+                { weight: "50g", price: 600.0 },
+                { weight: "100g", price: 1100.0 },
+              ],
+            },
+          ],
+        },
         /* {
           id: "DOUBLESTATIC",
           name: "🧿 DOUBLE STATIC 🧿",
@@ -1269,13 +1331,31 @@ document.addEventListener("DOMContentLoaded", function () {
       quality: " 🪴 Weed 🪴",
       image: "CategWeed.jpg",
       farms: [
-        /*   {
+          {
                     id: 'CALIUS',
                     name: '🇺🇸 CALI US 🇺🇸',
                     image: 'Wizard4.png',
                     badgeText: '2 produits',
-                    products: []
-                }, */
+                    products: [
+                       {
+              id: "FORBIDDEN JOY 🍇 🍬",
+              name: "FORBIDDEN JOY 🍇🍬",
+              farm: "NO BRAND ™️©️",
+              promoEligible: true,
+              type: "Weed",
+              image: "ProductFJJ.jpg",
+              video: "VideoFJJ.mp4",
+              description:
+                "",
+              tarifs: [
+                { weight: "10g", price: 100.0 },
+                { weight: "25g", price: 220.0 },
+                { weight: "50g", price: 400.0 },
+                { weight: "100g", price: 750.0 },
+              ],
+            },
+                    ]
+                },
         {
           id: "WEEDholland",
           name: "🇳🇱 WEED HOLLANDAISE 🇳🇱",
