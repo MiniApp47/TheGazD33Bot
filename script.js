@@ -224,7 +224,7 @@ document.addEventListener("DOMContentLoaded", function () {
               image: "ProductPPP.jpg",
               video: "VideoPPP.mov",
               description:
-                "",
+                  "🍮 <b>CRÈME DE PÊCHE</b> 🍑\n\nUne base douce et crémeuse rappelant la panna cotta vanillée, accompagnée d'un coulis de pêche mûre et sucrée. Une finale légèrement gourmande et lactée.\n\n🧪 <i>Un profil 90u dessert, fruité et particulièrement onctueux.</i>",
               tarifs: [
                 { weight: "10g", price: 70.0 },
                 { weight: "25g", price: 130.0 },
@@ -244,7 +244,7 @@ document.addEventListener("DOMContentLoaded", function () {
               image: "ProductMGGG.jpg",
               video: "VideoMGGG.mov",
               description:
-                "",
+                  "🥭 <b>MANGUE TROPICALE</b> 🌴\n\nUne mangue bien mûre, juteuse et sucrée, soutenue par des notes tropicales profondes et une légère touche gazeuse en fin de bouche.\n\n🧪 <i>Un 90u exotique, intense et généreusement fruité.</i>",
               tarifs: [
                 { weight: "10g", price: 70.0 },
                 { weight: "25g", price: 130.0 },
@@ -264,7 +264,7 @@ document.addEventListener("DOMContentLoaded", function () {
               image: "ProductBS.jpg",
               video: "VideoBS.mov",
               description:
-                "",
+                  "🍌 <b>DESSERT BANANE</b> 🍨\n\nUne banane mûre et crémeuse accompagnée de notes de vanille, de crème glacée et d'une légère touche chocolatée. Un véritable profil dessert.\n\n🧪 <i>Un 90u rond, gourmand et ultra-crémeux.</i>",
               tarifs: [
                 { weight: "10g", price: 70.0 },
                 { weight: "25g", price: 130.0 },
@@ -284,7 +284,7 @@ document.addEventListener("DOMContentLoaded", function () {
               image: "ProductTI.jpg",
               video: "VideoTI.mov",
               description:
-                "",
+                  "☕️ <b>TIRAMISU CRÉMEUX</b> 🍰\n\nDes notes de café torréfié et de cacao doux enveloppées dans une crème vanillée rappelant le mascarpone. Une finale pâtissière riche et persistante.\n\n🧪 <i>Un 90u dessert profond, crémeux et élégant.</i>",
               tarifs: [
                 { weight: "10g", price: 70.0 },
                 { weight: "25g", price: 130.0 },
@@ -595,7 +595,7 @@ document.addEventListener("DOMContentLoaded", function () {
               image: "ProductPLL.jpg",
               video: "VideoPLL.mp4",
               description:
-                  "FRESH FROZEN PREMIUM 🧊 ⚡️",
+                   "🥭 <b>PAPAYE CITRONNÉE</b> 🍋\n\nLa douceur tropicale d'une papaye bien mûre rencontre un citron vif et acidulé. Une combinaison fraîche avec une finale légèrement sucrée.\n\n❄️ <i>Un Fresh Frozen exotique, frais et parfaitement équilibré.</i>",
               tarifs: [
                 { weight: "5g", price: 60.0 },
                 { weight: "10g", price: 100.0 },
@@ -613,7 +613,7 @@ document.addEventListener("DOMContentLoaded", function () {
               image: "ProductGTA.jpg",
               video: "VideoGTA.mp4",
               description:
-                  "FRESH FROZEN PREMIUM 🧊 ⚡️",
+                   "🍋‍🟩 <b>LEMON GAS</b> ⛽️\n\nUne attaque franche de citron vert et de zestes d'agrumes, rapidement accompagnée par un fond gazeux plus sombre et persistant.\n\n❄️ <i>Un Fresh Frozen vif, citronné et à la signature bien marquée.</i>",
               tarifs: [
                 { weight: "5g", price: 60.0 },
                 { weight: "10g", price: 100.0 },
@@ -631,7 +631,7 @@ document.addEventListener("DOMContentLoaded", function () {
               image: "ProductCM.jpg",
               video: "VideoCM.mp4",
               description:
-                  "FRESH FROZEN PREMIUM 🧊 ⚡️",
+                    "🍒 <b>MOCHI CERISE</b> 🍙\n\nUne cerise rouge sucrée enveloppée dans des notes de pâte de riz, de vanille et de crème. La finale rappelle un dessert japonais fruité et délicat.\n\n❄️ <i>Un Fresh Frozen doux, crémeux et gourmand.</i>",
               tarifs: [
                 { weight: "5g", price: 60.0 },
                 { weight: "10g", price: 100.0 },
@@ -649,7 +649,7 @@ document.addEventListener("DOMContentLoaded", function () {
               image: "ProductKO.jpg",
               video: "VideoKO.mp4",
               description:
-                  "FRESH FROZEN PREMIUM 🧊 ⚡️",
+                    "🥊 <b>IMPACT GAZEUX</b> 💥\n\nUn profil profond mêlant des notes gazeuses, légèrement épicées et terreuses à une douceur subtile en arrière-plan. Une signature aromatique dense et persistante.\n\n❄️ <i>Un Fresh Frozen puissant en caractère et particulièrement expressif.</i>",
               tarifs: [
                 { weight: "5g", price: 60.0 },
                 { weight: "10g", price: 100.0 },
@@ -927,7 +927,7 @@ document.addEventListener("DOMContentLoaded", function () {
               image: "ProductSR.jpg",
               video: "VideoSR.mp4",
               description:
-                "PLASAMASTATIC ⚡️",
+                 "🍊 <b>MANDARINE ACIDE</b> 🍋\n\nUne explosion d'agrumes dominée par la mandarine satsuma, relevée par du citron frais et une légère amertume de zeste. La finale reste vive et persistante.\n\n⚡️ <i>Un Plasmastatic frais, acidulé et intensément citronné.</i>",
               tarifs: [
                 { weight: "5g", price: 80.0 },
                 { weight: "10g", price: 140.0 },
@@ -945,7 +945,7 @@ document.addEventListener("DOMContentLoaded", function () {
               image: "ProductHP.jpg",
               video: "VideoHP.mp4",
               description:
-                "PLASAMASTATIC ⚡️",
+                 "🍯 <b>PAPAYE AU MIEL</b> 🥭\n\nUne papaye tropicale bien mûre recouverte de notes de miel doux et floral. Une texture aromatique ronde avec une finale sucrée et légèrement crémeuse.\n\n⚡️ <i>Un Plasmastatic exotique, doux et particulièrement gourmand.</i>",
               tarifs: [
                 { weight: "5g", price: 80.0 },
                 { weight: "10g", price: 140.0 },
@@ -963,7 +963,7 @@ document.addEventListener("DOMContentLoaded", function () {
               image: "ProductRR.jpg",
               video: "VideoRR.mp4",
               description:
-                "PLASAMASTATIC ⚡️",
+                 "🌈 <b>FRUITS CONFITS</b> 🍓\n\nUn mélange intense de fruits rouges très mûrs, de bonbons acidulés et de notes pâtissières. Une petite touche funky vient complexifier l'ensemble.\n\n⚡️ <i>Un Plasmastatic fruité, sucré et volontairement atypique.</i>",
               tarifs: [
                 { weight: "5g", price: 80.0 },
                 { weight: "10g", price: 140.0 },
@@ -981,7 +981,7 @@ document.addEventListener("DOMContentLoaded", function () {
               image: "ProductMGG.jpg",
               video: "VideoMGG.mp4",
               description:
-                "PLASAMASTATIC ⚡️",
+                 "🍭 <b>CANDY FUNKY</b> 🍡\n\nDes notes de bonbons sucrés et fruités rencontrent un fond plus profond, légèrement salé et gazeux. Un contraste original qui évolue à chaque note.\n\n⚡️ <i>Un Plasmastatic complexe entre gourmandise et caractère funky.</i>",
               tarifs: [
                 { weight: "5g", price: 80.0 },
                 { weight: "10g", price: 140.0 },
@@ -1115,7 +1115,7 @@ document.addEventListener("DOMContentLoaded", function () {
               image: "ProductOO.jpg",
               video: "VideoOO.mp4",
               description:
-                "PLASAMASTATIC PREMIUM 🥇 ⚡️",
+                  "🍊 <b>ORANGE PRESSÉE</b> 🍋\n\nUne orange juteuse et très expressive mêlée à des zestes de citron et une légère touche de bonbon aux agrumes. Une finale fraîche et légèrement gazeuse.\n\n🥇 <i>Un Plasmastatic Premium lumineux, fruité et intensément citronné.</i>",
               tarifs: [
                 { weight: "5g", price: 90.0 },
                 { weight: "10g", price: 160.0 },
@@ -1133,7 +1133,7 @@ document.addEventListener("DOMContentLoaded", function () {
               image: "ProductFJC.jpg",
               video: "VideoFJC.mp4",
               description:
-                "PLASAMASTATIC PREMIUM 🥇 ⚡️",
+                  "🍓 <b>GLACE AUX FRUITS</b> 🍦\n\nUn cocktail de fruits rouges et de raisin sucré accompagné d'une fraîcheur rappelant une glace Calippo. Une finale crémeuse et acidulée complète le profil.\n\n🥇 <i>Un Plasmastatic Premium gourmand entre candy, fruits et fraîcheur.</i>",
               tarifs: [
                 { weight: "5g", price: 90.0 },
                 { weight: "10g", price: 160.0 },
@@ -1151,7 +1151,7 @@ document.addEventListener("DOMContentLoaded", function () {
               image: "ProductFFM.jpg",
               video: "VideoFFM.mp4",
               description:
-                "PLASAMASTATIC PREMIUM 🥇 ⚡️",
+                 "🍊 <b>MANDARINE INTERDITE</b> 🍒\n\nLa mandarine apporte une attaque vive et acidulée avant de laisser place à des fruits rouges plus sombres, entre cerise, raisin et notes tropicales.\n\n🥇 <i>Un Plasmastatic Premium complexe, fruité et riche en agrumes.</i>",
               tarifs: [
                 { weight: "5g", price: 90.0 },
                 { weight: "10g", price: 160.0 },
@@ -1346,7 +1346,7 @@ document.addEventListener("DOMContentLoaded", function () {
               image: "ProductFJJ.jpg",
               video: "VideoFJJ.mp4",
               description:
-                "",
+                "🍇 <b>BONBON AUX FRUITS NOIRS</b> 🍬\n\nDes notes de raisin, de fruits rouges et de baies mûres accompagnées d'une douceur rappelant les bonbons fruités. Une légère touche florale apparaît en finale.\n\n🇺🇸 <i>Un profil Cali US sucré, fruité et particulièrement gourmand.</i>",
               tarifs: [
                 { weight: "10g", price: 100.0 },
                 { weight: "25g", price: 220.0 },
