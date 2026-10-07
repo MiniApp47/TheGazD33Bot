@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       name: "POTATO PRINCIPAL 🥔",
-      url: "https://tatokdym.org/thegazdoggy330",
+      url: "https://tatokdym.org/gazdogz33",
       icon: "#icon-potato",
       id: "potato-main",
       className: "potato-main",
@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       name: "PAGE INSTAGRAM 📸",
-      url: "https://www.instagram.com/thegdbdx?igsh=MWlvZWFybGd3bTVvaQ==",
+      url: "https://www.instagram.com/gazdogz?stkn=MWVicm5hNzVjbmVwbw==",
       icon: "#icon-instagram",
       id: "insta-main",
       className: "insta-main",
