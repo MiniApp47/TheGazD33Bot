@@ -582,11 +582,83 @@ document.addEventListener("DOMContentLoaded", function () {
         }, */
         {
           id: "FRESH FROZEN",
-          name: "💎 FRESH FROZEN 💎",
+          name: "💎 FROZEN 50G 🧱",
           image: "CategHash.png",
           badgeText: "5 produits",
           products: [
              {
+              id: "Banana Pi'nana",
+              name: "BANANA PI'NANAZ 🍌",
+              farm: "GAZ SELECTION 🇲🇦 ⛰️",
+              promoEligible: true,
+              type: "FRESH FRO",
+              image: "ProductBRZ.jpg",
+              video: "VideoBRZ.mp4",
+              description:
+                   "",
+              tarifs: [
+                { weight: "5g", price: 60.0 },
+                { weight: "10g", price: 100.0 },
+                { weight: "25g", price: 220.0 },
+                { weight: "50g", price: 400.0 },
+                { weight: "100g", price: 700.0 },
+              ],
+            },
+             {
+              id: "BLACK TRUFFLE 🍄‍🟫⛽️",
+              name: "BLACK TRUFFLE 🍄‍🟫⛽️",
+              farm: "GAZ SELECTION 🇲🇦 ⛰️",
+              promoEligible: true,
+              type: "FRESH FRO",
+              image: "ProductBT.jpg",
+              video: "VideoBT.mp4",
+              description:
+                   "",
+              tarifs: [
+                { weight: "5g", price: 60.0 },
+                { weight: "10g", price: 100.0 },
+                { weight: "25g", price: 220.0 },
+                { weight: "50g", price: 400.0 },
+                { weight: "100g", price: 700.0 },
+              ],
+            },
+             {
+              id: "BANANA PIZZA 🍕 🍌",
+              name: "BANANA PIZZA 🍕 🍌",
+              farm: "GAZ SELECTION 🇲🇦 ⛰️",
+              promoEligible: true,
+              type: "FRESH FRO",
+              image: "ProductBPP.jpg",
+              video: "VideoBPP.mp4",
+              description:
+                   "",
+              tarifs: [
+                { weight: "5g", price: 60.0 },
+                { weight: "10g", price: 100.0 },
+                { weight: "25g", price: 220.0 },
+                { weight: "50g", price: 400.0 },
+                { weight: "100g", price: 700.0 },
+              ],
+            },
+             {
+              id: "BERRY MELON 🍇🍈",
+              name: "BERRY MELON 🍇🍈",
+              farm: "GAZ SELECTION 🇲🇦 ⛰️",
+              promoEligible: true,
+              type: "FRESH FRO",
+              image: "ProductBM.jpg",
+              video: "VideoBM.mp4",
+              description:
+                   "",
+              tarifs: [
+                { weight: "5g", price: 60.0 },
+                { weight: "10g", price: 100.0 },
+                { weight: "25g", price: 220.0 },
+                { weight: "50g", price: 400.0 },
+                { weight: "100g", price: 700.0 },
+              ],
+            },
+             /* {
               id: "PAPAY LEMONZ 🥭 🍋",
               name: "PAPAY LEMONZ 🥭 🍋",
               farm: "GAZ SELECTION 🇲🇦 ⛰️",
@@ -657,7 +729,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { weight: "50g", price: 400.0 },
                 { weight: "100g", price: 700.0 },
               ],
-            },
+            }, */
          /*    {
               id: "FROSTED AÇAI ☃️🫐🫐",
               name: "FROSTED AÇAI ☃️🫐",
