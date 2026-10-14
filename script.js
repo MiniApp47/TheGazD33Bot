@@ -595,7 +595,7 @@ document.addEventListener("DOMContentLoaded", function () {
               image: "ProductBRZ.jpg",
               video: "VideoBRZ.mp4",
               description:
-                   "",
+                  "🍌❄️ BANANA PI'NANAZ — FRESH FROZEN PREMIUM ❄️🍌\n\nUne sélection Fresh Fro au profil tropical, crémeux et ultra gourmand. Banana Pi'nanaz se distingue par une belle douceur fruitée, une texture propre et une identité aromatique originale signée Gaz Selection. 🇲🇦⛰️🔥\n\n👃 Profil aromatique :\n🍌 Banane mûre et sucrée\n🍍 Touche tropicale légère\n🍦 Fond crémeux et rond\n🍯 Petite douceur miellée\n🌿 Finition végétale propre\n\n👅 Goût :\nEn bouche, Banana Pi'nanaz développe une attaque douce et fruitée, avec une belle présence de banane sucrée. Le profil devient ensuite plus rond et crémeux, avec une finale tropicale agréable et bien parfumée. 😮‍💨🍌\n\n❄️ Texture & qualité :\n💎 Fresh Fro soigneusement travaillé\n🧱 Format Frozen 50G\n🤲 Texture propre et agréable\n🌈 Belle conservation des arômes\n🔥 Profil fruité, doux et premium\n\n🏆 Le verdict :\nUne sélection parfaite pour ceux qui aiment les profils tropicaux, crémeux et gourmands. Banana Pi'nanaz combine douceur, fraîcheur et finition premium dans une gamme très propre. 🍌❄️🔥",
               tarifs: [
                 { weight: "5g", price: 60.0 },
                 { weight: "10g", price: 100.0 },
@@ -613,7 +613,7 @@ document.addEventListener("DOMContentLoaded", function () {
               image: "ProductBT.jpg",
               video: "VideoBT.mp4",
               description:
-                   "",
+                   "🍄‍🟫⛽ BLACK TRUFFLE — FRESH FROZEN PREMIUM ⛽🍄‍🟫\n\nUne sélection Fresh Fro au profil profond, terreux et gassy. Black Truffle se distingue par son identité sombre et raffinée, avec une belle intensité aromatique et une finition propre signée Gaz Selection. 🇲🇦⛰️🔥\n\n👃 Profil aromatique :\n🍄‍🟫 Notes truffées et terreuses\n⛽ Fond gassy bien présent\n🌰 Touches boisées et rondes\n🌿 Nuance végétale propre\n🔥 Finition résineuse élégante\n\n👅 Goût :\nEn bouche, Black Truffle développe une attaque riche et profonde, avec des notes terreuses et gassy très marquées. Le profil reste long, propre et aromatique, avec une finale sombre et raffinée qui reste bien en bouche. 😮‍💨🍄‍🟫\n\n❄️ Texture & qualité :\n💎 Fresh Fro premium\n🧱 Format Frozen 50G\n🤲 Texture soignée et propre\n🌈 Arômes profonds bien conservés\n🔥 Profil gassy, terreux et premium\n\n🏆 Le verdict :\nUne sélection de caractère, idéale pour les amateurs de profils sombres, truffés et gassy. Black Truffle combine profondeur, élégance et finition haut de gamme. 🍄‍🟫⛽❄️🔥",
               tarifs: [
                 { weight: "5g", price: 60.0 },
                 { weight: "10g", price: 100.0 },
@@ -631,8 +631,7 @@ document.addEventListener("DOMContentLoaded", function () {
               image: "ProductBPP.jpg",
               video: "VideoBPP.mp4",
               description:
-                   "",
-              tarifs: [
+"🍕🍌 BANANA PIZZA — FRESH FROZEN PREMIUM 🍌🍕\n\nUne sélection Fresh Fro originale au profil gourmand, fruité et légèrement crémeux. Banana Pizza mélange une douceur banane bien marquée avec une rondeur plus pâtissière, pour une identité aromatique moderne et surprenante. 🇲🇦⛰️🔥\n\n👃 Profil aromatique :\n🍌 Banane sucrée et mûre\n🍕 Touche gourmande originale\n🍦 Fond crémeux et doux\n🍯 Notes légèrement miellées\n🌿 Finition propre et équilibrée\n\n👅 Goût :\nEn bouche, Banana Pizza développe une attaque douce et fruitée, rapidement suivie par une rondeur plus gourmande. Le profil reste propre, agréable et bien équilibré, avec une finale sucrée qui reste présente. 😮‍💨🍌\n\n❄️ Texture & qualité :\n💎 Fresh Fro soigneusement sélectionné\n🧱 Format Frozen 50G\n🤲 Texture propre et agréable\n🌈 Profil aromatique original\n🔥 Sélection gourmande et premium\n\n🏆 Le verdict :\nUne Fresh Fro originale et pleine de personnalité, parfaite pour ceux qui aiment les profils banane, crémeux et gourmands. Banana Pizza sort clairement du lot. 🍕🍌❄️🔥",              tarifs: [
                 { weight: "5g", price: 60.0 },
                 { weight: "10g", price: 100.0 },
                 { weight: "25g", price: 220.0 },
@@ -649,7 +648,7 @@ document.addEventListener("DOMContentLoaded", function () {
               image: "ProductBM.jpg",
               video: "VideoBM.mp4",
               description:
-                   "",
+                  "🍇🍈 BERRY MELON — FRESH FROZEN PREMIUM 🍈🍇\n\nUne sélection Fresh Fro au profil fruité, frais et ultra gourmand. Berry Melon se distingue par un mélange doux de fruits rouges, melon sucré et notes candy, avec une belle rondeur aromatique signée Gaz Selection. 🇲🇦⛰️🔥\n\n👃 Profil aromatique :\n🍇 Fruits rouges et raisin sucré\n🍈 Melon frais et gourmand\n🍬 Touche candy fruitée\n🌸 Nuance florale légère\n🌿 Finition propre et douce\n\n👅 Goût :\nEn bouche, Berry Melon développe une attaque fruitée et sucrée, avec une belle présence de baies et de melon. Le profil reste frais, rond et agréable, avec une finale douce et parfumée qui reste bien en bouche. 😮‍💨🍇🍈\n\n❄️ Texture & qualité :\n💎 Fresh Fro premium\n🧱 Format Frozen 50G\n🤲 Texture propre et soignée\n🌈 Arômes fruités bien conservés\n🔥 Profil frais, sucré et premium\n\n🏆 Le verdict :\nUne sélection idéale pour les amateurs de profils fruités, berry et melon. Berry Melon combine fraîcheur, douceur et finition premium dans une Fresh Fro très agréable. 🍇🍈❄️🔥",
               tarifs: [
                 { weight: "5g", price: 60.0 },
                 { weight: "10g", price: 100.0 },
