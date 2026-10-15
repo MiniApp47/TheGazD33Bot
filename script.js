@@ -2652,41 +2652,48 @@ document.addEventListener("DOMContentLoaded", function () {
   // Pour ajouter un avis : copie un objet, change name / rating / text / date.
   // La moyenne globale se recalcule automatiquement.
   const publishedReviews = [
-    {
-      name: "Client démo 1",
-      rating: 5,
-      text: "Très bonne expérience, communication claire et service réactif. Je recommande.",
-      date: "15/10/2026",
-      demo: false,
-    },
-    {
-      name: "Client démo 2",
-      rating: 5,
-      text: "Équipe disponible et réponses rapides. Tout s’est bien passé du début à la fin.",
-      date: "14/10/2026",
-      demo: false,
-    },
-    {
-      name: "Client démo 3",
-      rating: 5,
-      text: "Bonne prise en charge et expérience fluide. Merci à l’équipe pour la réactivité.",
-      date: "13/10/2026",
-      demo: false,
-    },
-    {
-      name: "Client démo 4",
-      rating: 4,
-      text: "Très satisfait dans l’ensemble. Service sérieux et équipe facilement joignable.",
-      date: "12/10/2026",
-      demo: false,
-    },
-    {
-      name: "Client démo 5",
-      rating: 4,
-      text: "Bonne expérience et bon suivi. Petit délai mais rien de gênant, je reviendrai.",
-      date: "11/10/2026",
-      demo: false,
-    },
+   {
+  name: "Yamaha2T",
+  rating: 5,
+  text: "Franchement super carré 🔥 réponse rapide, bonne communication et tout s’est passé nickel 👌 je recommande sans hésiter.",
+  date: "15/10/2026",
+  demo: true,
+},
+{
+  name: "Lolo_BDX",
+  rating: 5,
+  text: "Première expérience et franchement rien à dire 😮‍💨✅ équipe réactive, sympa et efficace. Je reviendrai clairement.",
+  date: "14/10/2026",
+  demo: true,
+},
+{
+  name: "Mika",
+  rating: 5,
+  text: "Très bonne expérience 💯 ils répondent vite et expliquent bien tout. Service sérieux du début à la fin 🔥",
+  date: "13/10/2026",
+  demo: true,
+},
+{
+  name: "SarahLopez",
+  rating: 5,
+  text: "Équipe au top ❤️ super gentils, réponses rapides et bon suivi. Franchement très satisfaite 😊",
+  date: "12/10/2026",
+  demo: true,
+},
+{
+  name: "Nono_33",
+  rating: 4,
+  text: "Bon service dans l’ensemble 👌 petit délai mais ils m’ont tenu au courant donc aucun souci. Je recommande ✅",
+  date: "11/10/2026",
+  demo: true,
+},
+{
+  name: "Alex.Merignac",
+  rating: 4,
+  text: "Bonne expérience 👍 communication claire et équipe facilement joignable. Rien à redire, je reviendrai sûrement 🔥",
+  date: "10/10/2026",
+  demo: true,
+},
   ];
 
   const publishedReviewsList = document.getElementById("published-reviews-list");
