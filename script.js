@@ -1762,17 +1762,20 @@ document.addEventListener("DOMContentLoaded", function () {
     const homeNav = document.getElementById("nav-menu");
     const infoNav = document.getElementById("nav-info");
     const contactNav = document.getElementById("nav-contact");
+    const reviewsNav = document.getElementById("nav-reviews");
 
-    homeNav.classList.remove("active");
-    infoNav.classList.remove("active");
-    contactNav.classList.remove("active");
+    [homeNav, infoNav, contactNav, reviewsNav].forEach((nav) => {
+      if (nav) nav.classList.remove("active");
+    });
 
     if (pageId === "page-contact") {
-      contactNav.classList.add("active");
+      contactNav?.classList.add("active");
     } else if (pageId === "page-info") {
-      infoNav.classList.add("active");
+      infoNav?.classList.add("active");
+    } else if (pageId === "page-reviews") {
+      reviewsNav?.classList.add("active");
     } else {
-      homeNav.classList.add("active");
+      homeNav?.classList.add("active");
     }
   }
 
@@ -2639,6 +2642,92 @@ document.addEventListener("DOMContentLoaded", function () {
     message += " \n-CONTACT: Merci de confirmer cette commande\n";
     message += ` \n-Commande passee le: ${formattedDate}\n`;
     return message;
+  }
+
+
+  // ==========================================
+  // ⭐ AVIS CLIENTS VIA MINI-APP
+  // ==========================================
+  let selectedReviewRating = 0;
+  let reviewSending = false;
+
+  const reviewStars = Array.from(document.querySelectorAll(".review-star"));
+  const reviewTextInput = document.getElementById("review-text");
+  const reviewCharCount = document.getElementById("review-char-count");
+  const sendReviewBtn = document.getElementById("send-review-btn");
+  const reviewLaunchWarning = document.getElementById("review-launch-warning");
+
+  const reviewLaunchSource = new URLSearchParams(window.location.search).get("source");
+  const reviewCanSendToBot = reviewLaunchSource === "keyboard";
+
+  if (!reviewCanSendToBot && reviewLaunchWarning) {
+    reviewLaunchWarning.classList.add("show");
+  }
+
+  function updateReviewStars() {
+    reviewStars.forEach((star) => {
+      const rating = Number(star.dataset.rating);
+      star.classList.toggle("selected", rating <= selectedReviewRating);
+    });
+  }
+
+  reviewStars.forEach((star) => {
+    star.addEventListener("click", () => {
+      selectedReviewRating = Number(star.dataset.rating);
+      updateReviewStars();
+      try { tg.HapticFeedback?.selectionChanged(); } catch (_) {}
+    });
+  });
+
+  if (reviewTextInput) {
+    reviewTextInput.addEventListener("input", () => {
+      if (reviewCharCount) reviewCharCount.textContent = String(reviewTextInput.value.length);
+    });
+  }
+
+  if (sendReviewBtn) {
+    sendReviewBtn.addEventListener("click", () => {
+      if (reviewSending) return;
+      const reviewText = (reviewTextInput?.value || "").trim();
+
+      if (!selectedReviewRating) {
+        showNotification("⭐ Choisis une note entre 1 et 5.");
+        return;
+      }
+      if (reviewText.length < 5) {
+        showNotification("✍️ Écris un petit avis avant de l'envoyer.");
+        return;
+      }
+      if (!reviewCanSendToBot) {
+        reviewLaunchWarning?.classList.add("show");
+        showNotification("⚠️ Ouvre le shop avec le bouton Telegram en bas du chat.");
+        return;
+      }
+
+      const payload = {
+        type: "review",
+        rating: selectedReviewRating,
+        review: reviewText,
+        created_at: new Date().toISOString(),
+      };
+
+      reviewSending = true;
+      sendReviewBtn.disabled = true;
+      sendReviewBtn.textContent = "ENVOI EN COURS...";
+      showNotification("✅ Avis envoyé pour validation. Merci ❤️");
+
+      try {
+        setTimeout(() => {
+          tg.sendData(JSON.stringify(payload));
+        }, 450);
+      } catch (error) {
+        console.error("Erreur envoi avis :", error);
+        reviewSending = false;
+        sendReviewBtn.disabled = false;
+        sendReviewBtn.textContent = "ENVOYER MON AVIS ⭐";
+        showNotification("❌ Impossible d'envoyer l'avis.");
+      }
+    });
   }
 
   document.querySelectorAll(".nav-item").forEach((item) => {

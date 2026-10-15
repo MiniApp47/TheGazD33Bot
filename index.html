@@ -1475,6 +1475,133 @@
     margin-bottom: 5px;
 }
 
+
+        /* --- PAGE AVIS --- */
+        #page-reviews .page-content {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 24px 16px 110px;
+        }
+
+        .review-card {
+            width: min(92vw, 520px);
+            box-sizing: border-box;
+            padding: 24px 20px;
+            border-radius: 24px;
+            background: rgba(24, 24, 27, 0.92);
+            border: 1px solid #ca351d;
+            box-shadow: 0 0 22px rgba(202, 53, 29, 0.28);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            text-align: center;
+        }
+
+        .review-card h2 {
+            margin: 0 0 10px;
+            font-family: Copperplate, 'Roboto', sans-serif;
+            font-size: 1.35rem;
+        }
+
+        .review-card .review-intro {
+            margin: 0 0 22px;
+            color: #d2d2d7;
+            line-height: 1.55;
+            font-size: 0.95rem;
+        }
+
+        .review-stars {
+            display: flex;
+            justify-content: center;
+            gap: 6px;
+            margin: 8px 0 20px;
+        }
+
+        .review-star {
+            border: 0;
+            background: transparent;
+            font-size: clamp(2rem, 10vw, 2.7rem);
+            padding: 2px;
+            cursor: pointer;
+            filter: grayscale(1);
+            opacity: 0.45;
+            transform: scale(0.95);
+            transition: transform 0.15s ease, opacity 0.15s ease, filter 0.15s ease;
+        }
+
+        .review-star.selected {
+            filter: grayscale(0);
+            opacity: 1;
+            transform: scale(1.08);
+        }
+
+        #review-text {
+            width: 100%;
+            min-height: 135px;
+            resize: vertical;
+            box-sizing: border-box;
+            padding: 14px;
+            border-radius: 16px;
+            border: 1px solid #ca351d;
+            outline: none;
+            background: rgba(44, 44, 46, 0.92);
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            line-height: 1.45;
+        }
+
+        #review-text::placeholder { color: #8e8e93; }
+
+        .review-counter {
+            margin: 7px 3px 18px;
+            text-align: right;
+            color: #8e8e93;
+            font-size: 0.78rem;
+        }
+
+        #send-review-btn {
+            width: 100%;
+            min-height: 52px;
+            border: 1px solid #ff664f;
+            border-radius: 14px;
+            background: linear-gradient(135deg, #952b18, #5b37d4);
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 0 14px rgba(202, 53, 29, 0.35);
+        }
+
+        #send-review-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+        .review-note {
+            margin: 15px 0 0;
+            color: #a9a9af;
+            font-size: 0.8rem;
+            line-height: 1.4;
+        }
+
+        .review-launch-warning {
+            display: none;
+            margin-bottom: 18px;
+            padding: 12px;
+            border-radius: 12px;
+            background: rgba(255, 149, 0, 0.14);
+            border: 1px solid rgba(255, 149, 0, 0.65);
+            color: #ffd18a;
+            font-size: 0.85rem;
+            line-height: 1.45;
+        }
+
+        .review-launch-warning.show { display: block; }
+
+        .bottom-nav .nav-item {
+            width: 22vw;
+            max-width: 105px;
+            min-width: 68px;
+        }
+
     </style>
 </head>
 
@@ -1831,6 +1958,37 @@
     </div>
 
 
+
+    <div id="page-reviews" class="page">
+        <div class="page-header">
+            <span class="title">⭐ LAISSER UN AVIS ⭐</span>
+        </div>
+        <div class="page-content">
+            <div class="review-card">
+                <h2>TON EXPÉRIENCE COMPTE ❤️</h2>
+                <p class="review-intro">
+                    Choisis une note puis écris ton avis. Il sera envoyé à notre équipe
+                    pour validation avant d'être éventuellement ajouté manuellement à la boutique.
+                </p>
+                <div id="review-launch-warning" class="review-launch-warning">
+                    Pour envoyer ton avis, ouvre la mini-app avec le bouton
+                    <b>🛍️ OUVRIR LE SHOP</b> situé sous la zone de saisie du bot Telegram.
+                </div>
+                <div id="review-stars" class="review-stars" aria-label="Choisir une note">
+                    <button type="button" class="review-star" data-rating="1" aria-label="1 étoile">⭐</button>
+                    <button type="button" class="review-star" data-rating="2" aria-label="2 étoiles">⭐</button>
+                    <button type="button" class="review-star" data-rating="3" aria-label="3 étoiles">⭐</button>
+                    <button type="button" class="review-star" data-rating="4" aria-label="4 étoiles">⭐</button>
+                    <button type="button" class="review-star" data-rating="5" aria-label="5 étoiles">⭐</button>
+                </div>
+                <textarea id="review-text" maxlength="500" placeholder="Écris ton avis ici..."></textarea>
+                <div class="review-counter"><span id="review-char-count">0</span>/500</div>
+                <button id="send-review-btn" type="button">ENVOYER MON AVIS ⭐</button>
+                <p class="review-note">Ton avis n'est jamais publié automatiquement. L'équipe le vérifie d'abord.</p>
+            </div>
+        </div>
+    </div>
+
     <div class="bottom-nav">
         <button id="nav-menu" data-page="page-home" class="nav-item active">
             <svg width="20" height="20">
@@ -1851,6 +2009,10 @@
             </svg>
             <p style="
             margin: inherit;"> LINKS </p>
+        </button>
+        <button id="nav-reviews" data-page="page-reviews" class="nav-item">
+            <span style="font-size: 20px; line-height: 20px;">⭐</span>
+            <p style="margin: inherit;"> AVIS </p>
         </button>
     </div>
 
