@@ -1479,8 +1479,10 @@
         /* --- PAGE AVIS --- */
         #page-reviews .page-content {
             display: flex;
-            justify-content: center;
-            align-items: flex-start;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 18px;
             padding: 24px 16px 110px;
         }
 
@@ -1595,6 +1597,135 @@
         }
 
         .review-launch-warning.show { display: block; }
+
+
+        /* --- AVIS PUBLIÉS + MOYENNE --- */
+        .reviews-summary,
+        .published-reviews-card {
+            width: min(92vw, 520px);
+            box-sizing: border-box;
+            border-radius: 24px;
+            background: rgba(24, 24, 27, 0.92);
+            border: 1px solid #ca351d;
+            box-shadow: 0 0 22px rgba(202, 53, 29, 0.22);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .reviews-summary {
+            padding: 22px 20px;
+            text-align: center;
+        }
+
+        .reviews-summary-label {
+            margin: 0 0 8px;
+            color: #d2d2d7;
+            font-size: 0.9rem;
+        }
+
+        .reviews-average {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            gap: 8px;
+            margin-bottom: 6px;
+        }
+
+        #reviews-average-value {
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: #ffffff;
+        }
+
+        .reviews-average-max {
+            color: #a9a9af;
+            font-size: 1rem;
+        }
+
+        #reviews-average-stars {
+            color: #ffd54a;
+            font-size: 1.35rem;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        #reviews-count {
+            color: #a9a9af;
+            font-size: 0.82rem;
+        }
+
+        .published-reviews-card {
+            padding: 20px;
+        }
+
+        .published-reviews-card h3 {
+            margin: 0 0 15px;
+            text-align: center;
+            font-family: Copperplate, 'Roboto', sans-serif;
+            font-size: 1.1rem;
+        }
+
+        #published-reviews-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .published-review-item {
+            padding: 14px;
+            border-radius: 16px;
+            background: rgba(44, 44, 46, 0.9);
+            border: 1px solid rgba(202, 53, 29, 0.45);
+            text-align: left;
+        }
+
+        .published-review-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 7px;
+        }
+
+        .published-review-name {
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .published-review-stars {
+            color: #ffd54a;
+            font-size: 0.95rem;
+            white-space: nowrap;
+        }
+
+        .published-review-text {
+            margin: 0;
+            color: #e5e5ea;
+            line-height: 1.45;
+            font-size: 0.92rem;
+        }
+
+        .published-review-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            margin-top: 9px;
+            color: #8e8e93;
+            font-size: 0.72rem;
+        }
+
+        .review-demo-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 3px 7px;
+            border-radius: 999px;
+            background: rgba(255, 149, 0, 0.14);
+            border: 1px solid rgba(255, 149, 0, 0.55);
+            color: #ffd18a;
+            font-size: 0.68rem;
+            font-weight: 700;
+        }
 
         .bottom-nav .nav-item {
             width: 22vw;
@@ -1961,9 +2092,24 @@
 
     <div id="page-reviews" class="page">
         <div class="page-header">
-            <span class="title">⭐ LAISSER UN AVIS ⭐</span>
+            <span class="title">⭐ AVIS CLIENTS ⭐</span>
         </div>
         <div class="page-content">
+            <div class="reviews-summary">
+                <p class="reviews-summary-label">NOTE GLOBALE</p>
+                <div class="reviews-average">
+                    <span id="reviews-average-value">0,0</span>
+                    <span class="reviews-average-max">/ 5</span>
+                </div>
+                <div id="reviews-average-stars">☆☆☆☆☆</div>
+                <div id="reviews-count">0 avis publié</div>
+            </div>
+
+            <div class="published-reviews-card">
+                <h3>💬 AVIS PUBLIÉS</h3>
+                <div id="published-reviews-list"></div>
+            </div>
+
             <div class="review-card">
                 <h2>TON EXPÉRIENCE COMPTE ❤️</h2>
                 <p class="review-intro">

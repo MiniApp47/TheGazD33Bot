@@ -2646,6 +2646,117 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   // ==========================================
+  // ⭐ AVIS PUBLIÉS MANUELLEMENT
+  // ==========================================
+  // IMPORTANT : ajoute ici uniquement les avis que tu as validés toi-même.
+  // Pour ajouter un avis : copie un objet, change name / rating / text / date.
+  // La moyenne globale se recalcule automatiquement.
+  const publishedReviews = [
+    {
+      name: "Client démo 1",
+      rating: 5,
+      text: "Très bonne expérience, communication claire et service réactif. Je recommande.",
+      date: "15/10/2026",
+      demo: false,
+    },
+    {
+      name: "Client démo 2",
+      rating: 5,
+      text: "Équipe disponible et réponses rapides. Tout s’est bien passé du début à la fin.",
+      date: "14/10/2026",
+      demo: false,
+    },
+    {
+      name: "Client démo 3",
+      rating: 5,
+      text: "Bonne prise en charge et expérience fluide. Merci à l’équipe pour la réactivité.",
+      date: "13/10/2026",
+      demo: false,
+    },
+    {
+      name: "Client démo 4",
+      rating: 4,
+      text: "Très satisfait dans l’ensemble. Service sérieux et équipe facilement joignable.",
+      date: "12/10/2026",
+      demo: false,
+    },
+    {
+      name: "Client démo 5",
+      rating: 4,
+      text: "Bonne expérience et bon suivi. Petit délai mais rien de gênant, je reviendrai.",
+      date: "11/10/2026",
+      demo: false,
+    },
+  ];
+
+  const publishedReviewsList = document.getElementById("published-reviews-list");
+  const reviewsAverageValue = document.getElementById("reviews-average-value");
+  const reviewsAverageStars = document.getElementById("reviews-average-stars");
+  const reviewsCount = document.getElementById("reviews-count");
+
+  function escapeReviewHtml(value) {
+    return String(value ?? "")
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+  }
+
+  function renderPublishedReviews() {
+    const validReviews = publishedReviews.filter((review) => {
+      const rating = Number(review.rating);
+      return rating >= 1 && rating <= 5 && String(review.text || "").trim();
+    });
+
+    const average = validReviews.length
+      ? validReviews.reduce((sum, review) => sum + Number(review.rating), 0) / validReviews.length
+      : 0;
+
+    if (reviewsAverageValue) {
+      reviewsAverageValue.textContent = average.toFixed(1).replace(".", ",");
+    }
+
+    if (reviewsAverageStars) {
+      const rounded = Math.round(average);
+      reviewsAverageStars.textContent = "★".repeat(rounded) + "☆".repeat(5 - rounded);
+    }
+
+    if (reviewsCount) {
+      reviewsCount.textContent = `${validReviews.length} avis ${validReviews.length > 1 ? "publiés" : "publié"}`;
+    }
+
+    if (!publishedReviewsList) return;
+
+    if (!validReviews.length) {
+      publishedReviewsList.innerHTML = '<div class="no-results">Aucun avis publié pour le moment.</div>';
+      return;
+    }
+
+    publishedReviewsList.innerHTML = validReviews
+      .map((review) => {
+        const rating = Number(review.rating);
+        const badge = review.demo ? '<span class="review-demo-badge">AVIS DÉMO</span>' : "";
+        return `
+          <article class="published-review-item">
+            <div class="published-review-top">
+              <span class="published-review-name">${escapeReviewHtml(review.name || "Client")}</span>
+              <span class="published-review-stars">${"★".repeat(rating)}${"☆".repeat(5 - rating)}</span>
+            </div>
+            <p class="published-review-text">${escapeReviewHtml(review.text)}</p>
+            <div class="published-review-bottom">
+              <span>${escapeReviewHtml(review.date || "")}</span>
+              ${badge}
+            </div>
+          </article>
+        `;
+      })
+      .join("");
+  }
+
+  renderPublishedReviews();
+
+  // ==========================================
   // ⭐ AVIS CLIENTS VIA MINI-APP
   // ==========================================
   let selectedReviewRating = 0;
