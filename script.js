@@ -1434,6 +1434,23 @@ document.addEventListener("DOMContentLoaded", function () {
           badgeText: "2 produits",
           products: [
             {
+              id: "SUPER LEMON HAZE ⛽️ 🍋",
+              name: "SUPER LEMON HAZE ⛽️ 🍋",
+              farm: "NO BRAND ™️©️",
+              promoEligible: true,
+              type: "Weed",
+              image: "ProductSL.jpg",
+              video: "VideoSL.mov",
+              description:
+                    "🍋 <b>LEMON GAS</b> ⛽️\n\nUn profil très citronné dominé par le zeste de citron frais, accompagné de notes Haze, végétales et légèrement gazeuses. Une finale vive et persistante avec une vraie signature agrumes.\n\n🌿 <i>Une Super Lemon Haze fraîche, expressive et particulièrement aromatique.</i>",
+              tarifs: [
+                { weight: "10g", price: 70.0 },
+                { weight: "25g", price: 150.0 },
+                { weight: "50g", price: 270.0 },
+                { weight: "100g", price: 500.0 },
+              ],
+            },
+            {
               id: "AMNESIA HAZE",
               name: "AMNESIA HAZE ⛽️ 🌲",
               farm: "NO BRAND ™️©️",
