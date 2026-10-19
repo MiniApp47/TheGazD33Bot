@@ -2670,6 +2670,27 @@ document.addEventListener("DOMContentLoaded", function () {
   // La moyenne globale se recalcule automatiquement.
   const publishedReviews = [
    {
+  name: "BELLO Cheb",
+  rating: 5,
+  text: "Franchement super produit le fresh frozen et merci pour la livraison",
+  date: "18/10/2026",
+  demo: true,
+},
+   {
+  name: "GenetixLabz 33",
+  rating: 5,
+  text: "Produits de qualités +++ 😍😍",
+  date: "18/10/2026",
+  demo: true,
+},
+   {
+  name: "Lucas ter",
+  rating: 5,
+  text: "Le PLASMASTATIC c’est vraiment la fusé",
+  date: "17/10/2026",
+  demo: true,
+},
+   {
   name: "Yamaha2T",
   rating: 5,
   text: "Franchement super carré 🔥 réponse rapide, bonne communication et tout s’est passé nickel 👌 je recommande sans hésiter.",
