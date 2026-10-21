@@ -1476,6 +1476,24 @@ document.addEventListener("DOMContentLoaded", function () {
           badgeText: "2 produits",
           products: [
             {
+              id: "TROPIX CALIPPO 🌴 🍦",
+              name: "TROPIX CALIPPO 🌴 🍦",
+              farm: "NO BRAND ™️©️",
+              promoEligible: true,
+              type: "Weed",
+              image: "ProductTC.jpg",
+              video: "VideoTC.mov",
+              description:
+                "🌴 <b>GLACE TROPICALE</b> 🍦\n\nUn cocktail de fruits tropicaux sucrés et acidulés, avec des notes de mangue, d'ananas et de fruit de la passion. Une finale fraîche et légèrement crémeuse.\n\n🍹 <i>Un high joyeux et élévateur. Parfait pour se détendre sous le soleil.</i>",
+              tarifs: [
+                { weight: "10g", price: 80.0 },
+                { weight: "25g", price: 180.0 },
+                { weight: "50g", price: 350.0 },
+                { weight: "100g", price: 650.0 },
+                { weight: "500g", price: 2500.0 },
+              ],
+            },
+            {
               id: "ONIONZ COCKTAIL x 26MM 🧅🍋",
               name: "ONIONZ COCKTAIL x 26MM 🧅🍋",
               farm: "NO BRAND ™️©️",
