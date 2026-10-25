@@ -1409,6 +1409,42 @@ document.addEventListener("DOMContentLoaded", function () {
                     badgeText: '2 produits',
                     products: [
                        {
+              id: "PINK LEMONADE 🍋‍🟩🌹",
+              name: "PINK LEMONADE 🍋‍🟩🌹",
+              farm: "PARLAY ®️™️",
+              promoEligible: true,
+              type: "Weed",
+              image: "ProductP.jpg",
+              video: "VideoP.mp4",
+              description:
+                "",
+              tarifs: [
+                { weight: "3.5g", price: 70.0 },
+                { weight: "7g", price: 120.0 },
+                { weight: "14g", price: 200.0 },
+                { weight: "56g", price: 650.0 },
+                { weight: "112g", price: 1100.0 },
+              ],
+            },
+                       {
+              id: "CHERRY LEMONADE 🍋‍🟩🍋🍒",
+              name: "CHERRY LEMONADE 🍋‍🟩🍋🍒",
+              farm: "PARLAY ®️™️",
+              promoEligible: true,
+              type: "Weed",
+              image: "ProductCL.jpg",
+              video: "VideoCL.mp4",
+              description:
+                "",
+              tarifs: [
+                { weight: "3.5g", price: 70.0 },
+                { weight: "7g", price: 120.0 },
+                { weight: "14g", price: 200.0 },
+                { weight: "56g", price: 650.0 },
+                { weight: "112g", price: 1100.0 },
+              ],
+            },
+                      /*  {
               id: "FORBIDDEN JOY 🍇 🍬",
               name: "FORBIDDEN JOY 🍇🍬",
               farm: "NO BRAND ™️©️",
@@ -1425,7 +1461,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 { weight: "56g", price: 650.0 },
                 { weight: "112g", price: 1100.0 },
               ],
-            },
+            }, */
                     ]
                 },
         {
