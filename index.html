@@ -139,6 +139,76 @@
 
 
 
+
+        /* --- VIDEO D'INTRO APRES LE CHARGEMENT --- */
+        body.intro-playing {
+            overflow: hidden;
+            margin-bottom: 0;
+        }
+
+        body.intro-playing .bottom-nav {
+            display: none !important;
+        }
+
+        #page-intro {
+            position: fixed;
+            inset: 0;
+            z-index: 99;
+            width: 100%;
+            height: 100%;
+            min-height: 100vh;
+            padding: 0;
+            background: #000;
+            overflow: hidden;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #intro-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background: #000;
+        }
+
+        #intro-skip-button {
+            position: absolute;
+            top: max(18px, env(safe-area-inset-top));
+            right: 18px;
+            z-index: 101;
+            border: 1px solid rgba(255, 255, 255, 0.55);
+            border-radius: 999px;
+            padding: 11px 18px;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.58);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            font-size: 0.9rem;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+        }
+
+        #intro-skip-button:active {
+            transform: scale(0.96);
+        }
+
+        #intro-video-hint {
+            position: absolute;
+            left: 50%;
+            bottom: max(22px, env(safe-area-inset-bottom));
+            transform: translateX(-50%);
+            z-index: 100;
+            margin: 0;
+            padding: 8px 12px;
+            border-radius: 999px;
+            background: rgba(0, 0, 0, 0.48);
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 0.78rem;
+            white-space: nowrap;
+            pointer-events: none;
+        }
+
         /* --- PAGE DE FERMETURE TEMPORAIRE --- */
         body.shop-closed {
             overflow: hidden;
@@ -1940,6 +2010,17 @@
             <div class="app-name"> ⛰️ TheGazDogz ⛰️ </div>
             <div class="loading-text">Chargement de TheGazDogzBot...</div>
         </div>
+    </div>
+
+
+    <!-- Vidéo affichée automatiquement juste après le chargement -->
+    <div id="page-intro" class="page">
+        <video id="intro-video" playsinline preload="auto" poster="Logo.jpg">
+            <source src="Intro.mp4" type="video/mp4">
+            Votre navigateur ne prend pas en charge la vidéo.
+        </video>
+        <button id="intro-skip-button" type="button">SKIP ⏭</button>
+        <p id="intro-video-hint">Touchez la vidéo pour activer/couper le son</p>
     </div>
 
 

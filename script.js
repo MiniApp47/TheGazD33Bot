@@ -226,13 +226,13 @@ document.addEventListener("DOMContentLoaded", function () {
               description:
                   "🍮 <b>CRÈME DE PÊCHE</b> 🍑\n\nUne base douce et crémeuse rappelant la panna cotta vanillée, accompagnée d'un coulis de pêche mûre et sucrée. Une finale légèrement gourmande et lactée.\n\n🧪 <i>Un profil 90u dessert, fruité et particulièrement onctueux.</i>",
               tarifs: [
-                { weight: "10g", price: 70.0 },
-                { weight: "25g", price: 130.0 },
-                { weight: "50g", price: 200.0 },
-                { weight: "100g", price: 380.0 },
-                { weight: "200g", price: 700.0 },
-                { weight: "500g", price: 1500.0 },
-                { weight: "1K", price: 2800.0 },
+                { weight: "10g", price: 60.0 },
+                { weight: "25g", price: 100.0 },
+                { weight: "50g", price: 180.0 },
+                { weight: "100g", price: 350.0 },
+                { weight: "200g", price: 650.0 },
+                { weight: "500g", price: 1400.0 },
+                { weight: "1K", price: 2700.0 },
               ],
             },
             {
@@ -246,13 +246,13 @@ document.addEventListener("DOMContentLoaded", function () {
               description:
                   "🥭 <b>MANGUE TROPICALE</b> 🌴\n\nUne mangue bien mûre, juteuse et sucrée, soutenue par des notes tropicales profondes et une légère touche gazeuse en fin de bouche.\n\n🧪 <i>Un 90u exotique, intense et généreusement fruité.</i>",
               tarifs: [
-                { weight: "10g", price: 70.0 },
-                { weight: "25g", price: 130.0 },
-                { weight: "50g", price: 200.0 },
-                { weight: "100g", price: 380.0 },
-                { weight: "200g", price: 700.0 },
-                { weight: "500g", price: 1500.0 },
-                { weight: "1K", price: 2800.0 },
+                { weight: "10g", price: 60.0 },
+                { weight: "25g", price: 100.0 },
+                { weight: "50g", price: 180.0 },
+                { weight: "100g", price: 350.0 },
+                { weight: "200g", price: 650.0 },
+                { weight: "500g", price: 1400.0 },
+                { weight: "1K", price: 2700.0 },
               ],
             },
             {
@@ -266,13 +266,13 @@ document.addEventListener("DOMContentLoaded", function () {
               description:
                   "🍌 <b>DESSERT BANANE</b> 🍨\n\nUne banane mûre et crémeuse accompagnée de notes de vanille, de crème glacée et d'une légère touche chocolatée. Un véritable profil dessert.\n\n🧪 <i>Un 90u rond, gourmand et ultra-crémeux.</i>",
               tarifs: [
-                { weight: "10g", price: 70.0 },
-                { weight: "25g", price: 130.0 },
-                { weight: "50g", price: 200.0 },
-                { weight: "100g", price: 380.0 },
-                { weight: "200g", price: 700.0 },
-                { weight: "500g", price: 1500.0 },
-                { weight: "1K", price: 2800.0 },
+                { weight: "10g", price: 60.0 },
+                { weight: "25g", price: 100.0 },
+                { weight: "50g", price: 180.0 },
+                { weight: "100g", price: 350.0 },
+                { weight: "200g", price: 650.0 },
+                { weight: "500g", price: 1400.0 },
+                { weight: "1K", price: 2700.0 },
               ],
             },
             {
@@ -286,13 +286,13 @@ document.addEventListener("DOMContentLoaded", function () {
               description:
                   "☕️ <b>TIRAMISU CRÉMEUX</b> 🍰\n\nDes notes de café torréfié et de cacao doux enveloppées dans une crème vanillée rappelant le mascarpone. Une finale pâtissière riche et persistante.\n\n🧪 <i>Un 90u dessert profond, crémeux et élégant.</i>",
               tarifs: [
-                { weight: "10g", price: 70.0 },
-                { weight: "25g", price: 130.0 },
-                { weight: "50g", price: 200.0 },
-                { weight: "100g", price: 380.0 },
-                { weight: "200g", price: 700.0 },
-                { weight: "500g", price: 1500.0 },
-                { weight: "1K", price: 2800.0 },
+                { weight: "10g", price: 60.0 },
+                { weight: "25g", price: 100.0 },
+                { weight: "50g", price: 180.0 },
+                { weight: "100g", price: 350.0 },
+                { weight: "200g", price: 650.0 },
+                { weight: "500g", price: 1400.0 },
+                { weight: "1K", price: 2700.0 },
               ],
             },
             /* {
@@ -597,11 +597,11 @@ document.addEventListener("DOMContentLoaded", function () {
               description:
                   "🍌❄️ BANANA PI'NANAZ — FRESH FROZEN PREMIUM ❄️🍌\n\nUne sélection Fresh Fro au profil tropical, crémeux et ultra gourmand. Banana Pi'nanaz se distingue par une belle douceur fruitée, une texture propre et une identité aromatique originale signée Gaz Selection. 🇲🇦⛰️🔥\n\n👃 Profil aromatique :\n🍌 Banane mûre et sucrée\n🍍 Touche tropicale légère\n🍦 Fond crémeux et rond\n🍯 Petite douceur miellée\n🌿 Finition végétale propre\n\n👅 Goût :\nEn bouche, Banana Pi'nanaz développe une attaque douce et fruitée, avec une belle présence de banane sucrée. Le profil devient ensuite plus rond et crémeux, avec une finale tropicale agréable et bien parfumée. 😮‍💨🍌\n\n❄️ Texture & qualité :\n💎 Fresh Fro soigneusement travaillé\n🧱 Format Frozen 50G\n🤲 Texture propre et agréable\n🌈 Belle conservation des arômes\n🔥 Profil fruité, doux et premium\n\n🏆 Le verdict :\nUne sélection parfaite pour ceux qui aiment les profils tropicaux, crémeux et gourmands. Banana Pi'nanaz combine douceur, fraîcheur et finition premium dans une gamme très propre. 🍌❄️🔥",
               tarifs: [
-                { weight: "5g", price: 60.0 },
-                { weight: "10g", price: 100.0 },
-                { weight: "25g", price: 220.0 },
-                { weight: "50g", price: 400.0 },
-                { weight: "100g", price: 700.0 },
+                { weight: "5g", price: 50.0 },
+                { weight: "10g", price: 90.0 },
+                { weight: "25g", price: 200.0 },
+                { weight: "50g", price: 350.0 },
+                { weight: "100g", price: 650.0 },
               ],
             },
              {
@@ -615,11 +615,11 @@ document.addEventListener("DOMContentLoaded", function () {
               description:
                    "🍄‍🟫⛽ BLACK TRUFFLE — FRESH FROZEN PREMIUM ⛽🍄‍🟫\n\nUne sélection Fresh Fro au profil profond, terreux et gassy. Black Truffle se distingue par son identité sombre et raffinée, avec une belle intensité aromatique et une finition propre signée Gaz Selection. 🇲🇦⛰️🔥\n\n👃 Profil aromatique :\n🍄‍🟫 Notes truffées et terreuses\n⛽ Fond gassy bien présent\n🌰 Touches boisées et rondes\n🌿 Nuance végétale propre\n🔥 Finition résineuse élégante\n\n👅 Goût :\nEn bouche, Black Truffle développe une attaque riche et profonde, avec des notes terreuses et gassy très marquées. Le profil reste long, propre et aromatique, avec une finale sombre et raffinée qui reste bien en bouche. 😮‍💨🍄‍🟫\n\n❄️ Texture & qualité :\n💎 Fresh Fro premium\n🧱 Format Frozen 50G\n🤲 Texture soignée et propre\n🌈 Arômes profonds bien conservés\n🔥 Profil gassy, terreux et premium\n\n🏆 Le verdict :\nUne sélection de caractère, idéale pour les amateurs de profils sombres, truffés et gassy. Black Truffle combine profondeur, élégance et finition haut de gamme. 🍄‍🟫⛽❄️🔥",
               tarifs: [
-                { weight: "5g", price: 60.0 },
-                { weight: "10g", price: 100.0 },
-                { weight: "25g", price: 220.0 },
-                { weight: "50g", price: 400.0 },
-                { weight: "100g", price: 700.0 },
+                { weight: "5g", price: 50.0 },
+                { weight: "10g", price: 90.0 },
+                { weight: "25g", price: 200.0 },
+                { weight: "50g", price: 350.0 },
+                { weight: "100g", price: 650.0 },
               ],
             },
              {
@@ -632,11 +632,11 @@ document.addEventListener("DOMContentLoaded", function () {
               video: "VideoBPP.mp4",
               description:
 "🍕🍌 BANANA PIZZA — FRESH FROZEN PREMIUM 🍌🍕\n\nUne sélection Fresh Fro originale au profil gourmand, fruité et légèrement crémeux. Banana Pizza mélange une douceur banane bien marquée avec une rondeur plus pâtissière, pour une identité aromatique moderne et surprenante. 🇲🇦⛰️🔥\n\n👃 Profil aromatique :\n🍌 Banane sucrée et mûre\n🍕 Touche gourmande originale\n🍦 Fond crémeux et doux\n🍯 Notes légèrement miellées\n🌿 Finition propre et équilibrée\n\n👅 Goût :\nEn bouche, Banana Pizza développe une attaque douce et fruitée, rapidement suivie par une rondeur plus gourmande. Le profil reste propre, agréable et bien équilibré, avec une finale sucrée qui reste présente. 😮‍💨🍌\n\n❄️ Texture & qualité :\n💎 Fresh Fro soigneusement sélectionné\n🧱 Format Frozen 50G\n🤲 Texture propre et agréable\n🌈 Profil aromatique original\n🔥 Sélection gourmande et premium\n\n🏆 Le verdict :\nUne Fresh Fro originale et pleine de personnalité, parfaite pour ceux qui aiment les profils banane, crémeux et gourmands. Banana Pizza sort clairement du lot. 🍕🍌❄️🔥",              tarifs: [
-                { weight: "5g", price: 60.0 },
-                { weight: "10g", price: 100.0 },
-                { weight: "25g", price: 220.0 },
-                { weight: "50g", price: 400.0 },
-                { weight: "100g", price: 700.0 },
+                { weight: "5g", price: 50.0 },
+                { weight: "10g", price: 90.0 },
+                { weight: "25g", price: 200.0 },
+                { weight: "50g", price: 350.0 },
+                { weight: "100g", price: 650.0 },
               ],
             },
              {
@@ -650,11 +650,11 @@ document.addEventListener("DOMContentLoaded", function () {
               description:
                   "🍇🍈 BERRY MELON — FRESH FROZEN PREMIUM 🍈🍇\n\nUne sélection Fresh Fro au profil fruité, frais et ultra gourmand. Berry Melon se distingue par un mélange doux de fruits rouges, melon sucré et notes candy, avec une belle rondeur aromatique signée Gaz Selection. 🇲🇦⛰️🔥\n\n👃 Profil aromatique :\n🍇 Fruits rouges et raisin sucré\n🍈 Melon frais et gourmand\n🍬 Touche candy fruitée\n🌸 Nuance florale légère\n🌿 Finition propre et douce\n\n👅 Goût :\nEn bouche, Berry Melon développe une attaque fruitée et sucrée, avec une belle présence de baies et de melon. Le profil reste frais, rond et agréable, avec une finale douce et parfumée qui reste bien en bouche. 😮‍💨🍇🍈\n\n❄️ Texture & qualité :\n💎 Fresh Fro premium\n🧱 Format Frozen 50G\n🤲 Texture propre et soignée\n🌈 Arômes fruités bien conservés\n🔥 Profil frais, sucré et premium\n\n🏆 Le verdict :\nUne sélection idéale pour les amateurs de profils fruités, berry et melon. Berry Melon combine fraîcheur, douceur et finition premium dans une Fresh Fro très agréable. 🍇🍈❄️🔥",
               tarifs: [
-                { weight: "5g", price: 60.0 },
-                { weight: "10g", price: 100.0 },
-                { weight: "25g", price: 220.0 },
-                { weight: "50g", price: 400.0 },
-                { weight: "100g", price: 700.0 },
+                { weight: "5g", price: 50.0 },
+                { weight: "10g", price: 90.0 },
+                { weight: "25g", price: 200.0 },
+                { weight: "50g", price: 350.0 },
+                { weight: "100g", price: 650.0 },
               ],
             },
              /* {
@@ -1000,9 +1000,9 @@ document.addEventListener("DOMContentLoaded", function () {
               description:
                  "🍊 <b>MANDARINE ACIDE</b> 🍋\n\nUne explosion d'agrumes dominée par la mandarine satsuma, relevée par du citron frais et une légère amertume de zeste. La finale reste vive et persistante.\n\n⚡️ <i>Un Plasmastatic frais, acidulé et intensément citronné.</i>",
               tarifs: [
-                { weight: "5g", price: 80.0 },
-                { weight: "10g", price: 140.0 },
-                { weight: "25g", price: 300.0 },
+                { weight: "5g", price: 70.0 },
+                { weight: "10g", price: 120.0 },
+                { weight: "25g", price: 250.0 },
                 { weight: "50g", price: 500.0 },
                 { weight: "100g", price: 900.0 },
               ],
@@ -1018,9 +1018,9 @@ document.addEventListener("DOMContentLoaded", function () {
               description:
                  "🍯 <b>PAPAYE AU MIEL</b> 🥭\n\nUne papaye tropicale bien mûre recouverte de notes de miel doux et floral. Une texture aromatique ronde avec une finale sucrée et légèrement crémeuse.\n\n⚡️ <i>Un Plasmastatic exotique, doux et particulièrement gourmand.</i>",
               tarifs: [
-                { weight: "5g", price: 80.0 },
-                { weight: "10g", price: 140.0 },
-                { weight: "25g", price: 300.0 },
+                { weight: "5g", price: 70.0 },
+                { weight: "10g", price: 120.0 },
+                { weight: "25g", price: 250.0 },
                 { weight: "50g", price: 500.0 },
                 { weight: "100g", price: 900.0 },
               ],
@@ -1036,9 +1036,9 @@ document.addEventListener("DOMContentLoaded", function () {
               description:
                  "🌈 <b>FRUITS CONFITS</b> 🍓\n\nUn mélange intense de fruits rouges très mûrs, de bonbons acidulés et de notes pâtissières. Une petite touche funky vient complexifier l'ensemble.\n\n⚡️ <i>Un Plasmastatic fruité, sucré et volontairement atypique.</i>",
               tarifs: [
-                { weight: "5g", price: 80.0 },
-                { weight: "10g", price: 140.0 },
-                { weight: "25g", price: 300.0 },
+                { weight: "5g", price: 70.0 },
+                { weight: "10g", price: 120.0 },
+                { weight: "25g", price: 250.0 },
                 { weight: "50g", price: 500.0 },
                 { weight: "100g", price: 900.0 },
               ],
@@ -1054,9 +1054,9 @@ document.addEventListener("DOMContentLoaded", function () {
               description:
                  "🍭 <b>CANDY FUNKY</b> 🍡\n\nDes notes de bonbons sucrés et fruités rencontrent un fond plus profond, légèrement salé et gazeux. Un contraste original qui évolue à chaque note.\n\n⚡️ <i>Un Plasmastatic complexe entre gourmandise et caractère funky.</i>",
               tarifs: [
-                { weight: "5g", price: 80.0 },
-                { weight: "10g", price: 140.0 },
-                { weight: "25g", price: 300.0 },
+                { weight: "5g", price: 70.0 },
+                { weight: "10g", price: 120.0 },
+                { weight: "25g", price: 250.0 },
                 { weight: "50g", price: 500.0 },
                 { weight: "100g", price: 900.0 },
               ],
@@ -1188,9 +1188,9 @@ document.addEventListener("DOMContentLoaded", function () {
               description:
                   "🍊 <b>ORANGE PRESSÉE</b> 🍋\n\nUne orange juteuse et très expressive mêlée à des zestes de citron et une légère touche de bonbon aux agrumes. Une finale fraîche et légèrement gazeuse.\n\n🥇 <i>Un Plasmastatic Premium lumineux, fruité et intensément citronné.</i>",
               tarifs: [
-                { weight: "5g", price: 90.0 },
-                { weight: "10g", price: 160.0 },
-                { weight: "25g", price: 330.0 },
+                { weight: "5g", price: 70.0 },
+                { weight: "10g", price: 120.0 },
+                { weight: "25g", price: 250.0 },
                 { weight: "50g", price: 600.0 },
                 { weight: "100g", price: 1100.0 },
               ],
@@ -1206,9 +1206,9 @@ document.addEventListener("DOMContentLoaded", function () {
               description:
                   "🍓 <b>GLACE AUX FRUITS</b> 🍦\n\nUn cocktail de fruits rouges et de raisin sucré accompagné d'une fraîcheur rappelant une glace Calippo. Une finale crémeuse et acidulée complète le profil.\n\n🥇 <i>Un Plasmastatic Premium gourmand entre candy, fruits et fraîcheur.</i>",
               tarifs: [
-                { weight: "5g", price: 90.0 },
-                { weight: "10g", price: 160.0 },
-                { weight: "25g", price: 330.0 },
+                { weight: "5g", price: 70.0 },
+                { weight: "10g", price: 120.0 },
+                { weight: "25g", price: 250.0 },
                 { weight: "50g", price: 600.0 },
                 { weight: "100g", price: 1100.0 },
               ],
@@ -1224,9 +1224,9 @@ document.addEventListener("DOMContentLoaded", function () {
               description:
                  "🍊 <b>MANDARINE INTERDITE</b> 🍒\n\nLa mandarine apporte une attaque vive et acidulée avant de laisser place à des fruits rouges plus sombres, entre cerise, raisin et notes tropicales.\n\n🥇 <i>Un Plasmastatic Premium complexe, fruité et riche en agrumes.</i>",
               tarifs: [
-                { weight: "5g", price: 90.0 },
-                { weight: "10g", price: 160.0 },
-                { weight: "25g", price: 330.0 },
+                { weight: "5g", price: 70.0 },
+                { weight: "10g", price: 120.0 },
+                { weight: "25g", price: 250.0 },
                 { weight: "50g", price: 600.0 },
                 { weight: "100g", price: 1100.0 },
               ],
@@ -1419,10 +1419,11 @@ document.addEventListener("DOMContentLoaded", function () {
               description:
                 "🍇 <b>BONBON AUX FRUITS NOIRS</b> 🍬\n\nDes notes de raisin, de fruits rouges et de baies mûres accompagnées d'une douceur rappelant les bonbons fruités. Une légère touche florale apparaît en finale.\n\n🇺🇸 <i>Un profil Cali US sucré, fruité et particulièrement gourmand.</i>",
               tarifs: [
-                { weight: "10g", price: 100.0 },
-                { weight: "25g", price: 220.0 },
-                { weight: "50g", price: 400.0 },
-                { weight: "100g", price: 750.0 },
+                { weight: "3.5g", price: 70.0 },
+                { weight: "7g", price: 120.0 },
+                { weight: "14g", price: 200.0 },
+                { weight: "56g", price: 650.0 },
+                { weight: "112g", price: 1100.0 },
               ],
             },
                     ]
@@ -1444,10 +1445,10 @@ document.addEventListener("DOMContentLoaded", function () {
               description:
                     "🍋 <b>LEMON GAS</b> ⛽️\n\nUn profil très citronné dominé par le zeste de citron frais, accompagné de notes Haze, végétales et légèrement gazeuses. Une finale vive et persistante avec une vraie signature agrumes.\n\n🌿 <i>Une Super Lemon Haze fraîche, expressive et particulièrement aromatique.</i>",
               tarifs: [
-                { weight: "10g", price: 70.0 },
-                { weight: "25g", price: 150.0 },
-                { weight: "50g", price: 270.0 },
-                { weight: "100g", price: 500.0 },
+                { weight: "10g", price: 60.0 },
+                { weight: "25g", price: 130.0 },
+                { weight: "50g", price: 250.0 },
+                { weight: "100g", price: 450.0 },
               ],
             },
             {
@@ -1461,10 +1462,10 @@ document.addEventListener("DOMContentLoaded", function () {
               description:
                 "L'indémodable Haze à la puissance légendaire. Attendez-vous à un 'high' cérébral stimulant et euphorique. \n\n🍋 Arômes Vifs & Citronnés 🍋\n avec des notes de poivre et d'encens. Une expérience Haze authentique et pure.",
               tarifs: [
-                { weight: "10g", price: 70.0 },
-                { weight: "25g", price: 150.0 },
-                { weight: "50g", price: 270.0 },
-                { weight: "100g", price: 500.0 },
+                { weight: "10g", price: 60.0 },
+                { weight: "25g", price: 130.0 },
+                { weight: "50g", price: 250.0 },
+                { weight: "100g", price: 450.0 },
               ],
             },
           ],
@@ -1487,10 +1488,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 "🌴 <b>GLACE TROPICALE</b> 🍦\n\nUn cocktail de fruits tropicaux sucrés et acidulés, avec des notes de mangue, d'ananas et de fruit de la passion. Une finale fraîche et légèrement crémeuse.\n\n🍹 <i>Un high joyeux et élévateur. Parfait pour se détendre sous le soleil.</i>",
               tarifs: [
                 { weight: "10g", price: 80.0 },
-                { weight: "25g", price: 180.0 },
-                { weight: "50g", price: 350.0 },
-                { weight: "100g", price: 650.0 },
-                { weight: "500g", price: 2500.0 },
+                { weight: "25g", price: 160.0 },
+                { weight: "50g", price: 300.0 },
+                { weight: "100g", price: 580.0 },
+                { weight: "500g", price: 2400.0 },
               ],
             },
             {
@@ -1505,10 +1506,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 "🧅 <b>COCKTAIL FUNKY</b> 🍋\n\nUn croisement audacieux. L'arôme puissant et umami de l'oignon percuté par l'acidité piquante du citron. Un profil terpénique gazeux et unique.\n\n🚀 <i>Grosse claque cérébrale suivie d'un stone corporel profond. Pour les palais avertis.</i>",
               tarifs: [
                 { weight: "10g", price: 80.0 },
-                { weight: "25g", price: 180.0 },
-                { weight: "50g", price: 350.0 },
-                { weight: "100g", price: 650.0 },
-                { weight: "500g", price: 2500.0 },
+                { weight: "25g", price: 160.0 },
+                { weight: "50g", price: 300.0 },
+                { weight: "100g", price: 580.0 },
+                { weight: "500g", price: 2400.0 },
               ],
             },
             /*   {
@@ -3133,13 +3134,68 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  let introFinished = false;
+
+  function finishIntro() {
+    if (introFinished) return;
+    introFinished = true;
+
+    const introVideo = document.getElementById("intro-video");
+    if (introVideo) {
+      introVideo.pause();
+    }
+
+    document.body.classList.remove("intro-playing");
+
+    populateFilters();
+    renderHomePage();
+    updateCartCount();
+    showPage("page-home");
+  }
+
+  function startIntro() {
+    const introVideo = document.getElementById("intro-video");
+    const skipButton = document.getElementById("intro-skip-button");
+
+    if (!introVideo || !skipButton) {
+      finishIntro();
+      return;
+    }
+
+    document.body.classList.add("intro-playing");
+    showPage("page-intro");
+
+    introVideo.currentTime = 0;
+    introVideo.muted = false;
+
+    // On tente d'abord la lecture avec le son.
+    // Si le navigateur bloque l'autoplay sonore, on relance en muet.
+    const playPromise = introVideo.play();
+    if (playPromise && typeof playPromise.catch === "function") {
+      playPromise.catch(() => {
+        introVideo.muted = true;
+        introVideo.play().catch(() => {
+          // La vidéo reste affichée et l'utilisateur peut toujours utiliser SKIP.
+        });
+      });
+    }
+
+    introVideo.addEventListener("ended", finishIntro, { once: true });
+    introVideo.addEventListener("error", finishIntro, { once: true });
+    skipButton.addEventListener("click", finishIntro, { once: true });
+
+    // Permet d'activer/couper rapidement le son en touchant la vidéo.
+    introVideo.addEventListener("click", () => {
+      introVideo.muted = !introVideo.muted;
+      if (introVideo.paused) {
+        introVideo.play().catch(() => {});
+      }
+    });
+  }
+
   function init() {
     setTimeout(() => {
-
-      populateFilters();
-      renderHomePage();
-      updateCartCount();
-      showPage("page-home");
+      startIntro();
     }, 1500);
   }
 
