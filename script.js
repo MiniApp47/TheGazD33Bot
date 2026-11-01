@@ -2732,13 +2732,6 @@ document.addEventListener("DOMContentLoaded", function () {
   demo: true,
 },
    {
-  name: "GenetixLabz 33",
-  rating: 5,
-  text: "Produits de qualités +++ 😍😍",
-  date: "18/10/2026",
-  demo: true,
-},
-   {
   name: "Lucas ter",
   rating: 5,
   text: "Le PLASMASTATIC c’est vraiment la fusé",
