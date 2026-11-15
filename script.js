@@ -209,68 +209,161 @@ document.addEventListener("DOMContentLoaded", function () {
       image: "CategHash.jpg",
 
       farms: [
-        {
-          id: "FRESH FROZEN PREMIUM 🧊 ⚡️",
-          name: "FRESH FROZEN PREMIUM 🧊 ⚡️",
-          image: "CategHash.png",
-          badgeText: "5 produits",
-          products: [
-            {
-              id: "TANGIBERTO 🍋🍊",
-              name: "TANGIBERTO 🍋🍊",
-              farm: "🇲🇦🏔️ AYLA’HASH .CO 🏔️🇲🇦",
-              promoEligible: true,
-              type: "AYLA’HASH",
-              image: "ProductTG.jpg",
-              video: "VideoTG.mov",
-              description:
-                  "",
-              tarifs: [
-                { weight: "5g", price: 70.0 },
-                { weight: "10g", price: 120.0 },
-                { weight: "25g", price: 250.0 },
-                { weight: "50g", price: 450.0 },
-                { weight: "100g", price: 800.0 },
-              ],
-            },
-            {
-              id: "BLUE LAGON 🫐🫐🍭",
-              name: "BLUE LAGON 🫐🫐🍭",
-              farm: "🇲🇦🏔️ AYLA’HASH .CO 🏔️🇲🇦",
-              promoEligible: true,
-              type: "AYLA’HASH",
-              image: "ProductBG.jpg",
-              video: "VideoBG.mov",
-              description:
-                  "",
-              tarifs: [
-                { weight: "5g", price: 70.0 },
-                { weight: "10g", price: 120.0 },
-                { weight: "25g", price: 250.0 },
-                { weight: "50g", price: 450.0 },
-                { weight: "100g", price: 800.0 },
-              ],
-            },
-            {
-              id: "AYLA FF FRUST x 26mm 🍌🍓🍋‍🟩",
-              name: "AYLA FF FRUST x 26mm 🍌🍓🍋‍🟩",
-              farm: "🇲🇦🏔️ AYLA’HASH .CO 🏔️🇲🇦",
-              promoEligible: true,
-              type: "thegaz",
-              image: "ProductAY.jpg",
-              video: "VideoAY.mov",
-              description:
-                  "",
-              tarifs: [
-                { weight: "5g", price: 70.0 },
-                { weight: "10g", price: 120.0 },
-                { weight: "25g", price: 250.0 },
-                { weight: "50g", price: 450.0 },
-                { weight: "100g", price: 800.0 },
-              ],
-            },
-          ],
-        },
+       {
+  id: "FRESH FROZEN PREMIUM 🧊 ⚡️",
+  name: "FRESH FROZEN PREMIUM 🧊 ⚡️",
+  image: "CategHash.png",
+  badgeText: "5 produits",
+  products: [
+    {
+      id: "TANGIBERTO 🍋🍊",
+      name: "TANGIBERTO 🍋🍊",
+      farm: "🇲🇦🏔️ AYLA’HASH .CO 🏔️🇲🇦",
+      promoEligible: true,
+      type: "AYLA’HASH",
+      image: "ProductTG.jpg",
+      video: "VideoTG.mov",
+      description:
+        "🍊 <b>TANGERINE CITRUS</b> 🍋\n\nUne attaque très agrumes mêlant mandarine juteuse, orange douce et zestes de citron. Une petite touche gazeuse vient renforcer le profil et laisse une finale fraîche et persistante.\n\n🧊 <i>Un Fresh Frozen Premium vif, fruité et ultra citronné signé AYLA’HASH.</i>",
+      tarifs: [
+        { weight: "5g", price: 70.0 },
+        { weight: "10g", price: 120.0 },
+        { weight: "25g", price: 250.0 },
+        { weight: "50g", price: 450.0 },
+        { weight: "100g", price: 800.0 },
+      ],
+    },
+    {
+      id: "BLUE LAGON 🫐🫐🍭",
+      name: "BLUE LAGON 🫐🫐🍭",
+      farm: "🇲🇦🏔️ AYLA’HASH .CO 🏔️🇲🇦",
+      promoEligible: true,
+      type: "AYLA’HASH",
+      image: "ProductBG.jpg",
+      video: "VideoBG.mov",
+      description:
+        "🫐 <b>BLUEBERRY CANDY</b> 🍭\n\nUn profil très gourmand dominé par la myrtille mûre et les fruits bleus, accompagné de notes de bonbon sucré et légèrement acidulé. La finale reste douce, fruitée et presque sirupeuse.\n\n🧊 <i>Un Fresh Frozen Premium sucré, coloré et intensément fruité.</i>",
+      tarifs: [
+        { weight: "5g", price: 70.0 },
+        { weight: "10g", price: 120.0 },
+        { weight: "25g", price: 250.0 },
+        { weight: "50g", price: 450.0 },
+        { weight: "100g", price: 800.0 },
+      ],
+    },
+    {
+      id: "AYLA FF FRUST x 26mm 🍌🍓🍋‍🟩",
+      name: "AYLA FF FRUST x 26mm 🍌🍓🍋‍🟩",
+      farm: "🇲🇦🏔️ AYLA’HASH .CO 🏔️🇲🇦",
+      promoEligible: true,
+      type: "thegaz",
+      image: "ProductAY.jpg",
+      video: "VideoAY.mov",
+      description:
+        "🍌 <b>FRUIT MIX 26MM</b> 🍓\n\nUn mélange gourmand entre banane mûre, fraise sucrée et citron vert acidulé. Le côté crémeux de la banane équilibre parfaitement la fraîcheur des agrumes et des fruits rouges.\n\n⚡️ <i>Un Fresh Frozen Premium complexe, tropical et très gourmand.</i>",
+      tarifs: [
+        { weight: "5g", price: 70.0 },
+        { weight: "10g", price: 120.0 },
+        { weight: "25g", price: 250.0 },
+        { weight: "50g", price: 450.0 },
+        { weight: "100g", price: 800.0 },
+      ],
+    },
+  ],
+},
+{
+  id: "WPFF 73–120 µm 🥇",
+  name: "WPFF 73–120 µm 🥇",
+  image: "CategHash.png",
+  badgeText: "5 produits",
+  products: [
+    {
+      id: "DARK RAINBOW 🦂🫐🍓",
+      name: "DARK RAINBOW 🦂🫐🍓",
+      farm: "CAPITAIN AMERICA 🦸🏽‍♂️🇺🇸",
+      promoEligible: true,
+      type: "AYLA’HASH",
+      image: "ProductDR.png",
+      video: "VideoDR.mov",
+      description:
+        "🌈 <b>DARK BERRIES</b> 🫐\n\nUn profil sombre et fruité mêlant myrtille, fraise mûre et fruits rouges confits. Une légère note gazeuse et terreuse vient apporter plus de profondeur à l’ensemble.\n\n🇺🇸 <i>Un WPFF californien riche, fruité et particulièrement expressif.</i>",
+      tarifs: [
+        { weight: "1g", price: 40.0 },
+        { weight: "2g", price: 70.0 },
+        { weight: "5g", price: 160.0 },
+        { weight: "10g", price: 300.0 },
+      ],
+    },
+    {
+      id: "GARLIC JUICE  🥤🧄",
+      name: "GARLIC JUICE  🥤🧄",
+      farm: "CAPITAIN AMERICA 🦸🏽‍♂️🇺🇸",
+      promoEligible: true,
+      type: "AYLA’HASH",
+      image: "ProductGJ.png",
+      video: "VideoGJ.mov",
+      description:
+        "🧄 <b>GARLIC GAS</b> 🥤\n\nUn profil atypique et profond avec des notes d’ail, d’épices et une touche légèrement salée, accompagnées d’un fond gazeux et terreux. Une finale originale qui reste longtemps en bouche.\n\n🇺🇸 <i>Un WPFF complexe, funky et totalement différent des profils fruités classiques.</i>",
+      tarifs: [
+        { weight: "1g", price: 40.0 },
+        { weight: "2g", price: 70.0 },
+        { weight: "5g", price: 160.0 },
+        { weight: "10g", price: 300.0 },
+      ],
+    },
+    {
+      id: "BANANA GUAVA 🍌🥭",
+      name: "BANANA GUAVA 🍌🥭",
+      farm: "CAPITAIN AMERICA 🦸🏽‍♂️🇺🇸",
+      promoEligible: true,
+      type: "thegaz",
+      image: "ProductBGG.png",
+      video: "VideoBGG.mov",
+      description:
+        "🍌 <b>TROPICAL CREAM</b> 🥭\n\nUne banane bien mûre et crémeuse associée à la douceur exotique de la goyave. Des notes tropicales juteuses apparaissent ensuite avec une finale légèrement sucrée et lactée.\n\n🇺🇸 <i>Un WPFF exotique, rond et particulièrement gourmand.</i>",
+      tarifs: [
+        { weight: "1g", price: 40.0 },
+        { weight: "2g", price: 70.0 },
+        { weight: "5g", price: 160.0 },
+        { weight: "10g", price: 300.0 },
+      ],
+    },
+    {
+      id: "BANANA CAKE 🍌🍰",
+      name: "BANANA CAKE 🍌🍰",
+      farm: "CAPITAIN AMERICA 🦸🏽‍♂️🇺🇸",
+      promoEligible: true,
+      type: "thegaz",
+      image: "ProductBC.png",
+      video: "VideoBC.mov",
+      description:
+        "🍌 <b>BANANA CAKE</b> 🍰\n\nUn véritable profil dessert associant banane mûre, pâte à gâteau sucrée, vanille et une touche crémeuse. La finale rappelle un cake à la banane fraîchement sorti du four.\n\n🇺🇸 <i>Un WPFF doux, pâtissier et ultra gourmand.</i>",
+      tarifs: [
+        { weight: "1g", price: 40.0 },
+        { weight: "2g", price: 70.0 },
+        { weight: "5g", price: 160.0 },
+        { weight: "10g", price: 300.0 },
+      ],
+    },
+    {
+      id: "PAPA GRAPPE 🍇 🍬",
+      name: "PAPA GRAPPE 🍇 🍬",
+      farm: "CAPITAIN AMERICA 🦸🏽‍♂️🇺🇸",
+      promoEligible: true,
+      type: "thegaz",
+      image: "ProductPG.png",
+      video: "VideoPG.mov",
+      description:
+        "🍇 <b>GRAPE CANDY</b> 🍬\n\nUn raisin noir très sucré accompagné de notes de bonbon, de fruits rouges et de baies mûres. Une légère touche florale vient compléter une finale douce et persistante.\n\n🇺🇸 <i>Un WPFF fruité, sucré et résolument candy.</i>",
+      tarifs: [
+        { weight: "1g", price: 40.0 },
+        { weight: "2g", price: 70.0 },
+        { weight: "5g", price: 160.0 },
+        { weight: "10g", price: 300.0 },
+      ],
+    },
+  ],
+},
         {
           id: "90u PREMIUM",
           name: "🧪 90u PREMIUM 🧪",
@@ -1632,6 +1725,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // --- PRODUCTEURS DISPONIBLES DANS LA CATÉGORIE HASH ---
   const hashProducers = [
+    {
+      id: "CAPITAIN AMERICA",
+      name: "CAPITAIN AMERICA 🦸🏽‍♂️🇺🇸",
+      match: "CAPITAIN AMERICA",
+    },
     {
       id: "AYLA’HASH",
       name: "🇲🇦🏔️ AYLA’HASH .CO 🏔️🇲🇦",
