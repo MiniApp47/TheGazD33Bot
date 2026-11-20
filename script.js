@@ -964,6 +964,25 @@ document.addEventListener("DOMContentLoaded", function () {
           badgeText: "0 produits",
           products: [
             {
+              id: "Vapes 🍥",
+              name: "Vapes 🍥",
+              farm: 'GAZ SELECTION 🇲🇦 ⛰️',
+              promoEligible: true,
+              type: "Weed",
+              useSmallText: true,
+              image: "ProductVap.jpg",
+              images: ["ProductVap3.jpg", "ProductVape4.jpg", "ProductVape5.jpg", "ProductVape6.jpg", "ProductVape7.jpg", "ProductVape8.jpg", "ProductVape9.jpg", "ProductVape10.jpg","ProductVape11.jpg"],
+              video: "",
+              description:
+                    "💨 <b>VAPES PREMIUM</b> 🍥\n\nUne expérience simple, pratique et discrète avec un format compact pensé pour une utilisation facile au quotidien. Selon les références disponibles, les profils aromatiques peuvent varier entre notes fruitées, sucrées, fraîches ou plus gourmandes.\n\n✨ <i>Un format pratique et propre, idéal pour ceux qui recherchent simplicité et variété.</i>",
+              tarifs: [
+                { weight: "1 VAPE", price: 60.0 },
+                { weight: "5 VAPE", price: 250.0 },
+                { weight: "10 VAPE", price: 450.0 },
+                { weight: "50 VAPE", price: 2000.0 },
+              ],
+            },
+            {
               id: "CANDY GRAPES 🍬",
               name: "CANDY GRAPES 🍬",
               farm: "CHOICES LAB 🇺🇸",
