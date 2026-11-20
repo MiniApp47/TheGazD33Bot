@@ -971,7 +971,7 @@ document.addEventListener("DOMContentLoaded", function () {
               type: "Weed",
               useSmallText: true,
               image: "ProductVap.jpg",
-              images: ["ProductVap3.jpg", "ProductVape4.jpg", "ProductVape5.jpg", "ProductVape6.jpg", "ProductVape7.jpg", "ProductVape8.jpg", "ProductVape9.jpg", "ProductVape10.jpg","ProductVape11.jpg"],
+              images: ["ProductVap3.jpg", "ProductVap4.jpg", "ProductVap5.jpg", "ProductVap6.jpg", "ProductVap7.jpg", "ProductVap8.jpg", "ProductVap9.jpg", "ProductVap10.jpg","ProductVap11.jpg"],
               video: "",
               description:
                     "💨 <b>VAPES PREMIUM</b> 🍥\n\nUne expérience simple, pratique et discrète avec un format compact pensé pour une utilisation facile au quotidien. Selon les références disponibles, les profils aromatiques peuvent varier entre notes fruitées, sucrées, fraîches ou plus gourmandes.\n\n✨ <i>Un format pratique et propre, idéal pour ceux qui recherchent simplicité et variété.</i>",
