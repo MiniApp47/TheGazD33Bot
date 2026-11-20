@@ -1038,7 +1038,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
           ],
         },
-        {
+     /*    {
           id: "WAX 💉",
           name: "WAX 💉",
           image: "",
@@ -1138,7 +1138,7 @@ document.addEventListener("DOMContentLoaded", function () {
               ],
             },
           ],
-        },
+        }, */
       ],
     },
   ];
