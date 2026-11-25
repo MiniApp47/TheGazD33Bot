@@ -1803,10 +1803,101 @@
             min-width: 68px;
         }
 
+
+        /* CAPTCHA THE GAZ DOGZ — écran bloquant à l'entrée */
+        #thegaz-captcha {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            padding: max(18px, env(safe-area-inset-top)) 18px max(18px, env(safe-area-inset-bottom));
+            background: rgba(8, 8, 10, .96);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            z-index: 30000;
+            overflow-y: auto;
+            transition: opacity .35s ease;
+        }
+        #thegaz-captcha.captcha-passed { opacity: 0; pointer-events: none; }
+        #thegaz-captcha .captcha-card {
+            background: linear-gradient(155deg, #262022, #131012 64%, #2c1512);
+            border: 1px solid rgba(255, 105, 66, .48);
+            border-radius: 25px;
+            padding: 24px 22px;
+            width: min(100%, 370px);
+            box-shadow: 0 20px 70px rgba(0,0,0,.65), inset 0 1px 0 #ffffff14;
+            color: #fff;
+            text-align: center;
+        }
+        #thegaz-captcha .captcha-brand { font-size: .72rem; font-weight: 800; letter-spacing: .2em; color: #ffad8c; }
+        #thegaz-captcha h2 { font-size: 1.4rem; margin: 9px 0 6px; }
+        #thegaz-captcha p { color: #f0d4ca; font-size: .93rem; line-height: 1.5; margin: 8px 0; }
+        #thegaz-captcha .captcha-target {
+            position: relative; display: grid; place-items: center;
+            width: 180px; height: 180px; margin: 21px auto;
+            border-radius: 50%;
+            background: radial-gradient(circle, #2e1716 43%, #140e0c 73%);
+            border: 2px solid #c94a30;
+            box-shadow: 0 0 25px rgba(201,74,48,.25), inset 0 0 22px #0008;
+        }
+        #thegaz-captcha .captcha-top-marker {
+            position: absolute; top: -17px; left: 50%; transform: translateX(-50%);
+            font-size: .70rem; color: #ffd3b7; letter-spacing: .1em; font-weight: 800;
+        }
+        #thegaz-captcha .captcha-top-line {
+            position: absolute; top: 0; left: 50%; height: 18px; width: 3px;
+            transform: translateX(-50%); border-radius: 5px; background: #ffd3b7;
+        }
+        #thegaz-captcha .captcha-rotator {
+            width: 130px; height: 130px; display: flex; align-items: center;
+            justify-content: center; flex-direction: column;
+            border: 1px solid #fb7447; border-radius: 50%;
+            background: radial-gradient(circle at 30% 25%, #c64925, #581b1e 75%);
+            box-shadow: 0 0 24px rgba(200,50,30,.35);
+            user-select: none; transition: transform .08s linear;
+        }
+        #thegaz-captcha .captcha-direction { font-size: 3.3rem; line-height: 1; color: #ffe0ba; text-shadow: 0 1px 9px #0008; }
+        #thegaz-captcha .captcha-direction-label { color: #fff; font-size: .75rem; letter-spacing: .12em; font-weight: 800; }
+        #captcha-rotation { display: block; width: 100%; margin: 24px 0 16px; height: 12px; accent-color: #e45b34; touch-action: auto; }
+        #captcha-check { border: 0; width: 100%; padding: 14px 18px; border-radius: 13px; background: linear-gradient(100deg,#912e24,#ef692c); color: #fff; font-size: 1rem; font-weight: 800; cursor: pointer; }
+        #captcha-check:active { transform: scale(.98); }
+        #captcha-status { min-height: 1.35em; color: #ffbbaa !important; margin: 12px 0 0 !important; }
+        #captcha-status.success { color: #86e8b0 !important; }
+        @media (max-height: 590px) {
+            #thegaz-captcha .captcha-target { width: 135px; height: 135px; margin: 12px auto; }
+            #thegaz-captcha .captcha-rotator { width: 100px; height: 100px; }
+            #thegaz-captcha .captcha-direction { font-size: 2.5rem; }
+            #thegaz-captcha .captcha-card { padding: 16px; }
+        }
     </style>
 </head>
 
 <body>
+    <!-- Vérification visuelle avant toute navigation dans la Mini App -->
+    <div id="thegaz-captcha" role="dialog" aria-modal="true" aria-labelledby="captcha-title">
+        <div class="captcha-card">
+            <div class="captcha-brand">THE GAZ DOGZ • SÉCURITÉ</div>
+            <h2 id="captcha-title">🔐 Vérification rapide</h2>
+            <p>Fais tourner le symbole avec le curseur pour orienter la flèche vers le haut.</p>
+            <div class="captcha-target" aria-hidden="true">
+                <div class="captcha-top-marker">HAUT</div>
+                <div class="captcha-top-line"></div>
+                <div id="captcha-rotator" class="captcha-rotator">
+                    <span class="captcha-direction">⬆</span>
+                    <span class="captcha-direction-label">THE GAZ DOGZ</span>
+                </div>
+            </div>
+            <label for="captcha-rotation" style="display:block;font-size:.85rem;color:#f6d4c9;">
+                Tourner le symbole
+            </label>
+            <input id="captcha-rotation" type="range" min="0" max="359" step="1" value="0" aria-label="Rotation du symbole">
+            <button id="captcha-check" type="button">✅ Vérifier et entrer</button>
+            <p id="captcha-status" role="status" aria-live="polite"></p>
+        </div>
+    </div>
+
     <div id="page-contact" class="page">
         <div class="page-content">
             <img src="Logo.jpg" alt="Logo" class="contact-logo">

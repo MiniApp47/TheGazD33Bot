@@ -10,6 +10,73 @@ document.addEventListener("DOMContentLoaded", function () {
   tg.setHeaderColor("#2c2c2e");
   tg.setBackgroundColor("#1c1c1d");
 
+
+  // CAPTCHA visuel à rotation : simple protection côté navigateur.
+  // Pour une protection anti-bot forte il faut un serveur qui valide les jetons.
+  function initTheGazCaptcha() {
+    const overlay = document.getElementById('thegaz-captcha');
+    const wheel = document.getElementById('captcha-rotator');
+    const slider = document.getElementById('captcha-rotation');
+    const verify = document.getElementById('captcha-check');
+    const status = document.getElementById('captcha-status');
+    if (!overlay || !wheel || !slider || !verify || !status) return;
+
+    function finishCaptcha() {
+      window.theGazCaptchaPassed = true;
+      try { sessionStorage.setItem('thegaz_captcha_ok', '1'); } catch (_) {}
+      overlay.classList.add('captcha-passed');
+      window.setTimeout(() => overlay.remove(), 370);
+      if (typeof window.theGazOnCaptchaPass === 'function') {
+        const callback = window.theGazOnCaptchaPass;
+        window.theGazOnCaptchaPass = null;
+        callback();
+      }
+    }
+    try {
+      if (sessionStorage.getItem('thegaz_captcha_ok') === '1') {
+        overlay.remove();
+        window.theGazCaptchaPassed = true;
+        return;
+      }
+    } catch (_) {}
+
+    let initialAngle = 0;
+    let attempts = 0;
+    function refreshChallenge() {
+      // Un angle aléatoire, jamais déjà correctement orienté.
+      initialAngle = 50 + Math.floor(Math.random() * 260);
+      slider.value = '0';
+      wheel.style.transform = `rotate(${initialAngle}deg)`;
+      status.textContent = '';
+    }
+    function renderRotation() {
+      wheel.style.transform = `rotate(${initialAngle + Number(slider.value)}deg)`;
+      status.textContent = '';
+    }
+    slider.addEventListener('input', renderRotation);
+    verify.addEventListener('click', () => {
+      const angle = (initialAngle + Number(slider.value)) % 360;
+      const difference = Math.min(angle, 360 - angle);
+      if (difference <= 12) {
+        status.classList.add('success');
+        status.textContent = '✅ Vérification réussie !';
+        finishCaptcha();
+      } else {
+        attempts += 1;
+        status.classList.remove('success');
+        status.textContent = attempts >= 3
+          ? '🔁 Nouvelle image : recommence la rotation.'
+          : '❌ Pas encore droit. Aligne la flèche sur le repère HAUT.';
+        if (attempts >= 3) {
+          attempts = 0;
+          window.setTimeout(refreshChallenge, 1100);
+        }
+      }
+    });
+    refreshChallenge();
+  }
+  initTheGazCaptcha();
+
   // --- CONFIGURATION DES LIENS DE CONTACT ---
   const contactLinks = [
     {
@@ -2616,9 +2683,10 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function init() {
-    setTimeout(() => {
-      startIntro();
-    }, 1500);
+    // La vidéo d'introduction ne commence qu'après le CAPTCHA.
+    const launchIntro = () => window.setTimeout(startIntro, 500);
+    if (window.theGazCaptchaPassed) launchIntro();
+    else window.theGazOnCaptchaPass = launchIntro;
   }
 
   init();
